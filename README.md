@@ -100,9 +100,3 @@ I'm an Inbound Team Leader at Target with a passion for creating unique user exp
 - **Statistical Computing:** Advanced analytics, sabermetrics, and predictive modeling
 
 ---
-
-### 📫 Let's Connect
-
-I'm always interested in discussing retail technology, AI-assisted development, or collaboration opportunities!
-
-**Open to:** Store-Level Information Systems Roles • Technology Leadership • Collaboration on Analytics Projects
