@@ -12,6 +12,27 @@
 
 ---
 
+## 🌟 Featured Projects
+
+### ⚾ [The Cycle - MLB Analytics Platform](https://thecycle.online)
+> Comprehensive enterprise analytics platform processing thousands of MLB games with 40+ statistical categories
+
+**Built with AI-accelerated development | [Live Demo](https://thecycle.online) | [View Code](#)**
+
+```
+Tech Stack: React • TypeScript • Node.js • Azure Redis • Docker • Material-UI
+```
+
+### 🙏 GodMuse
+> Flutter iOS application bringing users closer to Jesus through interactive Bible study and apologetics
+
+**In Active Development**
+
+```
+Tech Stack: Flutter • iOS • Azure Redis Cache
+```
+
+
 ## 🎯 About Me
 
 I'm an Inbound Team Leader at Target with a passion for creating unique user experiences. I leverage AI-accelerated development to build complex information systems that transform complex data into elegant solutions.
@@ -52,26 +73,6 @@ I'm an Inbound Team Leader at Target with a passion for creating unique user exp
   ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=c-tram&theme=dark&hide_border=true&background=0d1117&ring=f0e68c&fire=f0e68c&currStreakLabel=f0e68c)
 
 </div>
-
-## 🌟 Featured Projects
-
-### ⚾ [The Cycle - MLB Analytics Platform](https://thecycle.online)
-> Comprehensive enterprise analytics platform processing thousands of MLB games with 40+ statistical categories
-
-**Built with AI-accelerated development | [Live Demo](https://thecycle.online) | [View Code](#)**
-
-```
-Tech Stack: React • TypeScript • Node.js • Azure Redis • Docker • Material-UI
-```
-
-### 🙏 GodMuse
-> Flutter iOS application bringing users closer to Jesus through interactive Bible study and apologetics
-
-**In Active Development**
-
-```
-Tech Stack: Flutter • iOS • Azure Redis Cache
-```
 
 ## 📈 Contribution Activity
 
