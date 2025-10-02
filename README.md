@@ -43,24 +43,30 @@ I'm an Inbound Team Leader at Target with a passion for creating unique user exp
 - 🌱 **Learning:** Frontend architectures • GenAI techniques • Advanced system design
 - 💡 **Specialty:** Translating complex data into intuitive, user-focused solutions
 
-## 🛠️ Technologies & Tools
+## 💼 Professional Focus
 
-```text
-🤖 AI & Development    : Advanced Prompt Engineering • AI-Assisted Architecture
-                        Code Generation & Optimization • Rapid Prototyping
+<div align="center">
 
-💻 Languages          : JavaScript • TypeScript • HTML/CSS
+| 🎯 Software Engineering | ☁️ Cloud & Infrastructure | 📊 Data & Analytics |
+|------------------------|---------------------------|---------------------|
+| Full-Stack Development | Azure Ecosystem | Statistical Computing |
+| AI-Assisted Architecture | Performance Optimization | Predictive Analytics |
+| Enterprise Systems | CI/CD & DevOps | Real-Time Data Processing |
+| RESTful API Design | Redis Caching Strategies | Business Intelligence |
 
-🚀 Frameworks         : React • Node.js • Express.js • Flutter • Material-UI
+</div>
 
-☁️ Cloud & DevOps     : Azure (Redis Cache, Web Apps, DevOps) • Firebase
-                        Docker • CI/CD Pipelines • RESTful APIs
+## 🎓 Core Competencies
 
-🛢️ Databases          : Redis • Azure Redis Cache
+- **AI-Accelerated Development:** Advanced prompt engineering and AI-assisted architecture design for rapid enterprise application development
+- **Enterprise System Architecture:** Building scalable platforms processing millions of data points with sub-millisecond response times
+- **Performance Engineering:** Redis batch operations (500-key pipelines), parallel processing, and optimization techniques achieving 80% load time reduction
+- **Cloud Infrastructure & DevOps:** Azure ecosystem expertise (Redis Cache, Web Apps, DevOps), Docker containerization, and automated CI/CD pipelines
+- **Data Pipeline Development:** Real-time bidirectional APIs, statistical computing, and dynamic baseline calculation systems
+- **Cross-Functional Leadership:** 6+ years driving operational excellence, achieving 10% growth in managed areas, and mentoring high-performing teams
+- **Proprietary Algorithm Development:** Creating complex analytical systems integrating multiple data sources for business value assessment
 
-🔧 Tools & Methods    : Git/GitHub • Jest • Agile Development
-                        Performance Optimization • API Integration
-```
+---
 
 ## 📊 GitHub Statistics
 
@@ -77,26 +83,3 @@ I'm an Inbound Team Leader at Target with a passion for creating unique user exp
 ## 📈 Contribution Activity
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=c-tram&theme=github-dark&hide_border=true&area=true&bg_color=0d1117&color=f0e68c&line=f0e68c&point=c9d1d9)
-
-## 💼 Professional Focus
-
-<div align="center">
-
-| 🏪 Retail Operations | 💻 Technology | 🔄 Integration |
-|---------------------|---------------|----------------|
-| Team Leadership | System Architecture | Data Pipelines |
-| Process Optimization | Performance Tuning | API Development |
-| Operational Excellence | Cloud Infrastructure | CI/CD Automation |
-
-</div>
-
-## 🎓 Core Competencies
-
-- **AI-Assisted Development:** Leveraging cutting-edge prompt engineering to accelerate full-stack development
-- **Data Translation:** Converting complex operational data into intuitive, user-focused solutions
-- **Frontend Architecture:** Exploring modern patterns and GenAI techniques for optimal user experiences
-- **Performance Optimization:** Redis caching strategies, batch operations, and parallel processing
-- **Cloud Infrastructure:** Azure ecosystem expertise (Redis, Web Apps, DevOps)
-- **Statistical Computing:** Advanced analytics, sabermetrics, and predictive modeling
-
----
