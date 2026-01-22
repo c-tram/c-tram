@@ -38,7 +38,7 @@ Tech Stack: Flutter • iOS • Azure Redis Cache
 I'm an Inbound Team Leader at Target with a passion for creating unique user experiences. I leverage AI-accelerated development to build complex information systems that transform complex data into elegant solutions.
 
 - 🎯 **Current Role:** Inbound Team Leader at Target
-- 🚀 **Career Goal:** Transition into store-level retail information systems and technology leadership
+- 🚀 **Career Goal:** Transition into a role where I can leverage information systems
 - 🔨 **Building:** Complex information systems with AI-accelerated development
 - 🌱 **Learning:** Frontend architectures • GenAI techniques • Advanced system design
 - 💡 **Specialty:** Translating complex data into intuitive, user-focused solutions
