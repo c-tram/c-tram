@@ -14,14 +14,14 @@
 
 ## 🌟 Featured Projects
 
-### ⚾ [The Cycle - MLB Analytics Platform](https://thecycle.online)
+### ⚾ [The Cycle - MLB Analytics Platform](https://github.com/c-tram/The-Cycle)
 > Comprehensive enterprise analytics platform processing thousands of MLB games with 40+ statistical categories
 
 ```
 Tech Stack: React • TypeScript • Node.js • Azure Redis • Docker • Material-UI
 ```
 
-### 🙏 mlb-data-scraper
+### 🙏 [mlb-data-scraper](https://github.com/c-tram/mlb-data-scraper)
 > Scrapes MLB API with option to convert to JSON or put in Redis
 
 ## 🎯 About Me
