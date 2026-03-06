@@ -21,15 +21,8 @@
 Tech Stack: React • TypeScript • Node.js • Azure Redis • Docker • Material-UI
 ```
 
-### 🙏 GodMuse
-> Flutter Application with the goal of making an interactive Bible.
-
-**In Active Development**
-
-```
-Tech Stack: Flutter • iOS • Azure Redis Cache
-```
-
+### 🙏 mlb-data-scraper
+> Scrapes MLB API with option to convert to JSON or put in Redis
 
 ## 🎯 About Me
 
