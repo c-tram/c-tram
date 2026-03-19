@@ -4,9 +4,9 @@
   
   ![Profile Views](https://komarev.com/ghpvc/?username=c-tram&color=1a1a1a&style=flat-square)
   
-  **Inbound Team Leader @ Target | Aspiring Full-Stack Developer**
+  **Inbound Team Leader @ Target | Full-Stack Developer**
   
-  *Building the bridge between complex data interactions and information systems for the everyday user*
+  *Building the bridge between complex data and intuitive information systems*
 
 </div>
 
@@ -14,25 +14,36 @@
 
 ## 🌟 Featured Projects
 
-### ⚾ [The Cycle - MLB Analytics Platform](https://github.com/c-tram/The-Cycle)
-> Comprehensive enterprise analytics platform processing thousands of MLB games with 40+ statistical categories
+### ⚾ [The Cycle — MLB Analytics Platform](https://thecycle.online)
+> A live MLB analytics platform that automatically tracks every game throughout the season
+
+**See it live:** [thecycle.online](https://thecycle.online)
+
+The Cycle pulls data from the MLB Stats API and processes it into a full-featured analytics dashboard. During the season, it monitors live games every 2 minutes and automatically ingests completed box scores — no manual updates needed.
+
+**What it does:**
+- **Live Scoreboard** — Real-time scores and game states across the league
+- **Player Profiles** — Season stats, advanced metrics (wOBA, FIP, BABIP), and a proprietary Cycle Value Rating (CVR) that grades overall player value
+- **Splits Explorer** — Situational breakdowns (home/away, vs L/R, by count, runners on, etc.) for both players and teams
+- **Pitch Analysis** — Pitch-type breakdowns, zone heatmaps, and spray charts built from play-by-play data
+- **Team Analytics** — Roster overviews, team batting/pitching profiles, and head-to-head matchup history
+- **Standings & Leaderboards** — League-wide rankings with sortable stat categories
 
 ```
-Tech Stack: React • TypeScript • Node.js • Azure Redis • Docker • Material-UI
+Stack: React · Node.js · Express · Redis · Nginx · MLB Stats API
 ```
 
-### 🙏 [mlb-data-scraper](https://github.com/c-tram/mlb-data-scraper)
-> Scrapes MLB API with option to convert to JSON or put in Redis
+---
 
 ## 🎯 About Me
 
-I'm an Inbound Team Leader at Target with a passion for creating unique user experiences. I leverage AI-accelerated development to build complex information systems that transform complex data into elegant solutions.
+I'm an Inbound Team Leader at Target with a passion for building software that makes complex data accessible. I use AI-accelerated development to move fast — from idea to deployed product.
 
 - 🎯 **Current Role:** Inbound Team Leader at Target
-- 🚀 **Career Goal:** Transition into a role where I can leverage information systems
-- 🔨 **Building:** Complex information systems with AI-accelerated development
-- 🌱 **Learning:** Frontend architectures • GenAI techniques • Advanced system design
-- 💡 **Specialty:** Translating complex data into intuitive, user-focused solutions
+- 🚀 **Career Goal:** Transition into a full-time software engineering role leveraging information systems
+- 🔨 **Building:** [The Cycle](https://thecycle.online) — a self-updating MLB analytics platform
+- 🌱 **Learning:** Frontend architectures · GenAI techniques · Advanced system design
+- 💡 **Specialty:** Turning messy data into clean, useful interfaces
 
 ## 💼 Professional Focus
 
@@ -40,7 +51,7 @@ I'm an Inbound Team Leader at Target with a passion for creating unique user exp
 
 | 🎯 Software Engineering | ☁️ Cloud & Infrastructure | 📊 Data & Analytics |
 |------------------------|---------------------------|---------------------|
-| Full-Stack Development | Azure Ecosystem | Statistical Computing |
+| Full-Stack Development | Linux VPS & Nginx | Statistical Computing |
 | AI-Assisted Architecture | Performance Optimization | Predictive Analytics |
 | Enterprise Systems | CI/CD & DevOps | Real-Time Data Processing |
 | RESTful API Design | Redis Caching Strategies | Business Intelligence |
@@ -49,13 +60,13 @@ I'm an Inbound Team Leader at Target with a passion for creating unique user exp
 
 ## 🎓 Core Competencies
 
-- **AI-Accelerated Development:** Advanced prompt engineering and AI-assisted architecture design for rapid enterprise application development
-- **Enterprise System Architecture:** Building scalable platforms processing millions of data points with sub-millisecond response times
-- **Performance Engineering:** Redis batch operations (500-key pipelines), parallel processing, and optimization techniques achieving 80% load time reduction
-- **Cloud Infrastructure & DevOps:** Azure ecosystem expertise (Redis Cache, Web Apps, DevOps), Docker containerization, and automated CI/CD pipelines
-- **Data Pipeline Development:** Real-time bidirectional APIs, statistical computing, and dynamic baseline calculation systems
+- **AI-Accelerated Development:** Advanced prompt engineering and AI-assisted architecture design for rapid application development
+- **Full-Stack System Architecture:** Building scalable platforms processing millions of data points with sub-millisecond response times
+- **Performance Engineering:** Redis batch operations, parallel processing, and optimization techniques achieving significant load time reductions
+- **Cloud Infrastructure & DevOps:** Linux server management, Nginx, Docker containerization, Redis caching, and automated deployment pipelines
+- **Data Pipeline Development:** Real-time APIs, statistical computing, and automated data ingestion from external sources
 - **Cross-Functional Leadership:** 6+ years driving operational excellence, achieving 10% growth in managed areas, and mentoring high-performing teams
-- **Proprietary Algorithm Development:** Creating complex analytical systems integrating multiple data sources for business value assessment
+- **Proprietary Algorithm Development:** Creating analytical systems that integrate multiple data sources into composite player and team valuations
 
 ---
 
