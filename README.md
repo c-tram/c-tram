@@ -29,6 +29,15 @@ The Cycle pulls data from the MLB Stats API and processes it into a full-feature
 - **Team Analytics** — Roster overviews, team batting/pitching profiles, and head-to-head matchup history
 - **Standings & Leaderboards** — League-wide rankings with sortable stat categories
 
+#### Scheduled Tasks (Server: UTC | CST)
+
+| Task | UTC | CDT (UTC-5) | Description |
+|------|-----|-------------|-------------|
+| Live game monitor | Every 90s | Every 90s | Polls MLB schedule, ingests boxscores + splits when games go final |
+| Season refresh | 4:00 AM | 11:00 PM | Full re-pull of current season boxscores |
+| Player index rebuild | 4:30 AM | 11:30 PM | Rebuilds searchable player index |
+| Splits refresh | 5:00 AM | 12:00 AM | Full play-by-play splits recompute for current season |
+
 ```
 Stack: React · Node.js · Express · Redis · Nginx · MLB Stats API
 ```
