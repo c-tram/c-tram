@@ -67,6 +67,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Merge leaderboard into dashboard with sortable table, filters, consistent tab headers (`2026-03-23`)
   - Smooth scoreboard refresh — no more layout bounce (`2026-03-23`)
   - Fix: remove middle dot from player cards, fix game type filter refresh (`2026-03-18`)
 
@@ -91,7 +92,6 @@
 #### 📝 General
 
   - Update GitHub link to profile URL (`2026-03-20`)
-  - Complete Overhaul of front/backend. Check README (`2026-03-17`)
 
 </details>
 
