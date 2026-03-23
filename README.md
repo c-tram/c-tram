@@ -14,14 +14,15 @@
 
 <!-- CHANGELOG:START -->
 ### ⚾ The Cycle — MLB Analytics Platform
-
-<sub>Auto-updated changelog • Last updated: 2026-03-23 • 44 recent changes</sub>
+**See it live:** [thecycle.online](https://thecycle.online)
+<sub>Auto-updated changelog • Last updated: 2026-03-23 • 45 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
 
 #### 💰 Trade Intelligence
 
+  - Fix trade dashboard: remove Players Ranked/Negative boxes, fix category filter TV bug (client-side filtering) (`2026-03-23`)
   - Redesign Mock Trade UI: team dropdowns → roster player selection (`2026-03-23`)
   - Prominent Benchmarks hero card on Dashboard + URL tab routing for Trades (`2026-03-22`)
   - Highlight key pages — DTV hero banner, featured nav cards, sidebar badges (`2026-03-22`)
