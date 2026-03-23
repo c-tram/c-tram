@@ -15,7 +15,8 @@
 <!-- CHANGELOG:START -->
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
-<sub>Auto-updated changelog • Last updated: 2026-03-23 • 45 recent changes</sub>
+
+<sub>Auto-updated changelog • Last updated: 2026-03-23 • 46 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -45,6 +46,7 @@
 
 #### 📊 Advanced Metrics
 
+  - Fix TV=8/10 bug: benchmark cache collision, remove hero tiles, fix team sort order (`2026-03-23`)
   - set position before WAR calc in reaggregation path (`2026-03-21`)
   - WAR v2: Hybrid wRAA + positional adjustment + discipline/speed bonuses (`2026-03-21`)
   - recalculateCVR fallback when gameTypeBreakdown missing (`2026-03-19`)
