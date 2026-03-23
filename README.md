@@ -6,8 +6,6 @@
   
   **Inbound Team Leader @ Target | Full-Stack Developer**
   
-  *Building the bridge between complex data and intuitive information systems*
-
 </div>
 
 ---
@@ -18,6 +16,9 @@
 > A live MLB analytics platform that automatically tracks every game throughout the season
 
 **See it live:** [thecycle.online](https://thecycle.online)
+
+<!-- CHANGELOG:START -->
+<!-- CHANGELOG:END -->
 
 The Cycle pulls data from the MLB Stats API and processes it into a full-featured analytics dashboard. During the season, it monitors live games every 2 minutes and automatically ingests completed box scores — no manual updates needed.
 
@@ -46,10 +47,10 @@ Stack: React · Node.js · Express · Redis · Nginx · MLB Stats API
 
 ## 🎯 About Me
 
-I'm an Inbound Team Leader at Target with a passion for building software that makes complex data accessible. I use AI-accelerated development to move fast — from idea to deployed product.
+I'm an Inbound Team Leader at Target with a passion for building software that makes complex data accessible. 
 
 - 🎯 **Current Role:** Inbound Team Leader at Target
-- 🚀 **Career Goal:** Transition into a full-time software engineering role leveraging information systems
+- 🚀 **Career Goal:**  Building the bridge between complex data and intuitive information systems
 - 🔨 **Building:** [The Cycle](https://thecycle.online) — a self-updating MLB analytics platform
 - 🌱 **Learning:** Frontend architectures · GenAI techniques · Advanced system design
 - 💡 **Specialty:** Turning messy data into clean, useful interfaces
@@ -74,7 +75,7 @@ I'm an Inbound Team Leader at Target with a passion for building software that m
 - **Performance Engineering:** Redis batch operations, parallel processing, and optimization techniques achieving significant load time reductions
 - **Cloud Infrastructure & DevOps:** Linux server management, Nginx, Docker containerization, Redis caching, and automated deployment pipelines
 - **Data Pipeline Development:** Real-time APIs, statistical computing, and automated data ingestion from external sources
-- **Cross-Functional Leadership:** 6+ years driving operational excellence, achieving 10% growth in managed areas, and mentoring high-performing teams
+- **Cross-Functional Leadership:** 6+ years driving operational excellence and mentoring high-performing teams
 - **Proprietary Algorithm Development:** Creating analytical systems that integrate multiple data sources into composite player and team valuations
 
 ---
