@@ -12,11 +12,6 @@
 
 ## 🌟 Featured Projects
 
-### ⚾ [The Cycle — MLB Analytics Platform](https://thecycle.online)
-> A live MLB analytics platform that automatically tracks every game throughout the season
-
-**See it live:** [thecycle.online](https://thecycle.online)
-
 <!-- CHANGELOG:START -->
 ### ⚾ The Cycle — MLB Analytics Platform
 
