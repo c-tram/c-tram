@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - Redesign Trade Results & Compare UI: charts, structured narrative, fix negative bar bug (`2026-03-23`)
   - Fix trade dashboard: remove Players Ranked/Negative boxes, fix category filter TV bug (client-side filtering) (`2026-03-23`)
   - Redesign Mock Trade UI: team dropdowns → roster player selection (`2026-03-23`)
   - Prominent Benchmarks hero card on Dashboard + URL tab routing for Trades (`2026-03-22`)
@@ -81,7 +82,6 @@
   - Fix controlYears: count forward salary keys for FA/extension/foreign contracts instead of returning 0 (`2026-03-20`)
   - Add standalone age backfill script (`2026-03-19`)
   - Fix classifyGameType not defined in reaggregation scope - inline date classification (`2026-03-18`)
-  - Fix double-counting: skip season updates for existing games, filter spring training from reaggregation (`2026-03-18`)
 
 #### 🐛 Bug Fixes
 
