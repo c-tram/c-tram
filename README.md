@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-23 • 45 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-23 • 44 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -45,7 +45,6 @@
   - Trade system overhaul: MLB API age enrichment, salary data, share options, player comparison tab (`2026-03-19`)
   - enriched contract intelligence from Spotrac + contract-aware ACVR (`2026-03-19`)
   - Fix 6 issues: warByYear filter+dropdown, pitch analysis game type filter, OPS>1 splits fix, career tab all MLB years+WAR columns, ACVR column on players table, cross-year search fallback, remove wOBA (`2026-03-18`)
-  - WAR recalibration, pWAR/ACVR/postseason tracking, DataEngine real-time ingestion, remove SmartDataAutomator (`2026-03-18`)
 
 #### 📊 Advanced Metrics
 
