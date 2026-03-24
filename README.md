@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - active roster filtering for trade analysis (`2026-03-23`)
   - Next-best option analysis, control in DTV, improved roster depth (`2026-03-23`)
   - Redesign Trade Results & Compare UI: charts, structured narrative, fix negative bar bug (`2026-03-23`)
   - Fix trade dashboard: remove Players Ranked/Negative boxes, fix category filter TV bug (client-side filtering) (`2026-03-23`)
@@ -82,10 +83,6 @@
   - Add Data Engine scheduled task times to README (`2026-03-20`)
   - Fix controlYears: count forward salary keys for FA/extension/foreign contracts instead of returning 0 (`2026-03-20`)
   - Add standalone age backfill script (`2026-03-19`)
-
-#### 🐛 Bug Fixes
-
-  - Remove stray SSH command pasted into source (`2026-03-18`)
 
 #### 📝 General
 
