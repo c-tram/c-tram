@@ -56,7 +56,6 @@
   - preserve modern CVR fields in reaggregation + add recalculateCVR script (`2026-03-19`)
   - Fix career WAR/pWAR: always load all seasons for career totals, filter separately for response (`2026-03-18`)
   - Rework Players page: hero search, WAR/CVR leaderboards, compact layout (`2026-03-18`)
-  - Fix CVR: use nullish check so universalCVR=0 doesn't fallback to legacy 0-2 scale (`2026-03-18`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -83,6 +82,10 @@
   - Add Data Engine scheduled task times to README (`2026-03-20`)
   - Fix controlYears: count forward salary keys for FA/extension/foreign contracts instead of returning 0 (`2026-03-20`)
   - Add standalone age backfill script (`2026-03-19`)
+
+#### 🐛 Bug Fixes
+
+  - prefer stats-year data over current-year Spring Training for roster fallback (`2026-03-23`)
 
 #### 📝 General
 
