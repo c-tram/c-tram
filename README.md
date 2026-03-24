@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-23 • 44 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-23 • 43 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -53,7 +53,6 @@
   - WAR v2: Hybrid wRAA + positional adjustment + discipline/speed bonuses (`2026-03-21`)
   - recalculateCVR fallback when gameTypeBreakdown missing (`2026-03-19`)
   - preserve modern CVR fields in reaggregation + add recalculateCVR script (`2026-03-19`)
-  - Fix career WAR/pWAR: always load all seasons for career totals, filter separately for response (`2026-03-18`)
 
 #### ⚾ Splits & Pitch Analytics
 
