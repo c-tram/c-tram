@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-24 • 41 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-25 • 41 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -44,7 +44,6 @@
   - Add age enrichment to ingestion script and prefer cached age in trade API (`2026-03-19`)
   - Fix trade leaders timeout: parallelize MLB API age lookups with concurrency cap (`2026-03-19`)
   - Trade system overhaul: MLB API age enrichment, salary data, share options, player comparison tab (`2026-03-19`)
-  - enriched contract intelligence from Spotrac + contract-aware ACVR (`2026-03-19`)
 
 #### 📊 Advanced Metrics
 
@@ -68,6 +67,7 @@
 
 #### ⚡ API & Performance
 
+  - normalize team abbreviations for Redis key lookups (ARI→AZ, OAK→ATH) (`2026-03-25`)
   - Fix spring training: add gameTypes to all MLB API calls, fix dataAutomation flags, fix Redis key patterns for ST/postseason (`2026-03-20`)
 
 #### 🔧 Data Pipeline
