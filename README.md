@@ -47,11 +47,11 @@
 
 #### 📊 Advanced Metrics
 
+  - Remove Splits tab from TeamDetail, add bWAR/pWAR tooltips (`2026-03-24`)
   - Fix TV=8/10 bug: benchmark cache collision, remove hero tiles, fix team sort order (`2026-03-23`)
   - set position before WAR calc in reaggregation path (`2026-03-21`)
   - WAR v2: Hybrid wRAA + positional adjustment + discipline/speed bonuses (`2026-03-21`)
   - recalculateCVR fallback when gameTypeBreakdown missing (`2026-03-19`)
-  - preserve modern CVR fields in reaggregation + add recalculateCVR script (`2026-03-19`)
 
 #### ⚾ Splits & Pitch Analytics
 
