@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-24 • 42 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-24 • 41 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -65,7 +65,6 @@
 
   - Merge leaderboard into dashboard with sortable table, filters, consistent tab headers (`2026-03-23`)
   - Smooth scoreboard refresh — no more layout bounce (`2026-03-23`)
-  - Fix: remove middle dot from player cards, fix game type filter refresh (`2026-03-18`)
 
 #### ⚡ API & Performance
 
