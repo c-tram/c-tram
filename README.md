@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - Fix 7 trade engine bugs: double period, value bar negatives, narrative rendering, stale breakdown keys, futureOutlook surplus, control years fallback, multi-team support (`2026-03-24`)
   - active roster filtering for trade analysis (`2026-03-23`)
   - Next-best option analysis, control in DTV, improved roster depth (`2026-03-23`)
   - Redesign Trade Results & Compare UI: charts, structured narrative, fix negative bar bug (`2026-03-23`)
@@ -51,7 +52,6 @@
   - Fix TV=8/10 bug: benchmark cache collision, remove hero tiles, fix team sort order (`2026-03-23`)
   - set position before WAR calc in reaggregation path (`2026-03-21`)
   - WAR v2: Hybrid wRAA + positional adjustment + discipline/speed bonuses (`2026-03-21`)
-  - recalculateCVR fallback when gameTypeBreakdown missing (`2026-03-19`)
 
 #### ⚾ Splits & Pitch Analytics
 
