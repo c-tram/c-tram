@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-25 • 42 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-26 • 43 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -81,6 +81,7 @@
 
 #### 🐛 Bug Fixes
 
+  - game type detection for 2026 regular season (`2026-03-26`)
   - prefer stats-year data over current-year Spring Training for roster fallback (`2026-03-23`)
 
 #### 📝 General
