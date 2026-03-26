@@ -42,7 +42,6 @@
   - Add Spotrac contract enrichment: backfill script, pipeline integration, clean trade_v2 fallbacks (`2026-03-20`)
   - Add age to player detail, fix salary labels, enhance analytics leaderboard with age/ACVR/contract (`2026-03-19`)
   - Add age enrichment to ingestion script and prefer cached age in trade API (`2026-03-19`)
-  - Fix trade leaders timeout: parallelize MLB API age lookups with concurrency cap (`2026-03-19`)
 
 #### 📊 Advanced Metrics
 
@@ -81,6 +80,7 @@
 
 #### 🐛 Bug Fixes
 
+  - Fix classifyGameType: March 25+ is regular season, prefer stored gameType (`2026-03-26`)
   - default year switches to current year on March 25 (regular season start) (`2026-03-26`)
   - game type detection for 2026 regular season (`2026-03-26`)
   - prefer stats-year data over current-year Spring Training for roster fallback (`2026-03-23`)
