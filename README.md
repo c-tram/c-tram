@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-26 • 43 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-26 • 44 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -73,6 +73,7 @@
 
 #### 🔧 Data Pipeline
 
+  - add game type filtering to team reaggregation (`2026-03-26`)
   - data engine now monitors and ingests ALL game types (not just Regular Season) (`2026-03-22`)
   - Fix controlYears: use contractYearsRemaining from Spotrac contracts (`2026-03-21`)
   - Add Data Engine scheduled task times to README (`2026-03-20`)
