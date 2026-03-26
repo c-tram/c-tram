@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-25 • 41 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-25 • 42 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -62,6 +62,7 @@
 
 #### 🎨 Frontend & UX
 
+  - comprehensive mobile responsiveness pass across all pages (`2026-03-25`)
   - Merge leaderboard into dashboard with sortable table, filters, consistent tab headers (`2026-03-23`)
   - Smooth scoreboard refresh — no more layout bounce (`2026-03-23`)
 
