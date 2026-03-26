@@ -41,7 +41,6 @@
   - Replace Analytics with premium Trades hub — 5 tabs: Dashboard (bar/scatter/donut charts), Mock Trade Builder (radar eval), Leaderboard (sortable + player detail sidebar), Team Assets (WAR dist + position groups), Player Comparison (head-to-head radar). Powered by WAR v2, CVR v5, ACVR, surplus value, aging curves. Routes /analytics and /trade redirect to /trades. (`2026-03-21`)
   - Add Spotrac contract enrichment: backfill script, pipeline integration, clean trade_v2 fallbacks (`2026-03-20`)
   - Add age to player detail, fix salary labels, enhance analytics leaderboard with age/ACVR/contract (`2026-03-19`)
-  - Add age enrichment to ingestion script and prefer cached age in trade API (`2026-03-19`)
 
 #### 📊 Advanced Metrics
 
@@ -71,6 +70,7 @@
 
 #### 🔧 Data Pipeline
 
+  - Fix spring_training misclassification on player detail pages (`2026-03-26`)
   - add game type filtering to team reaggregation (`2026-03-26`)
   - data engine now monitors and ingests ALL game types (not just Regular Season) (`2026-03-22`)
   - Fix controlYears: use contractYearsRemaining from Spotrac contracts (`2026-03-21`)
