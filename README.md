@@ -54,7 +54,6 @@
   - Enable daily splits automation in DataEngine (`2026-03-20`)
   - Fix ReferenceError: key not defined in splits_macro_v2.js (`2026-03-20`)
   - Fix pullPlayByPlaySplits: support --types flag for spring training games (`2026-03-20`)
-  - Fix left-handed splits: store batSide/pitchHand, fix SprayChart orientation, fix on-the-fly builder (`2026-03-20`)
 
 #### 🎨 Frontend & UX
 
@@ -70,6 +69,7 @@
 
 #### 🔧 Data Pipeline
 
+  - Fix reaggregation: filter to regular season only, exclude spring training/postseason (`2026-03-27`)
   - Fix ARI/OAK salary normalization: bridge ARI↔AZ and OAK↔ATH team codes (`2026-03-27`)
   - Fix spring_training misclassification on player detail pages (`2026-03-26`)
   - add game type filtering to team reaggregation (`2026-03-26`)
