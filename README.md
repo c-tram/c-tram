@@ -36,7 +36,6 @@
   - Dynamic Trade Value (DTV) system - positional benchmarks, market rates, team-context impact analysis (`2026-03-22`)
   - Trades UI v4: negative values, decline tax, full aesthetic refresh (`2026-03-22`)
   - Trades v3.1: Polish Mock Trades, Leaderboard, Compare tabs to match app aesthetic (`2026-03-21`)
-  - Trades v3: Complete from-scratch rewrite — fix evaluateTrade bug, match app design language, standings-style team selector, premium charts, intuitive mock trade builder, MUI tables (`2026-03-21`)
 
 #### 📊 Advanced Metrics
 
@@ -87,6 +86,7 @@
 
 #### 📝 General
 
+  - Add batter silhouette to zone charts, dynamic Inside/Outside labels by handedness (`2026-03-27`)
   - proper game type system across all data layers (`2026-03-27`)
 
 </details>
