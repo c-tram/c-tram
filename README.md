@@ -58,6 +58,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Dashboard: dynamic leader thresholds + AL/NL standings filter (`2026-03-26`)
   - Fix dashboard: show 2026 data when teams have games played (`2026-03-26`)
   - comprehensive mobile responsiveness pass across all pages (`2026-03-25`)
   - Merge leaderboard into dashboard with sortable table, filters, consistent tab headers (`2026-03-23`)
@@ -75,7 +76,6 @@
   - data engine now monitors and ingests ALL game types (not just Regular Season) (`2026-03-22`)
   - Fix controlYears: use contractYearsRemaining from Spotrac contracts (`2026-03-21`)
   - Add Data Engine scheduled task times to README (`2026-03-20`)
-  - Fix controlYears: count forward salary keys for FA/extension/foreign contracts instead of returning 0 (`2026-03-20`)
 
 #### 🐛 Bug Fixes
 
