@@ -37,7 +37,6 @@
   - Trades UI v4: negative values, decline tax, full aesthetic refresh (`2026-03-22`)
   - Trades v3.1: Polish Mock Trades, Leaderboard, Compare tabs to match app aesthetic (`2026-03-21`)
   - Trades v3: Complete from-scratch rewrite — fix evaluateTrade bug, match app design language, standings-style team selector, premium charts, intuitive mock trade builder, MUI tables (`2026-03-21`)
-  - Trades v2: premium visuals, division cards, glow charts, rank badges (`2026-03-21`)
 
 #### 📊 Advanced Metrics
 
@@ -55,6 +54,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Fix double *100 on kRate/bbRate in AdvancedAnalyticsTab filtered view (`2026-03-27`)
   - Dashboard: dynamic leader thresholds + AL/NL standings filter (`2026-03-26`)
   - Fix dashboard: show 2026 data when teams have games played (`2026-03-26`)
   - comprehensive mobile responsiveness pass across all pages (`2026-03-25`)
