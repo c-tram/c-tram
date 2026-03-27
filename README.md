@@ -38,7 +38,6 @@
   - Trades v3.1: Polish Mock Trades, Leaderboard, Compare tabs to match app aesthetic (`2026-03-21`)
   - Trades v3: Complete from-scratch rewrite — fix evaluateTrade bug, match app design language, standings-style team selector, premium charts, intuitive mock trade builder, MUI tables (`2026-03-21`)
   - Trades v2: premium visuals, division cards, glow charts, rank badges (`2026-03-21`)
-  - Replace Analytics with premium Trades hub — 5 tabs: Dashboard (bar/scatter/donut charts), Mock Trade Builder (radar eval), Leaderboard (sortable + player detail sidebar), Team Assets (WAR dist + position groups), Player Comparison (head-to-head radar). Powered by WAR v2, CVR v5, ACVR, surplus value, aging curves. Routes /analytics and /trade redirect to /trades. (`2026-03-21`)
 
 #### 📊 Advanced Metrics
 
@@ -64,6 +63,7 @@
 
 #### ⚡ API & Performance
 
+  - Fix --clean flag to use script's own Redis client instead of utils module (`2026-03-27`)
   - normalize team abbreviations for Redis key lookups (ARI→AZ, OAK→ATH) (`2026-03-25`)
 
 #### 🔧 Data Pipeline
