@@ -32,7 +32,6 @@
   - Prominent Benchmarks hero card on Dashboard + URL tab routing for Trades (`2026-03-22`)
   - Highlight key pages — DTV hero banner, featured nav cards, sidebar badges (`2026-03-22`)
   - Position-based trade target suggestions in Mock Trade Builder (`2026-03-22`)
-  - Replace trade engine with DTV-powered v3 — full integration (`2026-03-22`)
 
 #### 📊 Advanced Metrics
 
@@ -50,6 +49,7 @@
 
 #### 🎨 Frontend & UX
 
+  - comprehensive mobile responsiveness overhaul (`2026-03-27`)
   - Fix double *100 on kRate/bbRate in AdvancedAnalyticsTab filtered view (`2026-03-27`)
   - Dashboard: dynamic leader thresholds + AL/NL standings filter (`2026-03-26`)
   - Fix dashboard: show 2026 data when teams have games played (`2026-03-26`)
