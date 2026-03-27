@@ -72,7 +72,6 @@
   - Fix ARI/OAK salary normalization: bridge ARI↔AZ and OAK↔ATH team codes (`2026-03-27`)
   - Fix spring_training misclassification on player detail pages (`2026-03-26`)
   - add game type filtering to team reaggregation (`2026-03-26`)
-  - data engine now monitors and ingests ALL game types (not just Regular Season) (`2026-03-22`)
 
 #### 🐛 Bug Fixes
 
@@ -86,6 +85,7 @@
 
 #### 📝 General
 
+  - move batter silhouette outside charts, improved filled-path figure (`2026-03-27`)
   - Add batter silhouette to zone charts, dynamic Inside/Outside labels by handedness (`2026-03-27`)
   - proper game type system across all data layers (`2026-03-27`)
 
