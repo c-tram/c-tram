@@ -45,10 +45,10 @@
   - Fix 6 bugs: run differential, leaders, pitch analysis, game type classification, CVR thresholds (`2026-03-27`)
   - Remove Splits tab from TeamDetail, add bWAR/pWAR tooltips (`2026-03-24`)
   - Fix TV=8/10 bug: benchmark cache collision, remove hero tiles, fix team sort order (`2026-03-23`)
-  - set position before WAR calc in reaggregation path (`2026-03-21`)
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Fix pitch events merge duplication + add --clean flag for reingest (`2026-03-27`)
   - Simplify Splits tab to All Splits only + fix gt field missing from pitch events API (`2026-03-27`)
   - pitch analysis spring training ingestion + advanced analytics filter recalculation (`2026-03-27`)
   - frontend pitch analysis now fetches all game types for client-side filtering (`2026-03-27`)
