@@ -40,7 +40,6 @@
   - Trades v2: premium visuals, division cards, glow charts, rank badges (`2026-03-21`)
   - Replace Analytics with premium Trades hub — 5 tabs: Dashboard (bar/scatter/donut charts), Mock Trade Builder (radar eval), Leaderboard (sortable + player detail sidebar), Team Assets (WAR dist + position groups), Player Comparison (head-to-head radar). Powered by WAR v2, CVR v5, ACVR, surplus value, aging curves. Routes /analytics and /trade redirect to /trades. (`2026-03-21`)
   - Add Spotrac contract enrichment: backfill script, pipeline integration, clean trade_v2 fallbacks (`2026-03-20`)
-  - Add age to player detail, fix salary labels, enhance analytics leaderboard with age/ACVR/contract (`2026-03-19`)
 
 #### 📊 Advanced Metrics
 
@@ -59,6 +58,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Fix dashboard: show 2026 data when teams have games played (`2026-03-26`)
   - comprehensive mobile responsiveness pass across all pages (`2026-03-25`)
   - Merge leaderboard into dashboard with sortable table, filters, consistent tab headers (`2026-03-23`)
   - Smooth scoreboard refresh — no more layout bounce (`2026-03-23`)
