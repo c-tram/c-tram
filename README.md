@@ -46,10 +46,10 @@
   - Remove Splits tab from TeamDetail, add bWAR/pWAR tooltips (`2026-03-24`)
   - Fix TV=8/10 bug: benchmark cache collision, remove hero tiles, fix team sort order (`2026-03-23`)
   - set position before WAR calc in reaggregation path (`2026-03-21`)
-  - WAR v2: Hybrid wRAA + positional adjustment + discipline/speed bonuses (`2026-03-21`)
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Simplify Splits tab to All Splits only + fix gt field missing from pitch events API (`2026-03-27`)
   - pitch analysis spring training ingestion + advanced analytics filter recalculation (`2026-03-27`)
   - frontend pitch analysis now fetches all game types for client-side filtering (`2026-03-27`)
   - zone heatmap and pitch arsenal re-aggregation - zones: use 'pitches' field (not 'count'), add swingRate/whiffRate/hitRate/inPlay/hits - zones: convert pre-aggregated object to array for ZoneHeatmap component - pitchTypes: add usage%, swingRate, contactRate, spin, maxVelo, battingAvg - pitchTypes: track pitch name from events (`2026-03-24`)
