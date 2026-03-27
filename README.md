@@ -33,7 +33,6 @@
   - Highlight key pages — DTV hero banner, featured nav cards, sidebar badges (`2026-03-22`)
   - Position-based trade target suggestions in Mock Trade Builder (`2026-03-22`)
   - Replace trade engine with DTV-powered v3 — full integration (`2026-03-22`)
-  - Dynamic Trade Value (DTV) system - positional benchmarks, market rates, team-context impact analysis (`2026-03-22`)
 
 #### 📊 Advanced Metrics
 
@@ -84,6 +83,7 @@
 
 #### 📝 General
 
+  - realistic single-path batter silhouette, positioned at plate edge (`2026-03-27`)
   - realistic batter silhouette proportioned to strike zone (`2026-03-27`)
   - move batter silhouette outside charts, improved filled-path figure (`2026-03-27`)
   - Add batter silhouette to zone charts, dynamic Inside/Outside labels by handedness (`2026-03-27`)
