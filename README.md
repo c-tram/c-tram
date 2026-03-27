@@ -52,7 +52,6 @@
 
   - zone heatmap and pitch arsenal re-aggregation - zones: use 'pitches' field (not 'count'), add swingRate/whiffRate/hitRate/inPlay/hits - zones: convert pre-aggregated object to array for ZoneHeatmap component - pitchTypes: add usage%, swingRate, contactRate, spin, maxVelo, battingAvg - pitchTypes: track pitch name from events (`2026-03-24`)
   - Enable daily splits automation in DataEngine (`2026-03-20`)
-  - Fix ReferenceError: key not defined in splits_macro_v2.js (`2026-03-20`)
 
 #### 🎨 Frontend & UX
 
@@ -68,6 +67,7 @@
 
 #### 🔧 Data Pipeline
 
+  - Fix reaggregation: reset teams with 0 regular season games instead of skipping (`2026-03-27`)
   - Fix reaggregation: also check flat date/gameType fields for older spring training games (`2026-03-27`)
   - Fix reaggregation: filter to regular season only, exclude spring training/postseason (`2026-03-27`)
   - Fix ARI/OAK salary normalization: bridge ARI↔AZ and OAK↔ATH team codes (`2026-03-27`)
