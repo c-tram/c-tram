@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-26 • 44 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-27 • 44 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -39,7 +39,6 @@
   - Trades v3: Complete from-scratch rewrite — fix evaluateTrade bug, match app design language, standings-style team selector, premium charts, intuitive mock trade builder, MUI tables (`2026-03-21`)
   - Trades v2: premium visuals, division cards, glow charts, rank badges (`2026-03-21`)
   - Replace Analytics with premium Trades hub — 5 tabs: Dashboard (bar/scatter/donut charts), Mock Trade Builder (radar eval), Leaderboard (sortable + player detail sidebar), Team Assets (WAR dist + position groups), Player Comparison (head-to-head radar). Powered by WAR v2, CVR v5, ACVR, surplus value, aging curves. Routes /analytics and /trade redirect to /trades. (`2026-03-21`)
-  - Add Spotrac contract enrichment: backfill script, pipeline integration, clean trade_v2 fallbacks (`2026-03-20`)
 
 #### 📊 Advanced Metrics
 
@@ -71,6 +70,7 @@
 
 #### 🔧 Data Pipeline
 
+  - Fix ARI/OAK salary normalization: bridge ARI↔AZ and OAK↔ATH team codes (`2026-03-27`)
   - Fix spring_training misclassification on player detail pages (`2026-03-26`)
   - add game type filtering to team reaggregation (`2026-03-26`)
   - data engine now monitors and ingests ALL game types (not just Regular Season) (`2026-03-22`)
