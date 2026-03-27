@@ -42,6 +42,7 @@
 
 #### 📊 Advanced Metrics
 
+  - Fix 6 bugs: run differential, leaders, pitch analysis, game type classification, CVR thresholds (`2026-03-27`)
   - Remove Splits tab from TeamDetail, add bWAR/pWAR tooltips (`2026-03-24`)
   - Fix TV=8/10 bug: benchmark cache collision, remove hero tiles, fix team sort order (`2026-03-23`)
   - set position before WAR calc in reaggregation path (`2026-03-21`)
@@ -66,7 +67,6 @@
 #### ⚡ API & Performance
 
   - normalize team abbreviations for Redis key lookups (ARI→AZ, OAK→ATH) (`2026-03-25`)
-  - Fix spring training: add gameTypes to all MLB API calls, fix dataAutomation flags, fix Redis key patterns for ST/postseason (`2026-03-20`)
 
 #### 🔧 Data Pipeline
 
