@@ -50,8 +50,8 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - frontend pitch analysis now fetches all game types for client-side filtering (`2026-03-27`)
   - zone heatmap and pitch arsenal re-aggregation - zones: use 'pitches' field (not 'count'), add swingRate/whiffRate/hitRate/inPlay/hits - zones: convert pre-aggregated object to array for ZoneHeatmap component - pitchTypes: add usage%, swingRate, contactRate, spin, maxVelo, battingAvg - pitchTypes: track pitch name from events (`2026-03-24`)
-  - Enable daily splits automation in DataEngine (`2026-03-20`)
 
 #### 🎨 Frontend & UX
 
