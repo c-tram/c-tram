@@ -75,7 +75,6 @@
   - Fix spring_training misclassification on player detail pages (`2026-03-26`)
   - add game type filtering to team reaggregation (`2026-03-26`)
   - data engine now monitors and ingests ALL game types (not just Regular Season) (`2026-03-22`)
-  - Fix controlYears: use contractYearsRemaining from Spotrac contracts (`2026-03-21`)
 
 #### 🐛 Bug Fixes
 
@@ -85,6 +84,10 @@
   - default year switches to current year on March 25 (regular season start) (`2026-03-26`)
   - game type detection for 2026 regular season (`2026-03-26`)
   - prefer stats-year data over current-year Spring Training for roster fallback (`2026-03-23`)
+
+#### 📝 General
+
+  - proper game type system across all data layers (`2026-03-27`)
 
 </details>
 
