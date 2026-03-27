@@ -35,7 +35,6 @@
   - Replace trade engine with DTV-powered v3 — full integration (`2026-03-22`)
   - Dynamic Trade Value (DTV) system - positional benchmarks, market rates, team-context impact analysis (`2026-03-22`)
   - Trades UI v4: negative values, decline tax, full aesthetic refresh (`2026-03-22`)
-  - Trades v3.1: Polish Mock Trades, Leaderboard, Compare tabs to match app aesthetic (`2026-03-21`)
 
 #### 📊 Advanced Metrics
 
@@ -77,6 +76,7 @@
 
 #### 🐛 Bug Fixes
 
+  - swap batter sides (RHB left, LHB right), larger silhouette, fix inside/outside labels (`2026-03-27`)
   - move useMemo before early return to fix React hooks order (`2026-03-27`)
   - Fix hasRegularSeasonGames: empty {} gameTypeBreakdown should fallback to gameCount (`2026-03-26`)
   - Fix classifyGameType: March 25+ is regular season, prefer stored gameType (`2026-03-26`)
