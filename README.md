@@ -29,8 +29,6 @@
   - Redesign Trade Results & Compare UI: charts, structured narrative, fix negative bar bug (`2026-03-23`)
   - Fix trade dashboard: remove Players Ranked/Negative boxes, fix category filter TV bug (client-side filtering) (`2026-03-23`)
   - Redesign Mock Trade UI: team dropdowns → roster player selection (`2026-03-23`)
-  - Prominent Benchmarks hero card on Dashboard + URL tab routing for Trades (`2026-03-22`)
-  - Highlight key pages — DTV hero banner, featured nav cards, sidebar badges (`2026-03-22`)
 
 #### 📊 Advanced Metrics
 
@@ -65,6 +63,7 @@
 
 #### 🔧 Data Pipeline
 
+  - Phase 1+2: dead code removal, page fixes, advanced stats, contracts tab (`2026-03-28`)
   - Fix contract enrichment: multiline names, colOffset, status normalization, --force-enrich flag (`2026-03-28`)
   - Fix Spotrac parser: auto-detect colOffset + multiline name format (`2026-03-28`)
   - Fix reaggregation: reset teams with 0 regular season games instead of skipping (`2026-03-27`)
@@ -85,6 +84,7 @@
 
 #### 📝 General
 
+  - temp (`2026-03-28`)
   - proper game type system across all data layers (`2026-03-27`)
 
 </details>
