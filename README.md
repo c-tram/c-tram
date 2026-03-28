@@ -38,6 +38,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Rolling window system: 162-game (batters) / 30-game (pitchers) replaces year selectors (`2026-03-28`)
   - Modernize boxscore: fix undefined team names, clickable innings with play-by-play popups, clickable player names with stat popups (`2026-03-28`)
   - Fix pitch events merge duplication + add --clean flag for reingest (`2026-03-27`)
   - Simplify Splits tab to All Splits only + fix gt field missing from pitch events API (`2026-03-27`)
@@ -52,7 +53,6 @@
   - Fix dashboard: show 2026 data when teams have games played (`2026-03-26`)
   - comprehensive mobile responsiveness pass across all pages (`2026-03-25`)
   - Merge leaderboard into dashboard with sortable table, filters, consistent tab headers (`2026-03-23`)
-  - Smooth scoreboard refresh — no more layout bounce (`2026-03-23`)
 
 #### ⚡ API & Performance
 
