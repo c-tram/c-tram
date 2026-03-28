@@ -37,27 +37,24 @@
   - Trades UI v4: negative values, decline tax, full aesthetic refresh (`2026-03-22`)
   - Trades v3.1: Polish Mock Trades, Leaderboard, Compare tabs to match app aesthetic (`2026-03-21`)
   - Trades v3: Complete from-scratch rewrite — fix evaluateTrade bug, match app design language, standings-style team selector, premium charts, intuitive mock trade builder, MUI tables (`2026-03-21`)
-  - Trades v2: premium visuals, division cards, glow charts, rank badges (`2026-03-21`)
-  - Replace Analytics with premium Trades hub — 5 tabs: Dashboard (bar/scatter/donut charts), Mock Trade Builder (radar eval), Leaderboard (sortable + player detail sidebar), Team Assets (WAR dist + position groups), Player Comparison (head-to-head radar). Powered by WAR v2, CVR v5, ACVR, surplus value, aging curves. Routes /analytics and /trade redirect to /trades. (`2026-03-21`)
 
 #### 📊 Advanced Metrics
 
   - Fix 6 bugs: run differential, leaders, pitch analysis, game type classification, CVR thresholds (`2026-03-27`)
   - Remove Splits tab from TeamDetail, add bWAR/pWAR tooltips (`2026-03-24`)
   - Fix TV=8/10 bug: benchmark cache collision, remove hero tiles, fix team sort order (`2026-03-23`)
-  - set position before WAR calc in reaggregation path (`2026-03-21`)
-  - WAR v2: Hybrid wRAA + positional adjustment + discipline/speed bonuses (`2026-03-21`)
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Fix pitch events merge duplication + add --clean flag for reingest (`2026-03-27`)
+  - Simplify Splits tab to All Splits only + fix gt field missing from pitch events API (`2026-03-27`)
+  - pitch analysis spring training ingestion + advanced analytics filter recalculation (`2026-03-27`)
+  - frontend pitch analysis now fetches all game types for client-side filtering (`2026-03-27`)
   - zone heatmap and pitch arsenal re-aggregation - zones: use 'pitches' field (not 'count'), add swingRate/whiffRate/hitRate/inPlay/hits - zones: convert pre-aggregated object to array for ZoneHeatmap component - pitchTypes: add usage%, swingRate, contactRate, spin, maxVelo, battingAvg - pitchTypes: track pitch name from events (`2026-03-24`)
-  - Enable daily splits automation in DataEngine (`2026-03-20`)
-  - Fix ReferenceError: key not defined in splits_macro_v2.js (`2026-03-20`)
-  - Fix pullPlayByPlaySplits: support --types flag for spring training games (`2026-03-20`)
-  - Fix left-handed splits: store batSide/pitchHand, fix SprayChart orientation, fix on-the-fly builder (`2026-03-20`)
 
 #### 🎨 Frontend & UX
 
+  - Fix double *100 on kRate/bbRate in AdvancedAnalyticsTab filtered view (`2026-03-27`)
   - Dashboard: dynamic leader thresholds + AL/NL standings filter (`2026-03-26`)
   - Fix dashboard: show 2026 data when teams have games played (`2026-03-26`)
   - comprehensive mobile responsiveness pass across all pages (`2026-03-25`)
@@ -66,19 +63,22 @@
 
 #### ⚡ API & Performance
 
+  - Fix --clean flag to use script's own Redis client instead of utils module (`2026-03-27`)
   - normalize team abbreviations for Redis key lookups (ARI→AZ, OAK→ATH) (`2026-03-25`)
 
 #### 🔧 Data Pipeline
 
+  - Fix reaggregation: reset teams with 0 regular season games instead of skipping (`2026-03-27`)
+  - Fix reaggregation: also check flat date/gameType fields for older spring training games (`2026-03-27`)
+  - Fix reaggregation: filter to regular season only, exclude spring training/postseason (`2026-03-27`)
   - Fix ARI/OAK salary normalization: bridge ARI↔AZ and OAK↔ATH team codes (`2026-03-27`)
   - Fix spring_training misclassification on player detail pages (`2026-03-26`)
   - add game type filtering to team reaggregation (`2026-03-26`)
   - data engine now monitors and ingests ALL game types (not just Regular Season) (`2026-03-22`)
-  - Fix controlYears: use contractYearsRemaining from Spotrac contracts (`2026-03-21`)
-  - Add Data Engine scheduled task times to README (`2026-03-20`)
 
 #### 🐛 Bug Fixes
 
+  - move useMemo before early return to fix React hooks order (`2026-03-27`)
   - Fix hasRegularSeasonGames: empty {} gameTypeBreakdown should fallback to gameCount (`2026-03-26`)
   - Fix classifyGameType: March 25+ is regular season, prefer stored gameType (`2026-03-26`)
   - default year switches to current year on March 25 (regular season start) (`2026-03-26`)
@@ -87,7 +87,7 @@
 
 #### 📝 General
 
-  - Update GitHub link to profile URL (`2026-03-20`)
+  - proper game type system across all data layers (`2026-03-27`)
 
 </details>
 
