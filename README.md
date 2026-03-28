@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-28 • 44 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-28 • 43 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -32,7 +32,6 @@
   - Prominent Benchmarks hero card on Dashboard + URL tab routing for Trades (`2026-03-22`)
   - Highlight key pages — DTV hero banner, featured nav cards, sidebar badges (`2026-03-22`)
   - Position-based trade target suggestions in Mock Trade Builder (`2026-03-22`)
-  - Replace trade engine with DTV-powered v3 — full integration (`2026-03-22`)
 
 #### 📊 Advanced Metrics
 
