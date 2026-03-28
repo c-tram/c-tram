@@ -33,7 +33,6 @@
   - Highlight key pages — DTV hero banner, featured nav cards, sidebar badges (`2026-03-22`)
   - Position-based trade target suggestions in Mock Trade Builder (`2026-03-22`)
   - Replace trade engine with DTV-powered v3 — full integration (`2026-03-22`)
-  - Dynamic Trade Value (DTV) system - positional benchmarks, market rates, team-context impact analysis (`2026-03-22`)
 
 #### 📊 Advanced Metrics
 
@@ -61,6 +60,7 @@
 
 #### ⚡ API & Performance
 
+  - Fix: pass mlbId through unified profile route for player headshots (`2026-03-28`)
   - Player headshots on profiles, full team names in boxscore, expose mlbId from API (`2026-03-28`)
   - Fix --clean flag to use script's own Redis client instead of utils module (`2026-03-27`)
   - normalize team abbreviations for Redis key lookups (ARI→AZ, OAK→ATH) (`2026-03-25`)
