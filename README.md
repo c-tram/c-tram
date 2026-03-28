@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-27 • 44 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-28 • 44 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -36,7 +36,6 @@
   - Dynamic Trade Value (DTV) system - positional benchmarks, market rates, team-context impact analysis (`2026-03-22`)
   - Trades UI v4: negative values, decline tax, full aesthetic refresh (`2026-03-22`)
   - Trades v3.1: Polish Mock Trades, Leaderboard, Compare tabs to match app aesthetic (`2026-03-21`)
-  - Trades v3: Complete from-scratch rewrite — fix evaluateTrade bug, match app design language, standings-style team selector, premium charts, intuitive mock trade builder, MUI tables (`2026-03-21`)
 
 #### 📊 Advanced Metrics
 
@@ -68,6 +67,7 @@
 
 #### 🔧 Data Pipeline
 
+  - Fix Spotrac parser: auto-detect colOffset + multiline name format (`2026-03-28`)
   - Fix reaggregation: reset teams with 0 regular season games instead of skipping (`2026-03-27`)
   - Fix reaggregation: also check flat date/gameType fields for older spring training games (`2026-03-27`)
   - Fix reaggregation: filter to regular season only, exclude spring training/postseason (`2026-03-27`)
