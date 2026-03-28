@@ -35,7 +35,6 @@
   - Replace trade engine with DTV-powered v3 — full integration (`2026-03-22`)
   - Dynamic Trade Value (DTV) system - positional benchmarks, market rates, team-context impact analysis (`2026-03-22`)
   - Trades UI v4: negative values, decline tax, full aesthetic refresh (`2026-03-22`)
-  - Trades v3.1: Polish Mock Trades, Leaderboard, Compare tabs to match app aesthetic (`2026-03-21`)
 
 #### 📊 Advanced Metrics
 
@@ -67,6 +66,7 @@
 
 #### 🔧 Data Pipeline
 
+  - Fix contract enrichment: multiline names, colOffset, status normalization, --force-enrich flag (`2026-03-28`)
   - Fix Spotrac parser: auto-detect colOffset + multiline name format (`2026-03-28`)
   - Fix reaggregation: reset teams with 0 regular season games instead of skipping (`2026-03-27`)
   - Fix reaggregation: also check flat date/gameType fields for older spring training games (`2026-03-27`)
