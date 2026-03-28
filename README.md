@@ -44,6 +44,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Modernize boxscore: fix undefined team names, clickable innings with play-by-play popups, clickable player names with stat popups (`2026-03-28`)
   - Fix pitch events merge duplication + add --clean flag for reingest (`2026-03-27`)
   - Simplify Splits tab to All Splits only + fix gt field missing from pitch events API (`2026-03-27`)
   - pitch analysis spring training ingestion + advanced analytics filter recalculation (`2026-03-27`)
@@ -74,7 +75,6 @@
   - Fix ARI/OAK salary normalization: bridge ARI↔AZ and OAK↔ATH team codes (`2026-03-27`)
   - Fix spring_training misclassification on player detail pages (`2026-03-26`)
   - add game type filtering to team reaggregation (`2026-03-26`)
-  - data engine now monitors and ingests ALL game types (not just Regular Season) (`2026-03-22`)
 
 #### 🐛 Bug Fixes
 
