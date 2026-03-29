@@ -63,6 +63,7 @@
 
 #### 🔧 Data Pipeline
 
+  - Fix backfillMissingGames doubleheader detection: match by gamePk not date (`2026-03-29`)
   - Add fast backfill script (single SCAN + pipeline writes) (`2026-03-29`)
   - smarter hasRegularSeasonGames heuristic for pre-backfill data (`2026-03-29`)
   - exclude spring training from career stats + backfill gameTypeBreakdown (`2026-03-29`)
@@ -74,7 +75,6 @@
   - Fix reaggregation: filter to regular season only, exclude spring training/postseason (`2026-03-27`)
   - Fix ARI/OAK salary normalization: bridge ARI↔AZ and OAK↔ATH team codes (`2026-03-27`)
   - Fix spring_training misclassification on player detail pages (`2026-03-26`)
-  - add game type filtering to team reaggregation (`2026-03-26`)
 
 #### 🐛 Bug Fixes
 
