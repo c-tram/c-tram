@@ -45,7 +45,6 @@
   - Simplify Splits tab to All Splits only + fix gt field missing from pitch events API (`2026-03-27`)
   - pitch analysis spring training ingestion + advanced analytics filter recalculation (`2026-03-27`)
   - frontend pitch analysis now fetches all game types for client-side filtering (`2026-03-27`)
-  - zone heatmap and pitch arsenal re-aggregation - zones: use 'pitches' field (not 'count'), add swingRate/whiffRate/hitRate/inPlay/hits - zones: convert pre-aggregated object to array for ZoneHeatmap component - pitchTypes: add usage%, swingRate, contactRate, spin, maxVelo, battingAvg - pitchTypes: track pitch name from events (`2026-03-24`)
 
 #### 🎨 Frontend & UX
 
@@ -56,6 +55,7 @@
 
 #### ⚡ API & Performance
 
+  - add in-memory caching to analytics/leaderboard + startup cache warming (`2026-03-29`)
   - deduplicate rolling cache reads, filter AL/NL from cache path (`2026-03-28`)
   - Rolling cache: pre-compute overnight + restore year selectors (`2026-03-28`)
   - Fix: pass mlbId through unified profile route for player headshots (`2026-03-28`)
