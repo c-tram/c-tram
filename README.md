@@ -28,7 +28,6 @@
   - Fix 7 trade engine bugs: double period, value bar negatives, narrative rendering, stale breakdown keys, futureOutlook surplus, control years fallback, multi-team support (`2026-03-24`)
   - active roster filtering for trade analysis (`2026-03-23`)
   - Next-best option analysis, control in DTV, improved roster depth (`2026-03-23`)
-  - Redesign Trade Results & Compare UI: charts, structured narrative, fix negative bar bug (`2026-03-23`)
 
 #### 📊 Advanced Metrics
 
@@ -85,6 +84,7 @@
 
 #### 📝 General
 
+  - Recalibrate consistency for per-game OPS variance, fix periodOPS to aggregate raw stats (`2026-03-28`)
   - temp (`2026-03-28`)
   - proper game type system across all data layers (`2026-03-27`)
 
