@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-28 • 42 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-28 • 43 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -56,6 +56,7 @@
 
 #### ⚡ API & Performance
 
+  - Rolling cache: pre-compute overnight + restore year selectors (`2026-03-28`)
   - Fix: pass mlbId through unified profile route for player headshots (`2026-03-28`)
   - Player headshots on profiles, full team names in boxscore, expose mlbId from API (`2026-03-28`)
   - Fix --clean flag to use script's own Redis client instead of utils module (`2026-03-27`)
