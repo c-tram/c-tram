@@ -61,10 +61,10 @@
   - Fix: pass mlbId through unified profile route for player headshots (`2026-03-28`)
   - Player headshots on profiles, full team names in boxscore, expose mlbId from API (`2026-03-28`)
   - Fix --clean flag to use script's own Redis client instead of utils module (`2026-03-27`)
-  - normalize team abbreviations for Redis key lookups (ARI→AZ, OAK→ATH) (`2026-03-25`)
 
 #### 🔧 Data Pipeline
 
+  - smarter hasRegularSeasonGames heuristic for pre-backfill data (`2026-03-29`)
   - exclude spring training from career stats + backfill gameTypeBreakdown (`2026-03-29`)
   - Phase 1+2: dead code removal, page fixes, advanced stats, contracts tab (`2026-03-28`)
   - Fix contract enrichment: multiline names, colOffset, status normalization, --force-enrich flag (`2026-03-28`)
