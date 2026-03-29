@@ -26,7 +26,6 @@
   - Fix trade value: pass mode through + use prev year benchmarks for rolling (`2026-03-28`)
   - Trade leaders: warm cache for rolling mode too (`2026-03-28`)
   - Fix 7 trade engine bugs: double period, value bar negatives, narrative rendering, stale breakdown keys, futureOutlook surplus, control years fallback, multi-team support (`2026-03-24`)
-  - active roster filtering for trade analysis (`2026-03-23`)
 
 #### 📊 Advanced Metrics
 
@@ -84,6 +83,7 @@
 
 #### 📝 General
 
+  - Add min thresholds for League Leaders, fix defaults for stats leaders endpoint (`2026-03-28`)
   - Recalibrate consistency for per-game OPS variance, fix periodOPS to aggregate raw stats (`2026-03-28`)
   - temp (`2026-03-28`)
   - proper game type system across all data layers (`2026-03-27`)
