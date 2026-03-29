@@ -27,7 +27,6 @@
   - Trade leaders: warm cache for rolling mode too (`2026-03-28`)
   - Fix 7 trade engine bugs: double period, value bar negatives, narrative rendering, stale breakdown keys, futureOutlook surplus, control years fallback, multi-team support (`2026-03-24`)
   - active roster filtering for trade analysis (`2026-03-23`)
-  - Next-best option analysis, control in DTV, improved roster depth (`2026-03-23`)
 
 #### 📊 Advanced Metrics
 
@@ -36,6 +35,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Add pitcher consistency (Game Score) and pitcher streak analysis (`2026-03-28`)
   - Fix analytics: detectPitcher SP/RP, year-doubling keys, rolling mode everywhere, salary merge for rolling (`2026-03-28`)
   - Rolling window system: 162-game (batters) / 30-game (pitchers) replaces year selectors (`2026-03-28`)
   - Modernize boxscore: fix undefined team names, clickable innings with play-by-play popups, clickable player names with stat popups (`2026-03-28`)
