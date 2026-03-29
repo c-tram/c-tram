@@ -50,7 +50,6 @@
 
   - card standings on dashboard, team logos in standings, card default on teams (`2026-03-29`)
   - Fix double *100 on kRate/bbRate in AdvancedAnalyticsTab filtered view (`2026-03-27`)
-  - Dashboard: dynamic leader thresholds + AL/NL standings filter (`2026-03-26`)
 
 #### ⚡ API & Performance
 
@@ -79,6 +78,7 @@
 
 #### 🐛 Bug Fixes
 
+  - use current-year-only for counting stat leaders, rolling for rate stats (`2026-03-29`)
   - team logos 404 (ESPN size 40 invalid) + early-season leader fallback (`2026-03-29`)
   - Fix 3 career stat bugs: classifyPlayerType drops 0-AB games, career OBP uses wrong field name, career SLG uses missing singles field (`2026-03-29`)
   - filter All-Star game keys (AL/NL) from rolling stats computation (`2026-03-28`)
