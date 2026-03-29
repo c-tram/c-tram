@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-29 • 47 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-29 • 48 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -31,6 +31,7 @@
 
 #### 📊 Advanced Metrics
 
+  - CVR calculation bugs - falsy trap, control formula, rolling recomputation (`2026-03-29`)
   - use rolling data everywhere — dashboard, leaders, benchmarks (`2026-03-28`)
   - Fix 6 bugs: run differential, leaders, pitch analysis, game type classification, CVR thresholds (`2026-03-27`)
   - Remove Splits tab from TeamDetail, add bWAR/pWAR tooltips (`2026-03-24`)
