@@ -80,11 +80,11 @@
 
 #### 🐛 Bug Fixes
 
+  - team logos 404 (ESPN size 40 invalid) + early-season leader fallback (`2026-03-29`)
   - Fix 3 career stat bugs: classifyPlayerType drops 0-AB games, career OBP uses wrong field name, career SLG uses missing singles field (`2026-03-29`)
   - filter All-Star game keys (AL/NL) from rolling stats computation (`2026-03-28`)
   - Fix consistency/streaks: calculate OPS from raw counting stats in game logs (`2026-03-28`)
   - move useMemo before early return to fix React hooks order (`2026-03-27`)
-  - Fix hasRegularSeasonGames: empty {} gameTypeBreakdown should fallback to gameCount (`2026-03-26`)
 
 #### 📝 General
 
