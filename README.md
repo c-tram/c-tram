@@ -74,7 +74,6 @@
   - Fix reaggregation: reset teams with 0 regular season games instead of skipping (`2026-03-27`)
   - Fix reaggregation: also check flat date/gameType fields for older spring training games (`2026-03-27`)
   - Fix reaggregation: filter to regular season only, exclude spring training/postseason (`2026-03-27`)
-  - Fix ARI/OAK salary normalization: bridge ARI↔AZ and OAK↔ATH team codes (`2026-03-27`)
 
 #### 🐛 Bug Fixes
 
@@ -87,6 +86,7 @@
 
 #### 📝 General
 
+  - disambiguate players with same name using mlbId (`2026-03-29`)
   - use MLB qualifier-rate scaling for leader minimums instead of year fallback (`2026-03-29`)
   - Add min thresholds for League Leaders, fix defaults for stats leaders endpoint (`2026-03-28`)
   - Recalibrate consistency for per-game OPS variance, fix periodOPS to aggregate raw stats (`2026-03-28`)
