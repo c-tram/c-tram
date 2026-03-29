@@ -27,7 +27,6 @@
   - pass mode=rolling to all trade tab endpoints (`2026-03-28`)
   - Fix trade value: pass mode through + use prev year benchmarks for rolling (`2026-03-28`)
   - Trade leaders: warm cache for rolling mode too (`2026-03-28`)
-  - Fix 7 trade engine bugs: double period, value bar negatives, narrative rendering, stale breakdown keys, futureOutlook surplus, control years fallback, multi-team support (`2026-03-24`)
 
 #### 📊 Advanced Metrics
 
@@ -66,6 +65,7 @@
 
 #### 🔧 Data Pipeline
 
+  - exclude spring training from career stats + backfill gameTypeBreakdown (`2026-03-29`)
   - Phase 1+2: dead code removal, page fixes, advanced stats, contracts tab (`2026-03-28`)
   - Fix contract enrichment: multiline names, colOffset, status normalization, --force-enrich flag (`2026-03-28`)
   - Fix Spotrac parser: auto-detect colOffset + multiline name format (`2026-03-28`)
