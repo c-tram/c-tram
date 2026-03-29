@@ -23,12 +23,12 @@
 
 #### 💰 Trade Intelligence
 
+  - Trade leaders: warm cache for rolling mode too (`2026-03-28`)
   - Fix 7 trade engine bugs: double period, value bar negatives, narrative rendering, stale breakdown keys, futureOutlook surplus, control years fallback, multi-team support (`2026-03-24`)
   - active roster filtering for trade analysis (`2026-03-23`)
   - Next-best option analysis, control in DTV, improved roster depth (`2026-03-23`)
   - Redesign Trade Results & Compare UI: charts, structured narrative, fix negative bar bug (`2026-03-23`)
   - Fix trade dashboard: remove Players Ranked/Negative boxes, fix category filter TV bug (client-side filtering) (`2026-03-23`)
-  - Redesign Mock Trade UI: team dropdowns → roster player selection (`2026-03-23`)
 
 #### 📊 Advanced Metrics
 
