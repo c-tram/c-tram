@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - Fix trade value: pass mode through + use prev year benchmarks for rolling (`2026-03-28`)
   - Trade leaders: warm cache for rolling mode too (`2026-03-28`)
   - Fix 7 trade engine bugs: double period, value bar negatives, narrative rendering, stale breakdown keys, futureOutlook surplus, control years fallback, multi-team support (`2026-03-24`)
   - active roster filtering for trade analysis (`2026-03-23`)
@@ -52,7 +53,6 @@
   - Dashboard: dynamic leader thresholds + AL/NL standings filter (`2026-03-26`)
   - Fix dashboard: show 2026 data when teams have games played (`2026-03-26`)
   - comprehensive mobile responsiveness pass across all pages (`2026-03-25`)
-  - Merge leaderboard into dashboard with sortable table, filters, consistent tab headers (`2026-03-23`)
 
 #### ⚡ API & Performance
 
