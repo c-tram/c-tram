@@ -48,6 +48,7 @@
 
 #### 🎨 Frontend & UX
 
+  - card standings on dashboard, team logos in standings, card default on teams (`2026-03-29`)
   - Fix double *100 on kRate/bbRate in AdvancedAnalyticsTab filtered view (`2026-03-27`)
   - Dashboard: dynamic leader thresholds + AL/NL standings filter (`2026-03-26`)
   - Fix dashboard: show 2026 data when teams have games played (`2026-03-26`)
@@ -63,6 +64,8 @@
 
 #### 🔧 Data Pipeline
 
+  - remove 9 obsolete backfill/fix scripts (~2,177 lines) (`2026-03-29`)
+  - rewrite backfill script with team filtering, add cleanup script (`2026-03-29`)
   - Fix backfillMissingGames doubleheader detection: match by gamePk not date (`2026-03-29`)
   - Add fast backfill script (single SCAN + pipeline writes) (`2026-03-29`)
   - smarter hasRegularSeasonGames heuristic for pre-backfill data (`2026-03-29`)
@@ -74,7 +77,6 @@
   - Fix reaggregation: also check flat date/gameType fields for older spring training games (`2026-03-27`)
   - Fix reaggregation: filter to regular season only, exclude spring training/postseason (`2026-03-27`)
   - Fix ARI/OAK salary normalization: bridge ARI↔AZ and OAK↔ATH team codes (`2026-03-27`)
-  - Fix spring_training misclassification on player detail pages (`2026-03-26`)
 
 #### 🐛 Bug Fixes
 
@@ -83,8 +85,6 @@
   - Fix consistency/streaks: calculate OPS from raw counting stats in game logs (`2026-03-28`)
   - move useMemo before early return to fix React hooks order (`2026-03-27`)
   - Fix hasRegularSeasonGames: empty {} gameTypeBreakdown should fallback to gameCount (`2026-03-26`)
-  - Fix classifyGameType: March 25+ is regular season, prefer stored gameType (`2026-03-26`)
-  - default year switches to current year on March 25 (regular season start) (`2026-03-26`)
 
 #### 📝 General
 
