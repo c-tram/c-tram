@@ -34,7 +34,6 @@
 
   - Fix 6 bugs: run differential, leaders, pitch analysis, game type classification, CVR thresholds (`2026-03-27`)
   - Remove Splits tab from TeamDetail, add bWAR/pWAR tooltips (`2026-03-24`)
-  - Fix TV=8/10 bug: benchmark cache collision, remove hero tiles, fix team sort order (`2026-03-23`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -76,6 +75,7 @@
 
 #### 🐛 Bug Fixes
 
+  - Fix consistency/streaks: calculate OPS from raw counting stats in game logs (`2026-03-28`)
   - move useMemo before early return to fix React hooks order (`2026-03-27`)
   - Fix hasRegularSeasonGames: empty {} gameTypeBreakdown should fallback to gameCount (`2026-03-26`)
   - Fix classifyGameType: March 25+ is regular season, prefer stored gameType (`2026-03-26`)
