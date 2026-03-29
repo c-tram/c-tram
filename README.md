@@ -29,7 +29,6 @@
   - active roster filtering for trade analysis (`2026-03-23`)
   - Next-best option analysis, control in DTV, improved roster depth (`2026-03-23`)
   - Redesign Trade Results & Compare UI: charts, structured narrative, fix negative bar bug (`2026-03-23`)
-  - Fix trade dashboard: remove Players Ranked/Negative boxes, fix category filter TV bug (client-side filtering) (`2026-03-23`)
 
 #### 📊 Advanced Metrics
 
@@ -39,6 +38,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Fix analytics: detectPitcher SP/RP, year-doubling keys, rolling mode everywhere, salary merge for rolling (`2026-03-28`)
   - Rolling window system: 162-game (batters) / 30-game (pitchers) replaces year selectors (`2026-03-28`)
   - Modernize boxscore: fix undefined team names, clickable innings with play-by-play popups, clickable player names with stat popups (`2026-03-28`)
   - Fix pitch events merge duplication + add --clean flag for reingest (`2026-03-27`)
