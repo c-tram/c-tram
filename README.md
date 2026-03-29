@@ -51,7 +51,6 @@
   - Fix double *100 on kRate/bbRate in AdvancedAnalyticsTab filtered view (`2026-03-27`)
   - Dashboard: dynamic leader thresholds + AL/NL standings filter (`2026-03-26`)
   - Fix dashboard: show 2026 data when teams have games played (`2026-03-26`)
-  - comprehensive mobile responsiveness pass across all pages (`2026-03-25`)
 
 #### ⚡ API & Performance
 
@@ -64,6 +63,7 @@
 
 #### 🔧 Data Pipeline
 
+  - Add fast backfill script (single SCAN + pipeline writes) (`2026-03-29`)
   - smarter hasRegularSeasonGames heuristic for pre-backfill data (`2026-03-29`)
   - exclude spring training from career stats + backfill gameTypeBreakdown (`2026-03-29`)
   - Phase 1+2: dead code removal, page fixes, advanced stats, contracts tab (`2026-03-28`)
