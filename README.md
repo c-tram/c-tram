@@ -51,7 +51,6 @@
   - card standings on dashboard, team logos in standings, card default on teams (`2026-03-29`)
   - Fix double *100 on kRate/bbRate in AdvancedAnalyticsTab filtered view (`2026-03-27`)
   - Dashboard: dynamic leader thresholds + AL/NL standings filter (`2026-03-26`)
-  - Fix dashboard: show 2026 data when teams have games played (`2026-03-26`)
 
 #### ⚡ API & Performance
 
@@ -88,6 +87,7 @@
 
 #### 📝 General
 
+  - use MLB qualifier-rate scaling for leader minimums instead of year fallback (`2026-03-29`)
   - Add min thresholds for League Leaders, fix defaults for stats leaders endpoint (`2026-03-28`)
   - Recalibrate consistency for per-game OPS variance, fix periodOPS to aggregate raw stats (`2026-03-28`)
   - temp (`2026-03-28`)
