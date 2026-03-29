@@ -16,13 +16,14 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-28 • 44 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-28 • 45 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
 
 #### 💰 Trade Intelligence
 
+  - pass mode=rolling to all trade tab endpoints (`2026-03-28`)
   - Fix trade value: pass mode through + use prev year benchmarks for rolling (`2026-03-28`)
   - Trade leaders: warm cache for rolling mode too (`2026-03-28`)
   - Fix 7 trade engine bugs: double period, value bar negatives, narrative rendering, stale breakdown keys, futureOutlook surplus, control years fallback, multi-team support (`2026-03-24`)
