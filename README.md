@@ -53,7 +53,6 @@
 
   - composite /dashboard endpoint — 13 API calls → 1 (`2026-03-30`)
   - card standings on dashboard, team logos in standings, card default on teams (`2026-03-29`)
-  - Fix double *100 on kRate/bbRate in AdvancedAnalyticsTab filtered view (`2026-03-27`)
 
 #### ⚡ API & Performance
 
@@ -65,6 +64,7 @@
 
 #### 🔧 Data Pipeline
 
+  - add hover tooltips explaining every stat column on Teams page (`2026-03-30`)
   - remove 9 obsolete backfill/fix scripts (~2,177 lines) (`2026-03-29`)
   - rewrite backfill script with team filtering, add cleanup script (`2026-03-29`)
   - Fix backfillMissingGames doubleheader detection: match by gamePk not date (`2026-03-29`)
