@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-29 • 48 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-30 • 48 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -45,10 +45,10 @@
   - Modernize boxscore: fix undefined team names, clickable innings with play-by-play popups, clickable player names with stat popups (`2026-03-28`)
   - Fix pitch events merge duplication + add --clean flag for reingest (`2026-03-27`)
   - Simplify Splits tab to All Splits only + fix gt field missing from pitch events API (`2026-03-27`)
-  - pitch analysis spring training ingestion + advanced analytics filter recalculation (`2026-03-27`)
 
 #### 🎨 Frontend & UX
 
+  - composite /dashboard endpoint — 13 API calls → 1 (`2026-03-30`)
   - card standings on dashboard, team logos in standings, card default on teams (`2026-03-29`)
   - Fix double *100 on kRate/bbRate in AdvancedAnalyticsTab filtered view (`2026-03-27`)
 
