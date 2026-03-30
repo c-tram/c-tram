@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - team CVR uses avgACVR (0-100 scale) + sort no longer resets view (`2026-03-30`)
   - overhaul: trade value engine v4 — prior-year benchmarks + simple pace scaling (`2026-03-29`)
   - trade engine WAR prorating + DTV benchmark fallback (`2026-03-29`)
   - prorate WAR in trade value for partial seasons (v6.1) (`2026-03-29`)
@@ -91,7 +92,6 @@
   - Add min thresholds for League Leaders, fix defaults for stats leaders endpoint (`2026-03-28`)
   - Recalibrate consistency for per-game OPS variance, fix periodOPS to aggregate raw stats (`2026-03-28`)
   - temp (`2026-03-28`)
-  - proper game type system across all data layers (`2026-03-27`)
 
 </details>
 
