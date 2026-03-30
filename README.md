@@ -37,6 +37,7 @@
 
 #### 📊 Advanced Metrics
 
+  - contracts tab crash (typeof null === 'object') + enrich contracts with WAR/CVR (`2026-03-30`)
   - single rolling fetch + fix wOBA field casing (`2026-03-30`)
   - lower isPitcher threshold in recalculateCVR + respect playerType in WAR routing (`2026-03-29`)
   - CVR calculation bugs - falsy trap, control formula, rolling recomputation (`2026-03-29`)
@@ -73,7 +74,6 @@
   - exclude spring training from career stats + backfill gameTypeBreakdown (`2026-03-29`)
   - Phase 1+2: dead code removal, page fixes, advanced stats, contracts tab (`2026-03-28`)
   - Fix contract enrichment: multiline names, colOffset, status normalization, --force-enrich flag (`2026-03-28`)
-  - Fix Spotrac parser: auto-detect colOffset + multiline name format (`2026-03-28`)
 
 #### 🐛 Bug Fixes
 
