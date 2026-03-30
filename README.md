@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - recompute team CVR/ACVR in post-processing reaggregation (`2026-03-30`)
   - preserve acvr + teamPayroll in post-processing team reaggregation (`2026-03-30`)
   - proper team CVR (raw performance) + ACVR (bang for buck) (`2026-03-30`)
   - team CVR uses avgACVR (0-100 scale) + sort no longer resets view (`2026-03-30`)
@@ -61,7 +62,6 @@
   - Rolling cache: pre-compute overnight + restore year selectors (`2026-03-28`)
   - Fix: pass mlbId through unified profile route for player headshots (`2026-03-28`)
   - Player headshots on profiles, full team names in boxscore, expose mlbId from API (`2026-03-28`)
-  - Fix --clean flag to use script's own Redis client instead of utils module (`2026-03-27`)
 
 #### 🔧 Data Pipeline
 
