@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - trade engine WAR prorating + DTV benchmark fallback (`2026-03-29`)
   - prorate WAR in trade value for partial seasons (v6.1) (`2026-03-29`)
   - add team control column to trade value dashboard (`2026-03-29`)
   - pass mode=rolling to all trade tab endpoints (`2026-03-28`)
@@ -72,7 +73,6 @@
   - Fix contract enrichment: multiline names, colOffset, status normalization, --force-enrich flag (`2026-03-28`)
   - Fix Spotrac parser: auto-detect colOffset + multiline name format (`2026-03-28`)
   - Fix reaggregation: reset teams with 0 regular season games instead of skipping (`2026-03-27`)
-  - Fix reaggregation: also check flat date/gameType fields for older spring training games (`2026-03-27`)
 
 #### 🐛 Bug Fixes
 
