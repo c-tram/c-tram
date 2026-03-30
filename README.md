@@ -37,6 +37,7 @@
 
 #### 📊 Advanced Metrics
 
+  - WAR to 2 decimal places everywhere (player detail, team detail, roster, contracts, backend storage) (`2026-03-30`)
   - show WAR with 2 decimal places on team detail page (`2026-03-30`)
   - contracts tab crash (typeof null === 'object') + enrich contracts with WAR/CVR (`2026-03-30`)
   - single rolling fetch + fix wOBA field casing (`2026-03-30`)
@@ -49,7 +50,6 @@
   - Add pitcher consistency (Game Score) and pitcher streak analysis (`2026-03-28`)
   - Fix analytics: detectPitcher SP/RP, year-doubling keys, rolling mode everywhere, salary merge for rolling (`2026-03-28`)
   - Rolling window system: 162-game (batters) / 30-game (pitchers) replaces year selectors (`2026-03-28`)
-  - Modernize boxscore: fix undefined team names, clickable innings with play-by-play popups, clickable player names with stat popups (`2026-03-28`)
 
 #### 🎨 Frontend & UX
 
