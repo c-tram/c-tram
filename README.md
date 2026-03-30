@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - proper team CVR (raw performance) + ACVR (bang for buck) (`2026-03-30`)
   - team CVR uses avgACVR (0-100 scale) + sort no longer resets view (`2026-03-30`)
   - overhaul: trade value engine v4 — prior-year benchmarks + simple pace scaling (`2026-03-29`)
   - trade engine WAR prorating + DTV benchmark fallback (`2026-03-29`)
@@ -46,7 +47,6 @@
   - Rolling window system: 162-game (batters) / 30-game (pitchers) replaces year selectors (`2026-03-28`)
   - Modernize boxscore: fix undefined team names, clickable innings with play-by-play popups, clickable player names with stat popups (`2026-03-28`)
   - Fix pitch events merge duplication + add --clean flag for reingest (`2026-03-27`)
-  - Simplify Splits tab to All Splits only + fix gt field missing from pitch events API (`2026-03-27`)
 
 #### 🎨 Frontend & UX
 
