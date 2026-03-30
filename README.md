@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - overhaul: trade value engine v4 — prior-year benchmarks + simple pace scaling (`2026-03-29`)
   - trade engine WAR prorating + DTV benchmark fallback (`2026-03-29`)
   - prorate WAR in trade value for partial seasons (v6.1) (`2026-03-29`)
   - add team control column to trade value dashboard (`2026-03-29`)
@@ -45,7 +46,6 @@
   - Fix pitch events merge duplication + add --clean flag for reingest (`2026-03-27`)
   - Simplify Splits tab to All Splits only + fix gt field missing from pitch events API (`2026-03-27`)
   - pitch analysis spring training ingestion + advanced analytics filter recalculation (`2026-03-27`)
-  - frontend pitch analysis now fetches all game types for client-side filtering (`2026-03-27`)
 
 #### 🎨 Frontend & UX
 
