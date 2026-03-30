@@ -33,7 +33,6 @@
   - lower isPitcher threshold in recalculateCVR + respect playerType in WAR routing (`2026-03-29`)
   - CVR calculation bugs - falsy trap, control formula, rolling recomputation (`2026-03-29`)
   - use rolling data everywhere — dashboard, leaders, benchmarks (`2026-03-28`)
-  - Fix 6 bugs: run differential, leaders, pitch analysis, game type classification, CVR thresholds (`2026-03-27`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -77,6 +76,7 @@
 
 #### 🐛 Bug Fixes
 
+  - include 0-AB games with walks/HBP/SF/SB in data pipeline (`2026-03-29`)
   - use current-year-only for counting stat leaders, rolling for rate stats (`2026-03-29`)
   - team logos 404 (ESPN size 40 invalid) + early-season leader fallback (`2026-03-29`)
   - Fix 3 career stat bugs: classifyPlayerType drops 0-AB games, career OBP uses wrong field name, career SLG uses missing singles field (`2026-03-29`)
