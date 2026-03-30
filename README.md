@@ -72,10 +72,10 @@
   - Phase 1+2: dead code removal, page fixes, advanced stats, contracts tab (`2026-03-28`)
   - Fix contract enrichment: multiline names, colOffset, status normalization, --force-enrich flag (`2026-03-28`)
   - Fix Spotrac parser: auto-detect colOffset + multiline name format (`2026-03-28`)
-  - Fix reaggregation: reset teams with 0 regular season games instead of skipping (`2026-03-27`)
 
 #### 🐛 Bug Fixes
 
+  - stop appending mlbId to player slugs for non-disambiguated players (`2026-03-29`)
   - include 0-AB games with walks/HBP/SF/SB in data pipeline (`2026-03-29`)
   - use current-year-only for counting stat leaders, rolling for rate stats (`2026-03-29`)
   - team logos 404 (ESPN size 40 invalid) + early-season leader fallback (`2026-03-29`)
