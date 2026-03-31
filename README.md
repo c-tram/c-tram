@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-30 • 49 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-30 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -55,6 +55,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Mobile responsiveness fixes across 6 pages (`2026-03-30`)
   - Mobile responsiveness: comprehensive useMediaQuery guards across all pages (`2026-03-30`)
   - composite /dashboard endpoint — 13 API calls → 1 (`2026-03-30`)
   - card standings on dashboard, team logos in standings, card default on teams (`2026-03-29`)
