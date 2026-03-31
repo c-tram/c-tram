@@ -86,10 +86,10 @@
   - team logos 404 (ESPN size 40 invalid) + early-season leader fallback (`2026-03-29`)
   - Fix 3 career stat bugs: classifyPlayerType drops 0-AB games, career OBP uses wrong field name, career SLG uses missing singles field (`2026-03-29`)
   - filter All-Star game keys (AL/NL) from rolling stats computation (`2026-03-28`)
-  - Fix consistency/streaks: calculate OPS from raw counting stats in game logs (`2026-03-28`)
 
 #### 📝 General
 
+  - Replace calendar date range picker with simple dropdown presets (7d/14d/30d) (`2026-03-30`)
   - disambiguate players with same name using mlbId (`2026-03-29`)
   - use MLB qualifier-rate scaling for leader minimums instead of year fallback (`2026-03-29`)
   - Add min thresholds for League Leaders, fix defaults for stats leaders endpoint (`2026-03-28`)
