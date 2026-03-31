@@ -53,6 +53,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Mobile responsiveness: comprehensive useMediaQuery guards across all pages (`2026-03-30`)
   - composite /dashboard endpoint — 13 API calls → 1 (`2026-03-30`)
   - card standings on dashboard, team logos in standings, card default on teams (`2026-03-29`)
 
@@ -62,7 +63,6 @@
   - deduplicate rolling cache reads, filter AL/NL from cache path (`2026-03-28`)
   - Rolling cache: pre-compute overnight + restore year selectors (`2026-03-28`)
   - Fix: pass mlbId through unified profile route for player headshots (`2026-03-28`)
-  - Player headshots on profiles, full team names in boxscore, expose mlbId from API (`2026-03-28`)
 
 #### 🔧 Data Pipeline
 
