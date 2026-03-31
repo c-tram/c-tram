@@ -66,7 +66,6 @@
 #### ⚡ API & Performance
 
   - add in-memory caching to analytics/leaderboard + startup cache warming (`2026-03-29`)
-  - deduplicate rolling cache reads, filter AL/NL from cache path (`2026-03-28`)
 
 #### 🔧 Data Pipeline
 
@@ -81,6 +80,7 @@
 
 #### 🐛 Bug Fixes
 
+  - show hamburger menu icon on desktop (`2026-03-31`)
   - stop appending mlbId to player slugs for non-disambiguated players (`2026-03-29`)
   - include 0-AB games with walks/HBP/SF/SB in data pipeline (`2026-03-29`)
   - use current-year-only for counting stat leaders, rolling for rate stats (`2026-03-29`)
