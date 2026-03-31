@@ -51,6 +51,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - proper gameType filtering for all splits sections (`2026-03-30`)
   - supplement on-the-fly splits with precomputed play-by-play data for vs_pitchers/vs_batters (`2026-03-30`)
   - Add pitcher consistency (Game Score) and pitcher streak analysis (`2026-03-28`)
   - Fix analytics: detectPitcher SP/RP, year-doubling keys, rolling mode everywhere, salary merge for rolling (`2026-03-28`)
@@ -66,7 +67,6 @@
 
   - add in-memory caching to analytics/leaderboard + startup cache warming (`2026-03-29`)
   - deduplicate rolling cache reads, filter AL/NL from cache path (`2026-03-28`)
-  - Rolling cache: pre-compute overnight + restore year selectors (`2026-03-28`)
 
 #### 🔧 Data Pipeline
 
