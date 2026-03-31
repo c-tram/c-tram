@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-30 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-31 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -54,7 +54,6 @@
   - career splits gameType filtering + remove games column from splits (`2026-03-30`)
   - proper gameType filtering for all splits sections (`2026-03-30`)
   - supplement on-the-fly splits with precomputed play-by-play data for vs_pitchers/vs_batters (`2026-03-30`)
-  - Add pitcher consistency (Game Score) and pitcher streak analysis (`2026-03-28`)
 
 #### 🎨 Frontend & UX
 
@@ -89,6 +88,7 @@
 
 #### 📝 General
 
+  - Leaders: use full season stats instead of rolling window (`2026-03-31`)
   - Date range dropdown for PlayerDetail + move glossary to chat position (`2026-03-30`)
   - Replace calendar date range picker with simple dropdown presets (7d/14d/30d) (`2026-03-30`)
   - disambiguate players with same name using mlbId (`2026-03-29`)
