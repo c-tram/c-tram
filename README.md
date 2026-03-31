@@ -49,12 +49,12 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - add play-by-play coverage note to career splits (`2026-03-30`)
   - restore G column in splits, remove game counts from gameType filter buttons (`2026-03-30`)
   - career splits gameType filtering + remove games column from splits (`2026-03-30`)
   - proper gameType filtering for all splits sections (`2026-03-30`)
   - supplement on-the-fly splits with precomputed play-by-play data for vs_pitchers/vs_batters (`2026-03-30`)
   - Add pitcher consistency (Game Score) and pitcher streak analysis (`2026-03-28`)
-  - Fix analytics: detectPitcher SP/RP, year-doubling keys, rolling mode everywhere, salary merge for rolling (`2026-03-28`)
 
 #### 🎨 Frontend & UX
 
