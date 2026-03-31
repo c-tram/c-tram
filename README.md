@@ -89,11 +89,11 @@
 
 #### 📝 General
 
+  - Date range dropdown for PlayerDetail + move glossary to chat position (`2026-03-30`)
   - Replace calendar date range picker with simple dropdown presets (7d/14d/30d) (`2026-03-30`)
   - disambiguate players with same name using mlbId (`2026-03-29`)
   - use MLB qualifier-rate scaling for leader minimums instead of year fallback (`2026-03-29`)
   - Add min thresholds for League Leaders, fix defaults for stats leaders endpoint (`2026-03-28`)
-  - Recalibrate consistency for per-game OPS variance, fix periodOPS to aggregate raw stats (`2026-03-28`)
 
 </details>
 
