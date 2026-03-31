@@ -69,6 +69,7 @@
 
 #### 🔧 Data Pipeline
 
+  - add team alias mapping for salary lookups (ATH↔OAK, AZ↔ARI, WSH↔WAS) (`2026-03-31`)
   - add hover tooltips explaining every stat column on Teams page (`2026-03-30`)
   - remove 9 obsolete backfill/fix scripts (~2,177 lines) (`2026-03-29`)
   - rewrite backfill script with team filtering, add cleanup script (`2026-03-29`)
@@ -93,7 +94,6 @@
   - Replace calendar date range picker with simple dropdown presets (7d/14d/30d) (`2026-03-30`)
   - disambiguate players with same name using mlbId (`2026-03-29`)
   - use MLB qualifier-rate scaling for leader minimums instead of year fallback (`2026-03-29`)
-  - Add min thresholds for League Leaders, fix defaults for stats leaders endpoint (`2026-03-28`)
 
 </details>
 
