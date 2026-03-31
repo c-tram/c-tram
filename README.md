@@ -45,7 +45,6 @@
   - single rolling fetch + fix wOBA field casing (`2026-03-30`)
   - lower isPitcher threshold in recalculateCVR + respect playerType in WAR routing (`2026-03-29`)
   - CVR calculation bugs - falsy trap, control formula, rolling recomputation (`2026-03-29`)
-  - use rolling data everywhere — dashboard, leaders, benchmarks (`2026-03-28`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -80,6 +79,7 @@
 
 #### 🐛 Bug Fixes
 
+  - close JSX comment syntax (`2026-03-31`)
   - show hamburger menu icon on desktop (`2026-03-31`)
   - stop appending mlbId to player slugs for non-disambiguated players (`2026-03-29`)
   - include 0-AB games with walks/HBP/SF/SB in data pipeline (`2026-03-29`)
