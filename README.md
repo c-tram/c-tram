@@ -51,9 +51,9 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - supplement on-the-fly splits with precomputed play-by-play data for vs_pitchers/vs_batters (`2026-03-30`)
   - Add pitcher consistency (Game Score) and pitcher streak analysis (`2026-03-28`)
   - Fix analytics: detectPitcher SP/RP, year-doubling keys, rolling mode everywhere, salary merge for rolling (`2026-03-28`)
-  - Rolling window system: 162-game (batters) / 30-game (pitchers) replaces year selectors (`2026-03-28`)
 
 #### 🎨 Frontend & UX
 
