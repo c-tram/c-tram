@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - Add team control column to Trade Assets roster table (`2026-03-30`)
   - recompute team CVR/ACVR in post-processing reaggregation (`2026-03-30`)
   - preserve acvr + teamPayroll in post-processing team reaggregation (`2026-03-30`)
   - proper team CVR (raw performance) + ACVR (bang for buck) (`2026-03-30`)
@@ -62,7 +63,6 @@
   - add in-memory caching to analytics/leaderboard + startup cache warming (`2026-03-29`)
   - deduplicate rolling cache reads, filter AL/NL from cache path (`2026-03-28`)
   - Rolling cache: pre-compute overnight + restore year selectors (`2026-03-28`)
-  - Fix: pass mlbId through unified profile route for player headshots (`2026-03-28`)
 
 #### 🔧 Data Pipeline
 
