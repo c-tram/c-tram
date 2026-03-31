@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - Fix rolling CVR: only override CVR/ACVR (not rWAR/stats) + career splits + vs_batters for pitchers (`2026-03-30`)
   - Add Stats Glossary page + ACVR column in Trades dashboard (`2026-03-30`)
   - Add team control column to Trade Assets roster table (`2026-03-30`)
   - recompute team CVR/ACVR in post-processing reaggregation (`2026-03-30`)
@@ -76,7 +77,6 @@
   - Add fast backfill script (single SCAN + pipeline writes) (`2026-03-29`)
   - smarter hasRegularSeasonGames heuristic for pre-backfill data (`2026-03-29`)
   - exclude spring training from career stats + backfill gameTypeBreakdown (`2026-03-29`)
-  - Phase 1+2: dead code removal, page fixes, advanced stats, contracts tab (`2026-03-28`)
 
 #### 🐛 Bug Fixes
 
