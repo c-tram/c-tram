@@ -34,7 +34,6 @@
   - overhaul: trade value engine v4 — prior-year benchmarks + simple pace scaling (`2026-03-29`)
   - trade engine WAR prorating + DTV benchmark fallback (`2026-03-29`)
   - prorate WAR in trade value for partial seasons (v6.1) (`2026-03-29`)
-  - add team control column to trade value dashboard (`2026-03-29`)
 
 #### 📊 Advanced Metrics
 
@@ -57,6 +56,7 @@
 
 #### 🎨 Frontend & UX
 
+  - mobile-first responsive overhaul across all pages (`2026-03-31`)
   - Mobile responsiveness fixes across 6 pages (`2026-03-30`)
   - Mobile responsiveness: comprehensive useMediaQuery guards across all pages (`2026-03-30`)
   - composite /dashboard endpoint — 13 API calls → 1 (`2026-03-30`)
