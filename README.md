@@ -16,13 +16,14 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-30 • 48 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-03-30 • 49 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
 
 #### 💰 Trade Intelligence
 
+  - Add Stats Glossary page + ACVR column in Trades dashboard (`2026-03-30`)
   - Add team control column to Trade Assets roster table (`2026-03-30`)
   - recompute team CVR/ACVR in post-processing reaggregation (`2026-03-30`)
   - preserve acvr + teamPayroll in post-processing team reaggregation (`2026-03-30`)
