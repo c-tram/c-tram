@@ -35,7 +35,6 @@
   - prorate WAR in trade value for partial seasons (v6.1) (`2026-03-29`)
   - add team control column to trade value dashboard (`2026-03-29`)
   - pass mode=rolling to all trade tab endpoints (`2026-03-28`)
-  - Fix trade value: pass mode through + use prev year benchmarks for rolling (`2026-03-28`)
 
 #### 📊 Advanced Metrics
 
@@ -50,6 +49,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - restore G column in splits, remove game counts from gameType filter buttons (`2026-03-30`)
   - career splits gameType filtering + remove games column from splits (`2026-03-30`)
   - proper gameType filtering for all splits sections (`2026-03-30`)
   - supplement on-the-fly splits with precomputed play-by-play data for vs_pitchers/vs_batters (`2026-03-30`)
