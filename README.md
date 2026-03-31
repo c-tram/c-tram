@@ -39,6 +39,7 @@
 
 #### 📊 Advanced Metrics
 
+  - Convert Glossary to floating popup + switch all CVR to rolling window (`2026-03-30`)
   - WAR to 2 decimal places everywhere (player detail, team detail, roster, contracts, backend storage) (`2026-03-30`)
   - show WAR with 2 decimal places on team detail page (`2026-03-30`)
   - contracts tab crash (typeof null === 'object') + enrich contracts with WAR/CVR (`2026-03-30`)
@@ -93,7 +94,6 @@
   - use MLB qualifier-rate scaling for leader minimums instead of year fallback (`2026-03-29`)
   - Add min thresholds for League Leaders, fix defaults for stats leaders endpoint (`2026-03-28`)
   - Recalibrate consistency for per-game OPS variance, fix periodOPS to aggregate raw stats (`2026-03-28`)
-  - temp (`2026-03-28`)
 
 </details>
 
