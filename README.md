@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-03-31 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-01 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -65,12 +65,12 @@
 
 #### 🔧 Data Pipeline
 
+  - Fix horizontal scroll overflow across all pages (`2026-04-01`)
   - add team alias mapping for salary lookups (ATH↔OAK, AZ↔ARI, WSH↔WAS) (`2026-03-31`)
   - add hover tooltips explaining every stat column on Teams page (`2026-03-30`)
   - remove 9 obsolete backfill/fix scripts (~2,177 lines) (`2026-03-29`)
   - rewrite backfill script with team filtering, add cleanup script (`2026-03-29`)
   - Fix backfillMissingGames doubleheader detection: match by gamePk not date (`2026-03-29`)
-  - Add fast backfill script (single SCAN + pipeline writes) (`2026-03-29`)
 
 #### 🐛 Bug Fixes
 
