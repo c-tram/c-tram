@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - recompute ACVR in rolling stats from blended universalCVR (`2026-04-01`)
   - add WAS→WSH alias in salary ingestion for ACVR calculation (`2026-03-31`)
   - Fix rolling CVR: only override CVR/ACVR (not rWAR/stats) + career splits + vs_batters for pitchers (`2026-03-30`)
   - Add Stats Glossary page + ACVR column in Trades dashboard (`2026-03-30`)
@@ -64,7 +65,6 @@
   - Mobile responsiveness fixes across 6 pages (`2026-03-30`)
   - Mobile responsiveness: comprehensive useMediaQuery guards across all pages (`2026-03-30`)
   - composite /dashboard endpoint — 13 API calls → 1 (`2026-03-30`)
-  - card standings on dashboard, team logos in standings, card default on teams (`2026-03-29`)
 
 #### 🔧 Data Pipeline
 
