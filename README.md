@@ -45,6 +45,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Fix 6 issues: boxscore mobile scroll, pitching leaders fallback, players/teams mobile card layouts, standings clickable teams + postseason error handling (`2026-04-01`)
   - per-game pitch analysis filter on player detail page (`2026-03-31`)
   - remove: /splits page (covered by player detail) (`2026-03-31`)
   - add play-by-play coverage note to career splits (`2026-03-30`)
@@ -70,7 +71,6 @@
   - add team alias mapping for salary lookups (ATH↔OAK, AZ↔ARI, WSH↔WAS) (`2026-03-31`)
   - add hover tooltips explaining every stat column on Teams page (`2026-03-30`)
   - remove 9 obsolete backfill/fix scripts (~2,177 lines) (`2026-03-29`)
-  - rewrite backfill script with team filtering, add cleanup script (`2026-03-29`)
 
 #### 🐛 Bug Fixes
 
