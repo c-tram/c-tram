@@ -74,6 +74,7 @@
 
 #### 🐛 Bug Fixes
 
+  - Fix counting stats missing in slim mode + mobile stat group buttons (`2026-04-01`)
   - boxscore date bug — use officialDate instead of UTC gameDate (`2026-03-31`)
   - Fix UTC date rollover bug in live game monitor (`2026-03-31`)
   - close JSX comment syntax (`2026-03-31`)
@@ -82,7 +83,6 @@
   - include 0-AB games with walks/HBP/SF/SB in data pipeline (`2026-03-29`)
   - use current-year-only for counting stat leaders, rolling for rate stats (`2026-03-29`)
   - team logos 404 (ESPN size 40 invalid) + early-season leader fallback (`2026-03-29`)
-  - Fix 3 career stat bugs: classifyPlayerType drops 0-AB games, career OBP uses wrong field name, career SLG uses missing singles field (`2026-03-29`)
 
 #### 📝 General
 
