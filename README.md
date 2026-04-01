@@ -42,7 +42,6 @@
   - show WAR with 2 decimal places on team detail page (`2026-03-30`)
   - contracts tab crash (typeof null === 'object') + enrich contracts with WAR/CVR (`2026-03-30`)
   - single rolling fetch + fix wOBA field casing (`2026-03-30`)
-  - lower isPitcher threshold in recalculateCVR + respect playerType in WAR routing (`2026-03-29`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -55,6 +54,7 @@
 
 #### 🎨 Frontend & UX
 
+  - mobile UX + spring training leaders bug (`2026-03-31`)
   - mobile UX improvements, remove search/compare, fix standings filtering (`2026-03-31`)
   - mobile-first responsive overhaul across all pages (`2026-03-31`)
   - Mobile responsiveness fixes across 6 pages (`2026-03-30`)
