@@ -43,7 +43,6 @@
   - contracts tab crash (typeof null === 'object') + enrich contracts with WAR/CVR (`2026-03-30`)
   - single rolling fetch + fix wOBA field casing (`2026-03-30`)
   - lower isPitcher threshold in recalculateCVR + respect playerType in WAR routing (`2026-03-29`)
-  - CVR calculation bugs - falsy trap, control formula, rolling recomputation (`2026-03-29`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -76,6 +75,7 @@
 
 #### 🐛 Bug Fixes
 
+  - Fix UTC date rollover bug in live game monitor (`2026-03-31`)
   - close JSX comment syntax (`2026-03-31`)
   - show hamburger menu icon on desktop (`2026-03-31`)
   - stop appending mlbId to player slugs for non-disambiguated players (`2026-03-29`)
