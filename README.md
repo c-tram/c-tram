@@ -56,15 +56,12 @@
 
 #### 🎨 Frontend & UX
 
+  - mobile UX improvements, remove search/compare, fix standings filtering (`2026-03-31`)
   - mobile-first responsive overhaul across all pages (`2026-03-31`)
   - Mobile responsiveness fixes across 6 pages (`2026-03-30`)
   - Mobile responsiveness: comprehensive useMediaQuery guards across all pages (`2026-03-30`)
   - composite /dashboard endpoint — 13 API calls → 1 (`2026-03-30`)
   - card standings on dashboard, team logos in standings, card default on teams (`2026-03-29`)
-
-#### ⚡ API & Performance
-
-  - add in-memory caching to analytics/leaderboard + startup cache warming (`2026-03-29`)
 
 #### 🔧 Data Pipeline
 
