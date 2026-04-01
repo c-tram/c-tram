@@ -56,6 +56,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Fix navigation: back buttons use history, tab switches use replace (`2026-04-01`)
   - Add inning to dashboard scoreboard + boxscore popup on click (`2026-04-01`)
   - mobile UX + spring training leaders bug (`2026-03-31`)
   - mobile UX improvements, remove search/compare, fix standings filtering (`2026-03-31`)
@@ -70,7 +71,6 @@
   - Fix horizontal scroll overflow across all pages (`2026-04-01`)
   - add team alias mapping for salary lookups (ATH↔OAK, AZ↔ARI, WSH↔WAS) (`2026-03-31`)
   - add hover tooltips explaining every stat column on Teams page (`2026-03-30`)
-  - remove 9 obsolete backfill/fix scripts (~2,177 lines) (`2026-03-29`)
 
 #### 🐛 Bug Fixes
 
