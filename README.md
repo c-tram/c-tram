@@ -45,6 +45,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - per-game pitch analysis filter on player detail page (`2026-03-31`)
   - remove: /splits page (covered by player detail) (`2026-03-31`)
   - add play-by-play coverage note to career splits (`2026-03-30`)
   - restore G column in splits, remove game counts from gameType filter buttons (`2026-03-30`)
@@ -70,7 +71,6 @@
   - rewrite backfill script with team filtering, add cleanup script (`2026-03-29`)
   - Fix backfillMissingGames doubleheader detection: match by gamePk not date (`2026-03-29`)
   - Add fast backfill script (single SCAN + pipeline writes) (`2026-03-29`)
-  - smarter hasRegularSeasonGames heuristic for pre-backfill data (`2026-03-29`)
 
 #### 🐛 Bug Fixes
 
