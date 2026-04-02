@@ -32,7 +32,6 @@
   - preserve acvr + teamPayroll in post-processing team reaggregation (`2026-03-30`)
   - proper team CVR (raw performance) + ACVR (bang for buck) (`2026-03-30`)
   - team CVR uses avgACVR (0-100 scale) + sort no longer resets view (`2026-03-30`)
-  - overhaul: trade value engine v4 — prior-year benchmarks + simple pace scaling (`2026-03-29`)
 
 #### 📊 Advanced Metrics
 
@@ -86,6 +85,7 @@
 
 #### 📝 General
 
+  - increase header logo size (38/48 -> 44/56) (`2026-04-02`)
   - increase header logo size (32/40 -> 38/48) (`2026-04-02`)
   - update favicon.ico to match new logo (`2026-04-02`)
   - Leaders: use full season stats instead of rolling window (`2026-03-31`)
