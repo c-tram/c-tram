@@ -33,7 +33,6 @@
   - proper team CVR (raw performance) + ACVR (bang for buck) (`2026-03-30`)
   - team CVR uses avgACVR (0-100 scale) + sort no longer resets view (`2026-03-30`)
   - overhaul: trade value engine v4 — prior-year benchmarks + simple pace scaling (`2026-03-29`)
-  - trade engine WAR prorating + DTV benchmark fallback (`2026-03-29`)
 
 #### 📊 Advanced Metrics
 
@@ -59,6 +58,7 @@
 
 #### 🎨 Frontend & UX
 
+  - update header: use new logo SVG + navy-to-orange text gradient (`2026-04-02`)
   - dashboard leaders use season stats + game type filter aggregates all game logs (`2026-04-02`)
   - Fix navigation: back buttons use history, tab switches use replace (`2026-04-01`)
   - Add inning to dashboard scoreboard + boxscore popup on click (`2026-04-01`)
