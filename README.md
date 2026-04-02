@@ -83,10 +83,10 @@
   - Fix UTC date rollover bug in live game monitor (`2026-03-31`)
   - close JSX comment syntax (`2026-03-31`)
   - show hamburger menu icon on desktop (`2026-03-31`)
-  - stop appending mlbId to player slugs for non-disambiguated players (`2026-03-29`)
 
 #### 📝 General
 
+  - increase header logo size (32/40 -> 38/48) (`2026-04-02`)
   - update favicon.ico to match new logo (`2026-04-02`)
   - Leaders: use full season stats instead of rolling window (`2026-03-31`)
   - Date range dropdown for PlayerDetail + move glossary to chat position (`2026-03-30`)
