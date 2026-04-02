@@ -16,13 +16,14 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: |0) accumulation|2026-04-01 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-02 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
 
 #### 💰 Trade Intelligence
 
+  - Tasks 1-9: salary fix, spring training, player filter, bWAR removal, search removal, mobile reorder, trade engine ACVR refactor, benchmark removal, upcoming schedule (`2026-04-02`)
   - recompute ACVR in rolling stats from blended universalCVR (`2026-04-01`)
   - add WAS→WSH alias in salary ingestion for ACVR calculation (`2026-03-31`)
   - Fix rolling CVR: only override CVR/ACVR (not rWAR/stats) + career splits + vs_batters for pitchers (`2026-03-30`)
@@ -83,7 +84,6 @@
   - show hamburger menu icon on desktop (`2026-03-31`)
   - stop appending mlbId to player slugs for non-disambiguated players (`2026-03-29`)
   - include 0-AB games with walks/HBP/SF/SB in data pipeline (`2026-03-29`)
-  - use current-year-only for counting stat leaders, rolling for rate stats (`2026-03-29`)
 
 #### 📝 General
 
