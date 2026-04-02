@@ -59,6 +59,7 @@
 
 #### 🎨 Frontend & UX
 
+  - dashboard leaders use season stats + game type filter aggregates all game logs (`2026-04-02`)
   - Fix navigation: back buttons use history, tab switches use replace (`2026-04-01`)
   - Add inning to dashboard scoreboard + boxscore popup on click (`2026-04-01`)
   - mobile UX + spring training leaders bug (`2026-03-31`)
@@ -90,7 +91,6 @@
   - Leaders: use full season stats instead of rolling window (`2026-03-31`)
   - Date range dropdown for PlayerDetail + move glossary to chat position (`2026-03-30`)
   - Replace calendar date range picker with simple dropdown presets (7d/14d/30d) (`2026-03-30`)
-  - disambiguate players with same name using mlbId (`2026-03-29`)
 
 </details>
 
