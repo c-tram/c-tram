@@ -34,7 +34,6 @@
   - team CVR uses avgACVR (0-100 scale) + sort no longer resets view (`2026-03-30`)
   - overhaul: trade value engine v4 — prior-year benchmarks + simple pace scaling (`2026-03-29`)
   - trade engine WAR prorating + DTV benchmark fallback (`2026-03-29`)
-  - prorate WAR in trade value for partial seasons (v6.1) (`2026-03-29`)
 
 #### 📊 Advanced Metrics
 
@@ -88,6 +87,7 @@
 
 #### 📝 General
 
+  - update favicon.ico to match new logo (`2026-04-02`)
   - Leaders: use full season stats instead of rolling window (`2026-03-31`)
   - Date range dropdown for PlayerDetail + move glossary to chat position (`2026-03-30`)
   - Replace calendar date range picker with simple dropdown presets (7d/14d/30d) (`2026-03-30`)
