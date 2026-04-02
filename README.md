@@ -46,6 +46,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - pitcher splits explorer - backend merge + pitching stat columns (`2026-04-01`)
   - Fix 6 issues: boxscore mobile scroll, pitching leaders fallback, players/teams mobile card layouts, standings clickable teams + postseason error handling (`2026-04-01`)
   - per-game pitch analysis filter on player detail page (`2026-03-31`)
   - remove: /splits page (covered by player detail) (`2026-03-31`)
@@ -82,7 +83,6 @@
   - stop appending mlbId to player slugs for non-disambiguated players (`2026-03-29`)
   - include 0-AB games with walks/HBP/SF/SB in data pipeline (`2026-03-29`)
   - use current-year-only for counting stat leaders, rolling for rate stats (`2026-03-29`)
-  - team logos 404 (ESPN size 40 invalid) + early-season leader fallback (`2026-03-29`)
 
 #### 📝 General
 
