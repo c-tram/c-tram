@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: |0) accumulation|2026-04-01 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-02 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -70,6 +70,7 @@
 
 #### 🔧 Data Pipeline
 
+  - Fix salary mismatch: always prefer full salary-key totals on /teams listing, add WAS/WSH team code mapping (`2026-04-02`)
   - Fix horizontal scroll overflow across all pages (`2026-04-01`)
   - add team alias mapping for salary lookups (ATH↔OAK, AZ↔ARI, WSH↔WAS) (`2026-03-31`)
   - add hover tooltips explaining every stat column on Teams page (`2026-03-30`)
@@ -83,7 +84,6 @@
   - show hamburger menu icon on desktop (`2026-03-31`)
   - stop appending mlbId to player slugs for non-disambiguated players (`2026-03-29`)
   - include 0-AB games with walks/HBP/SF/SB in data pipeline (`2026-03-29`)
-  - use current-year-only for counting stat leaders, rolling for rate stats (`2026-03-29`)
 
 #### 📝 General
 
