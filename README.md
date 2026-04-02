@@ -57,6 +57,7 @@
 
 #### 🎨 Frontend & UX
 
+  - update loading screen with new logo and navy-orange branding (`2026-04-02`)
   - update header: use new logo SVG + navy-to-orange text gradient (`2026-04-02`)
   - dashboard leaders use season stats + game type filter aggregates all game logs (`2026-04-02`)
   - Fix navigation: back buttons use history, tab switches use replace (`2026-04-01`)
@@ -66,7 +67,6 @@
   - mobile-first responsive overhaul across all pages (`2026-03-31`)
   - Mobile responsiveness fixes across 6 pages (`2026-03-30`)
   - Mobile responsiveness: comprehensive useMediaQuery guards across all pages (`2026-03-30`)
-  - composite /dashboard endpoint — 13 API calls → 1 (`2026-03-30`)
 
 #### 🔧 Data Pipeline
 
