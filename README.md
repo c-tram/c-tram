@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-01 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: |0) accumulation|2026-04-01 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -46,6 +46,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - aggregatePitchingTotals NaN bug - use safe ( (`|0) accumulation|2026-04-01`)
   - pitcher splits explorer - backend merge + pitching stat columns (`2026-04-01`)
   - Fix 6 issues: boxscore mobile scroll, pitching leaders fallback, players/teams mobile card layouts, standings clickable teams + postseason error handling (`2026-04-01`)
   - per-game pitch analysis filter on player detail page (`2026-03-31`)
@@ -90,7 +91,6 @@
   - Date range dropdown for PlayerDetail + move glossary to chat position (`2026-03-30`)
   - Replace calendar date range picker with simple dropdown presets (7d/14d/30d) (`2026-03-30`)
   - disambiguate players with same name using mlbId (`2026-03-29`)
-  - use MLB qualifier-rate scaling for leader minimums instead of year fallback (`2026-03-29`)
 
 </details>
 
