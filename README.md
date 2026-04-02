@@ -30,7 +30,6 @@
   - Add team control column to Trade Assets roster table (`2026-03-30`)
   - recompute team CVR/ACVR in post-processing reaggregation (`2026-03-30`)
   - preserve acvr + teamPayroll in post-processing team reaggregation (`2026-03-30`)
-  - proper team CVR (raw performance) + ACVR (bang for buck) (`2026-03-30`)
 
 #### 📊 Advanced Metrics
 
@@ -42,6 +41,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Fix pitcher splits IP parsing: handle decimal vs baseball notation, proper IP display format (`2026-04-02`)
   - Fix pitcher splits: expand isPitchingSection to include vs_handedness/vs_batters, add location aggregation to extractPitching (`2026-04-02`)
   - aggregatePitchingTotals NaN bug - use safe ( (`|0) accumulation|2026-04-01`)
   - pitcher splits explorer - backend merge + pitching stat columns (`2026-04-01`)
