@@ -34,10 +34,10 @@
   - ui: new Cycle logo, remove bWAR/pWAR boxes, remove teams search bar (`2026-04-02`)
   - Convert Glossary to floating popup + switch all CVR to rolling window (`2026-03-30`)
   - WAR to 2 decimal places everywhere (player detail, team detail, roster, contracts, backend storage) (`2026-03-30`)
-  - show WAR with 2 decimal places on team detail page (`2026-03-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Rename toggle to Pitching/Batting, fix opponent hand label (RHB vs RHP) (`2026-04-02`)
   - At-Bat Explorer - pitch-by-pitch at-bat viewer with zone chart (`2026-04-02`)
   - correct PA inflation in splits ingestion (`2026-04-02`)
   - Fix splits: AB-based matchup stats for pitcher vs_batters/handedness and batter vs_pitchers, fix OBP to include HBP (`2026-04-02`)
