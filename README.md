@@ -63,7 +63,6 @@
   - mobile UX + spring training leaders bug (`2026-03-31`)
   - mobile UX improvements, remove search/compare, fix standings filtering (`2026-03-31`)
   - mobile-first responsive overhaul across all pages (`2026-03-31`)
-  - Mobile responsiveness fixes across 6 pages (`2026-03-30`)
 
 #### 🔧 Data Pipeline
 
@@ -73,6 +72,7 @@
 
 #### 🐛 Bug Fixes
 
+  - drill-down selects correct at-bat by inning, not just first AB of the day (`2026-04-03`)
   - Fix strike zone accuracy: correct width to 17" plate + ball radius, add per-batter szT/szB (`2026-04-02`)
   - perspective logic for two-way players (Kershaw, Ohtani, etc) (`2026-04-02`)
   - convert aggregated IP to baseball notation instead of .toFixed(1) (`2026-04-02`)
