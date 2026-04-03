@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-02 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-03 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -27,7 +27,6 @@
   - add WAS→WSH alias in salary ingestion for ACVR calculation (`2026-03-31`)
   - Fix rolling CVR: only override CVR/ACVR (not rWAR/stats) + career splits + vs_batters for pitchers (`2026-03-30`)
   - Add Stats Glossary page + ACVR column in Trades dashboard (`2026-03-30`)
-  - Add team control column to Trade Assets roster table (`2026-03-30`)
 
 #### 📊 Advanced Metrics
 
@@ -36,6 +35,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - InteractiveZoneChart zone width ±0.833ft + hB/vB aggregation in PitchAnalysisTab (`2026-04-03`)
   - Add all pitch event fields + vs-player filter for At-Bat Explorer (`2026-04-02`)
   - Rename toggle to Pitching/Batting, fix opponent hand label (RHB vs RHP) (`2026-04-02`)
   - At-Bat Explorer - pitch-by-pitch at-bat viewer with zone chart (`2026-04-02`)
