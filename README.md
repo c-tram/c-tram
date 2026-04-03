@@ -36,6 +36,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Add all pitch event fields + vs-player filter for At-Bat Explorer (`2026-04-02`)
   - Rename toggle to Pitching/Batting, fix opponent hand label (RHB vs RHP) (`2026-04-02`)
   - At-Bat Explorer - pitch-by-pitch at-bat viewer with zone chart (`2026-04-02`)
   - correct PA inflation in splits ingestion (`2026-04-02`)
@@ -64,7 +65,6 @@
   - mobile UX improvements, remove search/compare, fix standings filtering (`2026-03-31`)
   - mobile-first responsive overhaul across all pages (`2026-03-31`)
   - Mobile responsiveness fixes across 6 pages (`2026-03-30`)
-  - Mobile responsiveness: comprehensive useMediaQuery guards across all pages (`2026-03-30`)
 
 #### 🔧 Data Pipeline
 
