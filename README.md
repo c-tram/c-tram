@@ -33,7 +33,6 @@
 
   - ui: new Cycle logo, remove bWAR/pWAR boxes, remove teams search bar (`2026-04-02`)
   - Convert Glossary to floating popup + switch all CVR to rolling window (`2026-03-30`)
-  - WAR to 2 decimal places everywhere (player detail, team detail, roster, contracts, backend storage) (`2026-03-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -75,6 +74,7 @@
 
 #### 🐛 Bug Fixes
 
+  - Fix strike zone accuracy: correct width to 17" plate + ball radius, add per-batter szT/szB (`2026-04-02`)
   - perspective logic for two-way players (Kershaw, Ohtani, etc) (`2026-04-02`)
   - convert aggregated IP to baseball notation instead of .toFixed(1) (`2026-04-02`)
   - Fix counting stats missing in slim mode + mobile stat group buttons (`2026-04-01`)
