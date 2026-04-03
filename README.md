@@ -39,6 +39,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - At-Bat Explorer - pitch-by-pitch at-bat viewer with zone chart (`2026-04-02`)
   - correct PA inflation in splits ingestion (`2026-04-02`)
   - Fix splits: AB-based matchup stats for pitcher vs_batters/handedness and batter vs_pitchers, fix OBP to include HBP (`2026-04-02`)
   - Fix pitcher splits IP parsing: handle decimal vs baseball notation, proper IP display format (`2026-04-02`)
@@ -72,7 +73,6 @@
   - Fix salary mismatch: always prefer full salary-key totals on /teams listing, add WAS/WSH team code mapping (`2026-04-02`)
   - Fix horizontal scroll overflow across all pages (`2026-04-01`)
   - add team alias mapping for salary lookups (ATH↔OAK, AZ↔ARI, WSH↔WAS) (`2026-03-31`)
-  - add hover tooltips explaining every stat column on Teams page (`2026-03-30`)
 
 #### 🐛 Bug Fixes
 
