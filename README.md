@@ -35,7 +35,6 @@
   - Convert Glossary to floating popup + switch all CVR to rolling window (`2026-03-30`)
   - WAR to 2 decimal places everywhere (player detail, team detail, roster, contracts, backend storage) (`2026-03-30`)
   - show WAR with 2 decimal places on team detail page (`2026-03-30`)
-  - contracts tab crash (typeof null === 'object') + enrich contracts with WAR/CVR (`2026-03-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -76,6 +75,7 @@
 
 #### 🐛 Bug Fixes
 
+  - perspective logic for two-way players (Kershaw, Ohtani, etc) (`2026-04-02`)
   - convert aggregated IP to baseball notation instead of .toFixed(1) (`2026-04-02`)
   - Fix counting stats missing in slim mode + mobile stat group buttons (`2026-04-01`)
   - boxscore date bug — use officialDate instead of UTC gameDate (`2026-03-31`)
