@@ -26,7 +26,6 @@
   - recompute ACVR in rolling stats from blended universalCVR (`2026-04-01`)
   - add WAS→WSH alias in salary ingestion for ACVR calculation (`2026-03-31`)
   - Fix rolling CVR: only override CVR/ACVR (not rWAR/stats) + career splits + vs_batters for pitchers (`2026-03-30`)
-  - Add Stats Glossary page + ACVR column in Trades dashboard (`2026-03-30`)
 
 #### 📊 Advanced Metrics
 
@@ -85,6 +84,7 @@
 
 #### 📝 General
 
+  - rework InteractiveZoneChart - dynamic zone, rich tooltip, drill-down to At-Bat Explorer (`2026-04-03`)
   - increase header logo size (38/48 -> 44/56) (`2026-04-02`)
   - increase header logo size (32/40 -> 38/48) (`2026-04-02`)
   - update favicon.ico to match new logo (`2026-04-02`)
