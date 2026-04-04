@@ -25,15 +25,14 @@
 
   - recompute ACVR in rolling stats from blended universalCVR (`2026-04-01`)
   - add WAS→WSH alias in salary ingestion for ACVR calculation (`2026-03-31`)
-  - Fix rolling CVR: only override CVR/ACVR (not rWAR/stats) + career splits + vs_batters for pitchers (`2026-03-30`)
 
 #### 📊 Advanced Metrics
 
   - ui: new Cycle logo, remove bWAR/pWAR boxes, remove teams search bar (`2026-04-02`)
-  - Convert Glossary to floating popup + switch all CVR to rolling window (`2026-03-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Phase 4: Player Matchup Splits (`2026-04-03`)
   - InteractiveZoneChart zone width ±0.833ft + hB/vB aggregation in PitchAnalysisTab (`2026-04-03`)
   - Add all pitch event fields + vs-player filter for At-Bat Explorer (`2026-04-02`)
   - Rename toggle to Pitching/Batting, fix opponent hand label (RHB vs RHP) (`2026-04-02`)
@@ -49,9 +48,6 @@
   - remove: /splits page (covered by player detail) (`2026-03-31`)
   - add play-by-play coverage note to career splits (`2026-03-30`)
   - restore G column in splits, remove game counts from gameType filter buttons (`2026-03-30`)
-  - career splits gameType filtering + remove games column from splits (`2026-03-30`)
-  - proper gameType filtering for all splits sections (`2026-03-30`)
-  - supplement on-the-fly splits with precomputed play-by-play data for vs_pitchers/vs_batters (`2026-03-30`)
 
 #### 🎨 Frontend & UX
 
@@ -84,6 +80,10 @@
 
 #### 📝 General
 
+  - Phase 5: Live Win Probability + WPA chart (`2026-04-03`)
+  - Phase 3: Projected Record display in OverviewTab (`2026-04-03`)
+  - Phase 2: Pre-game Win Probability (Log5 model) (`2026-04-03`)
+  - Phase 1: Future Games Scheduler in TeamDetail (`2026-04-03`)
   - rework InteractiveZoneChart - dynamic zone, rich tooltip, drill-down to At-Bat Explorer (`2026-04-03`)
   - increase header logo size (38/48 -> 44/56) (`2026-04-02`)
   - increase header logo size (32/40 -> 38/48) (`2026-04-02`)
