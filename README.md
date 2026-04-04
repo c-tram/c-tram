@@ -32,6 +32,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Live game enhancements: runners/outs/count on scoreboard cards + interactive play-by-play with pitch location charts (`2026-04-04`)
   - pitcher-vs-lineup shows batting stats (PA, AVG, OBP, HR, H, K%, BB%) instead of pitching stats (`2026-04-03`)
   - pitcher-vs-lineup matchup shows pitching stats (IP/H/K/BB/ERA) instead of all zeros (`2026-04-03`)
   - Phase 4: Player Matchup Splits (`2026-04-03`)
@@ -90,7 +91,6 @@
   - increase header logo size (38/48 -> 44/56) (`2026-04-02`)
   - increase header logo size (32/40 -> 38/48) (`2026-04-02`)
   - update favicon.ico to match new logo (`2026-04-02`)
-  - Leaders: use full season stats instead of rolling window (`2026-03-31`)
 
 </details>
 
