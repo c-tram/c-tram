@@ -49,7 +49,6 @@
   - pitcher splits explorer - backend merge + pitching stat columns (`2026-04-01`)
   - Fix 6 issues: boxscore mobile scroll, pitching leaders fallback, players/teams mobile card layouts, standings clickable teams + postseason error handling (`2026-04-01`)
   - per-game pitch analysis filter on player detail page (`2026-03-31`)
-  - remove: /splits page (covered by player detail) (`2026-03-31`)
 
 #### 🎨 Frontend & UX
 
@@ -82,6 +81,7 @@
 
 #### 📝 General
 
+  - Teams mobile: grade stats in tinted top block, remaining stats below (`2026-04-04`)
   - pre-game win probability on scheduled games (Log5 model) (`2026-04-04`)
   - Phase 5: Live Win Probability + WPA chart (`2026-04-03`)
   - Phase 3: Projected Record display in OverviewTab (`2026-04-03`)
