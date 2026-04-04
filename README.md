@@ -31,6 +31,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Add Stuff+ metric for pitchers (L/R handedness-aware) (`2026-04-04`)
   - Add hB, vB, spin to play-by-play pitch-by-pitch table (`2026-04-04`)
   - Live game enhancements: runners/outs/count on scoreboard cards + interactive play-by-play with pitch location charts (`2026-04-04`)
   - pitcher-vs-lineup shows batting stats (PA, AVG, OBP, HR, H, K%, BB%) instead of pitching stats (`2026-04-03`)
@@ -78,7 +79,6 @@
   - boxscore date bug — use officialDate instead of UTC gameDate (`2026-03-31`)
   - Fix UTC date rollover bug in live game monitor (`2026-03-31`)
   - close JSX comment syntax (`2026-03-31`)
-  - show hamburger menu icon on desktop (`2026-03-31`)
 
 #### 📝 General
 
