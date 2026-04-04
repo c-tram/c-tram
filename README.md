@@ -24,7 +24,6 @@
 #### 💰 Trade Intelligence
 
   - recompute ACVR in rolling stats from blended universalCVR (`2026-04-01`)
-  - add WAS→WSH alias in salary ingestion for ACVR calculation (`2026-03-31`)
 
 #### 📊 Advanced Metrics
 
@@ -32,6 +31,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Add hB, vB, spin to play-by-play pitch-by-pitch table (`2026-04-04`)
   - Live game enhancements: runners/outs/count on scoreboard cards + interactive play-by-play with pitch location charts (`2026-04-04`)
   - pitcher-vs-lineup shows batting stats (PA, AVG, OBP, HR, H, K%, BB%) instead of pitching stats (`2026-04-03`)
   - pitcher-vs-lineup matchup shows pitching stats (IP/H/K/BB/ERA) instead of all zeros (`2026-04-03`)
