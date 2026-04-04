@@ -32,6 +32,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - pitcher-vs-lineup shows batting stats (PA, AVG, OBP, HR, H, K%, BB%) instead of pitching stats (`2026-04-03`)
   - pitcher-vs-lineup matchup shows pitching stats (IP/H/K/BB/ERA) instead of all zeros (`2026-04-03`)
   - Phase 4: Player Matchup Splits (`2026-04-03`)
   - InteractiveZoneChart zone width ±0.833ft + hB/vB aggregation in PitchAnalysisTab (`2026-04-03`)
@@ -47,7 +48,6 @@
   - Fix 6 issues: boxscore mobile scroll, pitching leaders fallback, players/teams mobile card layouts, standings clickable teams + postseason error handling (`2026-04-01`)
   - per-game pitch analysis filter on player detail page (`2026-03-31`)
   - remove: /splits page (covered by player detail) (`2026-03-31`)
-  - add play-by-play coverage note to career splits (`2026-03-30`)
 
 #### 🎨 Frontend & UX
 
