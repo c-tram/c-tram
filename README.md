@@ -68,6 +68,7 @@
 
 #### 🐛 Bug Fixes
 
+  - remove duplicate pregame WP chip from ticker (`2026-04-04`)
   - drill-down selects correct at-bat by inning, not just first AB of the day (`2026-04-03`)
   - Fix strike zone accuracy: correct width to 17" plate + ball radius, add per-batter szT/szB (`2026-04-02`)
   - perspective logic for two-way players (Kershaw, Ohtani, etc) (`2026-04-02`)
@@ -90,7 +91,6 @@
   - increase header logo size (32/40 -> 38/48) (`2026-04-02`)
   - update favicon.ico to match new logo (`2026-04-02`)
   - Leaders: use full season stats instead of rolling window (`2026-03-31`)
-  - Date range dropdown for PlayerDetail + move glossary to chat position (`2026-03-30`)
 
 </details>
 
