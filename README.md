@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-03 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-04 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -80,6 +80,7 @@
 
 #### 📝 General
 
+  - pre-game win probability on scheduled games (Log5 model) (`2026-04-04`)
   - Phase 5: Live Win Probability + WPA chart (`2026-04-03`)
   - Phase 3: Projected Record display in OverviewTab (`2026-04-03`)
   - Phase 2: Pre-game Win Probability (Log5 model) (`2026-04-03`)
@@ -90,7 +91,6 @@
   - update favicon.ico to match new logo (`2026-04-02`)
   - Leaders: use full season stats instead of rolling window (`2026-03-31`)
   - Date range dropdown for PlayerDetail + move glossary to chat position (`2026-03-30`)
-  - Replace calendar date range picker with simple dropdown presets (7d/14d/30d) (`2026-03-30`)
 
 </details>
 
