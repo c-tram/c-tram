@@ -32,6 +32,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - pitcher-vs-lineup matchup shows pitching stats (IP/H/K/BB/ERA) instead of all zeros (`2026-04-03`)
   - Phase 4: Player Matchup Splits (`2026-04-03`)
   - InteractiveZoneChart zone width ±0.833ft + hB/vB aggregation in PitchAnalysisTab (`2026-04-03`)
   - Add all pitch event fields + vs-player filter for At-Bat Explorer (`2026-04-02`)
@@ -47,7 +48,6 @@
   - per-game pitch analysis filter on player detail page (`2026-03-31`)
   - remove: /splits page (covered by player detail) (`2026-03-31`)
   - add play-by-play coverage note to career splits (`2026-03-30`)
-  - restore G column in splits, remove game counts from gameType filter buttons (`2026-03-30`)
 
 #### 🎨 Frontend & UX
 
