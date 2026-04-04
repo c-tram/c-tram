@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - Trade engine overhaul: 6-pillar CVR Trade Score (CTS) replacing WAR-based scoring. Pillars: CVR Production 30%, ACVR Efficiency 20%, Versatility 10%, Scarcity 15%, Age Trajectory 15%, Team Control 10%. Adds positionsPlayed tracking, CVR/ACVR benchmarks, fixes position overwrite bug, updates frontend for 0-100 scale. (`2026-04-04`)
   - recompute ACVR in rolling stats from blended universalCVR (`2026-04-01`)
 
 #### 📊 Advanced Metrics
@@ -77,7 +78,6 @@
   - Fix counting stats missing in slim mode + mobile stat group buttons (`2026-04-01`)
   - boxscore date bug — use officialDate instead of UTC gameDate (`2026-03-31`)
   - Fix UTC date rollover bug in live game monitor (`2026-03-31`)
-  - close JSX comment syntax (`2026-03-31`)
 
 #### 📝 General
 
