@@ -23,6 +23,7 @@
 
 #### 💰 Trade Intelligence
 
+  - Frontend polish: SettingsContext, expanded Settings page, CompareYears tab, DTV→CVR branding, Navigation breadcrumb (`2026-04-04`)
   - update Trades page to CTS 6-pillar system - fix broken mock trade evaluation (`2026-04-04`)
   - Trade engine overhaul: 6-pillar CVR Trade Score (CTS) replacing WAR-based scoring. Pillars: CVR Production 30%, ACVR Efficiency 20%, Versatility 10%, Scarcity 15%, Age Trajectory 15%, Team Control 10%. Adds positionsPlayed tracking, CVR/ACVR benchmarks, fixes position overwrite bug, updates frontend for 0-100 scale. (`2026-04-04`)
   - recompute ACVR in rolling stats from blended universalCVR (`2026-04-01`)
@@ -61,7 +62,6 @@
   - Fix navigation: back buttons use history, tab switches use replace (`2026-04-01`)
   - Add inning to dashboard scoreboard + boxscore popup on click (`2026-04-01`)
   - mobile UX + spring training leaders bug (`2026-03-31`)
-  - mobile UX improvements, remove search/compare, fix standings filtering (`2026-03-31`)
 
 #### 🔧 Data Pipeline
 
