@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-04 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-05 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -34,6 +34,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Fix pitcher movement chart + full zone layout in CompareYears (`2026-04-05`)
   - CompareYears: add Pitch Analysis mode with multi-year whiff/contact tracking (`2026-04-04`)
   - Add Stuff+ metric for pitchers (L/R handedness-aware) (`2026-04-04`)
   - Add hB, vB, spin to play-by-play pitch-by-pitch table (`2026-04-04`)
@@ -62,7 +63,6 @@
   - dashboard leaders use season stats + game type filter aggregates all game logs (`2026-04-02`)
   - Fix navigation: back buttons use history, tab switches use replace (`2026-04-01`)
   - Add inning to dashboard scoreboard + boxscore popup on click (`2026-04-01`)
-  - mobile UX + spring training leaders bug (`2026-03-31`)
 
 #### 🔧 Data Pipeline
 
