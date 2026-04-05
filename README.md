@@ -34,6 +34,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - CompareYears: add Pitch Analysis mode with multi-year whiff/contact tracking (`2026-04-04`)
   - Add Stuff+ metric for pitchers (L/R handedness-aware) (`2026-04-04`)
   - Add hB, vB, spin to play-by-play pitch-by-pitch table (`2026-04-04`)
   - Live game enhancements: runners/outs/count on scoreboard cards + interactive play-by-play with pitch location charts (`2026-04-04`)
@@ -77,7 +78,6 @@
   - convert aggregated IP to baseball notation instead of .toFixed(1) (`2026-04-02`)
   - Fix counting stats missing in slim mode + mobile stat group buttons (`2026-04-01`)
   - boxscore date bug — use officialDate instead of UTC gameDate (`2026-03-31`)
-  - Fix UTC date rollover bug in live game monitor (`2026-03-31`)
 
 #### 📝 General
 
