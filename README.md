@@ -65,13 +65,13 @@
 
 #### ⚡ API & Performance
 
+  - increase SCAN COUNT from 200 to 10000 (0.6s vs 5.5s on 1.17M keys) (`2026-04-05`)
   - add ip_hash sticky sessions to nginx upstream (`2026-04-05`)
   - PM2 cluster mode (6 workers), KEYS→SCAN, cache TTL 300s (`2026-04-05`)
 
 #### 🔧 Data Pipeline
 
   - Fix salary mismatch: always prefer full salary-key totals on /teams listing, add WAS/WSH team code mapping (`2026-04-02`)
-  - Fix horizontal scroll overflow across all pages (`2026-04-01`)
 
 #### 🐛 Bug Fixes
 
