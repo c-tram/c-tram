@@ -80,10 +80,10 @@
   - Fix strike zone accuracy: correct width to 17" plate + ball radius, add per-batter szT/szB (`2026-04-02`)
   - perspective logic for two-way players (Kershaw, Ohtani, etc) (`2026-04-02`)
   - convert aggregated IP to baseball notation instead of .toFixed(1) (`2026-04-02`)
-  - Fix counting stats missing in slim mode + mobile stat group buttons (`2026-04-01`)
 
 #### 📝 General
 
+  - revert: SCAN back to KEYS — SCAN overhead worse than blocking at this scale (`2026-04-05`)
   - Teams mobile: grade stats in tinted top block, remaining stats below (`2026-04-04`)
   - pre-game win probability on scheduled games (Log5 model) (`2026-04-04`)
   - Phase 5: Live Win Probability + WPA chart (`2026-04-03`)
