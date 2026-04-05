@@ -52,10 +52,10 @@
   - Fix pitcher splits: expand isPitchingSection to include vs_handedness/vs_batters, add location aggregation to extractPitching (`2026-04-02`)
   - aggregatePitchingTotals NaN bug - use safe ( (`|0) accumulation|2026-04-01`)
   - pitcher splits explorer - backend merge + pitching stat columns (`2026-04-01`)
-  - Fix 6 issues: boxscore mobile scroll, pitching leaders fallback, players/teams mobile card layouts, standings clickable teams + postseason error handling (`2026-04-01`)
 
 #### 🎨 Frontend & UX
 
+  - wave1: UX polish - silent refresh, boxscore fixes, remove dev tells, standardize fallbacks (`2026-04-05`)
   - Add team abbreviations to win probability bars on scoreboard cards (`2026-04-04`)
   - update loading screen with new logo and navy-orange branding (`2026-04-02`)
   - update header: use new logo SVG + navy-to-orange text gradient (`2026-04-02`)
