@@ -61,10 +61,10 @@
   - update header: use new logo SVG + navy-to-orange text gradient (`2026-04-02`)
   - dashboard leaders use season stats + game type filter aggregates all game logs (`2026-04-02`)
   - Fix navigation: back buttons use history, tab switches use replace (`2026-04-01`)
-  - Add inning to dashboard scoreboard + boxscore popup on click (`2026-04-01`)
 
 #### ⚡ API & Performance
 
+  - per-worker cache warming + in-memory cache in getRollingPlayerDataCached (`2026-04-05`)
   - increase SCAN COUNT from 200 to 10000 (0.6s vs 5.5s on 1.17M keys) (`2026-04-05`)
   - add ip_hash sticky sessions to nginx upstream (`2026-04-05`)
   - PM2 cluster mode (6 workers), KEYS→SCAN, cache TTL 300s (`2026-04-05`)
