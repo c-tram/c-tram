@@ -55,12 +55,12 @@
 
 #### 🎨 Frontend & UX
 
+  - Wave 2: commercial polish — remove dev strings, version suffixes, console.logs, tech stack exposure, hardcoded year, soften proprietary language, fix timezone, bump ticker fonts, clean dashboard (`2026-04-05`)
   - wave1: UX polish - silent refresh, boxscore fixes, remove dev tells, standardize fallbacks (`2026-04-05`)
   - Add team abbreviations to win probability bars on scoreboard cards (`2026-04-04`)
   - update loading screen with new logo and navy-orange branding (`2026-04-02`)
   - update header: use new logo SVG + navy-to-orange text gradient (`2026-04-02`)
   - dashboard leaders use season stats + game type filter aggregates all game logs (`2026-04-02`)
-  - Fix navigation: back buttons use history, tab switches use replace (`2026-04-01`)
 
 #### ⚡ API & Performance
 
