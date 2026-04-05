@@ -64,6 +64,10 @@
   - Fix navigation: back buttons use history, tab switches use replace (`2026-04-01`)
   - Add inning to dashboard scoreboard + boxscore popup on click (`2026-04-01`)
 
+#### ⚡ API & Performance
+
+  - PM2 cluster mode (6 workers), KEYS→SCAN, cache TTL 300s (`2026-04-05`)
+
 #### 🔧 Data Pipeline
 
   - Fix salary mismatch: always prefer full salary-key totals on /teams listing, add WAS/WSH team code mapping (`2026-04-02`)
@@ -77,7 +81,6 @@
   - perspective logic for two-way players (Kershaw, Ohtani, etc) (`2026-04-02`)
   - convert aggregated IP to baseball notation instead of .toFixed(1) (`2026-04-02`)
   - Fix counting stats missing in slim mode + mobile stat group buttons (`2026-04-01`)
-  - boxscore date bug — use officialDate instead of UTC gameDate (`2026-03-31`)
 
 #### 📝 General
 
