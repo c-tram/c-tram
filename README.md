@@ -53,7 +53,6 @@
   - aggregatePitchingTotals NaN bug - use safe ( (`|0) accumulation|2026-04-01`)
   - pitcher splits explorer - backend merge + pitching stat columns (`2026-04-01`)
   - Fix 6 issues: boxscore mobile scroll, pitching leaders fallback, players/teams mobile card layouts, standings clickable teams + postseason error handling (`2026-04-01`)
-  - per-game pitch analysis filter on player detail page (`2026-03-31`)
 
 #### 🎨 Frontend & UX
 
@@ -66,6 +65,7 @@
 
 #### ⚡ API & Performance
 
+  - add ip_hash sticky sessions to nginx upstream (`2026-04-05`)
   - PM2 cluster mode (6 workers), KEYS→SCAN, cache TTL 300s (`2026-04-05`)
 
 #### 🔧 Data Pipeline
