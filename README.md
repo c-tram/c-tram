@@ -26,7 +26,6 @@
   - Frontend polish: SettingsContext, expanded Settings page, CompareYears tab, DTV→CVR branding, Navigation breadcrumb (`2026-04-04`)
   - update Trades page to CTS 6-pillar system - fix broken mock trade evaluation (`2026-04-04`)
   - Trade engine overhaul: 6-pillar CVR Trade Score (CTS) replacing WAR-based scoring. Pillars: CVR Production 30%, ACVR Efficiency 20%, Versatility 10%, Scarcity 15%, Age Trajectory 15%, Team Control 10%. Adds positionsPlayed tracking, CVR/ACVR benchmarks, fixes position overwrite bug, updates frontend for 0-100 scale. (`2026-04-04`)
-  - recompute ACVR in rolling stats from blended universalCVR (`2026-04-01`)
 
 #### 📊 Advanced Metrics
 
@@ -71,6 +70,7 @@
 
 #### 🔧 Data Pipeline
 
+  - Wave 3: player & team detail polish — fix fallbacks (---/?/N-A → em dash), remove version suffixes, sanitize error messages, fix dateRange labels, remove dev text (Log5/mlbId), park factor labels, dead code cleanup (`2026-04-05`)
   - Fix salary mismatch: always prefer full salary-key totals on /teams listing, add WAS/WSH team code mapping (`2026-04-02`)
 
 #### 🐛 Bug Fixes
