@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-05 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-06 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -50,7 +50,6 @@
   - Fix pitcher splits IP parsing: handle decimal vs baseball notation, proper IP display format (`2026-04-02`)
   - Fix pitcher splits: expand isPitchingSection to include vs_handedness/vs_batters, add location aggregation to extractPitching (`2026-04-02`)
   - aggregatePitchingTotals NaN bug - use safe ( (`|0) accumulation|2026-04-01`)
-  - pitcher splits explorer - backend merge + pitching stat columns (`2026-04-01`)
 
 #### 🎨 Frontend & UX
 
@@ -83,6 +82,7 @@
 
 #### 📝 General
 
+  - Replace logo with square gradient version across entire app (`2026-04-06`)
   - revert: SCAN back to KEYS — SCAN overhead worse than blocking at this scale (`2026-04-05`)
   - Teams mobile: grade stats in tinted top block, remaining stats below (`2026-04-04`)
   - pre-game win probability on scheduled games (Log5 model) (`2026-04-04`)
