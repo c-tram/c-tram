@@ -29,6 +29,7 @@
 
 #### 📊 Advanced Metrics
 
+  - dynamic Stuff+ baselines, Explorer page, dashboard highlights (`2026-04-06`)
   - ui: new Cycle logo, remove bWAR/pWAR boxes, remove teams search bar (`2026-04-02`)
 
 #### ⚾ Splits & Pitch Analytics
@@ -49,7 +50,6 @@
   - Fix splits: AB-based matchup stats for pitcher vs_batters/handedness and batter vs_pitchers, fix OBP to include HBP (`2026-04-02`)
   - Fix pitcher splits IP parsing: handle decimal vs baseball notation, proper IP display format (`2026-04-02`)
   - Fix pitcher splits: expand isPitchingSection to include vs_handedness/vs_batters, add location aggregation to extractPitching (`2026-04-02`)
-  - aggregatePitchingTotals NaN bug - use safe ( (`|0) accumulation|2026-04-01`)
 
 #### 🎨 Frontend & UX
 
