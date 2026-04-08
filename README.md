@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-06 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-07 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -34,6 +34,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - revamp dashboard highlights — nastiest pitches, longest HRs, luckiest wins (`2026-04-07`)
   - Fix pitcher movement chart + full zone layout in CompareYears (`2026-04-05`)
   - CompareYears: add Pitch Analysis mode with multi-year whiff/contact tracking (`2026-04-04`)
   - Add Stuff+ metric for pitchers (L/R handedness-aware) (`2026-04-04`)
@@ -70,7 +71,6 @@
 #### 🔧 Data Pipeline
 
   - Wave 3: player & team detail polish — fix fallbacks (---/?/N-A → em dash), remove version suffixes, sanitize error messages, fix dateRange labels, remove dev text (Log5/mlbId), park factor labels, dead code cleanup (`2026-04-05`)
-  - Fix salary mismatch: always prefer full salary-key totals on /teams listing, add WAS/WSH team code mapping (`2026-04-02`)
 
 #### 🐛 Bug Fixes
 
