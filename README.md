@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-07 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-08 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -34,6 +34,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - WPA-based improbable wins, PitcherStuffCard, Explorer UX polish (`2026-04-08`)
   - revamp dashboard highlights — nastiest pitches, longest HRs, luckiest wins (`2026-04-07`)
   - Fix pitcher movement chart + full zone layout in CompareYears (`2026-04-05`)
   - CompareYears: add Pitch Analysis mode with multi-year whiff/contact tracking (`2026-04-04`)
@@ -59,7 +60,6 @@
   - Add team abbreviations to win probability bars on scoreboard cards (`2026-04-04`)
   - update loading screen with new logo and navy-orange branding (`2026-04-02`)
   - update header: use new logo SVG + navy-to-orange text gradient (`2026-04-02`)
-  - dashboard leaders use season stats + game type filter aggregates all game logs (`2026-04-02`)
 
 #### ⚡ API & Performance
 
