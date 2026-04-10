@@ -63,6 +63,7 @@
 
 #### ⚡ API & Performance
 
+  - single SCAN for career matchup instead of per-player SCAN (`2026-04-10`)
   - per-worker cache warming + in-memory cache in getRollingPlayerDataCached (`2026-04-05`)
   - increase SCAN COUNT from 200 to 10000 (0.6s vs 5.5s on 1.17M keys) (`2026-04-05`)
   - add ip_hash sticky sessions to nginx upstream (`2026-04-05`)
@@ -93,7 +94,6 @@
   - rework InteractiveZoneChart - dynamic zone, rich tooltip, drill-down to At-Bat Explorer (`2026-04-03`)
   - increase header logo size (38/48 -> 44/56) (`2026-04-02`)
   - increase header logo size (32/40 -> 38/48) (`2026-04-02`)
-  - update favicon.ico to match new logo (`2026-04-02`)
 
 </details>
 
