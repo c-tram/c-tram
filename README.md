@@ -33,6 +33,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - parse TEAM-Name in opponentPitcher correctly (don't normalize hyphens) (`2026-04-10`)
   - WPA-based improbable wins, PitcherStuffCard, Explorer UX polish (`2026-04-08`)
   - revamp dashboard highlights — nastiest pitches, longest HRs, luckiest wins (`2026-04-07`)
   - Fix pitcher movement chart + full zone layout in CompareYears (`2026-04-05`)
@@ -59,7 +60,6 @@
   - wave1: UX polish - silent refresh, boxscore fixes, remove dev tells, standardize fallbacks (`2026-04-05`)
   - Add team abbreviations to win probability bars on scoreboard cards (`2026-04-04`)
   - update loading screen with new logo and navy-orange branding (`2026-04-02`)
-  - update header: use new logo SVG + navy-to-orange text gradient (`2026-04-02`)
 
 #### ⚡ API & Performance
 
