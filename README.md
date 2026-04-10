@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-08 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-10 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -30,7 +30,6 @@
 #### 📊 Advanced Metrics
 
   - dynamic Stuff+ baselines, Explorer page, dashboard highlights (`2026-04-06`)
-  - ui: new Cycle logo, remove bWAR/pWAR boxes, remove teams search bar (`2026-04-02`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -55,6 +54,7 @@
 
 #### 🎨 Frontend & UX
 
+  - career matchup history + fix dashboard deep links (`2026-04-10`)
   - Wave 2: commercial polish — remove dev strings, version suffixes, console.logs, tech stack exposure, hardcoded year, soften proprietary language, fix timezone, bump ticker fonts, clean dashboard (`2026-04-05`)
   - wave1: UX polish - silent refresh, boxscore fixes, remove dev tells, standardize fallbacks (`2026-04-05`)
   - Add team abbreviations to win probability bars on scoreboard cards (`2026-04-04`)
