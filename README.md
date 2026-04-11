@@ -56,6 +56,7 @@
 
 #### 🎨 Frontend & UX
 
+  - tunneling/xStats field mismatches, dashboard cleanup, DFS timeout, explorer UI polish (`2026-04-10`)
   - career matchup history + fix dashboard deep links (`2026-04-10`)
   - Wave 2: commercial polish — remove dev strings, version suffixes, console.logs, tech stack exposure, hardcoded year, soften proprietary language, fix timezone, bump ticker fonts, clean dashboard (`2026-04-05`)
   - wave1: UX polish - silent refresh, boxscore fixes, remove dev tells, standardize fallbacks (`2026-04-05`)
@@ -93,7 +94,6 @@
   - Phase 2: Pre-game Win Probability (Log5 model) (`2026-04-03`)
   - Phase 1: Future Games Scheduler in TeamDetail (`2026-04-03`)
   - rework InteractiveZoneChart - dynamic zone, rich tooltip, drill-down to At-Bat Explorer (`2026-04-03`)
-  - increase header logo size (38/48 -> 44/56) (`2026-04-02`)
 
 </details>
 
