@@ -33,6 +33,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - massive feature drop - 11 new features including Live Games, Compare, Spray Charts, Streaks, Fantasy/DFS, Sequencing, Tunneling, Expected Stats (`2026-04-10`)
   - parse TEAM-Name in opponentPitcher correctly (don't normalize hyphens) (`2026-04-10`)
   - WPA-based improbable wins, PitcherStuffCard, Explorer UX polish (`2026-04-08`)
   - revamp dashboard highlights — nastiest pitches, longest HRs, luckiest wins (`2026-04-07`)
@@ -93,7 +94,6 @@
   - Phase 1: Future Games Scheduler in TeamDetail (`2026-04-03`)
   - rework InteractiveZoneChart - dynamic zone, rich tooltip, drill-down to At-Bat Explorer (`2026-04-03`)
   - increase header logo size (38/48 -> 44/56) (`2026-04-02`)
-  - increase header logo size (32/40 -> 38/48) (`2026-04-02`)
 
 </details>
 
