@@ -33,6 +33,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Major UI overhaul: ESPN/PitcherList-quality visual upgrade (`2026-04-11`)
   - massive feature drop - 11 new features including Live Games, Compare, Spray Charts, Streaks, Fantasy/DFS, Sequencing, Tunneling, Expected Stats (`2026-04-10`)
   - parse TEAM-Name in opponentPitcher correctly (don't normalize hyphens) (`2026-04-10`)
   - WPA-based improbable wins, PitcherStuffCard, Explorer UX polish (`2026-04-08`)
@@ -81,7 +82,6 @@
   - drill-down selects correct at-bat by inning, not just first AB of the day (`2026-04-03`)
   - Fix strike zone accuracy: correct width to 17" plate + ball radius, add per-batter szT/szB (`2026-04-02`)
   - perspective logic for two-way players (Kershaw, Ohtani, etc) (`2026-04-02`)
-  - convert aggregated IP to baseball notation instead of .toFixed(1) (`2026-04-02`)
 
 #### 📝 General
 
