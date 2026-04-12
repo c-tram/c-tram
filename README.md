@@ -33,6 +33,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Merge LiveGames into Scores, extract SprayChartExplorer for PlayerDetail (`2026-04-12`)
   - Fix all 5 functional issues: HotColdStreaks loading, SprayChart scatter dots + season toggle, FantasyDFS search/filter/pagination, LiveGames analytical depth (`2026-04-12`)
   - Major UI overhaul: ESPN/PitcherList-quality visual upgrade (`2026-04-11`)
   - massive feature drop - 11 new features including Live Games, Compare, Spray Charts, Streaks, Fantasy/DFS, Sequencing, Tunneling, Expected Stats (`2026-04-10`)
@@ -53,7 +54,6 @@
   - At-Bat Explorer - pitch-by-pitch at-bat viewer with zone chart (`2026-04-02`)
   - correct PA inflation in splits ingestion (`2026-04-02`)
   - Fix splits: AB-based matchup stats for pitcher vs_batters/handedness and batter vs_pitchers, fix OBP to include HBP (`2026-04-02`)
-  - Fix pitcher splits IP parsing: handle decimal vs baseball notation, proper IP display format (`2026-04-02`)
 
 #### 🎨 Frontend & UX
 
