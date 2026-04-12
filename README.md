@@ -52,10 +52,10 @@
   - InteractiveZoneChart zone width ±0.833ft + hB/vB aggregation in PitchAnalysisTab (`2026-04-03`)
   - Add all pitch event fields + vs-player filter for At-Bat Explorer (`2026-04-02`)
   - Rename toggle to Pitching/Batting, fix opponent hand label (RHB vs RHP) (`2026-04-02`)
-  - At-Bat Explorer - pitch-by-pitch at-bat viewer with zone chart (`2026-04-02`)
 
 #### 🎨 Frontend & UX
 
+  - Explorer redesign + ComparePlayers analytics + FantasyDFS enhancements + sidebar fix (`2026-04-12`)
   - data loading bugs + full UI overhaul for new feature pages (`2026-04-11`)
   - tunneling/xStats field mismatches, dashboard cleanup, DFS timeout, explorer UI polish (`2026-04-10`)
   - career matchup history + fix dashboard deep links (`2026-04-10`)
