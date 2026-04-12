@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-11 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-12 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -33,6 +33,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Fix all 5 functional issues: HotColdStreaks loading, SprayChart scatter dots + season toggle, FantasyDFS search/filter/pagination, LiveGames analytical depth (`2026-04-12`)
   - Major UI overhaul: ESPN/PitcherList-quality visual upgrade (`2026-04-11`)
   - massive feature drop - 11 new features including Live Games, Compare, Spray Charts, Streaks, Fantasy/DFS, Sequencing, Tunneling, Expected Stats (`2026-04-10`)
   - parse TEAM-Name in opponentPitcher correctly (don't normalize hyphens) (`2026-04-10`)
@@ -53,7 +54,6 @@
   - correct PA inflation in splits ingestion (`2026-04-02`)
   - Fix splits: AB-based matchup stats for pitcher vs_batters/handedness and batter vs_pitchers, fix OBP to include HBP (`2026-04-02`)
   - Fix pitcher splits IP parsing: handle decimal vs baseball notation, proper IP display format (`2026-04-02`)
-  - Fix pitcher splits: expand isPitchingSection to include vs_handedness/vs_batters, add location aggregation to extractPitching (`2026-04-02`)
 
 #### 🎨 Frontend & UX
 
