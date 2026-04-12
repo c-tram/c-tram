@@ -53,7 +53,6 @@
   - Add all pitch event fields + vs-player filter for At-Bat Explorer (`2026-04-02`)
   - Rename toggle to Pitching/Batting, fix opponent hand label (RHB vs RHP) (`2026-04-02`)
   - At-Bat Explorer - pitch-by-pitch at-bat viewer with zone chart (`2026-04-02`)
-  - correct PA inflation in splits ingestion (`2026-04-02`)
 
 #### 🎨 Frontend & UX
 
@@ -85,6 +84,7 @@
 
 #### 📝 General
 
+  - Comprehensive frontend audit fixes: data integrity, mobile UX, accessibility (`2026-04-12`)
   - Replace logo with square gradient version across entire app (`2026-04-06`)
   - revert: SCAN back to KEYS — SCAN overhead worse than blocking at this scale (`2026-04-05`)
   - Teams mobile: grade stats in tinted top block, remaining stats below (`2026-04-04`)
