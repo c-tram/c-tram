@@ -53,6 +53,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Teams: fix division card scrolling, remove filler info (`2026-04-15`)
   - Player detail: replace Trends & Projections with compact Streaks card (`2026-04-15`)
   - dashboard — remove breadcrumb tag, remove freshness card, link highlights to at-bat explorer (`2026-04-15`)
   - remove Dashboard league context cards section (`2026-04-15`)
@@ -96,7 +97,6 @@
   - revert: SCAN back to KEYS — SCAN overhead worse than blocking at this scale (`2026-04-05`)
   - Teams mobile: grade stats in tinted top block, remaining stats below (`2026-04-04`)
   - pre-game win probability on scheduled games (Log5 model) (`2026-04-04`)
-  - Phase 5: Live Win Probability + WPA chart (`2026-04-03`)
 
 </details>
 
