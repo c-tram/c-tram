@@ -33,6 +33,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Add pitcher matchup info to Dashboard ticker and Scores page (`2026-04-15`)
   - restore: bring back SprayChart page (`2026-04-15`)
   - comprehensive bug fixes - player slugs, ROY filter, dashboard, SprayChart removal, 19 files (`2026-04-15`)
   - Add park-specific stadium filter to Spray Chart Explorer (`2026-04-12`)
@@ -49,7 +50,6 @@
   - Add hB, vB, spin to play-by-play pitch-by-pitch table (`2026-04-04`)
   - Live game enhancements: runners/outs/count on scoreboard cards + interactive play-by-play with pitch location charts (`2026-04-04`)
   - pitcher-vs-lineup shows batting stats (PA, AVG, OBP, HR, H, K%, BB%) instead of pitching stats (`2026-04-03`)
-  - pitcher-vs-lineup matchup shows pitching stats (IP/H/K/BB/ERA) instead of all zeros (`2026-04-03`)
 
 #### 🎨 Frontend & UX
 
