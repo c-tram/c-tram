@@ -51,7 +51,6 @@
   - pitcher-vs-lineup matchup shows pitching stats (IP/H/K/BB/ERA) instead of all zeros (`2026-04-03`)
   - Phase 4: Player Matchup Splits (`2026-04-03`)
   - InteractiveZoneChart zone width ±0.833ft + hB/vB aggregation in PitchAnalysisTab (`2026-04-03`)
-  - Add all pitch event fields + vs-player filter for At-Bat Explorer (`2026-04-02`)
 
 #### 🎨 Frontend & UX
 
@@ -78,6 +77,7 @@
 
 #### 🐛 Bug Fixes
 
+  - remove duplicate lines in HotColdStreaks causing syntax error (`2026-04-15`)
   - remove duplicate pregame WP chip from ticker (`2026-04-04`)
   - drill-down selects correct at-bat by inning, not just first AB of the day (`2026-04-03`)
 
