@@ -65,6 +65,7 @@
 
 #### ⚡ API & Performance
 
+  - add QA test suite — API smoke tests, route consistency, page render tests (`2026-04-15`)
   - single SCAN for career matchup instead of per-player SCAN (`2026-04-10`)
   - per-worker cache warming + in-memory cache in getRollingPlayerDataCached (`2026-04-05`)
   - increase SCAN COUNT from 200 to 10000 (0.6s vs 5.5s on 1.17M keys) (`2026-04-05`)
@@ -80,7 +81,6 @@
 
   - remove duplicate lines in HotColdStreaks causing syntax error (`2026-04-15`)
   - remove duplicate pregame WP chip from ticker (`2026-04-04`)
-  - drill-down selects correct at-bat by inning, not just first AB of the day (`2026-04-03`)
 
 #### 📝 General
 
