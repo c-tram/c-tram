@@ -75,6 +75,7 @@
 
 #### 🔧 Data Pipeline
 
+  - players page — remove breadcrumb, merge dual search bars, flatten controls into single toolbar (`2026-04-15`)
   - Phase 3-5 overhaul: Salary Explorer, Awards Tracker, CountUp animations, favorites, CompareTeams, DFS scatter, ComparePlayers 4-player, league context, data freshness (`2026-04-14`)
   - Wave 3: player & team detail polish — fix fallbacks (---/?/N-A → em dash), remove version suffixes, sanitize error messages, fix dateRange labels, remove dev text (Log5/mlbId), park factor labels, dead code cleanup (`2026-04-05`)
 
@@ -96,7 +97,6 @@
   - Teams mobile: grade stats in tinted top block, remaining stats below (`2026-04-04`)
   - pre-game win probability on scheduled games (Log5 model) (`2026-04-04`)
   - Phase 5: Live Win Probability + WPA chart (`2026-04-03`)
-  - Phase 3: Projected Record display in OverviewTab (`2026-04-03`)
 
 </details>
 
