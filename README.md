@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-12 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-14 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -80,10 +80,10 @@
   - remove duplicate pregame WP chip from ticker (`2026-04-04`)
   - drill-down selects correct at-bat by inning, not just first AB of the day (`2026-04-03`)
   - Fix strike zone accuracy: correct width to 17" plate + ball radius, add per-batter szT/szB (`2026-04-02`)
-  - perspective logic for two-way players (Kershaw, Ohtani, etc) (`2026-04-02`)
 
 #### 📝 General
 
+  - Replace letter grades with numerical rankings (teams 1-30, players 1-N with T-prefix ties) (`2026-04-14`)
   - Comprehensive frontend audit fixes: data integrity, mobile UX, accessibility (`2026-04-12`)
   - Replace logo with square gradient version across entire app (`2026-04-06`)
   - revert: SCAN back to KEYS — SCAN overhead worse than blocking at this scale (`2026-04-05`)
