@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-14 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-15 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -33,6 +33,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - comprehensive bug fixes - player slugs, ROY filter, dashboard, SprayChart removal, 19 files (`2026-04-15`)
   - Add park-specific stadium filter to Spray Chart Explorer (`2026-04-12`)
   - Merge LiveGames into Scores, extract SprayChartExplorer for PlayerDetail (`2026-04-12`)
   - Fix all 5 functional issues: HotColdStreaks loading, SprayChart scatter dots + season toggle, FantasyDFS search/filter/pagination, LiveGames analytical depth (`2026-04-12`)
@@ -79,7 +80,6 @@
 
   - remove duplicate pregame WP chip from ticker (`2026-04-04`)
   - drill-down selects correct at-bat by inning, not just first AB of the day (`2026-04-03`)
-  - Fix strike zone accuracy: correct width to 17" plate + ball radius, add per-batter szT/szB (`2026-04-02`)
 
 #### 📝 General
 
