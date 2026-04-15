@@ -54,6 +54,7 @@
 
 #### 🎨 Frontend & UX
 
+  - dashboard — remove breadcrumb tag, remove freshness card, link highlights to at-bat explorer (`2026-04-15`)
   - remove Dashboard league context cards section (`2026-04-15`)
   - Explorer redesign + ComparePlayers analytics + FantasyDFS enhancements + sidebar fix (`2026-04-12`)
   - data loading bugs + full UI overhaul for new feature pages (`2026-04-11`)
@@ -96,7 +97,6 @@
   - pre-game win probability on scheduled games (Log5 model) (`2026-04-04`)
   - Phase 5: Live Win Probability + WPA chart (`2026-04-03`)
   - Phase 3: Projected Record display in OverviewTab (`2026-04-03`)
-  - Phase 2: Pre-game Win Probability (Log5 model) (`2026-04-03`)
 
 </details>
 
