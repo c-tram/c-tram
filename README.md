@@ -77,6 +77,10 @@
   - Phase 3-5 overhaul: Salary Explorer, Awards Tracker, CountUp animations, favorites, CompareTeams, DFS scatter, ComparePlayers 4-player, league context, data freshness (`2026-04-14`)
   - Wave 3: player & team detail polish — fix fallbacks (---/?/N-A → em dash), remove version suffixes, sanitize error messages, fix dateRange labels, remove dev text (Log5/mlbId), park factor labels, dead code cleanup (`2026-04-05`)
 
+#### 🏗️ Infrastructure
+
+  - wire QA checks into push.sh — runs before every deploy (`2026-04-15`)
+
 #### 🐛 Bug Fixes
 
   - remove duplicate lines in HotColdStreaks causing syntax error (`2026-04-15`)
@@ -93,7 +97,6 @@
   - Phase 5: Live Win Probability + WPA chart (`2026-04-03`)
   - Phase 3: Projected Record display in OverviewTab (`2026-04-03`)
   - Phase 2: Pre-game Win Probability (Log5 model) (`2026-04-03`)
-  - Phase 1: Future Games Scheduler in TeamDetail (`2026-04-03`)
 
 </details>
 
