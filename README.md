@@ -51,7 +51,6 @@
   - Phase 4: Player Matchup Splits (`2026-04-03`)
   - InteractiveZoneChart zone width ±0.833ft + hB/vB aggregation in PitchAnalysisTab (`2026-04-03`)
   - Add all pitch event fields + vs-player filter for At-Bat Explorer (`2026-04-02`)
-  - Rename toggle to Pitching/Batting, fix opponent hand label (RHB vs RHP) (`2026-04-02`)
 
 #### 🎨 Frontend & UX
 
@@ -73,6 +72,7 @@
 
 #### 🔧 Data Pipeline
 
+  - Phase 3-5 overhaul: Salary Explorer, Awards Tracker, CountUp animations, favorites, CompareTeams, DFS scatter, ComparePlayers 4-player, league context, data freshness (`2026-04-14`)
   - Wave 3: player & team detail polish — fix fallbacks (---/?/N-A → em dash), remove version suffixes, sanitize error messages, fix dateRange labels, remove dev text (Log5/mlbId), park factor labels, dead code cleanup (`2026-04-05`)
 
 #### 🐛 Bug Fixes
