@@ -54,6 +54,7 @@
 
 #### 🎨 Frontend & UX
 
+  - remove Dashboard league context cards section (`2026-04-15`)
   - Explorer redesign + ComparePlayers analytics + FantasyDFS enhancements + sidebar fix (`2026-04-12`)
   - data loading bugs + full UI overhaul for new feature pages (`2026-04-11`)
   - tunneling/xStats field mismatches, dashboard cleanup, DFS timeout, explorer UI polish (`2026-04-10`)
@@ -93,7 +94,6 @@
   - Phase 3: Projected Record display in OverviewTab (`2026-04-03`)
   - Phase 2: Pre-game Win Probability (Log5 model) (`2026-04-03`)
   - Phase 1: Future Games Scheduler in TeamDetail (`2026-04-03`)
-  - rework InteractiveZoneChart - dynamic zone, rich tooltip, drill-down to At-Bat Explorer (`2026-04-03`)
 
 </details>
 
