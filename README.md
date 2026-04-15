@@ -50,10 +50,10 @@
   - Live game enhancements: runners/outs/count on scoreboard cards + interactive play-by-play with pitch location charts (`2026-04-04`)
   - pitcher-vs-lineup shows batting stats (PA, AVG, OBP, HR, H, K%, BB%) instead of pitching stats (`2026-04-03`)
   - pitcher-vs-lineup matchup shows pitching stats (IP/H/K/BB/ERA) instead of all zeros (`2026-04-03`)
-  - Phase 4: Player Matchup Splits (`2026-04-03`)
 
 #### 🎨 Frontend & UX
 
+  - Player detail: replace Trends & Projections with compact Streaks card (`2026-04-15`)
   - dashboard — remove breadcrumb tag, remove freshness card, link highlights to at-bat explorer (`2026-04-15`)
   - remove Dashboard league context cards section (`2026-04-15`)
   - Explorer redesign + ComparePlayers analytics + FantasyDFS enhancements + sidebar fix (`2026-04-12`)
