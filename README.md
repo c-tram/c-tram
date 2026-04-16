@@ -52,6 +52,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Dashboard ticker: always show day navigation arrows (`2026-04-15`)
   - Allow viewing tomorrow's and future games in Dashboard and Scores (`2026-04-15`)
   - Teams: fix division card scrolling, remove filler info (`2026-04-15`)
   - Player detail: replace Trends & Projections with compact Streaks card (`2026-04-15`)
@@ -96,7 +97,6 @@
   - Replace logo with square gradient version across entire app (`2026-04-06`)
   - revert: SCAN back to KEYS — SCAN overhead worse than blocking at this scale (`2026-04-05`)
   - Teams mobile: grade stats in tinted top block, remaining stats below (`2026-04-04`)
-  - pre-game win probability on scheduled games (Log5 model) (`2026-04-04`)
 
 </details>
 
