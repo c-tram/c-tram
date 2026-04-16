@@ -49,10 +49,10 @@
   - Add Stuff+ metric for pitchers (L/R handedness-aware) (`2026-04-04`)
   - Add hB, vB, spin to play-by-play pitch-by-pitch table (`2026-04-04`)
   - Live game enhancements: runners/outs/count on scoreboard cards + interactive play-by-play with pitch location charts (`2026-04-04`)
-  - pitcher-vs-lineup shows batting stats (PA, AVG, OBP, HR, H, K%, BB%) instead of pitching stats (`2026-04-03`)
 
 #### 🎨 Frontend & UX
 
+  - Allow viewing tomorrow's and future games in Dashboard and Scores (`2026-04-15`)
   - Teams: fix division card scrolling, remove filler info (`2026-04-15`)
   - Player detail: replace Trends & Projections with compact Streaks card (`2026-04-15`)
   - dashboard — remove breadcrumb tag, remove freshness card, link highlights to at-bat explorer (`2026-04-15`)
