@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-15 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-17 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -52,6 +52,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Remove mobile bottom tab bar — sidebar handles navigation (`2026-04-17`)
   - Dashboard ticker: always show day navigation arrows (`2026-04-15`)
   - Allow viewing tomorrow's and future games in Dashboard and Scores (`2026-04-15`)
   - Teams: fix division card scrolling, remove filler info (`2026-04-15`)
@@ -88,7 +89,6 @@
 #### 🐛 Bug Fixes
 
   - remove duplicate lines in HotColdStreaks causing syntax error (`2026-04-15`)
-  - remove duplicate pregame WP chip from ticker (`2026-04-04`)
 
 #### 📝 General
 
