@@ -52,6 +52,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Fix matchups tab: reset data when switching games, prevent stale cache (`2026-04-17`)
   - Remove mobile bottom tab bar — sidebar handles navigation (`2026-04-17`)
   - Dashboard ticker: always show day navigation arrows (`2026-04-15`)
   - Allow viewing tomorrow's and future games in Dashboard and Scores (`2026-04-15`)
@@ -65,7 +66,6 @@
   - career matchup history + fix dashboard deep links (`2026-04-10`)
   - Wave 2: commercial polish — remove dev strings, version suffixes, console.logs, tech stack exposure, hardcoded year, soften proprietary language, fix timezone, bump ticker fonts, clean dashboard (`2026-04-05`)
   - wave1: UX polish - silent refresh, boxscore fixes, remove dev tells, standardize fallbacks (`2026-04-05`)
-  - Add team abbreviations to win probability bars on scoreboard cards (`2026-04-04`)
 
 #### ⚡ API & Performance
 
