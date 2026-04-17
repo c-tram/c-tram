@@ -33,6 +33,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Add Matchups tab to Boxscore — career batter vs pitcher stats for both lineups (`2026-04-17`)
   - Add pitcher matchup info to Dashboard ticker and Scores page (`2026-04-15`)
   - restore: bring back SprayChart page (`2026-04-15`)
   - comprehensive bug fixes - player slugs, ROY filter, dashboard, SprayChart removal, 19 files (`2026-04-15`)
@@ -48,7 +49,6 @@
   - CompareYears: add Pitch Analysis mode with multi-year whiff/contact tracking (`2026-04-04`)
   - Add Stuff+ metric for pitchers (L/R handedness-aware) (`2026-04-04`)
   - Add hB, vB, spin to play-by-play pitch-by-pitch table (`2026-04-04`)
-  - Live game enhancements: runners/outs/count on scoreboard cards + interactive play-by-play with pitch location charts (`2026-04-04`)
 
 #### 🎨 Frontend & UX
 
