@@ -69,7 +69,6 @@
   - per-worker cache warming + in-memory cache in getRollingPlayerDataCached (`2026-04-05`)
   - increase SCAN COUNT from 200 to 10000 (0.6s vs 5.5s on 1.17M keys) (`2026-04-05`)
   - add ip_hash sticky sessions to nginx upstream (`2026-04-05`)
-  - PM2 cluster mode (6 workers), KEYS→SCAN, cache TTL 300s (`2026-04-05`)
 
 #### 🔧 Data Pipeline
 
@@ -83,6 +82,7 @@
 
 #### 🐛 Bug Fixes
 
+  - fix win-probability/undefined bug + commercial stats.sh analytics (`2026-04-18`)
   - Fix pre-game detection: check linescore.innings instead of truthy linescore (`2026-04-17`)
   - Fix 9 stale-state bugs: key remount on game switch, ref-sync on auto-refresh, stable callback (`2026-04-17`)
   - remove duplicate lines in HotColdStreaks causing syntax error (`2026-04-15`)
