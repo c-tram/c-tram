@@ -27,6 +27,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Add hit location field chart to play-by-play expanded detail (`2026-04-18`)
   - Replace game spray chart with live at-bat tracker: strike zone + hit field (`2026-04-17`)
   - Add MLB-style live tracker + game spray chart to Boxscore (`2026-04-17`)
   - Add Matchups tab to Boxscore — career batter vs pitcher stats for both lineups (`2026-04-17`)
@@ -41,7 +42,6 @@
   - parse TEAM-Name in opponentPitcher correctly (don't normalize hyphens) (`2026-04-10`)
   - WPA-based improbable wins, PitcherStuffCard, Explorer UX polish (`2026-04-08`)
   - revamp dashboard highlights — nastiest pitches, longest HRs, luckiest wins (`2026-04-07`)
-  - Fix pitcher movement chart + full zone layout in CompareYears (`2026-04-05`)
 
 #### 🎨 Frontend & UX
 
