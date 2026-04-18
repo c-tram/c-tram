@@ -42,7 +42,6 @@
   - WPA-based improbable wins, PitcherStuffCard, Explorer UX polish (`2026-04-08`)
   - revamp dashboard highlights — nastiest pitches, longest HRs, luckiest wins (`2026-04-07`)
   - Fix pitcher movement chart + full zone layout in CompareYears (`2026-04-05`)
-  - CompareYears: add Pitch Analysis mode with multi-year whiff/contact tracking (`2026-04-04`)
 
 #### 🎨 Frontend & UX
 
@@ -90,6 +89,7 @@
 
 #### 📝 General
 
+  - Game click opens Boxscore dialog directly, skip inline analytics panel (`2026-04-18`)
   - Replace letter grades with numerical rankings (teams 1-30, players 1-N with T-prefix ties) (`2026-04-14`)
   - Comprehensive frontend audit fixes: data integrity, mobile UX, accessibility (`2026-04-12`)
   - Replace logo with square gradient version across entire app (`2026-04-06`)
