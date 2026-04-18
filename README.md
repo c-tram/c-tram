@@ -47,10 +47,10 @@
   - revamp dashboard highlights — nastiest pitches, longest HRs, luckiest wins (`2026-04-07`)
   - Fix pitcher movement chart + full zone layout in CompareYears (`2026-04-05`)
   - CompareYears: add Pitch Analysis mode with multi-year whiff/contact tracking (`2026-04-04`)
-  - Add Stuff+ metric for pitchers (L/R handedness-aware) (`2026-04-04`)
 
 #### 🎨 Frontend & UX
 
+  - Overhaul Boxscore: MLB-style layout, 6 tabs → 3 (`2026-04-17`)
   - Fix matchups tab: reset data when switching games, prevent stale cache (`2026-04-17`)
   - Remove mobile bottom tab bar — sidebar handles navigation (`2026-04-17`)
   - Dashboard ticker: always show day navigation arrows (`2026-04-15`)
