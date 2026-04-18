@@ -16,14 +16,10 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-17 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-18 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
-
-#### 💰 Trade Intelligence
-
-  - Frontend polish: SettingsContext, expanded Settings page, CompareYears tab, DTV→CVR branding, Navigation breadcrumb (`2026-04-04`)
 
 #### 📊 Advanced Metrics
 
@@ -50,6 +46,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Redesign Scores page: MLB-app style date ribbon + linescore cards (`2026-04-18`)
   - Overhaul Boxscore: MLB-style layout, 6 tabs → 3 (`2026-04-17`)
   - Fix matchups tab: reset data when switching games, prevent stale cache (`2026-04-17`)
   - Remove mobile bottom tab bar — sidebar handles navigation (`2026-04-17`)
