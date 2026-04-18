@@ -27,6 +27,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Add at-bat/pitch explorer popup to matchup history tables (`2026-04-18`)
   - Add hit location field chart to play-by-play expanded detail (`2026-04-18`)
   - Replace game spray chart with live at-bat tracker: strike zone + hit field (`2026-04-17`)
   - Add MLB-style live tracker + game spray chart to Boxscore (`2026-04-17`)
@@ -68,7 +69,6 @@
   - single SCAN for career matchup instead of per-player SCAN (`2026-04-10`)
   - per-worker cache warming + in-memory cache in getRollingPlayerDataCached (`2026-04-05`)
   - increase SCAN COUNT from 200 to 10000 (0.6s vs 5.5s on 1.17M keys) (`2026-04-05`)
-  - add ip_hash sticky sessions to nginx upstream (`2026-04-05`)
 
 #### 🔧 Data Pipeline
 
