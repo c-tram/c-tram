@@ -87,6 +87,7 @@
 
 #### 🐛 Bug Fixes
 
+  - Fix pre-game detection: check linescore.innings instead of truthy linescore (`2026-04-17`)
   - Fix 9 stale-state bugs: key remount on game switch, ref-sync on auto-refresh, stable callback (`2026-04-17`)
   - remove duplicate lines in HotColdStreaks causing syntax error (`2026-04-15`)
 
@@ -96,7 +97,6 @@
   - Comprehensive frontend audit fixes: data integrity, mobile UX, accessibility (`2026-04-12`)
   - Replace logo with square gradient version across entire app (`2026-04-06`)
   - revert: SCAN back to KEYS — SCAN overhead worse than blocking at this scale (`2026-04-05`)
-  - Teams mobile: grade stats in tinted top block, remaining stats below (`2026-04-04`)
 
 </details>
 
