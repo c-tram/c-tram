@@ -24,7 +24,6 @@
 #### 💰 Trade Intelligence
 
   - Frontend polish: SettingsContext, expanded Settings page, CompareYears tab, DTV→CVR branding, Navigation breadcrumb (`2026-04-04`)
-  - update Trades page to CTS 6-pillar system - fix broken mock trade evaluation (`2026-04-04`)
 
 #### 📊 Advanced Metrics
 
@@ -32,6 +31,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Replace game spray chart with live at-bat tracker: strike zone + hit field (`2026-04-17`)
   - Add MLB-style live tracker + game spray chart to Boxscore (`2026-04-17`)
   - Add Matchups tab to Boxscore — career batter vs pitcher stats for both lineups (`2026-04-17`)
   - Add pitcher matchup info to Dashboard ticker and Scores page (`2026-04-15`)
