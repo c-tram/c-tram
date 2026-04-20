@@ -46,6 +46,7 @@
 
 #### 🎨 Frontend & UX
 
+  - move expected stats card to overview tab (`2026-04-20`)
   - add Savant-style percentile bars to expected stats card (`2026-04-20`)
   - Redesign Scores page: MLB-app style date ribbon + linescore cards (`2026-04-18`)
   - Overhaul Boxscore: MLB-style layout, 6 tabs → 3 (`2026-04-17`)
@@ -93,7 +94,6 @@
   - Replace letter grades with numerical rankings (teams 1-30, players 1-N with T-prefix ties) (`2026-04-14`)
   - Comprehensive frontend audit fixes: data integrity, mobile UX, accessibility (`2026-04-12`)
   - Replace logo with square gradient version across entire app (`2026-04-06`)
-  - revert: SCAN back to KEYS — SCAN overhead worse than blocking at this scale (`2026-04-05`)
 
 </details>
 
