@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-18 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-19 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -65,10 +65,10 @@
 
 #### ⚡ API & Performance
 
+  - add web-frontend-v2 — full React+TS+Vite+Tailwind rebuild (`2026-04-19`)
   - add QA test suite — API smoke tests, route consistency, page render tests (`2026-04-15`)
   - single SCAN for career matchup instead of per-player SCAN (`2026-04-10`)
   - per-worker cache warming + in-memory cache in getRollingPlayerDataCached (`2026-04-05`)
-  - increase SCAN COUNT from 200 to 10000 (0.6s vs 5.5s on 1.17M keys) (`2026-04-05`)
 
 #### 🔧 Data Pipeline
 
