@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-18 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-20 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -46,6 +46,7 @@
 
 #### 🎨 Frontend & UX
 
+  - add Savant-style percentile bars to expected stats card (`2026-04-20`)
   - Redesign Scores page: MLB-app style date ribbon + linescore cards (`2026-04-18`)
   - Overhaul Boxscore: MLB-style layout, 6 tabs → 3 (`2026-04-17`)
   - Fix matchups tab: reset data when switching games, prevent stale cache (`2026-04-17`)
@@ -68,7 +69,6 @@
   - add QA test suite — API smoke tests, route consistency, page render tests (`2026-04-15`)
   - single SCAN for career matchup instead of per-player SCAN (`2026-04-10`)
   - per-worker cache warming + in-memory cache in getRollingPlayerDataCached (`2026-04-05`)
-  - increase SCAN COUNT from 200 to 10000 (0.6s vs 5.5s on 1.17M keys) (`2026-04-05`)
 
 #### 🔧 Data Pipeline
 
