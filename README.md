@@ -21,6 +21,10 @@
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
 
+#### 💰 Trade Intelligence
+
+  - Fix wRC+/wOBA sort, add CVR+aCVR chips, expose acvr in leaders endpoint (`2026-04-21`)
+
 #### ⚾ Splits & Pitch Analytics
 
   - Add at-bat/pitch explorer popup to matchup history tables (`2026-04-18`)
@@ -53,7 +57,6 @@
   - dashboard — remove breadcrumb tag, remove freshness card, link highlights to at-bat explorer (`2026-04-15`)
   - remove Dashboard league context cards section (`2026-04-15`)
   - Explorer redesign + ComparePlayers analytics + FantasyDFS enhancements + sidebar fix (`2026-04-12`)
-  - data loading bugs + full UI overhaul for new feature pages (`2026-04-11`)
 
 #### ⚡ API & Performance
 
