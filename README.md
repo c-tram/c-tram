@@ -74,7 +74,6 @@
 
   - players page — remove breadcrumb, merge dual search bars, flatten controls into single toolbar (`2026-04-15`)
   - Phase 3-5 overhaul: Salary Explorer, Awards Tracker, CountUp animations, favorites, CompareTeams, DFS scatter, ComparePlayers 4-player, league context, data freshness (`2026-04-14`)
-  - Wave 3: player & team detail polish — fix fallbacks (---/?/N-A → em dash), remove version suffixes, sanitize error messages, fix dateRange labels, remove dev text (Log5/mlbId), park factor labels, dead code cleanup (`2026-04-05`)
 
 #### 🏗️ Infrastructure
 
@@ -82,6 +81,7 @@
 
 #### 🐛 Bug Fixes
 
+  - replace index.css with actual Tailwind + design system styles (`2026-04-20`)
   - proper title and favicon in index.html (`2026-04-20`)
   - fix win-probability/undefined bug + commercial stats.sh analytics (`2026-04-18`)
   - Fix pre-game detection: check linescore.innings instead of truthy linescore (`2026-04-17`)
