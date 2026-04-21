@@ -36,7 +36,6 @@
   - Fix all 5 functional issues: HotColdStreaks loading, SprayChart scatter dots + season toggle, FantasyDFS search/filter/pagination, LiveGames analytical depth (`2026-04-12`)
   - Major UI overhaul: ESPN/PitcherList-quality visual upgrade (`2026-04-11`)
   - massive feature drop - 11 new features including Live Games, Compare, Spray Charts, Streaks, Fantasy/DFS, Sequencing, Tunneling, Expected Stats (`2026-04-10`)
-  - parse TEAM-Name in opponentPitcher correctly (don't normalize hyphens) (`2026-04-10`)
 
 #### 🎨 Frontend & UX
 
@@ -72,6 +71,7 @@
 
 #### 🏗️ Infrastructure
 
+  - nginx.conf must include sites-enabled for SSL/443 to bind (`2026-04-21`)
   - wire QA checks into push.sh — runs before every deploy (`2026-04-15`)
 
 #### 🐛 Bug Fixes
