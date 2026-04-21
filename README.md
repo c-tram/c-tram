@@ -21,10 +21,6 @@
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
 
-#### 📊 Advanced Metrics
-
-  - dynamic Stuff+ baselines, Explorer page, dashboard highlights (`2026-04-06`)
-
 #### ⚾ Splits & Pitch Analytics
 
   - Add at-bat/pitch explorer popup to matchup history tables (`2026-04-18`)
@@ -46,6 +42,7 @@
 
 #### 🎨 Frontend & UX
 
+  - correct all backend data shapes across every page — standings divisions, game team objects, dashboard leaders, leaderboard normalization, players stat flattening, salaries data key, stuffplus leaders key (`2026-04-20`)
   - move expected stats card to overview tab (`2026-04-20`)
   - add Savant-style percentile bars to expected stats card (`2026-04-20`)
   - Redesign Scores page: MLB-app style date ribbon + linescore cards (`2026-04-18`)
