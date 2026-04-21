@@ -63,10 +63,10 @@
   - tunneling/xStats field mismatches, dashboard cleanup, DFS timeout, explorer UI polish (`2026-04-10`)
   - career matchup history + fix dashboard deep links (`2026-04-10`)
   - Wave 2: commercial polish — remove dev strings, version suffixes, console.logs, tech stack exposure, hardcoded year, soften proprietary language, fix timezone, bump ticker fonts, clean dashboard (`2026-04-05`)
-  - wave1: UX polish - silent refresh, boxscore fixes, remove dev tells, standardize fallbacks (`2026-04-05`)
 
 #### ⚡ API & Performance
 
+  - update nginx root to web-frontend-v2/dist (`2026-04-20`)
   - complete web-frontend-v2 rebuild - all 18 pages, full MLB analytics platform (`2026-04-20`)
   - add QA test suite — API smoke tests, route consistency, page render tests (`2026-04-15`)
   - single SCAN for career matchup instead of per-player SCAN (`2026-04-10`)
