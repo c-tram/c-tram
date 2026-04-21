@@ -38,10 +38,10 @@
   - Add park-specific stadium filter to Spray Chart Explorer (`2026-04-12`)
   - Merge LiveGames into Scores, extract SprayChartExplorer for PlayerDetail (`2026-04-12`)
   - Fix all 5 functional issues: HotColdStreaks loading, SprayChart scatter dots + season toggle, FantasyDFS search/filter/pagination, LiveGames analytical depth (`2026-04-12`)
-  - Major UI overhaul: ESPN/PitcherList-quality visual upgrade (`2026-04-11`)
 
 #### 🎨 Frontend & UX
 
+  - Fix player slug navigation in Leaders — use name-only slug, add slug field to leaders response (`2026-04-21`)
   - Task 2 polish: 2-row controls layout, stepper qualifier, stable useCallback filter, fixed imports (`2026-04-21`)
   - correct all backend data shapes across every page — standings divisions, game team objects, dashboard leaders, leaderboard normalization, players stat flattening, salaries data key, stuffplus leaders key (`2026-04-20`)
   - move expected stats card to overview tab (`2026-04-20`)
