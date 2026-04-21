@@ -38,6 +38,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Task 2 polish: 2-row controls layout, stepper qualifier, stable useCallback filter, fixed imports (`2026-04-21`)
   - correct all backend data shapes across every page — standings divisions, game team objects, dashboard leaders, leaderboard normalization, players stat flattening, salaries data key, stuffplus leaders key (`2026-04-20`)
   - move expected stats card to overview tab (`2026-04-20`)
   - add Savant-style percentile bars to expected stats card (`2026-04-20`)
@@ -53,7 +54,6 @@
   - remove Dashboard league context cards section (`2026-04-15`)
   - Explorer redesign + ComparePlayers analytics + FantasyDFS enhancements + sidebar fix (`2026-04-12`)
   - data loading bugs + full UI overhaul for new feature pages (`2026-04-11`)
-  - tunneling/xStats field mismatches, dashboard cleanup, DFS timeout, explorer UI polish (`2026-04-10`)
 
 #### ⚡ API & Performance
 
