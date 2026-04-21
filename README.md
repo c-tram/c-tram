@@ -65,6 +65,7 @@
 
 #### ⚡ API & Performance
 
+  - wire all pages to real backend endpoints with correct routes and response shapes (`2026-04-20`)
   - update nginx root to web-frontend-v2/dist (`2026-04-20`)
   - complete web-frontend-v2 rebuild - all 18 pages, full MLB analytics platform (`2026-04-20`)
   - add QA test suite — API smoke tests, route consistency, page render tests (`2026-04-15`)
@@ -93,7 +94,6 @@
   - Game click opens Boxscore dialog directly, skip inline analytics panel (`2026-04-18`)
   - Replace letter grades with numerical rankings (teams 1-30, players 1-N with T-prefix ties) (`2026-04-14`)
   - Comprehensive frontend audit fixes: data integrity, mobile UX, accessibility (`2026-04-12`)
-  - Replace logo with square gradient version across entire app (`2026-04-06`)
 
 </details>
 
