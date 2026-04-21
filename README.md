@@ -35,7 +35,6 @@
   - Merge LiveGames into Scores, extract SprayChartExplorer for PlayerDetail (`2026-04-12`)
   - Fix all 5 functional issues: HotColdStreaks loading, SprayChart scatter dots + season toggle, FantasyDFS search/filter/pagination, LiveGames analytical depth (`2026-04-12`)
   - Major UI overhaul: ESPN/PitcherList-quality visual upgrade (`2026-04-11`)
-  - massive feature drop - 11 new features including Live Games, Compare, Spray Charts, Streaks, Fantasy/DFS, Sequencing, Tunneling, Expected Stats (`2026-04-10`)
 
 #### 🎨 Frontend & UX
 
@@ -85,6 +84,7 @@
 
 #### 📝 General
 
+  - Task 2: FanGraphs-style dense leaderboard — col groups, team filter, min PA/IP, active sort column band (`2026-04-21`)
   - revert: serve web-frontend v1 build (`2026-04-21`)
   - Game click opens Boxscore dialog directly, skip inline analytics panel (`2026-04-18`)
   - Replace letter grades with numerical rankings (teams 1-30, players 1-N with T-prefix ties) (`2026-04-14`)
