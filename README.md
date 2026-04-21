@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-20 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-20 • 49 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -37,7 +37,6 @@
   - Major UI overhaul: ESPN/PitcherList-quality visual upgrade (`2026-04-11`)
   - massive feature drop - 11 new features including Live Games, Compare, Spray Charts, Streaks, Fantasy/DFS, Sequencing, Tunneling, Expected Stats (`2026-04-10`)
   - parse TEAM-Name in opponentPitcher correctly (don't normalize hyphens) (`2026-04-10`)
-  - WPA-based improbable wins, PitcherStuffCard, Explorer UX polish (`2026-04-08`)
 
 #### 🎨 Frontend & UX
 
