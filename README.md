@@ -37,7 +37,6 @@
   - comprehensive bug fixes - player slugs, ROY filter, dashboard, SprayChart removal, 19 files (`2026-04-15`)
   - Add park-specific stadium filter to Spray Chart Explorer (`2026-04-12`)
   - Merge LiveGames into Scores, extract SprayChartExplorer for PlayerDetail (`2026-04-12`)
-  - Fix all 5 functional issues: HotColdStreaks loading, SprayChart scatter dots + season toggle, FantasyDFS search/filter/pagination, LiveGames analytical depth (`2026-04-12`)
 
 #### 🎨 Frontend & UX
 
@@ -87,6 +86,7 @@
 
 #### 📝 General
 
+  - Task 3: MLB App scoreboard — team color accent bars, enlarged diamond panel, inning half ▲▼, team-colored WP bar (`2026-04-21`)
   - Task 2: FanGraphs-style dense leaderboard — col groups, team filter, min PA/IP, active sort column band (`2026-04-21`)
   - revert: serve web-frontend v1 build (`2026-04-21`)
   - Game click opens Boxscore dialog directly, skip inline analytics panel (`2026-04-18`)
