@@ -38,7 +38,6 @@
   - massive feature drop - 11 new features including Live Games, Compare, Spray Charts, Streaks, Fantasy/DFS, Sequencing, Tunneling, Expected Stats (`2026-04-10`)
   - parse TEAM-Name in opponentPitcher correctly (don't normalize hyphens) (`2026-04-10`)
   - WPA-based improbable wins, PitcherStuffCard, Explorer UX polish (`2026-04-08`)
-  - revamp dashboard highlights — nastiest pitches, longest HRs, luckiest wins (`2026-04-07`)
 
 #### 🎨 Frontend & UX
 
@@ -62,6 +61,7 @@
 
 #### ⚡ API & Performance
 
+  - use mlb-live schedule API instead of Redis cache for scoreboard; fix game key to use id (`2026-04-20`)
   - wire all pages to real backend endpoints with correct routes and response shapes (`2026-04-20`)
   - update nginx root to web-frontend-v2/dist (`2026-04-20`)
   - complete web-frontend-v2 rebuild - all 18 pages, full MLB analytics platform (`2026-04-20`)
