@@ -62,7 +62,6 @@
   - data loading bugs + full UI overhaul for new feature pages (`2026-04-11`)
   - tunneling/xStats field mismatches, dashboard cleanup, DFS timeout, explorer UI polish (`2026-04-10`)
   - career matchup history + fix dashboard deep links (`2026-04-10`)
-  - Wave 2: commercial polish — remove dev strings, version suffixes, console.logs, tech stack exposure, hardcoded year, soften proprietary language, fix timezone, bump ticker fonts, clean dashboard (`2026-04-05`)
 
 #### ⚡ API & Performance
 
@@ -83,6 +82,7 @@
 
 #### 🐛 Bug Fixes
 
+  - proper title and favicon in index.html (`2026-04-20`)
   - fix win-probability/undefined bug + commercial stats.sh analytics (`2026-04-18`)
   - Fix pre-game detection: check linescore.innings instead of truthy linescore (`2026-04-17`)
   - Fix 9 stale-state bugs: key remount on game switch, ref-sync on auto-refresh, stable callback (`2026-04-17`)
