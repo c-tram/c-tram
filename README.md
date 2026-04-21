@@ -67,9 +67,9 @@
 
 #### ⚡ API & Performance
 
+  - complete web-frontend-v2 rebuild - all 18 pages, full MLB analytics platform (`2026-04-20`)
   - add QA test suite — API smoke tests, route consistency, page render tests (`2026-04-15`)
   - single SCAN for career matchup instead of per-player SCAN (`2026-04-10`)
-  - per-worker cache warming + in-memory cache in getRollingPlayerDataCached (`2026-04-05`)
 
 #### 🔧 Data Pipeline
 
