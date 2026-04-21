@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-20 • 48 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-21 • 48 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -64,7 +64,6 @@
   - update nginx root to web-frontend-v2/dist (`2026-04-20`)
   - complete web-frontend-v2 rebuild - all 18 pages, full MLB analytics platform (`2026-04-20`)
   - add QA test suite — API smoke tests, route consistency, page render tests (`2026-04-15`)
-  - single SCAN for career matchup instead of per-player SCAN (`2026-04-10`)
 
 #### 🔧 Data Pipeline
 
@@ -86,6 +85,7 @@
 
 #### 📝 General
 
+  - revert: serve web-frontend v1 build (`2026-04-21`)
   - Game click opens Boxscore dialog directly, skip inline analytics panel (`2026-04-18`)
   - Replace letter grades with numerical rankings (teams 1-30, players 1-N with T-prefix ties) (`2026-04-14`)
   - Comprehensive frontend audit fixes: data integrity, mobile UX, accessibility (`2026-04-12`)
