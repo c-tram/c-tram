@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-20 • 49 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-20 • 48 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -56,7 +56,6 @@
   - Explorer redesign + ComparePlayers analytics + FantasyDFS enhancements + sidebar fix (`2026-04-12`)
   - data loading bugs + full UI overhaul for new feature pages (`2026-04-11`)
   - tunneling/xStats field mismatches, dashboard cleanup, DFS timeout, explorer UI polish (`2026-04-10`)
-  - career matchup history + fix dashboard deep links (`2026-04-10`)
 
 #### ⚡ API & Performance
 
