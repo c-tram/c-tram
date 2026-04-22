@@ -27,6 +27,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Revert "remove: At-Bat Explorer tab — redundant with Pitch Analysis" (`2026-04-22`)
   - remove: At-Bat Explorer tab — redundant with Pitch Analysis (`2026-04-22`)
   - splits tab — independent game type + date range (All Time) filters (`2026-04-22`)
   - Fix hero stats: fetch full player profile for complete batting/pitching stats (`2026-04-21`)
@@ -73,7 +74,6 @@
 #### 🏗️ Infrastructure
 
   - nginx.conf must include sites-enabled for SSL/443 to bind (`2026-04-21`)
-  - wire QA checks into push.sh — runs before every deploy (`2026-04-15`)
 
 #### 🐛 Bug Fixes
 
