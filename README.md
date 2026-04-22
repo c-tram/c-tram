@@ -39,6 +39,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Task 4: StatMuse hero search — autocomplete + giant hero stat + secondaries on Dashboard (`2026-04-21`)
   - Fix live AB card: always show currentPlay, dedup vs completed, 5s poll, LAST AB state (`2026-04-21`)
   - Fix player slug navigation in Leaders — use name-only slug, add slug field to leaders response (`2026-04-21`)
   - Task 2 polish: 2-row controls layout, stepper qualifier, stable useCallback filter, fixed imports (`2026-04-21`)
@@ -91,7 +92,6 @@
   - revert: serve web-frontend v1 build (`2026-04-21`)
   - Game click opens Boxscore dialog directly, skip inline analytics panel (`2026-04-18`)
   - Replace letter grades with numerical rankings (teams 1-30, players 1-N with T-prefix ties) (`2026-04-14`)
-  - Comprehensive frontend audit fixes: data integrity, mobile UX, accessibility (`2026-04-12`)
 
 </details>
 
