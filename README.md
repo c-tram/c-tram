@@ -56,7 +56,6 @@
   - Player detail: replace Trends & Projections with compact Streaks card (`2026-04-15`)
   - dashboard — remove breadcrumb tag, remove freshness card, link highlights to at-bat explorer (`2026-04-15`)
   - remove Dashboard league context cards section (`2026-04-15`)
-  - Explorer redesign + ComparePlayers analytics + FantasyDFS enhancements + sidebar fix (`2026-04-12`)
 
 #### ⚡ API & Performance
 
@@ -78,6 +77,7 @@
 
 #### 🐛 Bug Fixes
 
+  - Fix boxscore live updates: poll all tabs, use fresh linescore for score/inning display (`2026-04-21`)
   - replace index.css with actual Tailwind + design system styles (`2026-04-20`)
   - proper title and favicon in index.html (`2026-04-20`)
   - fix win-probability/undefined bug + commercial stats.sh analytics (`2026-04-18`)
