@@ -27,6 +27,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - remove: At-Bat Explorer tab — redundant with Pitch Analysis (`2026-04-22`)
   - splits tab — independent game type + date range (All Time) filters (`2026-04-22`)
   - Fix hero stats: fetch full player profile for complete batting/pitching stats (`2026-04-21`)
   - Live AB tracking: currentPlay in boxscore API + pulsing in-progress AB card in play-by-play (`2026-04-21`)
@@ -64,7 +65,6 @@
   - wire all pages to real backend endpoints with correct routes and response shapes (`2026-04-20`)
   - update nginx root to web-frontend-v2/dist (`2026-04-20`)
   - complete web-frontend-v2 rebuild - all 18 pages, full MLB analytics platform (`2026-04-20`)
-  - add QA test suite — API smoke tests, route consistency, page render tests (`2026-04-15`)
 
 #### 🔧 Data Pipeline
 
