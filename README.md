@@ -27,6 +27,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Pitch Lab race condition, Matchups/Compare empty search results (`2026-04-22`)
   - Explorer — remove salary tab, fix slugs/stat aliases/pitch filter/compare crashes (`2026-04-22`)
   - Revert "remove: At-Bat Explorer tab — redundant with Pitch Analysis" (`2026-04-22`)
   - remove: At-Bat Explorer tab — redundant with Pitch Analysis (`2026-04-22`)
@@ -57,7 +58,6 @@
   - Remove mobile bottom tab bar — sidebar handles navigation (`2026-04-17`)
   - Dashboard ticker: always show day navigation arrows (`2026-04-15`)
   - Allow viewing tomorrow's and future games in Dashboard and Scores (`2026-04-15`)
-  - Teams: fix division card scrolling, remove filler info (`2026-04-15`)
 
 #### ⚡ API & Performance
 
