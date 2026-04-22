@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-21 • 48 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-22 • 48 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -84,10 +84,10 @@
   - fix win-probability/undefined bug + commercial stats.sh analytics (`2026-04-18`)
   - Fix pre-game detection: check linescore.innings instead of truthy linescore (`2026-04-17`)
   - Fix 9 stale-state bugs: key remount on game switch, ref-sync on auto-refresh, stable callback (`2026-04-17`)
-  - remove duplicate lines in HotColdStreaks causing syntax error (`2026-04-15`)
 
 #### 📝 General
 
+  - Task 5: BBRef-style career table — column groups, monospace, sortable, advanced stats (`2026-04-22`)
   - Task 3: MLB App scoreboard — team color accent bars, enlarged diamond panel, inning half ▲▼, team-colored WP bar (`2026-04-21`)
   - Task 2: FanGraphs-style dense leaderboard — col groups, team filter, min PA/IP, active sort column band (`2026-04-21`)
   - revert: serve web-frontend v1 build (`2026-04-21`)
