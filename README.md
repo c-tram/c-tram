@@ -27,6 +27,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Live AB tracking: currentPlay in boxscore API + pulsing in-progress AB card in play-by-play (`2026-04-21`)
   - Add at-bat/pitch explorer popup to matchup history tables (`2026-04-18`)
   - Add hit location field chart to play-by-play expanded detail (`2026-04-18`)
   - Replace game spray chart with live at-bat tracker: strike zone + hit field (`2026-04-17`)
@@ -36,7 +37,6 @@
   - restore: bring back SprayChart page (`2026-04-15`)
   - comprehensive bug fixes - player slugs, ROY filter, dashboard, SprayChart removal, 19 files (`2026-04-15`)
   - Add park-specific stadium filter to Spray Chart Explorer (`2026-04-12`)
-  - Merge LiveGames into Scores, extract SprayChartExplorer for PlayerDetail (`2026-04-12`)
 
 #### 🎨 Frontend & UX
 
