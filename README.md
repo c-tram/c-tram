@@ -58,7 +58,6 @@
   - Allow viewing tomorrow's and future games in Dashboard and Scores (`2026-04-15`)
   - Teams: fix division card scrolling, remove filler info (`2026-04-15`)
   - Player detail: replace Trends & Projections with compact Streaks card (`2026-04-15`)
-  - dashboard — remove breadcrumb tag, remove freshness card, link highlights to at-bat explorer (`2026-04-15`)
 
 #### ⚡ API & Performance
 
@@ -69,6 +68,7 @@
 
 #### 🔧 Data Pipeline
 
+  - AIO Explorer — Leaders, Compare Players, Compare Teams, Salary merged into /explorer; delete old pages (`2026-04-22`)
   - players page — remove breadcrumb, merge dual search bars, flatten controls into single toolbar (`2026-04-15`)
 
 #### 🏗️ Infrastructure
