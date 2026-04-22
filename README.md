@@ -27,6 +27,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - splits tab — independent game type + date range (All Time) filters (`2026-04-22`)
   - Fix hero stats: fetch full player profile for complete batting/pitching stats (`2026-04-21`)
   - Live AB tracking: currentPlay in boxscore API + pulsing in-progress AB card in play-by-play (`2026-04-21`)
   - Add at-bat/pitch explorer popup to matchup history tables (`2026-04-18`)
@@ -56,7 +57,6 @@
   - Teams: fix division card scrolling, remove filler info (`2026-04-15`)
   - Player detail: replace Trends & Projections with compact Streaks card (`2026-04-15`)
   - dashboard — remove breadcrumb tag, remove freshness card, link highlights to at-bat explorer (`2026-04-15`)
-  - remove Dashboard league context cards section (`2026-04-15`)
 
 #### ⚡ API & Performance
 
