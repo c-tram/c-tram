@@ -58,7 +58,6 @@
   - Dashboard ticker: always show day navigation arrows (`2026-04-15`)
   - Allow viewing tomorrow's and future games in Dashboard and Scores (`2026-04-15`)
   - Teams: fix division card scrolling, remove filler info (`2026-04-15`)
-  - Player detail: replace Trends & Projections with compact Streaks card (`2026-04-15`)
 
 #### ⚡ API & Performance
 
@@ -77,6 +76,7 @@
 
 #### 🐛 Bug Fixes
 
+  - remove Leaders tab, fix Matchups fallback, fix Compare 3 bugs (`2026-04-22`)
   - flip Inside/Outside zone labels for left-handed batters (`2026-04-22`)
   - Fix boxscore live updates: poll all tabs, use fresh linescore for score/inning display (`2026-04-21`)
   - replace index.css with actual Tailwind + design system styles (`2026-04-20`)
