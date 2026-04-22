@@ -27,6 +27,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Fix hero stats: fetch full player profile for complete batting/pitching stats (`2026-04-21`)
   - Live AB tracking: currentPlay in boxscore API + pulsing in-progress AB card in play-by-play (`2026-04-21`)
   - Add at-bat/pitch explorer popup to matchup history tables (`2026-04-18`)
   - Add hit location field chart to play-by-play expanded detail (`2026-04-18`)
@@ -69,7 +70,6 @@
 #### 🔧 Data Pipeline
 
   - players page — remove breadcrumb, merge dual search bars, flatten controls into single toolbar (`2026-04-15`)
-  - Phase 3-5 overhaul: Salary Explorer, Awards Tracker, CountUp animations, favorites, CompareTeams, DFS scatter, ComparePlayers 4-player, league context, data freshness (`2026-04-14`)
 
 #### 🏗️ Infrastructure
 
