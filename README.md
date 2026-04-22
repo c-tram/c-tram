@@ -36,10 +36,10 @@
   - Add pitcher matchup info to Dashboard ticker and Scores page (`2026-04-15`)
   - restore: bring back SprayChart page (`2026-04-15`)
   - comprehensive bug fixes - player slugs, ROY filter, dashboard, SprayChart removal, 19 files (`2026-04-15`)
-  - Add park-specific stadium filter to Spray Chart Explorer (`2026-04-12`)
 
 #### 🎨 Frontend & UX
 
+  - Fix live AB card: always show currentPlay, dedup vs completed, 5s poll, LAST AB state (`2026-04-21`)
   - Fix player slug navigation in Leaders — use name-only slug, add slug field to leaders response (`2026-04-21`)
   - Task 2 polish: 2-row controls layout, stepper qualifier, stable useCallback filter, fixed imports (`2026-04-21`)
   - correct all backend data shapes across every page — standings divisions, game team objects, dashboard leaders, leaderboard normalization, players stat flattening, salaries data key, stuffplus leaders key (`2026-04-20`)
