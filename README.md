@@ -27,6 +27,7 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Explorer — remove salary tab, fix slugs/stat aliases/pitch filter/compare crashes (`2026-04-22`)
   - Revert "remove: At-Bat Explorer tab — redundant with Pitch Analysis" (`2026-04-22`)
   - remove: At-Bat Explorer tab — redundant with Pitch Analysis (`2026-04-22`)
   - splits tab — independent game type + date range (All Time) filters (`2026-04-22`)
@@ -69,7 +70,6 @@
 #### 🔧 Data Pipeline
 
   - AIO Explorer — Leaders, Compare Players, Compare Teams, Salary merged into /explorer; delete old pages (`2026-04-22`)
-  - players page — remove breadcrumb, merge dual search bars, flatten controls into single toolbar (`2026-04-15`)
 
 #### 🏗️ Infrastructure
 
