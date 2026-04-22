@@ -35,7 +35,6 @@
   - Add MLB-style live tracker + game spray chart to Boxscore (`2026-04-17`)
   - Add Matchups tab to Boxscore — career batter vs pitcher stats for both lineups (`2026-04-17`)
   - Add pitcher matchup info to Dashboard ticker and Scores page (`2026-04-15`)
-  - restore: bring back SprayChart page (`2026-04-15`)
 
 #### 🎨 Frontend & UX
 
@@ -78,6 +77,7 @@
 
 #### 🐛 Bug Fixes
 
+  - flip Inside/Outside zone labels for left-handed batters (`2026-04-22`)
   - Fix boxscore live updates: poll all tabs, use fresh linescore for score/inning display (`2026-04-21`)
   - replace index.css with actual Tailwind + design system styles (`2026-04-20`)
   - proper title and favicon in index.html (`2026-04-20`)
