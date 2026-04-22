@@ -39,6 +39,7 @@
 
 #### 🎨 Frontend & UX
 
+  - Fix hero search: consolidated player stats map so all stats show regardless of top-10 rank (`2026-04-21`)
   - Task 4: StatMuse hero search — autocomplete + giant hero stat + secondaries on Dashboard (`2026-04-21`)
   - Fix live AB card: always show currentPlay, dedup vs completed, 5s poll, LAST AB state (`2026-04-21`)
   - Fix player slug navigation in Leaders — use name-only slug, add slug field to leaders response (`2026-04-21`)
@@ -91,7 +92,6 @@
   - Task 2: FanGraphs-style dense leaderboard — col groups, team filter, min PA/IP, active sort column band (`2026-04-21`)
   - revert: serve web-frontend v1 build (`2026-04-21`)
   - Game click opens Boxscore dialog directly, skip inline analytics panel (`2026-04-18`)
-  - Replace letter grades with numerical rankings (teams 1-30, players 1-N with T-prefix ties) (`2026-04-14`)
 
 </details>
 
