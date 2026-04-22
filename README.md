@@ -36,10 +36,10 @@
   - Add Matchups tab to Boxscore — career batter vs pitcher stats for both lineups (`2026-04-17`)
   - Add pitcher matchup info to Dashboard ticker and Scores page (`2026-04-15`)
   - restore: bring back SprayChart page (`2026-04-15`)
-  - comprehensive bug fixes - player slugs, ROY filter, dashboard, SprayChart removal, 19 files (`2026-04-15`)
 
 #### 🎨 Frontend & UX
 
+  - Remove hero player search from Dashboard (`2026-04-21`)
   - Fix hero search: consolidated player stats map so all stats show regardless of top-10 rank (`2026-04-21`)
   - Task 4: StatMuse hero search — autocomplete + giant hero stat + secondaries on Dashboard (`2026-04-21`)
   - Fix live AB card: always show currentPlay, dedup vs completed, 5s poll, LAST AB state (`2026-04-21`)
