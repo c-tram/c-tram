@@ -23,7 +23,7 @@ The entire platform runs on a single **Hetzner dedicated VPS**:
 
 | Component | Spec |
 |-----------|------|
-| **CPU** | 6 vCPU · AMD EPYC-Milan |
+| **CPU** | 8 vCPU · AMD EPYC-Milan |
 | **RAM** | 32 GB DDR4 |
 | **Storage** | 150 GB NVMe SSD |
 | **OS** | Ubuntu 24.04.4 LTS |
