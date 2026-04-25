@@ -10,7 +10,191 @@
 
 ---
 
-## 🌟 Featured Projects
+## ⚾ The Cycle — MLB Analytics Platform
+
+> **Live at [thecycle.online](https://thecycle.online)** — a self-hosted, self-updating MLB analytics platform built to test every measurable baseball statistic.
+
+The Cycle ingests live MLB data, runs proprietary statistical models entirely server-side, and serves a React frontend from a single bare-metal VPS — no cloud databases, no third-party compute, no AWS/GCP bill.
+
+---
+
+### 🖥️ Infrastructure & Hardware
+
+The entire platform runs on a single **Hetzner dedicated VPS**:
+
+| Component | Spec |
+|-----------|------|
+| **CPU** | 8 vCPU · AMD EPYC-Milan |
+| **RAM** | 30 GB DDR4 |
+| **Storage** | 150 GB NVMe SSD |
+| **OS** | Ubuntu 24.04.4 LTS |
+| **Host** | Hetzner Cloud |
+
+**Runtime stack — all co-located on one machine:**
+- **Nginx** — reverse proxy, SSL termination, static React asset serving
+- **PM2** — 6-worker Node.js cluster (load-balanced, auto-restart on crash, zero-downtime reloads)
+- **Redis** — in-process, local, no external calls — sub-millisecond key lookups for all player/team/pitch data
+- **Express.js** — ~70 API endpoints across 10 route files, distributed across all 6 PM2 workers
+- **React (static build)** — pre-compiled, served directly from Nginx
+
+A player profile page requires zero network hops between services: Nginx → Express → Redis → response in < 5ms end-to-end.
+
+---
+
+### 🏗️ System Architecture
+
+```
+                        ┌──────────────────────────────────────────┐
+                        │          Hetzner VPS (single node)        │
+                        │                                           │
+  User Browser ──HTTPS──► Nginx (80/443) ──► React build (static)  │
+                        │      │                                    │
+                        │      └──/api/*──► PM2 Cluster (6 workers) │
+                        │                     │                     │
+                        │              Express.js (~70 endpoints)   │
+                        │                     │                     │
+                        │                  Redis (local)            │
+                        │             3,500–4,000 players/year      │
+                        │             2015–2026 historical data      │
+                        └──────────────────────┬───────────────────┘
+                                               │
+                              MLB Stats API (statsapi.mlb.com)
+                              Polled live + nightly full refresh
+```
+
+**Redis key schema:**
+```
+player:TEAM-Player_Name-YEAR:season     # Season totals (batting + pitching + WAR + CVR)
+player:TEAM-Player_Name-YEAR:DATE       # Single-game boxscore stats
+team:TEAM:YEAR:season                   # Team season aggregates
+splits:pitch:batter:TEAM-Name-YEAR      # Pitch zone data (14 zones, 6 pitch types)
+splits:pitch:pitcher:TEAM-Name-YEAR     # Pitcher arsenal and zone tendencies
+baseline:season:YEAR:latest             # League-average baselines for 30+ stats
+salary:TEAM-Name-YEAR                   # Salary, contract type, service time
+team-contracts:TEAM:YEAR                # Full roster payroll breakdown
+rolling:player:TEAM-Name-YEAR:season    # Rolling window stats (7/14/21 games)
+```
+
+**Data ingestion schedule:**
+
+| Task | CDT | Description |
+|------|-----|-------------|
+| Live game monitor | Every 90s | Polls MLB schedule, writes boxscores when games go final |
+| Season refresh | 11:00 PM | Full re-pull of all current-season boxscores |
+| Player index rebuild | 11:30 PM | Rebuilds searchable player + stat index |
+| Splits recompute | 12:00 AM | Full play-by-play splits refresh |
+
+---
+
+### 🤖 AI Search — Strategy & Architecture
+
+The home page (`/`) is a **natural language query interface** powered by **OpenAI gpt-4o with function calling**. The design principle: GPT should _never_ answer a baseball question from training data — every stat, every comparison, every trend must be retrieved live from Redis.
+
+**System prompt framing:**
+> GPT is defined as a "DATA RETRIEVAL AGENT with ZERO internal baseball knowledge." It is explicitly forbidden from stating any statistic not returned by a tool call. A metric glossary with tier benchmarks for every proprietary metric is baked into the system prompt so GPT interprets numbers correctly once tools return them.
+
+**16 specialized function-calling tools:**
+
+| Tool | What it fetches |
+|------|----------------|
+| `get_player_season` | Current season stats for a named player |
+| `get_player_rolling` | Last 7 / 14 / 21 game rolling averages |
+| `get_player_trends` | Multi-window trend (slumping / hot?) |
+| `get_pitch_analysis` | Zone heatmaps, pitch-type arsenal, exit velocity |
+| `get_player_splits` | Home/away, vs L/R, late & close, clutch situations |
+| `get_historical_stats` | Year-by-year career arc (2015–2026) |
+| `get_leaderboard` | Top-N players by any sortable stat |
+| `get_pitch_leaderboard` | Spin rate, velocity, whiff rate leaders |
+| `get_league_context` | League-average baselines for contextual comparison |
+| `get_salary_info` | Player salary, contract status, service time |
+| `get_team_contracts` | Full team payroll and roster financial breakdown |
+| `get_standings` | Division standings and playoff picture |
+| `get_team_stats` | Team batting / pitching aggregates |
+| `get_games` | Recent scores and schedule |
+| `get_breakout_players` | Pre-arb / emerging value candidates |
+| `compare_players` | Side-by-side stat comparison across any two players |
+
+**Two-pass orchestration (prevents training-data hallucination):**
+```
+Pass 1 → tool_choice: 'auto'
+  ├── Tools called → execute → synthesize answer          ✓
+  └── No tools called (GPT answered from training data) →
+        inject grounding nudge, reset message context
+        Pass 2 → tool_choice: 'required'                  ✓
+```
+
+**Additional durability features:**
+- **Rate-limit retry:** `openaiCall()` wrapper catches HTTP 429, backs off 8s → 16s, retries up to 2× before graceful failure
+- **Conversation threading:** Last 6 exchanges (12 messages) sent with every request so follow-ups like *"tell me more about that"* correctly resolve their subject without re-fetching the wrong player
+- **Glossary grounding:** CVR tiers (85–100 = ELITE), WAR benchmarks (8+ = MVP), wOBA/ISO scales baked into system prompt — GPT interprets numbers correctly once tools return them
+- **Eval:** 43/50 (86%) in automated batch; ~95% in direct testing (remainder are rate-limit timing artifacts in the eval harness)
+
+---
+
+### 📄 Pages & Features
+
+| Page | Route | Key Features |
+|------|-------|-------------|
+| **AI Search** | `/` | Natural language stat queries — gpt-4o + 16 tools, two-pass orchestration, follow-up chips, 6-exchange conversation history |
+| **Players** | `/players` | Full league list, 30+ sortable stats, team/position filters, card/list toggle, sparklines, leaderboard mode |
+| **Player Detail** | `/players/:team/:player/:year` | CVR 8-component radar, WAR trend line, Trade Value gauge, game log, career arc table, situational splits, pitch zone heatmap, spray chart |
+| **Teams** | `/teams` | All 30 teams with batting/pitching grade badges, CVR/ACVR scores, league rank |
+| **Team Detail** | `/teams/:teamId` | Roster depth chart, batting + pitching splits, CVR aggregate, payroll snapshot |
+| **Standings** | `/standings` | Division standings, wild card race, run differential, Pythagorean W%, L10 streaks |
+| **Scores** | `/scores` | Live scoreboard with date picker; click any game → full boxscore with line score + batting/pitching tables |
+| **Explorer** | `/explorer` | 5 tabs: **Pitch Lab** (zone heatmaps, arsenal, Stuff+ leaders), **At-Bats** (play-by-play drill-down), **Compare** (side-by-side radar), **Teams** (team comparison), **Spray Charts** |
+| **Trades** | `/trades` | Trade Value leaderboard, DTV 6-component deep dive with 6-year projection, Mock Trade Builder (fairness grade), team assets view |
+| **Insights** | `/insights` | Payroll efficiency scatter, WAR leaders by position, power/speed clusters, team ACVR vs payroll, aging curve plots |
+| **Hot/Cold Streaks** | `/streaks` | Rolling-window performance tracker (7/14/21 days), min-PA/IP filters, card and table views |
+| **Spray Chart** | `/spray-chart` | Batted-ball hit-coordinate visualizer with field overlay, outcome color coding, pitch-type filter |
+| **Fantasy / DFS** | `/fantasy` | DFS lineup optimizer, value plays, stack suggestions, DraftKings/FanDuel slate breakdown |
+| **Awards Tracker** | `/awards` | Live MVP, Cy Young, ROY, Silver Slugger, Gold Glove race projections — updated daily |
+| **Glossary** | `/glossary` | Full metric reference: CVR, ACVR, TV, DTV, WAR, wRC+, FIP, SIERA, wOBA, ISO, BABIP, Surplus Value, Aging Curve |
+| **Settings** | `/settings` | Dark/light mode, season selector (2015–2026), Redis health check, API connectivity status |
+
+---
+
+### 📊 Proprietary Metrics
+
+**CVR (Composite Value Rating, 0–100)** — 8-component player quality score computed server-side from raw boxscore data:
+
+`Production (25) + Plate Approach (12) + Power / Stuff (10) + Speed / Defense (8) + Situational (10) + Durability (10) + Contract Efficiency (10) + Trajectory (15)`
+
+| Tier | Range |
+|------|-------|
+| ELITE | 85–100 |
+| ALL-STAR | 70–84 |
+| ABOVE AVERAGE | 55–69 |
+| AVERAGE | 40–54 |
+| BELOW AVERAGE | 25–39 |
+| REPLACEMENT | 10–24 |
+
+**ACVR** — CVR adjusted by salary efficiency, contract type, and YoY trajectory delta. Pre-arb stars with elite production can be 10–15 points above their raw CVR.
+
+**TV (Trade Value, 0–100)** — `WAR (30) + CVR (25) + Contract Surplus (20) + Age/Future (15) + Positional Scarcity (10)`
+
+**DTV (Dynamic Trade Value)** — Expands TV with a 6-year discounted surplus projection, aging curve decay, positional market rate comparison, and narrative synthesis.
+
+---
+
+### 🔧 Tech Stack
+
+```
+Frontend          React 18 · Material UI 5 · Recharts · Framer Motion
+Backend           Node.js · Express.js · ioredis
+AI Layer          OpenAI gpt-4o · Function Calling · Two-pass orchestration
+Data Store        Redis (local, single node, ~150 MB live dataset)
+Data Source       MLB Stats API (statsapi.mlb.com — no auth required)
+Process Manager   PM2 (6-worker cluster)
+Web Server        Nginx (reverse proxy + static serving + SSL)
+OS / Host         Ubuntu 24.04.4 LTS · Hetzner VPS
+CI/CD             GitHub Actions → auto-deploy on push to main
+QA                Jest · route-consistency tests · pre-push lint + structural checks
+```
+
+---
+
+## 🌟 Recent Development Activity
 
 <!-- CHANGELOG:START -->
 ### ⚾ The Cycle — MLB Analytics Platform
@@ -95,63 +279,42 @@
 
 <!-- CHANGELOG:END -->
 
-The Cycle pulls data from the MLB Stats API and processes it into a full-featured analytics dashboard. During the season, it monitors live games every 2 minutes and automatically ingests completed box scores — no manual updates needed.
-
-**What it does:**
-- **Live Scoreboard** — Real-time scores and game states across the league
-- **Player Profiles** — Season stats, advanced metrics (wOBA, FIP, BABIP), and a proprietary Cycle Value Rating (CVR) that grades overall player value
-- **Splits Explorer** — Situational breakdowns (home/away, vs L/R, by count, runners on, etc.) for both players and teams
-- **Pitch Analysis** — Pitch-type breakdowns, zone heatmaps, and spray charts built from play-by-play data
-- **Team Analytics** — Roster overviews, team batting/pitching profiles, and head-to-head matchup history
-- **Standings & Leaderboards** — League-wide rankings with sortable stat categories
-
-#### Scheduled Tasks (Server: UTC | CST)
-
-| Task | UTC | CDT (UTC-5) | Description |
-|------|-----|-------------|-------------|
-| Live game monitor | Every 90s | Every 90s | Polls MLB schedule, ingests boxscores + splits when games go final |
-| Season refresh | 4:00 AM | 11:00 PM | Full re-pull of current season boxscores |
-| Player index rebuild | 4:30 AM | 11:30 PM | Rebuilds searchable player index |
-| Splits refresh | 5:00 AM | 12:00 AM | Full play-by-play splits recompute for current season |
-
-```
-Stack: React · Node.js · Express · Redis · Nginx · MLB Stats API
-```
-
 ---
 
 ## 🎯 About Me
 
-I'm an Inbound Team Leader at Target with a passion for building software that makes complex data accessible. 
+I'm an Inbound Team Leader at Target who builds software on the side that makes complex data genuinely useful.
 
-- 🎯 **Current Role:** Inbound Team Leader at Target
-- 🚀 **Career Goal:**  Building the bridge between complex data and intuitive information systems
-- 🔨 **Building:** [The Cycle](https://thecycle.online) — a self-updating MLB analytics platform
-- 🌱 **Learning:** Frontend architectures · GenAI techniques · Advanced system design
-- 💡 **Specialty:** Turning messy data into clean, useful interfaces
+- 🔨 **Building:** [The Cycle](https://thecycle.online) — self-hosted, self-updating MLB analytics on bare-metal
+- 🚀 **Goal:** Bridging the gap between raw data and interfaces people actually want to use
+- 🌱 **Currently learning:** LLM function-calling architectures · Redis performance patterns · system design at the edge
+- 💡 **Specialty:** Turning messy data pipelines into something clean and fast
+
+---
 
 ## 💼 Professional Focus
 
 <div align="center">
 
-| 🎯 Software Engineering | ☁️ Cloud & Infrastructure | 📊 Data & Analytics |
-|------------------------|---------------------------|---------------------|
+| 🎯 Software Engineering | ☁️ Infrastructure | 📊 Data & Analytics |
+|------------------------|-------------------|---------------------|
 | Full-Stack Development | Linux VPS & Nginx | Statistical Computing |
-| AI-Assisted Architecture | Performance Optimization | Predictive Analytics |
-| Enterprise Systems | CI/CD & DevOps | Real-Time Data Processing |
-| RESTful API Design | Redis Caching Strategies | Business Intelligence |
+| LLM / AI Architecture | Performance Optimization | Predictive Analytics |
+| Real-Time Data Processing | PM2 · Redis · Docker | Business Intelligence |
+| RESTful API Design | CI/CD & DevOps | Proprietary Metric Development |
 
 </div>
 
+---
+
 ## 🎓 Core Competencies
 
-- **AI-Accelerated Development:** Advanced prompt engineering and AI-assisted architecture design for rapid application development
-- **Full-Stack System Architecture:** Building scalable platforms processing millions of data points with sub-millisecond response times
-- **Performance Engineering:** Redis batch operations, parallel processing, and optimization techniques achieving significant load time reductions
-- **Cloud Infrastructure & DevOps:** Linux server management, Nginx, Docker containerization, Redis caching, and automated deployment pipelines
-- **Data Pipeline Development:** Real-time APIs, statistical computing, and automated data ingestion from external sources
-- **Cross-Functional Leadership:** 6+ years driving operational excellence and mentoring high-performing teams
-- **Proprietary Algorithm Development:** Creating analytical systems that integrate multiple data sources into composite player and team valuations
+- **LLM Function-Calling Systems** — Multi-tool AI agents grounded in live data; two-pass orchestration, rate-limit handling, conversation history threading — GPT never answers from training data
+- **Full-Stack Platform Architecture** — End-to-end systems from raw data ingestion through API design to polished UI, on commodity hardware with sub-5ms response times
+- **Redis-First Data Design** — Pre-aggregated JSON at write time, O(1) reads at query time; no SQL, no ORM, no query planning overhead
+- **Performance Engineering** — PM2 clustering, Nginx static caching, parallel Redis pipelines, React code splitting
+- **Proprietary Algorithm Development** — Multi-component composite scoring systems (CVR, ACVR, TV, DTV) integrating production, contract, age curve, and positional scarcity signals
+- **Cross-Functional Leadership** — 6+ years driving operational excellence and coaching high-performing teams at Target
 
 ---
 
@@ -166,6 +329,8 @@ I'm an Inbound Team Leader at Target with a passion for building software that m
   ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=c-tram&theme=dark&hide_border=true&background=0d1117&ring=f0e68c&fire=f0e68c&currStreakLabel=f0e68c)
 
 </div>
+
+---
 
 ## 📈 Contribution Activity
 
