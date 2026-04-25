@@ -14,8 +14,7 @@
 
 > **Live at [thecycle.online](https://thecycle.online)** — a self-hosted, self-updating MLB analytics platform built to test every measurable baseball statistic.
 
-The Cycle ingests live MLB data, runs proprietary statistical models entirely server-side, and serves a React frontend from a single bare-metal VPS — no cloud databases, no third-party compute, no AWS/GCP bill.
-
+The Cycle ingests live MLB data, runs proprietary statistical models entirely server-side, and serves a React frontend from a single bare-metal VPS.
 ---
 
 ### 🖥️ Infrastructure & Hardware
@@ -24,8 +23,8 @@ The entire platform runs on a single **Hetzner dedicated VPS**:
 
 | Component | Spec |
 |-----------|------|
-| **CPU** | 8 vCPU · AMD EPYC-Milan |
-| **RAM** | 30 GB DDR4 |
+| **CPU** | 6 vCPU · AMD EPYC-Milan |
+| **RAM** | 32 GB DDR4 |
 | **Storage** | 150 GB NVMe SSD |
 | **OS** | Ubuntu 24.04.4 LTS |
 | **Host** | Hetzner Cloud |
