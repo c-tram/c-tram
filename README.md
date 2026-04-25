@@ -16,7 +16,7 @@
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-22 • 48 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-22 • 44 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -27,6 +27,11 @@
 
 #### ⚾ Splits & Pitch Analytics
 
+  - lock splits explorer and analytics tab to Regular Season only (`2026-04-22`)
+  - tunneling pairs use full pitch names instead of acronyms (`2026-04-22`)
+  - replace Matchups with Spray Charts in Explorer (`2026-04-22`)
+  - Pitch Lab leaderboard uses pitchEvents for counts, not pitch_types (`2026-04-22`)
+  - Pitch Lab leaderboard preserves stuffPlus through gameType filter (`2026-04-22`)
   - Pitch Lab race condition, Matchups/Compare empty search results (`2026-04-22`)
   - Explorer — remove salary tab, fix slugs/stat aliases/pitch filter/compare crashes (`2026-04-22`)
   - Revert "remove: At-Bat Explorer tab — redundant with Pitch Analysis" (`2026-04-22`)
@@ -36,13 +41,11 @@
   - Live AB tracking: currentPlay in boxscore API + pulsing in-progress AB card in play-by-play (`2026-04-21`)
   - Add at-bat/pitch explorer popup to matchup history tables (`2026-04-18`)
   - Add hit location field chart to play-by-play expanded detail (`2026-04-18`)
-  - Replace game spray chart with live at-bat tracker: strike zone + hit field (`2026-04-17`)
-  - Add MLB-style live tracker + game spray chart to Boxscore (`2026-04-17`)
-  - Add Matchups tab to Boxscore — career batter vs pitcher stats for both lineups (`2026-04-17`)
-  - Add pitcher matchup info to Dashboard ticker and Scores page (`2026-04-15`)
 
 #### 🎨 Frontend & UX
 
+  - Insights page + Teams L10 trend badges (`2026-04-22`)
+  - keyboard Enter on recent searches navigates to /undefined (`2026-04-22`)
   - Remove hero player search from Dashboard (`2026-04-21`)
   - Fix hero search: consolidated player stats map so all stats show regardless of top-10 rank (`2026-04-21`)
   - Task 4: StatMuse hero search — autocomplete + giant hero stat + secondaries on Dashboard (`2026-04-21`)
@@ -52,12 +55,6 @@
   - correct all backend data shapes across every page — standings divisions, game team objects, dashboard leaders, leaderboard normalization, players stat flattening, salaries data key, stuffplus leaders key (`2026-04-20`)
   - move expected stats card to overview tab (`2026-04-20`)
   - add Savant-style percentile bars to expected stats card (`2026-04-20`)
-  - Redesign Scores page: MLB-app style date ribbon + linescore cards (`2026-04-18`)
-  - Overhaul Boxscore: MLB-style layout, 6 tabs → 3 (`2026-04-17`)
-  - Fix matchups tab: reset data when switching games, prevent stale cache (`2026-04-17`)
-  - Remove mobile bottom tab bar — sidebar handles navigation (`2026-04-17`)
-  - Dashboard ticker: always show day navigation arrows (`2026-04-15`)
-  - Allow viewing tomorrow's and future games in Dashboard and Scores (`2026-04-15`)
 
 #### ⚡ API & Performance
 
@@ -82,11 +79,10 @@
   - replace index.css with actual Tailwind + design system styles (`2026-04-20`)
   - proper title and favicon in index.html (`2026-04-20`)
   - fix win-probability/undefined bug + commercial stats.sh analytics (`2026-04-18`)
-  - Fix pre-game detection: check linescore.innings instead of truthy linescore (`2026-04-17`)
-  - Fix 9 stale-state bugs: key remount on game switch, ref-sync on auto-refresh, stable callback (`2026-04-17`)
 
 #### 📝 General
 
+  - two-way player role toggle in PlayerDetail (`2026-04-22`)
   - Task 5: BBRef-style career table — column groups, monospace, sortable, advanced stats (`2026-04-22`)
   - Task 3: MLB App scoreboard — team color accent bars, enlarged diamond panel, inning half ▲▼, team-colored WP bar (`2026-04-21`)
   - Task 2: FanGraphs-style dense leaderboard — col groups, team filter, min PA/IP, active sort column band (`2026-04-21`)
