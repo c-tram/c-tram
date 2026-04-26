@@ -222,7 +222,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - splits tab — independent game type + date range (All Time) filters (`2026-04-22`)
   - Fix hero stats: fetch full player profile for complete batting/pitching stats (`2026-04-21`)
   - Live AB tracking: currentPlay in boxscore API + pulsing in-progress AB card in play-by-play (`2026-04-21`)
-  - Add at-bat/pitch explorer popup to matchup history tables (`2026-04-18`)
 
 #### 🎨 Frontend & UX
 
@@ -240,6 +239,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - cache warmer keeps all 6 PM2 workers hot (`2026-04-26`)
   - single /api/v2/awards endpoint, no-bs award tracker (`2026-04-26`)
   - use mlb-live schedule API instead of Redis cache for scoreboard; fix game key to use id (`2026-04-20`)
   - wire all pages to real backend endpoints with correct routes and response shapes (`2026-04-20`)
