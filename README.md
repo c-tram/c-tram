@@ -199,7 +199,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-22 • 44 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-26 • 44 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -248,6 +248,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🔧 Data Pipeline
 
+  - infra: CPX31 downgrade — 2 PM2 workers, Dragonfly tiered storage, Nginx worker_processes 1 (`2026-04-26`)
   - AIO Explorer — Leaders, Compare Players, Compare Teams, Salary merged into /explorer; delete old pages (`2026-04-22`)
 
 #### 🏗️ Infrastructure
@@ -270,7 +271,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Task 3: MLB App scoreboard — team color accent bars, enlarged diamond panel, inning half ▲▼, team-colored WP bar (`2026-04-21`)
   - Task 2: FanGraphs-style dense leaderboard — col groups, team filter, min PA/IP, active sort column band (`2026-04-21`)
   - revert: serve web-frontend v1 build (`2026-04-21`)
-  - Game click opens Boxscore dialog directly, skip inline analytics panel (`2026-04-18`)
 
 </details>
 
