@@ -240,6 +240,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - single /api/v2/awards endpoint, no-bs award tracker (`2026-04-26`)
   - use mlb-live schedule API instead of Redis cache for scoreboard; fix game key to use id (`2026-04-20`)
   - wire all pages to real backend endpoints with correct routes and response shapes (`2026-04-20`)
   - update nginx root to web-frontend-v2/dist (`2026-04-20`)
@@ -262,7 +263,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Fix boxscore live updates: poll all tabs, use fresh linescore for score/inning display (`2026-04-21`)
   - replace index.css with actual Tailwind + design system styles (`2026-04-20`)
   - proper title and favicon in index.html (`2026-04-20`)
-  - fix win-probability/undefined bug + commercial stats.sh analytics (`2026-04-18`)
 
 #### 📝 General
 
