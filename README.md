@@ -234,7 +234,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Fix player slug navigation in Leaders — use name-only slug, add slug field to leaders response (`2026-04-21`)
   - Task 2 polish: 2-row controls layout, stepper qualifier, stable useCallback filter, fixed imports (`2026-04-21`)
   - correct all backend data shapes across every page — standings divisions, game team objects, dashboard leaders, leaderboard normalization, players stat flattening, salaries data key, stuffplus leaders key (`2026-04-20`)
-  - move expected stats card to overview tab (`2026-04-20`)
 
 #### ⚡ API & Performance
 
@@ -266,6 +265,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - AI search: subject continuity, qualifier-aware leaders, multi-year tool, sample warnings (`2026-04-26`)
   - two-way player role toggle in PlayerDetail (`2026-04-22`)
   - Task 5: BBRef-style career table — column groups, monospace, sortable, advanced stats (`2026-04-22`)
   - Task 3: MLB App scoreboard — team color accent bars, enlarged diamond panel, inning half ▲▼, team-colored WP bar (`2026-04-21`)
