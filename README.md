@@ -223,7 +223,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Fix hero stats: fetch full player profile for complete batting/pitching stats (`2026-04-21`)
   - Live AB tracking: currentPlay in boxscore API + pulsing in-progress AB card in play-by-play (`2026-04-21`)
   - Add at-bat/pitch explorer popup to matchup history tables (`2026-04-18`)
-  - Add hit location field chart to play-by-play expanded detail (`2026-04-18`)
 
 #### 🎨 Frontend & UX
 
@@ -253,6 +252,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🏗️ Infrastructure
 
+  - restore CCX33 config: 6 PM2 workers, 2 nginx workers (`2026-04-26`)
   - nginx.conf must include sites-enabled for SSL/443 to bind (`2026-04-21`)
 
 #### 🐛 Bug Fixes
