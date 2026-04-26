@@ -235,10 +235,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Task 2 polish: 2-row controls layout, stepper qualifier, stable useCallback filter, fixed imports (`2026-04-21`)
   - correct all backend data shapes across every page — standings divisions, game team objects, dashboard leaders, leaderboard normalization, players stat flattening, salaries data key, stuffplus leaders key (`2026-04-20`)
   - move expected stats card to overview tab (`2026-04-20`)
-  - add Savant-style percentile bars to expected stats card (`2026-04-20`)
 
 #### ⚡ API & Performance
 
+  - year-aware TTL + historical cache warmer loop (`2026-04-26`)
   - cache warmer keeps all 6 PM2 workers hot (`2026-04-26`)
   - single /api/v2/awards endpoint, no-bs award tracker (`2026-04-26`)
   - use mlb-live schedule API instead of Redis cache for scoreboard; fix game key to use id (`2026-04-20`)
