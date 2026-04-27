@@ -242,7 +242,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - single /api/v2/awards endpoint, no-bs award tracker (`2026-04-26`)
   - use mlb-live schedule API instead of Redis cache for scoreboard; fix game key to use id (`2026-04-20`)
   - wire all pages to real backend endpoints with correct routes and response shapes (`2026-04-20`)
-  - update nginx root to web-frontend-v2/dist (`2026-04-20`)
 
 #### 🔧 Data Pipeline
 
@@ -264,6 +263,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - Phase B: Statcast zone heatmap + auto-enrichment + qualifier fix (`2026-04-26`)
   - Phase A: StatMuse-grade NLQ envelope + charts (`2026-04-26`)
   - AI search: subject continuity, qualifier-aware leaders, multi-year tool, sample warnings (`2026-04-26`)
   - two-way player role toggle in PlayerDetail (`2026-04-22`)
