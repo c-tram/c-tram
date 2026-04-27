@@ -226,6 +226,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - Rename home nav: Dashboard/AI Search → Cycle IQ across sidebar, breadcrumb, bottom tab (`2026-04-27`)
   - Insights page + Teams L10 trend badges (`2026-04-22`)
   - keyboard Enter on recent searches navigates to /undefined (`2026-04-22`)
   - Remove hero player search from Dashboard (`2026-04-21`)
@@ -234,7 +235,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Fix live AB card: always show currentPlay, dedup vs completed, 5s poll, LAST AB state (`2026-04-21`)
   - Fix player slug navigation in Leaders — use name-only slug, add slug field to leaders response (`2026-04-21`)
   - Task 2 polish: 2-row controls layout, stepper qualifier, stable useCallback filter, fixed imports (`2026-04-21`)
-  - correct all backend data shapes across every page — standings divisions, game team objects, dashboard leaders, leaderboard normalization, players stat flattening, salaries data key, stuffplus leaders key (`2026-04-20`)
 
 #### ⚡ API & Performance
 
