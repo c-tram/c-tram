@@ -210,6 +210,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Phase C: situational splits tool + rank percentile gauge + follow-up dedup (`2026-04-26`)
   - lock splits explorer and analytics tab to Regular Season only (`2026-04-22`)
   - tunneling pairs use full pitch names instead of acronyms (`2026-04-22`)
   - replace Matchups with Spray Charts in Explorer (`2026-04-22`)
@@ -259,7 +260,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - flip Inside/Outside zone labels for left-handed batters (`2026-04-22`)
   - Fix boxscore live updates: poll all tabs, use fresh linescore for score/inning display (`2026-04-21`)
   - replace index.css with actual Tailwind + design system styles (`2026-04-20`)
-  - proper title and favicon in index.html (`2026-04-20`)
 
 #### 📝 General
 
