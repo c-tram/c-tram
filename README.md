@@ -238,6 +238,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - Phase D+E: sparkline/donut/compare-bar charts + enriched citations + adaptive cache TTL + 24-prompt regression suite (`2026-04-26`)
   - year-aware TTL + historical cache warmer loop (`2026-04-26`)
   - cache warmer keeps all 6 PM2 workers hot (`2026-04-26`)
   - single /api/v2/awards endpoint, no-bs award tracker (`2026-04-26`)
@@ -259,7 +260,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - remove Leaders tab, fix Matchups fallback, fix Compare 3 bugs (`2026-04-22`)
   - flip Inside/Outside zone labels for left-handed batters (`2026-04-22`)
   - Fix boxscore live updates: poll all tabs, use fresh linescore for score/inning display (`2026-04-21`)
-  - replace index.css with actual Tailwind + design system styles (`2026-04-20`)
 
 #### 📝 General
 
