@@ -199,7 +199,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-27 • 44 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-28 • 44 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -242,7 +242,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - year-aware TTL + historical cache warmer loop (`2026-04-26`)
   - cache warmer keeps all 6 PM2 workers hot (`2026-04-26`)
   - single /api/v2/awards endpoint, no-bs award tracker (`2026-04-26`)
-  - use mlb-live schedule API instead of Redis cache for scoreboard; fix game key to use id (`2026-04-20`)
 
 #### 🔧 Data Pipeline
 
@@ -256,6 +255,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - Fix: filter non-MLB All-Star noise from career/leaderboards/rank; suppress zero-data sparkline; mobile FAB no-overlap on Cycle IQ; inline career matchups in scoreboard (`2026-04-28`)
   - Fix /players leaderboard: filter on PA (batting) instead of gameCount (`2026-04-27`)
   - remove Leaders tab, fix Matchups fallback, fix Compare 3 bugs (`2026-04-22`)
   - flip Inside/Outside zone labels for left-handed batters (`2026-04-22`)
