@@ -227,6 +227,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - precompute /players and /teams cache for every year (`2026-04-29`)
   - Redis-backed shared cache for past-year responses (`2026-04-29`)
   - skip rolling overlay for past seasons (22s -> ~1s MISS) (`2026-04-29`)
   - ops: live boxscore pull cron + nginx cache purge (`2026-04-29`)
@@ -257,7 +258,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Fix: filter non-MLB All-Star noise from career/leaderboards/rank; suppress zero-data sparkline; mobile FAB no-overlap on Cycle IQ; inline career matchups in scoreboard (`2026-04-28`)
   - Fix /players leaderboard: filter on PA (batting) instead of gameCount (`2026-04-27`)
   - remove Leaders tab, fix Matchups fallback, fix Compare 3 bugs (`2026-04-22`)
-  - flip Inside/Outside zone labels for left-handed batters (`2026-04-22`)
 
 #### 📝 General
 
