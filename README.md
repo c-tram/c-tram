@@ -259,10 +259,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Fix /players leaderboard: filter on PA (batting) instead of gameCount (`2026-04-27`)
   - remove Leaders tab, fix Matchups fallback, fix Compare 3 bugs (`2026-04-22`)
   - flip Inside/Outside zone labels for left-handed batters (`2026-04-22`)
-  - Fix boxscore live updates: poll all tabs, use fresh linescore for score/inning display (`2026-04-21`)
 
 #### 📝 General
 
+  - grade filter chips + 162-game projected $/W (`2026-04-29`)
   - minimalist tabbed table — drop record cols, filters, embedded panels (`2026-04-29`)
   - audit: 8-fix batch — historical year, IP agg, team aliases, NLQ resilience (`2026-04-29`)
   - Phase B: Statcast zone heatmap + auto-enrichment + qualifier fix (`2026-04-26`)
