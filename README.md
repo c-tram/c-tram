@@ -226,7 +226,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Insights page + Teams L10 trend badges (`2026-04-22`)
   - keyboard Enter on recent searches navigates to /undefined (`2026-04-22`)
   - Remove hero player search from Dashboard (`2026-04-21`)
-  - Fix hero search: consolidated player stats map so all stats show regardless of top-10 rank (`2026-04-21`)
 
 #### ⚡ API & Performance
 
@@ -262,6 +261,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - A-F dynamic grades, sortable Grade column, remove filter chips (`2026-04-29`)
   - grade filter chips + 162-game projected $/W (`2026-04-29`)
   - minimalist tabbed table — drop record cols, filters, embedded panels (`2026-04-29`)
   - audit: 8-fix batch — historical year, IP agg, team aliases, NLQ resilience (`2026-04-29`)
