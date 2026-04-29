@@ -233,6 +233,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - year-aware Cache-Control — 30d TTL for historical seasons (`2026-04-29`)
   - SCAN-based getKeysByPattern + scale to 10 PM2 workers (`2026-04-29`)
   - hit nginx (HTTPS) instead of backend so shared cache fills (`2026-04-29`)
   - nginx response caching layer + warmer tuned for shared-vCPU host (`2026-04-29`)
@@ -269,7 +270,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - AI search: subject continuity, qualifier-aware leaders, multi-year tool, sample warnings (`2026-04-26`)
   - two-way player role toggle in PlayerDetail (`2026-04-22`)
   - Task 5: BBRef-style career table — column groups, monospace, sortable, advanced stats (`2026-04-22`)
-  - Task 3: MLB App scoreboard — team color accent bars, enlarged diamond panel, inning half ▲▼, team-colored WP bar (`2026-04-21`)
 
 </details>
 
