@@ -246,6 +246,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🔧 Data Pipeline
 
+  - point ops scripts at new Helsinki server (157.180.113.23) (`2026-04-29`)
   - infra: CPX31 downgrade — 2 PM2 workers, Dragonfly tiered storage, Nginx worker_processes 1 (`2026-04-26`)
   - AIO Explorer — Leaders, Compare Players, Compare Teams, Salary merged into /explorer; delete old pages (`2026-04-22`)
 
@@ -272,7 +273,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Task 5: BBRef-style career table — column groups, monospace, sortable, advanced stats (`2026-04-22`)
   - Task 3: MLB App scoreboard — team color accent bars, enlarged diamond panel, inning half ▲▼, team-colored WP bar (`2026-04-21`)
   - Task 2: FanGraphs-style dense leaderboard — col groups, team filter, min PA/IP, active sort column band (`2026-04-21`)
-  - revert: serve web-frontend v1 build (`2026-04-21`)
 
 </details>
 
