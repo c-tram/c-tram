@@ -239,6 +239,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - nginx response caching layer + warmer tuned for shared-vCPU host (`2026-04-29`)
   - relax historical re-warm schedule for new server (`2026-04-29`)
   - Phase D+E: sparkline/donut/compare-bar charts + enriched citations + adaptive cache TTL + 24-prompt regression suite (`2026-04-26`)
   - year-aware TTL + historical cache warmer loop (`2026-04-26`)
@@ -272,7 +273,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - two-way player role toggle in PlayerDetail (`2026-04-22`)
   - Task 5: BBRef-style career table — column groups, monospace, sortable, advanced stats (`2026-04-22`)
   - Task 3: MLB App scoreboard — team color accent bars, enlarged diamond panel, inning half ▲▼, team-colored WP bar (`2026-04-21`)
-  - Task 2: FanGraphs-style dense leaderboard — col groups, team filter, min PA/IP, active sort column band (`2026-04-21`)
 
 </details>
 
