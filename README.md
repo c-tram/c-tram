@@ -228,10 +228,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Remove hero player search from Dashboard (`2026-04-21`)
   - Fix hero search: consolidated player stats map so all stats show regardless of top-10 rank (`2026-04-21`)
   - Task 4: StatMuse hero search — autocomplete + giant hero stat + secondaries on Dashboard (`2026-04-21`)
-  - Fix live AB card: always show currentPlay, dedup vs completed, 5s poll, LAST AB state (`2026-04-21`)
 
 #### ⚡ API & Performance
 
+  - ops: live boxscore pull cron + nginx cache purge (`2026-04-29`)
   - year-aware Cache-Control — 30d TTL for historical seasons (`2026-04-29`)
   - SCAN-based getKeysByPattern + scale to 10 PM2 workers (`2026-04-29`)
   - hit nginx (HTTPS) instead of backend so shared cache fills (`2026-04-29`)
