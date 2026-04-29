@@ -204,10 +204,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
 
-#### 💰 Trade Intelligence
-
-  - Fix wRC+/wOBA sort, add CVR+aCVR chips, expose acvr in leaders endpoint (`2026-04-21`)
-
 #### ⚾ Splits & Pitch Analytics
 
   - restore dot click→AB popup and per-AB list mini-spray (`2026-04-29`)
@@ -248,6 +244,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🔧 Data Pipeline
 
+  - restore: bring back the awesome Teams + Insights pages (regressed in d1ce384) (`2026-04-29`)
   - point ops scripts at new Helsinki server (157.180.113.23) (`2026-04-29`)
   - infra: CPX31 downgrade — 2 PM2 workers, Dragonfly tiered storage, Nginx worker_processes 1 (`2026-04-26`)
   - AIO Explorer — Leaders, Compare Players, Compare Teams, Salary merged into /explorer; delete old pages (`2026-04-22`)
