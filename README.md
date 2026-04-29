@@ -230,10 +230,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Fix hero search: consolidated player stats map so all stats show regardless of top-10 rank (`2026-04-21`)
   - Task 4: StatMuse hero search — autocomplete + giant hero stat + secondaries on Dashboard (`2026-04-21`)
   - Fix live AB card: always show currentPlay, dedup vs completed, 5s poll, LAST AB state (`2026-04-21`)
-  - Fix player slug navigation in Leaders — use name-only slug, add slug field to leaders response (`2026-04-21`)
 
 #### ⚡ API & Performance
 
+  - SCAN-based getKeysByPattern + scale to 10 PM2 workers (`2026-04-29`)
   - hit nginx (HTTPS) instead of backend so shared cache fills (`2026-04-29`)
   - nginx response caching layer + warmer tuned for shared-vCPU host (`2026-04-29`)
   - relax historical re-warm schedule for new server (`2026-04-29`)
