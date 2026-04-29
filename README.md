@@ -227,6 +227,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - Redis-backed shared cache for past-year responses (`2026-04-29`)
   - skip rolling overlay for past seasons (22s -> ~1s MISS) (`2026-04-29`)
   - ops: live boxscore pull cron + nginx cache purge (`2026-04-29`)
   - year-aware Cache-Control — 30d TTL for historical seasons (`2026-04-29`)
@@ -269,7 +270,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Phase A: StatMuse-grade NLQ envelope + charts (`2026-04-26`)
   - AI search: subject continuity, qualifier-aware leaders, multi-year tool, sample warnings (`2026-04-26`)
   - two-way player role toggle in PlayerDetail (`2026-04-22`)
-  - Task 5: BBRef-style career table — column groups, monospace, sortable, advanced stats (`2026-04-22`)
 
 </details>
 
