@@ -218,7 +218,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Revert "remove: At-Bat Explorer tab — redundant with Pitch Analysis" (`2026-04-22`)
   - remove: At-Bat Explorer tab — redundant with Pitch Analysis (`2026-04-22`)
   - splits tab — independent game type + date range (All Time) filters (`2026-04-22`)
-  - Fix hero stats: fetch full player profile for complete batting/pitching stats (`2026-04-21`)
 
 #### 🎨 Frontend & UX
 
@@ -229,6 +228,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - skip rolling overlay for past seasons (22s -> ~1s MISS) (`2026-04-29`)
   - ops: live boxscore pull cron + nginx cache purge (`2026-04-29`)
   - year-aware Cache-Control — 30d TTL for historical seasons (`2026-04-29`)
   - SCAN-based getKeysByPattern + scale to 10 PM2 workers (`2026-04-29`)
