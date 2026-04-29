@@ -216,7 +216,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Pitch Lab race condition, Matchups/Compare empty search results (`2026-04-22`)
   - Explorer — remove salary tab, fix slugs/stat aliases/pitch filter/compare crashes (`2026-04-22`)
   - Revert "remove: At-Bat Explorer tab — redundant with Pitch Analysis" (`2026-04-22`)
-  - remove: At-Bat Explorer tab — redundant with Pitch Analysis (`2026-04-22`)
 
 #### 🎨 Frontend & UX
 
@@ -226,6 +225,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - canonicalize Redis cache key (drop cache-busters, default-equiv params, sort keys) (`2026-04-29`)
   - persist past-year payloads to Redis-backed shared cache (`2026-04-29`)
   - precompute /players and /teams cache for every year (`2026-04-29`)
   - Redis-backed shared cache for past-year responses (`2026-04-29`)
