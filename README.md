@@ -199,7 +199,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-28 • 44 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-29 • 45 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -263,6 +263,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - audit: 8-fix batch — historical year, IP agg, team aliases, NLQ resilience (`2026-04-29`)
   - Phase B: Statcast zone heatmap + auto-enrichment + qualifier fix (`2026-04-26`)
   - Phase A: StatMuse-grade NLQ envelope + charts (`2026-04-26`)
   - AI search: subject continuity, qualifier-aware leaders, multi-year tool, sample warnings (`2026-04-26`)
