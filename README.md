@@ -219,7 +219,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - remove: At-Bat Explorer tab — redundant with Pitch Analysis (`2026-04-22`)
   - splits tab — independent game type + date range (All Time) filters (`2026-04-22`)
   - Fix hero stats: fetch full player profile for complete batting/pitching stats (`2026-04-21`)
-  - Live AB tracking: currentPlay in boxscore API + pulsing in-progress AB card in play-by-play (`2026-04-21`)
 
 #### 🎨 Frontend & UX
 
@@ -245,6 +244,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🔧 Data Pipeline
 
+  - efficiency-first rewrite, absorb Insights, kill /insights page (`2026-04-29`)
   - restore: bring back the awesome Teams + Insights pages (regressed in d1ce384) (`2026-04-29`)
   - point ops scripts at new Helsinki server (157.180.113.23) (`2026-04-29`)
   - infra: CPX31 downgrade — 2 PM2 workers, Dragonfly tiered storage, Nginx worker_processes 1 (`2026-04-26`)
