@@ -239,6 +239,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - relax historical re-warm schedule for new server (`2026-04-29`)
   - Phase D+E: sparkline/donut/compare-bar charts + enriched citations + adaptive cache TTL + 24-prompt regression suite (`2026-04-26`)
   - year-aware TTL + historical cache warmer loop (`2026-04-26`)
   - cache warmer keeps all 6 PM2 workers hot (`2026-04-26`)
@@ -253,7 +254,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 #### 🏗️ Infrastructure
 
   - restore CCX33 config: 6 PM2 workers, 2 nginx workers (`2026-04-26`)
-  - nginx.conf must include sites-enabled for SSL/443 to bind (`2026-04-21`)
 
 #### 🐛 Bug Fixes
 
