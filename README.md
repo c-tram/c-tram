@@ -199,7 +199,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-29 • 45 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-29 • 46 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -210,6 +210,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - restore dot click→AB popup and per-AB list mini-spray (`2026-04-29`)
   - Phase C: situational splits tool + rank percentile gauge + follow-up dedup (`2026-04-26`)
   - lock splits explorer and analytics tab to Regular Season only (`2026-04-22`)
   - tunneling pairs use full pitch names instead of acronyms (`2026-04-22`)
