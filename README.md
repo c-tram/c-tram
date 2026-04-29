@@ -224,7 +224,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Rename home nav: Dashboard/AI Search → Cycle IQ across sidebar, breadcrumb, bottom tab (`2026-04-27`)
   - Insights page + Teams L10 trend badges (`2026-04-22`)
   - keyboard Enter on recent searches navigates to /undefined (`2026-04-22`)
-  - Remove hero player search from Dashboard (`2026-04-21`)
 
 #### ⚡ API & Performance
 
@@ -261,6 +260,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - warmer: include rolling/category/playerType variants (`2026-04-29`)
   - A-F dynamic grades, sortable Grade column, remove filter chips (`2026-04-29`)
   - grade filter chips + 162-game projected $/W (`2026-04-29`)
   - minimalist tabbed table — drop record cols, filters, embedded panels (`2026-04-29`)
