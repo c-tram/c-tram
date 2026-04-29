@@ -217,7 +217,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Explorer — remove salary tab, fix slugs/stat aliases/pitch filter/compare crashes (`2026-04-22`)
   - Revert "remove: At-Bat Explorer tab — redundant with Pitch Analysis" (`2026-04-22`)
   - remove: At-Bat Explorer tab — redundant with Pitch Analysis (`2026-04-22`)
-  - splits tab — independent game type + date range (All Time) filters (`2026-04-22`)
 
 #### 🎨 Frontend & UX
 
@@ -227,6 +226,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - persist past-year payloads to Redis-backed shared cache (`2026-04-29`)
   - precompute /players and /teams cache for every year (`2026-04-29`)
   - Redis-backed shared cache for past-year responses (`2026-04-29`)
   - skip rolling overlay for past seasons (22s -> ~1s MISS) (`2026-04-29`)
