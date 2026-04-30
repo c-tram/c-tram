@@ -211,6 +211,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - scrollable top/bottom 10 columns with fade hint (`2026-04-30`)
   - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
   - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
   - CVR Movers daily risers/fallers widget on hero (Tier-1 #1) (`2026-04-30`)
@@ -229,7 +230,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - Rename home nav: Dashboard/AI Search → Cycle IQ across sidebar, breadcrumb, bottom tab (`2026-04-27`)
   - Insights page + Teams L10 trend badges (`2026-04-22`)
-  - keyboard Enter on recent searches navigates to /undefined (`2026-04-22`)
 
 #### ⚡ API & Performance
 
