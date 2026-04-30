@@ -211,6 +211,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - infinite scroll pagination (25/page, 200 max) (`2026-04-30`)
   - bump CVRMoversCard limit to 25 (`2026-04-30`)
   - bump default limit to 25 per side for scroll (`2026-04-30`)
   - scrollable top/bottom 10 columns with fade hint (`2026-04-30`)
@@ -229,7 +230,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 #### 🎨 Frontend & UX
 
   - Rename home nav: Dashboard/AI Search → Cycle IQ across sidebar, breadcrumb, bottom tab (`2026-04-27`)
-  - Insights page + Teams L10 trend badges (`2026-04-22`)
 
 #### ⚡ API & Performance
 
