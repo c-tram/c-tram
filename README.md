@@ -211,6 +211,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - bump CVRMoversCard limit to 25 (`2026-04-30`)
   - bump default limit to 25 per side for scroll (`2026-04-30`)
   - scrollable top/bottom 10 columns with fade hint (`2026-04-30`)
   - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
@@ -224,7 +225,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - restore dot click→AB popup and per-AB list mini-spray (`2026-04-29`)
   - Phase C: situational splits tool + rank percentile gauge + follow-up dedup (`2026-04-26`)
-  - lock splits explorer and analytics tab to Regular Season only (`2026-04-22`)
 
 #### 🎨 Frontend & UX
 
