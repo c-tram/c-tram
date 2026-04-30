@@ -199,7 +199,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-30 • 46 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-30 • 47 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -268,6 +268,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - The Cycle Index — team market efficiency leaderboard (`2026-04-30`)
   - warmer: include rolling/category/playerType variants (`2026-04-29`)
   - A-F dynamic grades, sortable Grade column, remove filter chips (`2026-04-29`)
   - grade filter chips + 162-game projected $/W (`2026-04-29`)
