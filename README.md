@@ -206,10 +206,16 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - skip per-player KEYS scan for traded players (`2026-04-30`)
   - overlay rolling CVR/ACVR to match UI display values (`2026-04-30`)
 
 #### 📊 Advanced Metrics
 
+  - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
+  - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
+  - CVR Movers daily risers/fallers widget on hero (Tier-1 #1) (`2026-04-30`)
+  - filter out 0-baseline noise (rookie stubs) (`2026-04-30`)
+  - use prev-year season CVR as baseline (`2026-04-30`)
   - GET /api/v2/stats/cvr-movers — daily CVR risers/fallers (`2026-04-30`)
 
 #### ⚾ Splits & Pitch Analytics
@@ -218,10 +224,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Phase C: situational splits tool + rank percentile gauge + follow-up dedup (`2026-04-26`)
   - lock splits explorer and analytics tab to Regular Season only (`2026-04-22`)
   - tunneling pairs use full pitch names instead of acronyms (`2026-04-22`)
-  - replace Matchups with Spray Charts in Explorer (`2026-04-22`)
-  - Pitch Lab leaderboard uses pitchEvents for counts, not pitch_types (`2026-04-22`)
-  - Pitch Lab leaderboard preserves stuffPlus through gameType filter (`2026-04-22`)
-  - Pitch Lab race condition, Matchups/Compare empty search results (`2026-04-22`)
 
 #### 🎨 Frontend & UX
 
@@ -263,7 +265,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - Fix: filter non-MLB All-Star noise from career/leaderboards/rank; suppress zero-data sparkline; mobile FAB no-overlap on Cycle IQ; inline career matchups in scoreboard (`2026-04-28`)
   - Fix /players leaderboard: filter on PA (batting) instead of gameCount (`2026-04-27`)
-  - remove Leaders tab, fix Matchups fallback, fix Compare 3 bugs (`2026-04-22`)
 
 #### 📝 General
 
@@ -275,7 +276,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Phase B: Statcast zone heatmap + auto-enrichment + qualifier fix (`2026-04-26`)
   - Phase A: StatMuse-grade NLQ envelope + charts (`2026-04-26`)
   - AI search: subject continuity, qualifier-aware leaders, multi-year tool, sample warnings (`2026-04-26`)
-  - two-way player role toggle in PlayerDetail (`2026-04-22`)
 
 </details>
 
