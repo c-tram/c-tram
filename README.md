@@ -208,6 +208,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - overlay rolling CVR/ACVR to match UI display values (`2026-04-30`)
 
+#### 📊 Advanced Metrics
+
+  - GET /api/v2/stats/cvr-movers — daily CVR risers/fallers (`2026-04-30`)
+
 #### ⚾ Splits & Pitch Analytics
 
   - restore dot click→AB popup and per-AB list mini-spray (`2026-04-29`)
@@ -218,7 +222,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Pitch Lab leaderboard uses pitchEvents for counts, not pitch_types (`2026-04-22`)
   - Pitch Lab leaderboard preserves stuffPlus through gameType filter (`2026-04-22`)
   - Pitch Lab race condition, Matchups/Compare empty search results (`2026-04-22`)
-  - Explorer — remove salary tab, fix slugs/stat aliases/pitch filter/compare crashes (`2026-04-22`)
 
 #### 🎨 Frontend & UX
 
