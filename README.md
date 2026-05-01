@@ -211,6 +211,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - compute season WAR on-the-fly; stop overlaying multi-year rolling WAR (`2026-05-01`)
   - backfill team WAR + player position/playerType/war when season key fields stripped by reaggregation (`2026-04-30`)
   - infinite scroll pagination (25/page, 200 max) (`2026-04-30`)
   - bump CVRMoversCard limit to 25 (`2026-04-30`)
@@ -250,7 +251,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Phase D+E: sparkline/donut/compare-bar charts + enriched citations + adaptive cache TTL + 24-prompt regression suite (`2026-04-26`)
   - year-aware TTL + historical cache warmer loop (`2026-04-26`)
   - cache warmer keeps all 6 PM2 workers hot (`2026-04-26`)
-  - single /api/v2/awards endpoint, no-bs award tracker (`2026-04-26`)
 
 #### 🔧 Data Pipeline
 
