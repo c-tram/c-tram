@@ -259,12 +259,9 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - restore: bring back the awesome Teams + Insights pages (regressed in d1ce384) (`2026-04-29`)
   - point ops scripts at new Helsinki server (157.180.113.23) (`2026-04-29`)
 
-#### 🏗️ Infrastructure
-
-  - restore CCX33 config: 6 PM2 workers, 2 nginx workers (`2026-04-26`)
-
 #### 🐛 Bug Fixes
 
+  - use runsScored/runsAllowed for nested runs (flat 'runs' is ambiguous) (`2026-05-01`)
   - Fix: filter non-MLB All-Star noise from career/leaderboards/rank; suppress zero-data sparkline; mobile FAB no-overlap on Cycle IQ; inline career matchups in scoreboard (`2026-04-28`)
   - Fix /players leaderboard: filter on PA (batting) instead of gameCount (`2026-04-27`)
 
