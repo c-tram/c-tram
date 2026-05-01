@@ -206,6 +206,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - contracts tab WAR/CVR/ACVR (`2026-05-01`)
   - skip per-player KEYS scan for traded players (`2026-04-30`)
   - overlay rolling CVR/ACVR to match UI display values (`2026-04-30`)
 
@@ -250,7 +251,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - relax historical re-warm schedule for new server (`2026-04-29`)
   - Phase D+E: sparkline/donut/compare-bar charts + enriched citations + adaptive cache TTL + 24-prompt regression suite (`2026-04-26`)
   - year-aware TTL + historical cache warmer loop (`2026-04-26`)
-  - cache warmer keeps all 6 PM2 workers hot (`2026-04-26`)
 
 #### 🔧 Data Pipeline
 
