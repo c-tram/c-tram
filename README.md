@@ -250,7 +250,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - nginx response caching layer + warmer tuned for shared-vCPU host (`2026-04-29`)
   - relax historical re-warm schedule for new server (`2026-04-29`)
   - Phase D+E: sparkline/donut/compare-bar charts + enriched citations + adaptive cache TTL + 24-prompt regression suite (`2026-04-26`)
-  - year-aware TTL + historical cache warmer loop (`2026-04-26`)
 
 #### 🔧 Data Pipeline
 
@@ -261,6 +260,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - Fix spring training contamination of season aggregates (`2026-05-01`)
   - use runsScored/runsAllowed for nested runs (flat 'runs' is ambiguous) (`2026-05-01`)
   - Fix: filter non-MLB All-Star noise from career/leaderboards/rank; suppress zero-data sparkline; mobile FAB no-overlap on Cycle IQ; inline career matchups in scoreboard (`2026-04-28`)
   - Fix /players leaderboard: filter on PA (batting) instead of gameCount (`2026-04-27`)
