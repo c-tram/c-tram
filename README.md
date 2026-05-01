@@ -199,7 +199,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-30 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-05-01 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -234,6 +234,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - restore team detail key metrics, player WAR/position (`2026-05-01`)
   - skip rolling overlay for past seasons + warm sortBy variants (`2026-04-29`)
   - canonicalize Redis cache key (drop cache-busters, default-equiv params, sort keys) (`2026-04-29`)
   - persist past-year payloads to Redis-backed shared cache (`2026-04-29`)
@@ -257,7 +258,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - efficiency-first rewrite, absorb Insights, kill /insights page (`2026-04-29`)
   - restore: bring back the awesome Teams + Insights pages (regressed in d1ce384) (`2026-04-29`)
   - point ops scripts at new Helsinki server (157.180.113.23) (`2026-04-29`)
-  - infra: CPX31 downgrade — 2 PM2 workers, Dragonfly tiered storage, Nginx worker_processes 1 (`2026-04-26`)
 
 #### 🏗️ Infrastructure
 
