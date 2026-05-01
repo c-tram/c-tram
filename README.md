@@ -199,7 +199,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-30 • 48 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-04-30 • 49 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -252,6 +252,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🔧 Data Pipeline
 
+  - replace floating overlay with dedicated /compare/players page (`2026-04-30`)
   - efficiency-first rewrite, absorb Insights, kill /insights page (`2026-04-29`)
   - restore: bring back the awesome Teams + Insights pages (regressed in d1ce384) (`2026-04-29`)
   - point ops scripts at new Helsinki server (157.180.113.23) (`2026-04-29`)
