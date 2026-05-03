@@ -199,7 +199,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-05-01 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-05-02 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -260,6 +260,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - Fix Boxscore shutter loop on /scores (`2026-05-02`)
   - Fix spring training contamination of season aggregates (`2026-05-01`)
   - use runsScored/runsAllowed for nested runs (flat 'runs' is ambiguous) (`2026-05-01`)
   - Fix: filter non-MLB All-Star noise from career/leaderboards/rank; suppress zero-data sparkline; mobile FAB no-overlap on Cycle IQ; inline career matchups in scoreboard (`2026-04-28`)
@@ -276,7 +277,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - audit: 8-fix batch — historical year, IP agg, team aliases, NLQ resilience (`2026-04-29`)
   - Phase B: Statcast zone heatmap + auto-enrichment + qualifier fix (`2026-04-26`)
   - Phase A: StatMuse-grade NLQ envelope + charts (`2026-04-26`)
-  - AI search: subject continuity, qualifier-aware leaders, multi-year tool, sample warnings (`2026-04-26`)
 
 </details>
 
