@@ -260,6 +260,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - Fix Correa-style undercounts: stop double-subtracting postseason (`2026-05-02`)
   - Fix Boxscore shutter loop on /scores (`2026-05-02`)
   - Fix spring training contamination of season aggregates (`2026-05-01`)
   - use runsScored/runsAllowed for nested runs (flat 'runs' is ambiguous) (`2026-05-01`)
@@ -276,7 +277,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - minimalist tabbed table — drop record cols, filters, embedded panels (`2026-04-29`)
   - audit: 8-fix batch — historical year, IP agg, team aliases, NLQ resilience (`2026-04-29`)
   - Phase B: Statcast zone heatmap + auto-enrichment + qualifier fix (`2026-04-26`)
-  - Phase A: StatMuse-grade NLQ envelope + charts (`2026-04-26`)
 
 </details>
 
