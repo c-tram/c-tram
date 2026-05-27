@@ -212,6 +212,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - monetization — Pro paywall, Bettor CLV Tracker, CVR email alerts (`2026-05-27`)
   - compute season WAR on-the-fly; stop overlaying multi-year rolling WAR (`2026-05-01`)
   - backfill team WAR + player position/playerType/war when season key fields stripped by reaggregation (`2026-04-30`)
   - infinite scroll pagination (25/page, 200 max) (`2026-04-30`)
@@ -228,7 +229,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 #### ⚾ Splits & Pitch Analytics
 
   - restore dot click→AB popup and per-AB list mini-spray (`2026-04-29`)
-  - Phase C: situational splits tool + rank percentile gauge + follow-up dedup (`2026-04-26`)
 
 #### 🎨 Frontend & UX
 
