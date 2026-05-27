@@ -249,10 +249,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - hit nginx (HTTPS) instead of backend so shared cache fills (`2026-04-29`)
   - nginx response caching layer + warmer tuned for shared-vCPU host (`2026-04-29`)
   - relax historical re-warm schedule for new server (`2026-04-29`)
-  - Phase D+E: sparkline/donut/compare-bar charts + enriched citations + adaptive cache TTL + 24-prompt regression suite (`2026-04-26`)
 
 #### 🔧 Data Pipeline
 
+  - rewrite push.sh — commit + GitHub + VPS rsync/restart in one script (`2026-05-27`)
   - replace floating overlay with dedicated /compare/players page (`2026-04-30`)
   - efficiency-first rewrite, absorb Insights, kill /insights page (`2026-04-29`)
   - restore: bring back the awesome Teams + Insights pages (regressed in d1ce384) (`2026-04-29`)
