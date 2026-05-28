@@ -230,10 +230,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - restore dot click→AB popup and per-AB list mini-spray (`2026-04-29`)
 
-#### 🎨 Frontend & UX
-
-  - Rename home nav: Dashboard/AI Search → Cycle IQ across sidebar, breadcrumb, bottom tab (`2026-04-27`)
-
 #### ⚡ API & Performance
 
   - restore team detail key metrics, player WAR/position (`2026-05-01`)
@@ -264,6 +260,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - push.sh SSH quoting + dotenv order (`2026-05-27`)
   - Fix Correa-style undercounts: stop double-subtracting postseason (`2026-05-02`)
   - Fix Boxscore shutter loop on /scores (`2026-05-02`)
   - Fix spring training contamination of season aggregates (`2026-05-01`)
