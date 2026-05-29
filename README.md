@@ -250,7 +250,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - replace floating overlay with dedicated /compare/players page (`2026-04-30`)
   - efficiency-first rewrite, absorb Insights, kill /insights page (`2026-04-29`)
   - restore: bring back the awesome Teams + Insights pages (regressed in d1ce384) (`2026-04-29`)
-  - point ops scripts at new Helsinki server (157.180.113.23) (`2026-04-29`)
 
 #### 🏗️ Infrastructure
 
@@ -258,6 +257,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - AI search (openai pkg), canceled snackbar, checkout error handling in RequirePro (`2026-05-28`)
   - awards tracker — position from player-index, ROY rookie detection via team history (`2026-05-28`)
   - push.sh SSH quoting + dotenv order (`2026-05-27`)
   - Fix Correa-style undercounts: stop double-subtracting postseason (`2026-05-02`)
