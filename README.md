@@ -232,6 +232,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - awards mget casing (ioredis uses mget not mGet) (`2026-05-28`)
   - restore team detail key metrics, player WAR/position (`2026-05-01`)
   - skip rolling overlay for past seasons + warm sortBy variants (`2026-04-29`)
   - canonicalize Redis cache key (drop cache-busters, default-equiv params, sort keys) (`2026-04-29`)
@@ -276,7 +277,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - A-F dynamic grades, sortable Grade column, remove filter chips (`2026-04-29`)
   - grade filter chips + 162-game projected $/W (`2026-04-29`)
   - minimalist tabbed table — drop record cols, filters, embedded panels (`2026-04-29`)
-  - audit: 8-fix batch — historical year, IP agg, team aliases, NLQ resilience (`2026-04-29`)
 
 </details>
 
