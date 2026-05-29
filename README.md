@@ -226,6 +226,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - use prev-year season CVR as baseline (`2026-04-30`)
   - GET /api/v2/stats/cvr-movers — daily CVR risers/fallers (`2026-04-30`)
 
+#### ⚾ Splits & Pitch Analytics
+
+  - Tier-1 #3 — spider chart on Compare Players (RadarChart batting/pitching profile) (`2026-05-28`)
+
 #### ⚡ API & Performance
 
   - awards mget casing (ioredis uses mget not mGet) (`2026-05-28`)
@@ -241,7 +245,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - SCAN-based getKeysByPattern + scale to 10 PM2 workers (`2026-04-29`)
   - hit nginx (HTTPS) instead of backend so shared cache fills (`2026-04-29`)
   - nginx response caching layer + warmer tuned for shared-vCPU host (`2026-04-29`)
-  - relax historical re-warm schedule for new server (`2026-04-29`)
 
 #### 🔧 Data Pipeline
 
