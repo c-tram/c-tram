@@ -226,10 +226,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - use prev-year season CVR as baseline (`2026-04-30`)
   - GET /api/v2/stats/cvr-movers — daily CVR risers/fallers (`2026-04-30`)
 
-#### ⚾ Splits & Pitch Analytics
-
-  - restore dot click→AB popup and per-AB list mini-spray (`2026-04-29`)
-
 #### ⚡ API & Performance
 
   - awards mget casing (ioredis uses mget not mGet) (`2026-05-28`)
@@ -249,6 +245,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🔧 Data Pipeline
 
+  - add openai to package.json dependencies (NLQ was broken — module missing) (`2026-05-28`)
   - rewrite push.sh — commit + GitHub + VPS rsync/restart in one script (`2026-05-27`)
   - replace floating overlay with dedicated /compare/players page (`2026-04-30`)
   - efficiency-first rewrite, absorb Insights, kill /insights page (`2026-04-29`)
