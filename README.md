@@ -199,7 +199,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-05-28 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-05-30 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -230,6 +230,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - Tier-1 #3 — spider chart on Compare Players (RadarChart batting/pitching profile) (`2026-05-28`)
 
+#### 🎨 Frontend & UX
+
+  - account menu in top-right nav — login status, sign in/out, settings, upgrade/manage sub (`2026-05-30`)
+
 #### ⚡ API & Performance
 
   - awards mget casing (ioredis uses mget not mGet) (`2026-05-28`)
@@ -244,7 +248,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - year-aware Cache-Control — 30d TTL for historical seasons (`2026-04-29`)
   - SCAN-based getKeysByPattern + scale to 10 PM2 workers (`2026-04-29`)
   - hit nginx (HTTPS) instead of backend so shared cache fills (`2026-04-29`)
-  - nginx response caching layer + warmer tuned for shared-vCPU host (`2026-04-29`)
 
 #### 🔧 Data Pipeline
 
