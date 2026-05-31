@@ -236,6 +236,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - paywall — webhook raw body before express.json(), requirePro Redis lookup for fresh tier (`2026-05-30`)
   - awards mget casing (ioredis uses mget not mGet) (`2026-05-28`)
   - restore team detail key metrics, player WAR/position (`2026-05-01`)
   - skip rolling overlay for past seasons + warm sortBy variants (`2026-04-29`)
@@ -247,7 +248,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - ops: live boxscore pull cron + nginx cache purge (`2026-04-29`)
   - year-aware Cache-Control — 30d TTL for historical seasons (`2026-04-29`)
   - SCAN-based getKeysByPattern + scale to 10 PM2 workers (`2026-04-29`)
-  - hit nginx (HTTPS) instead of backend so shared cache fills (`2026-04-29`)
 
 #### 🔧 Data Pipeline
 
