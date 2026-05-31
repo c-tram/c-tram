@@ -211,7 +211,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - warm Pro page endpoints (Pitch Lab, Fantasy, Trades, Streaks) in cacheWarmer (`2026-05-31`)
   - contracts tab WAR/CVR/ACVR (`2026-05-01`)
   - skip per-player KEYS scan for traded players (`2026-04-30`)
-  - overlay rolling CVR/ACVR to match UI display values (`2026-04-30`)
 
 #### 📊 Advanced Metrics
 
@@ -245,6 +244,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
   - invite codes — generate script, /api/payments/redeem endpoint, Settings redeem UI (`2026-05-31`)
   - paywall — webhook raw body before express.json(), requirePro Redis lookup for fresh tier (`2026-05-30`)
   - awards mget casing (ioredis uses mget not mGet) (`2026-05-28`)
