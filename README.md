@@ -199,7 +199,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-05-30 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-05-31 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -236,6 +236,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - invite codes — generate script, /api/payments/redeem endpoint, Settings redeem UI (`2026-05-31`)
   - paywall — webhook raw body before express.json(), requirePro Redis lookup for fresh tier (`2026-05-30`)
   - awards mget casing (ioredis uses mget not mGet) (`2026-05-28`)
   - restore team detail key metrics, player WAR/position (`2026-05-01`)
@@ -247,7 +248,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - skip rolling overlay for past seasons (22s -> ~1s MISS) (`2026-04-29`)
   - ops: live boxscore pull cron + nginx cache purge (`2026-04-29`)
   - year-aware Cache-Control — 30d TTL for historical seasons (`2026-04-29`)
-  - SCAN-based getKeysByPattern + scale to 10 PM2 workers (`2026-04-29`)
 
 #### 🔧 Data Pipeline
 
