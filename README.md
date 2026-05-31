@@ -251,10 +251,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - canonicalize Redis cache key (drop cache-busters, default-equiv params, sort keys) (`2026-04-29`)
   - persist past-year payloads to Redis-backed shared cache (`2026-04-29`)
   - precompute /players and /teams cache for every year (`2026-04-29`)
-  - Redis-backed shared cache for past-year responses (`2026-04-29`)
 
 #### 🔧 Data Pipeline
 
+  - precomputeProPages cron in ecosystem — runs 10:15 UTC daily after data pull (`2026-05-31`)
   - add openai to package.json dependencies (NLQ was broken — module missing) (`2026-05-28`)
   - rewrite push.sh — commit + GitHub + VPS rsync/restart in one script (`2026-05-27`)
   - replace floating overlay with dedicated /compare/players page (`2026-04-30`)
