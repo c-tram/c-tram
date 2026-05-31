@@ -206,6 +206,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - Redis response cache for stuff-plus leaderboard + trade leaders (fix cold Pro page loads) (`2026-05-31`)
   - precompute URLs (/stats/leaders, /trade/leaders) + push.sh syncs scripts/ and ecosystem (`2026-05-31`)
   - warm Pro page endpoints (Pitch Lab, Fantasy, Trades, Streaks) in cacheWarmer (`2026-05-31`)
   - contracts tab WAR/CVR/ACVR (`2026-05-01`)
@@ -248,7 +249,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - paywall — webhook raw body before express.json(), requirePro Redis lookup for fresh tier (`2026-05-30`)
   - awards mget casing (ioredis uses mget not mGet) (`2026-05-28`)
   - restore team detail key metrics, player WAR/position (`2026-05-01`)
-  - skip rolling overlay for past seasons + warm sortBy variants (`2026-04-29`)
 
 #### 🔧 Data Pipeline
 
