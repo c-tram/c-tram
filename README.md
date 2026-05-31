@@ -249,7 +249,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - awards mget casing (ioredis uses mget not mGet) (`2026-05-28`)
   - restore team detail key metrics, player WAR/position (`2026-05-01`)
   - skip rolling overlay for past seasons + warm sortBy variants (`2026-04-29`)
-  - canonicalize Redis cache key (drop cache-busters, default-equiv params, sort keys) (`2026-04-29`)
 
 #### 🔧 Data Pipeline
 
@@ -277,6 +276,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - swap mailer from Mailgun to Resend (`2026-05-31`)
   - auth + Stripe paywall for AI search (`2026-05-27`)
   - Player comparison overlay — dual-radar + AI summary (Tier-1 #3) (`2026-04-30`)
   - The Cycle Index — team market efficiency leaderboard (`2026-04-30`)
