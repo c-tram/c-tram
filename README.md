@@ -210,10 +210,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - precompute URLs (/stats/leaders, /trade/leaders) + push.sh syncs scripts/ and ecosystem (`2026-05-31`)
   - warm Pro page endpoints (Pitch Lab, Fantasy, Trades, Streaks) in cacheWarmer (`2026-05-31`)
   - contracts tab WAR/CVR/ACVR (`2026-05-01`)
-  - skip per-player KEYS scan for traded players (`2026-04-30`)
 
 #### 📊 Advanced Metrics
 
+  - Email Digests tab — player watchlist, team pulse, module toggles; CVR Movers nav rename (`2026-05-31`)
   - remove CVR Movers + Cycle Index from home; CVR Movers now a Pro tab in Settings (`2026-05-31`)
   - monetization — Pro paywall, Bettor CLV Tracker, CVR email alerts (`2026-05-27`)
   - compute season WAR on-the-fly; stop overlaying multi-year rolling WAR (`2026-05-01`)
