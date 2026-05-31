@@ -206,6 +206,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - precompute URLs (/stats/leaders, /trade/leaders) + push.sh syncs scripts/ and ecosystem (`2026-05-31`)
   - warm Pro page endpoints (Pitch Lab, Fantasy, Trades, Streaks) in cacheWarmer (`2026-05-31`)
   - contracts tab WAR/CVR/ACVR (`2026-05-01`)
   - skip per-player KEYS scan for traded players (`2026-04-30`)
@@ -250,7 +251,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - skip rolling overlay for past seasons + warm sortBy variants (`2026-04-29`)
   - canonicalize Redis cache key (drop cache-busters, default-equiv params, sort keys) (`2026-04-29`)
   - persist past-year payloads to Redis-backed shared cache (`2026-04-29`)
-  - precompute /players and /teams cache for every year (`2026-04-29`)
 
 #### 🔧 Data Pipeline
 
