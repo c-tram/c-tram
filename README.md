@@ -226,7 +226,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - CVR Movers daily risers/fallers widget on hero (Tier-1 #1) (`2026-04-30`)
   - filter out 0-baseline noise (rookie stubs) (`2026-04-30`)
   - use prev-year season CVR as baseline (`2026-04-30`)
-  - GET /api/v2/stats/cvr-movers — daily CVR risers/fallers (`2026-04-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -244,6 +243,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
   - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
   - invite codes — generate script, /api/payments/redeem endpoint, Settings redeem UI (`2026-05-31`)
   - paywall — webhook raw body before express.json(), requirePro Redis lookup for fresh tier (`2026-05-30`)
