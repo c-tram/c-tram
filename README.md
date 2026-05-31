@@ -228,6 +228,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - split Explorer into Pitch Lab + At-Bat Explorer in sidebar (`2026-05-31`)
   - Tier-1 #3 — spider chart on Compare Players (RadarChart batting/pitching profile) (`2026-05-28`)
 
 #### 🎨 Frontend & UX
@@ -279,7 +280,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - warmer: include rolling/category/playerType variants (`2026-04-29`)
   - A-F dynamic grades, sortable Grade column, remove filter chips (`2026-04-29`)
   - grade filter chips + 162-game projected $/W (`2026-04-29`)
-  - minimalist tabbed table — drop record cols, filters, embedded panels (`2026-04-29`)
 
 </details>
 
