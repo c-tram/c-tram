@@ -232,6 +232,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - Pro features section in sidebar, background prefetch for Pro pages, Explorer now free (`2026-05-31`)
   - account menu in top-right nav — login status, sign in/out, settings, upgrade/manage sub (`2026-05-30`)
 
 #### ⚡ API & Performance
@@ -247,7 +248,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Redis-backed shared cache for past-year responses (`2026-04-29`)
   - skip rolling overlay for past seasons (22s -> ~1s MISS) (`2026-04-29`)
   - ops: live boxscore pull cron + nginx cache purge (`2026-04-29`)
-  - year-aware Cache-Control — 30d TTL for historical seasons (`2026-04-29`)
 
 #### 🔧 Data Pipeline
 
