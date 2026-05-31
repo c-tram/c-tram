@@ -229,6 +229,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - remove hardcoded backend floors — allow minGames/minAtBats/minInnings=0, remove 5IP pitcher floor (`2026-05-31`)
   - pitch lab 500 pitchers, awards Unknown position guard, fantasy 500 batters/250 pitchers (`2026-05-31`)
   - Pitch Lab + At-Bat Explorer as independent pages (/pitch-lab, /at-bat-explorer) (`2026-05-31`)
   - split Explorer into Pitch Lab + At-Bat Explorer in sidebar (`2026-05-31`)
@@ -279,7 +280,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - auth + Stripe paywall for AI search (`2026-05-27`)
   - Player comparison overlay — dual-radar + AI summary (Tier-1 #3) (`2026-04-30`)
   - The Cycle Index — team market efficiency leaderboard (`2026-04-30`)
-  - warmer: include rolling/category/playerType variants (`2026-04-29`)
 
 </details>
 
