@@ -214,6 +214,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - remove CVR Movers + Cycle Index from home; CVR Movers now a Pro tab in Settings (`2026-05-31`)
   - monetization — Pro paywall, Bettor CLV Tracker, CVR email alerts (`2026-05-27`)
   - compute season WAR on-the-fly; stop overlaying multi-year rolling WAR (`2026-05-01`)
   - backfill team WAR + player position/playerType/war when season key fields stripped by reaggregation (`2026-04-30`)
@@ -225,7 +226,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
   - CVR Movers daily risers/fallers widget on hero (Tier-1 #1) (`2026-04-30`)
   - filter out 0-baseline noise (rookie stubs) (`2026-04-30`)
-  - use prev-year season CVR as baseline (`2026-04-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
