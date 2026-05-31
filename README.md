@@ -250,10 +250,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - restore team detail key metrics, player WAR/position (`2026-05-01`)
   - skip rolling overlay for past seasons + warm sortBy variants (`2026-04-29`)
   - canonicalize Redis cache key (drop cache-busters, default-equiv params, sort keys) (`2026-04-29`)
-  - persist past-year payloads to Redis-backed shared cache (`2026-04-29`)
 
 #### 🔧 Data Pipeline
 
+  - forgot/reset password — email flow, /reset-password page, AuthModal forgot link (`2026-05-31`)
   - precomputeProPages cron in ecosystem — runs 10:15 UTC daily after data pull (`2026-05-31`)
   - add openai to package.json dependencies (NLQ was broken — module missing) (`2026-05-28`)
   - rewrite push.sh — commit + GitHub + VPS rsync/restart in one script (`2026-05-27`)
