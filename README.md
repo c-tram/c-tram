@@ -213,6 +213,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - Settings.js extra paren in CVR Movers tab fragment (was breaking build → 403) (`2026-05-31`)
   - Email Digests tab — player watchlist, team pulse, module toggles; CVR Movers nav rename (`2026-05-31`)
   - remove CVR Movers + Cycle Index from home; CVR Movers now a Pro tab in Settings (`2026-05-31`)
   - monetization — Pro paywall, Bettor CLV Tracker, CVR email alerts (`2026-05-27`)
@@ -225,7 +226,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
   - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
   - CVR Movers daily risers/fallers widget on hero (Tier-1 #1) (`2026-04-30`)
-  - filter out 0-baseline noise (rookie stubs) (`2026-04-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
