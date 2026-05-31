@@ -232,6 +232,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - restore Explorer tab to Explore section in sidebar + nav search (`2026-05-31`)
   - Pro features section in sidebar, background prefetch for Pro pages, Explorer now free (`2026-05-31`)
   - account menu in top-right nav — login status, sign in/out, settings, upgrade/manage sub (`2026-05-30`)
 
@@ -247,7 +248,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - precompute /players and /teams cache for every year (`2026-04-29`)
   - Redis-backed shared cache for past-year responses (`2026-04-29`)
   - skip rolling overlay for past seasons (22s -> ~1s MISS) (`2026-04-29`)
-  - ops: live boxscore pull cron + nginx cache purge (`2026-04-29`)
 
 #### 🔧 Data Pipeline
 
