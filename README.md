@@ -255,7 +255,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - rewrite push.sh — commit + GitHub + VPS rsync/restart in one script (`2026-05-27`)
   - replace floating overlay with dedicated /compare/players page (`2026-04-30`)
   - efficiency-first rewrite, absorb Insights, kill /insights page (`2026-04-29`)
-  - restore: bring back the awesome Teams + Insights pages (regressed in d1ce384) (`2026-04-29`)
 
 #### 🏗️ Infrastructure
 
@@ -263,6 +262,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - standardize price to $8/mo across RequirePro + Settings (`2026-05-30`)
   - AI search (openai pkg), canceled snackbar, checkout error handling in RequirePro (`2026-05-28`)
   - awards tracker — position from player-index, ROY rookie detection via team history (`2026-05-28`)
   - push.sh SSH quoting + dotenv order (`2026-05-27`)
