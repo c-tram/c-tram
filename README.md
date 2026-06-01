@@ -199,7 +199,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-05-31 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-06-01 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -216,6 +216,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - email digest — fetch CVR movers from API, add emailPrefs.enabled check (`2026-06-01`)
   - Settings.js extra paren in CVR Movers tab fragment (was breaking build → 403) (`2026-05-31`)
   - Email Digests tab — player watchlist, team pulse, module toggles; CVR Movers nav rename (`2026-05-31`)
   - remove CVR Movers + Cycle Index from home; CVR Movers now a Pro tab in Settings (`2026-05-31`)
@@ -279,7 +280,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - swap mailer from Mailgun to Resend (`2026-05-31`)
   - auth + Stripe paywall for AI search (`2026-05-27`)
-  - Player comparison overlay — dual-radar + AI summary (Tier-1 #3) (`2026-04-30`)
 
 </details>
 
