@@ -223,7 +223,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - infinite scroll pagination (25/page, 200 max) (`2026-04-30`)
   - bump CVRMoversCard limit to 25 (`2026-04-30`)
   - bump default limit to 25 per side for scroll (`2026-04-30`)
-  - scrollable top/bottom 10 columns with fade hint (`2026-04-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -252,6 +251,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🔧 Data Pipeline
 
+  - Admin page — useAuth() instead of AuthContext (not exported) (`2026-05-31`)
   - forgot/reset password — email flow, /reset-password page, AuthModal forgot link (`2026-05-31`)
   - precomputeProPages cron in ecosystem — runs 10:15 UTC daily after data pull (`2026-05-31`)
   - add openai to package.json dependencies (NLQ was broken — module missing) (`2026-05-28`)
