@@ -206,6 +206,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - revert WBC player filter in trades, resolve MLB team from redis for logo display (`2026-05-31`)
   - filter WBC/non-MLB team codes from trade_v2 player key scans (`2026-05-31`)
   - sidebar cleanup, invite-pro fix, sub days left, CVR Movers standalone+filters, hot-cold filters+mode, fantasy roster+team filter, trade engine CTS explainer (`2026-05-31`)
   - Redis response cache for stuff-plus leaderboard + trade leaders (fix cold Pro page loads) (`2026-05-31`)
@@ -279,7 +280,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - swap mailer from Mailgun to Resend (`2026-05-31`)
   - auth + Stripe paywall for AI search (`2026-05-27`)
   - Player comparison overlay — dual-radar + AI summary (Tier-1 #3) (`2026-04-30`)
-  - The Cycle Index — team market efficiency leaderboard (`2026-04-30`)
 
 </details>
 
