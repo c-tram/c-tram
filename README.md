@@ -206,6 +206,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - filter WBC/non-MLB team codes from trade_v2 player key scans (`2026-05-31`)
   - sidebar cleanup, invite-pro fix, sub days left, CVR Movers standalone+filters, hot-cold filters+mode, fantasy roster+team filter, trade engine CTS explainer (`2026-05-31`)
   - Redis response cache for stuff-plus leaderboard + trade leaders (fix cold Pro page loads) (`2026-05-31`)
   - precompute URLs (/stats/leaders, /trade/leaders) + push.sh syncs scripts/ and ecosystem (`2026-05-31`)
@@ -220,7 +221,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - monetization — Pro paywall, Bettor CLV Tracker, CVR email alerts (`2026-05-27`)
   - compute season WAR on-the-fly; stop overlaying multi-year rolling WAR (`2026-05-01`)
   - backfill team WAR + player position/playerType/war when season key fields stripped by reaggregation (`2026-04-30`)
-  - infinite scroll pagination (25/page, 200 max) (`2026-04-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
