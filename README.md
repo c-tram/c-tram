@@ -221,7 +221,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - compute season WAR on-the-fly; stop overlaying multi-year rolling WAR (`2026-05-01`)
   - backfill team WAR + player position/playerType/war when season key fields stripped by reaggregation (`2026-04-30`)
   - infinite scroll pagination (25/page, 200 max) (`2026-04-30`)
-  - bump CVRMoversCard limit to 25 (`2026-04-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -264,6 +263,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - WBC team logos 404 (skip non-MLB codes), p.tier object crash in suggestions table (`2026-05-31`)
   - remove duplicate prefersReducedMotion declaration in App.js (`2026-05-31`)
   - standardize price to $8/mo across RequirePro + Settings (`2026-05-30`)
   - AI search (openai pkg), canceled snackbar, checkout error handling in RequirePro (`2026-05-28`)
