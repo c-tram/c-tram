@@ -206,6 +206,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - sidebar cleanup, invite-pro fix, sub days left, CVR Movers standalone+filters, hot-cold filters+mode, fantasy roster+team filter, trade engine CTS explainer (`2026-05-31`)
   - Redis response cache for stuff-plus leaderboard + trade leaders (fix cold Pro page loads) (`2026-05-31`)
   - precompute URLs (/stats/leaders, /trade/leaders) + push.sh syncs scripts/ and ecosystem (`2026-05-31`)
   - warm Pro page endpoints (Pitch Lab, Fantasy, Trades, Streaks) in cacheWarmer (`2026-05-31`)
@@ -223,7 +224,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - bump CVRMoversCard limit to 25 (`2026-04-30`)
   - bump default limit to 25 per side for scroll (`2026-04-30`)
   - scrollable top/bottom 10 columns with fade hint (`2026-04-30`)
-  - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
   - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
 
 #### ⚾ Splits & Pitch Analytics
