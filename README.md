@@ -225,7 +225,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - scrollable top/bottom 10 columns with fade hint (`2026-04-30`)
   - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
   - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
-  - CVR Movers daily risers/fallers widget on hero (Tier-1 #1) (`2026-04-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -237,6 +236,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - push.sh — guard build failure, fix banner printf for zsh compat (`2026-05-31`)
   - restore Explorer tab to Explore section in sidebar + nav search (`2026-05-31`)
   - Pro features section in sidebar, background prefetch for Pro pages, Explorer now free (`2026-05-31`)
   - account menu in top-right nav — login status, sign in/out, settings, upgrade/manage sub (`2026-05-30`)
