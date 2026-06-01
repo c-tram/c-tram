@@ -224,7 +224,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - bump CVRMoversCard limit to 25 (`2026-04-30`)
   - bump default limit to 25 per side for scroll (`2026-04-30`)
   - scrollable top/bottom 10 columns with fade hint (`2026-04-30`)
-  - nightly rolling snapshots + 7d/30d/season toggle (`2026-04-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -236,6 +235,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - admin dashboard — /admin route, /api/admin/stats endpoint, isAdmin flag on coletrammell7@gmail.com (`2026-05-31`)
   - push.sh — guard build failure, fix banner printf for zsh compat (`2026-05-31`)
   - restore Explorer tab to Explore section in sidebar + nav search (`2026-05-31`)
   - Pro features section in sidebar, background prefetch for Pro pages, Explorer now free (`2026-05-31`)
