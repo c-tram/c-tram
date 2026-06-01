@@ -216,6 +216,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - full digest email — all 5 modules (CVR movers, hot/cold, team pulse, league insights, fantasy edge), personalized per user (`2026-06-01`)
   - email digest — fetch CVR movers from API, add emailPrefs.enabled check (`2026-06-01`)
   - Settings.js extra paren in CVR Movers tab fragment (was breaking build → 403) (`2026-05-31`)
   - Email Digests tab — player watchlist, team pulse, module toggles; CVR Movers nav rename (`2026-05-31`)
@@ -257,7 +258,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - precomputeProPages cron in ecosystem — runs 10:15 UTC daily after data pull (`2026-05-31`)
   - add openai to package.json dependencies (NLQ was broken — module missing) (`2026-05-28`)
   - rewrite push.sh — commit + GitHub + VPS rsync/restart in one script (`2026-05-27`)
-  - replace floating overlay with dedicated /compare/players page (`2026-04-30`)
 
 #### 🏗️ Infrastructure
 
