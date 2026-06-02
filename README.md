@@ -206,6 +206,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - MLB-only — exclude spring training players from Fantasy/Momentum/Trades (gameTypeBreakdown.R check in players_v2, trade_v2, recalculateCVR) (`2026-06-01`)
   - Momentum Board (replaces CVR Movers + Hot/Cold), FVS fantasy board, Trade War Room (surplus verdict + contender/rebuilder toggle), AL/NL league insights email split (`2026-06-01`)
   - revert WBC player filter in trades, resolve MLB team from redis for logo display (`2026-05-31`)
   - filter WBC/non-MLB team codes from trade_v2 player key scans (`2026-05-31`)
@@ -274,7 +275,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Fix Correa-style undercounts: stop double-subtracting postseason (`2026-05-02`)
   - Fix Boxscore shutter loop on /scores (`2026-05-02`)
   - Fix spring training contamination of season aggregates (`2026-05-01`)
-  - use runsScored/runsAllowed for nested runs (flat 'runs' is ambiguous) (`2026-05-01`)
 
 #### 📝 General
 
