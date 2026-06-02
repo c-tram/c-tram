@@ -24,20 +24,20 @@ The entire platform runs on a single **Hetzner dedicated VPS**:
 
 | Component | Spec |
 |-----------|------|
-| **CPU** | 8 vCPU · AMD EPYC-Milan |
+| **CPU** | 16 vCPU · AMD EPYC-Milan |
 | **RAM** | 30 GB DDR4 |
 | **Storage** | 150 GB NVMe SSD |
 | **OS** | Ubuntu 24.04.4 LTS |
 | **Host** | Hetzner Cloud |
 
 **Runtime stack — all co-located on one machine:**
-- **Nginx** — reverse proxy, SSL termination, static React asset serving
-- **PM2** — 6-worker Node.js cluster (load-balanced, auto-restart on crash, zero-downtime reloads)
-- **Redis** — in-process, local, no external calls — sub-millisecond key lookups for all player/team/pitch data
-- **Express.js** — ~70 API endpoints across 10 route files, distributed across all 6 PM2 workers
-- **React (static build)** — pre-compiled, served directly from Nginx
+- **Nginx 1.24** — reverse proxy, SSL termination, static React asset serving, plus split response-cache zones (`api_cache_current` 4 GB / 1 h for live data, `api_cache_historical` 16 GB / 30 d for past seasons, routed by `map $arg_year`)
+- **PM2** — 10-worker Node.js cluster (`the-cycle`) + 1 dedicated fork worker (`the-cycle-warmer`), load-balanced, zero-downtime reloads. Background jobs (Data Engine, live aggregation, cron tasks) gated to the primary worker only via `NODE_APP_INSTANCE === '0'`.
+- **Redis 8.6** — in-process, local, `allkeys-lru`, `io-threads 4`. ~1.2 M keys / ~15 GB live dataset covering every player-game and team-game from 2015–2026.
+- **Express.js** — ~70 API endpoints across 10 route files, fanned out across all 10 PM2 workers
+- **React (static build)** — pre-compiled CRA bundle served directly from Nginx
 
-A player profile page requires zero network hops between services: Nginx → Express → Redis → response in < 5ms end-to-end.
+A player profile page requires zero network hops between services: Nginx → Express → Redis → response in < 5 ms end-to-end. Past-season responses are also cached at the **app layer** under `cache:v2:<route>:<sha1>` (24 h) with a canonicalized URL so cache-busters and default-equivalent params don't fragment hits.
 
 ---
 
@@ -48,18 +48,22 @@ A player profile page requires zero network hops between services: Nginx → Exp
                         │          Hetzner VPS (single node)        │
                         │                                           │
   User Browser ──HTTPS──► Nginx (80/443) ──► React build (static)  │
+                        │      │   │                                │
+                        │      │   └─ response-cache zones          │
+                        │      │      (current 4 GB · historical 16 GB)
                         │      │                                    │
-                        │      └──/api/*──► PM2 Cluster (6 workers) │
+                        │      └─/api/*─► PM2 cluster (10 workers)  │
+                        │                  + 1 fork warmer worker   │
                         │                     │                     │
                         │              Express.js (~70 endpoints)   │
                         │                     │                     │
-                        │                  Redis (local)            │
-                        │             3,500–4,000 players/year      │
-                        │             2015–2026 historical data      │
+                        │                Redis 8.6 (local)          │
+                        │            ~1.2 M keys / ~15 GB           │
+                        │            2015–2026 historical data      │
                         └──────────────────────┬───────────────────┘
                                                │
                               MLB Stats API (statsapi.mlb.com)
-                              Polled live + nightly full refresh
+                              Polled every 90 s + nightly full refresh
 ```
 
 **Redis key schema:**
@@ -77,12 +81,16 @@ rolling:player:TEAM-Name-YEAR:season    # Rolling window stats (7/14/21 games)
 
 **Data ingestion schedule:**
 
-| Task | CDT | Description |
-|------|-----|-------------|
-| Live game monitor | Every 90s | Polls MLB schedule, writes boxscores when games go final |
-| Season refresh | 11:00 PM | Full re-pull of all current-season boxscores |
-| Player index rebuild | 11:30 PM | Rebuilds searchable player + stat index |
-| Splits recompute | 12:00 AM | Full play-by-play splits refresh |
+| Task | Cadence (UTC) | Description |
+|------|---------------|-------------|
+| Live game monitor | Every 90 s | Polls MLB schedule; runs the full ingest + WAR/CVR pipeline when a game flips to Final |
+| **Live aggregation** | Every 3 min while games are live | Overwrites per-game keys with running stats and rebuilds season totals from per-game keys — so `/players` season views reflect mid-game stats without double-counting |
+| Response cache warmer | 09:30 daily | Precomputes 11 historical years × 11 URL variants into the app-layer cache |
+| Season refresh | 04:00 daily | Full re-pull of all current-season boxscores |
+| Player index rebuild | 04:30 daily | Rebuilds searchable player + stat index |
+| Splits recompute | 05:00 daily | Full play-by-play splits refresh |
+
+**Rolling CVR overlay** — every UI surface (`/players`, `/teams`, `/trades`, player detail) calls v2 endpoints with `mode=rolling`, which overlays the rolling-window `universalCVR` / `acvr` / `acvrTrend` from `rolling:player:*` keys onto the season aggregate. Batting, pitching, WAR and salary remain season totals — only the value-rating numbers reflect the recent window.
 
 ---
 
@@ -143,14 +151,15 @@ Pass 1 → tool_choice: 'auto'
 | **Standings** | `/standings` | Division standings, wild card race, run differential, Pythagorean W%, L10 streaks |
 | **Scores** | `/scores` | Live scoreboard with date picker; click any game → full boxscore with line score + batting/pitching tables |
 | **Explorer** | `/explorer` | 5 tabs: **Pitch Lab** (zone heatmaps, arsenal, Stuff+ leaders), **At-Bats** (play-by-play drill-down), **Compare** (side-by-side radar), **Teams** (team comparison), **Spray Charts** |
-| **Trades** | `/trades` | Trade Value leaderboard, DTV 6-component deep dive with 6-year projection, Mock Trade Builder (fairness grade), team assets view |
-| **Insights** | `/insights` | Payroll efficiency scatter, WAR leaders by position, power/speed clusters, team ACVR vs payroll, aging curve plots |
-| **Hot/Cold Streaks** | `/streaks` | Rolling-window performance tracker (7/14/21 days), min-PA/IP filters, card and table views |
-| **Spray Chart** | `/spray-chart` | Batted-ball hit-coordinate visualizer with field overlay, outcome color coding, pitch-type filter |
-| **Fantasy / DFS** | `/fantasy` | DFS lineup optimizer, value plays, stack suggestions, DraftKings/FanDuel slate breakdown |
+| **Trades** | `/trades` | Trade Value leaderboard, DTV 6-component deep dive with 6-year projection, Mock Trade Builder (fairness grade + surplus verdict), Contender⚡/Rebuilder🌱 toggle, team assets view |
+| **Momentum Board** | `/momentum` | Quadrant scatter (CVR delta × WAR), biggest 30-day risers/fallers cards, full sortable table. Unified replacement for CVR Movers + Hot/Cold Streaks |
+| **Fantasy / DFS** | `/fantasy` | FVS (Fantasy Value Score) board, 4 tabs: Tonight's Slate / Value Board / Full Leaderboard / My Roster. DraftKings/FanDuel salary integration, stacking suggestions |
 | **Awards Tracker** | `/awards` | Live MVP, Cy Young, ROY, Silver Slugger, Gold Glove race projections — updated daily |
+| **Insights** | `/insights` | Payroll efficiency scatter, WAR leaders by position, power/speed clusters, team ACVR vs payroll, aging curve plots |
+| **Spray Chart** | `/spray-chart` | Batted-ball hit-coordinate visualizer with field overlay, outcome color coding, pitch-type filter |
+| **Admin** | `/admin` | User count, revenue snapshot, active subscriptions — isAdmin-gated |
 | **Glossary** | `/glossary` | Full metric reference: CVR, ACVR, TV, DTV, WAR, wRC+, FIP, SIERA, wOBA, ISO, BABIP, Surplus Value, Aging Curve |
-| **Settings** | `/settings` | Dark/light mode, season selector (2015–2026), Redis health check, API connectivity status |
+| **Settings** | `/settings` | Dark/light mode, season selector (2015–2026), email digest preferences (5 modules), watchlist management, Redis health check |
 
 ---
 
@@ -180,14 +189,14 @@ Pass 1 → tool_choice: 'auto'
 ### 🔧 Tech Stack
 
 ```
-Frontend          React 18 · Material UI 5 · Recharts · Framer Motion
+Frontend          React 18 · Material UI 5 · Recharts · Framer Motion (CRA)
 Backend           Node.js · Express.js · ioredis
 AI Layer          OpenAI gpt-4o · Function Calling · Two-pass orchestration
-Data Store        Redis (local, single node, ~150 MB live dataset)
+Data Store        Redis 8.6 (local, single node, ~1.2 M keys / ~15 GB, allkeys-lru)
 Data Source       MLB Stats API (statsapi.mlb.com — no auth required)
-Process Manager   PM2 (6-worker cluster)
-Web Server        Nginx (reverse proxy + static serving + SSL)
-OS / Host         Ubuntu 24.04.4 LTS · Hetzner VPS
+Process Manager   PM2 (10-worker cluster + 1 fork warmer)
+Web Server        Nginx 1.24 (reverse proxy + static + SSL + split response-cache zones)
+OS / Host         Ubuntu 24.04.4 LTS · Hetzner VPS (16 vCPU · 30 GB RAM · 150 GB NVMe)
 CI/CD             GitHub Actions → auto-deploy on push to main
 QA                Jest · route-consistency tests · pre-push lint + structural checks
 ```
@@ -200,78 +209,66 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-04-22 • 44 recent changes</sub>
+<sub>Last updated: 2026-06-01</sub>
 
 <details>
-<summary><b>📋 Recent Development Activity</b></summary>
+<summary><b>📋 Recent Development Activity (Spring 2026)</b></summary>
 
-#### 💰 Trade Intelligence
+#### 🚀 New Pages & Major Features
 
-  - Fix wRC+/wOBA sort, add CVR+aCVR chips, expose acvr in leaders endpoint (`2026-04-21`)
+- **Momentum Board** (`/momentum`) — quadrant scatter (CVR delta × WAR), biggest 30-day risers/fallers cards, full sortable table. Replaces CVR Movers + Hot/Cold Streaks with a single unified surface. Sidebar updated, `/cvr-movers` and `/streaks` redirect here. (`2026-06-01`)
+- **Fantasy Value Score (FVS) Board** — complete FVS-based rewrite of the Fantasy/DFS page. 4 tabs: Tonight's Slate, Value Board, Full Leaderboard, My Roster. DraftKings/FanDuel salary integration, stacking suggestions. (`2026-06-01`)
+- **Trade War Room** — surplus value verdict banner ("favors HOU by 0.6 WAR + $4M surplus value"), per-player surplus chip, Contender⚡ / Rebuilder🌱 toggle, fairness grade with narrative summary. (`2026-06-01`)
+- **Awards Tracker** (`/awards`) — live MVP, Cy Young, ROY, Silver Slugger, Gold Glove race projections updated daily. Position sourced from player-index; ROY rookie detection via team service-time history. (`2026-06-01`)
+- **Admin Dashboard** (`/admin`) — user count, revenue snapshot, active subscriptions, isAdmin gate (auth-hydration-safe). (`2026-05-15`)
+- **Forgot / Reset Password** — full email flow via Resend, `/reset-password` page, AuthModal forgot link. (`2026-05-10`)
+- **Compare Players spider chart** — RadarChart batting/pitching profile overlay on the Compare page (Tier-1 Roadmap item #3). (`2026-05-08`)
+- **Account menu** — top-right nav: login status, sign in/out, settings, upgrade/manage subscription. (`2026-05-07`)
 
-#### ⚾ Splits & Pitch Analytics
+#### 💰 Trade Intelligence & Pro Pages
 
-  - lock splits explorer and analytics tab to Regular Season only (`2026-04-22`)
-  - tunneling pairs use full pitch names instead of acronyms (`2026-04-22`)
-  - replace Matchups with Spray Charts in Explorer (`2026-04-22`)
-  - Pitch Lab leaderboard uses pitchEvents for counts, not pitch_types (`2026-04-22`)
-  - Pitch Lab leaderboard preserves stuffPlus through gameType filter (`2026-04-22`)
-  - Pitch Lab race condition, Matchups/Compare empty search results (`2026-04-22`)
-  - Explorer — remove salary tab, fix slugs/stat aliases/pitch filter/compare crashes (`2026-04-22`)
-  - Revert "remove: At-Bat Explorer tab — redundant with Pitch Analysis" (`2026-04-22`)
-  - remove: At-Bat Explorer tab — redundant with Pitch Analysis (`2026-04-22`)
-  - splits tab — independent game type + date range (All Time) filters (`2026-04-22`)
-  - Fix hero stats: fetch full player profile for complete batting/pitching stats (`2026-04-21`)
-  - Live AB tracking: currentPlay in boxscore API + pulsing in-progress AB card in play-by-play (`2026-04-21`)
-  - Add at-bat/pitch explorer popup to matchup history tables (`2026-04-18`)
-  - Add hit location field chart to play-by-play expanded detail (`2026-04-18`)
+- Trade War Room: Contender/Rebuilder mode toggle, surplus value verdict, "Get Verdict" CTA. (`2026-06-01`)
+- Trade Value leaderboard: `gameTypeBreakdown.R` MLB-only filter — spring training players excluded from trade assets. (`2026-06-01`)
+- DTV 6-year surplus projection with aging-curve decay, positional market rate, narrative synthesis. (`2026-05-20`)
+- Redis warm cache for trade leaders + Stuff+ leaderboard — cold Pro page loads eliminated. (`2026-05-12`)
+
+#### 🛡️ Data Integrity — MLB-Only Filter (Spring Training Exclusion)
+
+- **`players_v2.js`**: Current-year player list now requires `gameTypeBreakdown.R >= 1` (at least 1 regular-season game). `gameCount` in API response now returns MLB-only games, not combined spring+MLB total. (`2026-06-01`)
+- **`trade_v2.js`**: Same `gameTypeBreakdown.R` gate added to `computeTradeLeaders` pre-filter and team roster post-filter. `gameTypeBreakdown` added to trade stats shape so filter has the data it needs. (`2026-06-01`)
+- **`recalculateCVR.cjs`**: Fallback path for missing `gameTypeBreakdown` returns `false` for current year — spring-only players can no longer receive a CVR score. Past-year historical data keeps lenient fallback (safe, predates tracking). (`2026-06-01`)
+- `stats_v2.js` leaderboard already had this filter — confirmed as the correct pattern. (`2026-06-01`)
+
+#### ⚡ Infrastructure & Performance
+
+- **Detail-page caching** — new `detail` loop in `cacheWarmer.cjs`: 30 team detail + roster pages + top-100 players by WAR warmed every 20 min. Runs separately from the 4-min hot loop to avoid blocking list endpoints. Player IDs fetched dynamically from the already-warm list so the top-100 set always reflects current standings. (`2026-06-01`)
+- Stale precomputed Pro page blobs (`precomputed:pro:*:2026`) purged on deploy — Pro pages now serve fresh filtered data immediately rather than waiting for next 10:15 UTC cron. (`2026-06-01`)
+- Cache warmer explanation: 4-min hot loop interleaves with `pullLive.sh` (runs every 5 min during game hours, purges nginx cache after each live ingest) — warmer races to re-prime nginx before next user request hits a cold miss. (`2026-06-01`)
+- Mailer migrated from Mailgun → **Resend**. (`2026-05-11`)
+- Paywall: Stripe webhook raw-body parsing fixed (before `express.json()`); `requirePro` middleware now does a fresh Redis lookup for tier on each request. (`2026-05-09`)
+- Pro page endpoints (Pitch Lab, Fantasy, Trades, Streaks) added to cacheWarmer. (`2026-05-08`)
+- Price standardized to **$8/month** across `RequirePro` + Settings. (`2026-05-08`)
+
+#### 📧 Email Digest System
+
+- **AL/NL two-column layout** in League Insights email module. (`2026-06-01`)
+- Full personalized digest: 5 modules — CVR Movers, Hot/Cold, Team Pulse, League Insights, Fantasy Edge — per-user via `emailPrefs`. (`2026-05-25`)
+- Email Digests tab in Settings: player watchlist, team pulse, module toggles. (`2026-05-22`)
+- `emailPrefs.enabled` check added to digest scheduler — only sends to opted-in users. (`2026-05-24`)
 
 #### 🎨 Frontend & UX
 
-  - Insights page + Teams L10 trend badges (`2026-04-22`)
-  - keyboard Enter on recent searches navigates to /undefined (`2026-04-22`)
-  - Remove hero player search from Dashboard (`2026-04-21`)
-  - Fix hero search: consolidated player stats map so all stats show regardless of top-10 rank (`2026-04-21`)
-  - Task 4: StatMuse hero search — autocomplete + giant hero stat + secondaries on Dashboard (`2026-04-21`)
-  - Fix live AB card: always show currentPlay, dedup vs completed, 5s poll, LAST AB state (`2026-04-21`)
-  - Fix player slug navigation in Leaders — use name-only slug, add slug field to leaders response (`2026-04-21`)
-  - Task 2 polish: 2-row controls layout, stepper qualifier, stable useCallback filter, fixed imports (`2026-04-21`)
-  - correct all backend data shapes across every page — standings divisions, game team objects, dashboard leaders, leaderboard normalization, players stat flattening, salaries data key, stuffplus leaders key (`2026-04-20`)
-  - move expected stats card to overview tab (`2026-04-20`)
-  - add Savant-style percentile bars to expected stats card (`2026-04-20`)
-
-#### ⚡ API & Performance
-
-  - use mlb-live schedule API instead of Redis cache for scoreboard; fix game key to use id (`2026-04-20`)
-  - wire all pages to real backend endpoints with correct routes and response shapes (`2026-04-20`)
-  - update nginx root to web-frontend-v2/dist (`2026-04-20`)
-  - complete web-frontend-v2 rebuild - all 18 pages, full MLB analytics platform (`2026-04-20`)
-
-#### 🔧 Data Pipeline
-
-  - AIO Explorer — Leaders, Compare Players, Compare Teams, Salary merged into /explorer; delete old pages (`2026-04-22`)
-
-#### 🏗️ Infrastructure
-
-  - nginx.conf must include sites-enabled for SSL/443 to bind (`2026-04-21`)
+- Sidebar: replaced "Hot/Cold Streaks" + "CVR Movers" with unified "Momentum Board" (`ShowChart` icon). (`2026-06-01`)
+- CVR Movers standalone page with filters, Hot/Cold filters + mode toggle, Fantasy roster + team filter, Trade engine CTS explainer. (`2026-05-18`)
+- Sub days remaining chip in sidebar. Invite-Pro fix. (`2026-05-18`)
 
 #### 🐛 Bug Fixes
 
-  - remove Leaders tab, fix Matchups fallback, fix Compare 3 bugs (`2026-04-22`)
-  - flip Inside/Outside zone labels for left-handed batters (`2026-04-22`)
-  - Fix boxscore live updates: poll all tabs, use fresh linescore for score/inning display (`2026-04-21`)
-  - replace index.css with actual Tailwind + design system styles (`2026-04-20`)
-  - proper title and favicon in index.html (`2026-04-20`)
-  - fix win-probability/undefined bug + commercial stats.sh analytics (`2026-04-18`)
-
-#### 📝 General
-
-  - two-way player role toggle in PlayerDetail (`2026-04-22`)
-  - Task 5: BBRef-style career table — column groups, monospace, sortable, advanced stats (`2026-04-22`)
-  - Task 3: MLB App scoreboard — team color accent bars, enlarged diamond panel, inning half ▲▼, team-colored WP bar (`2026-04-21`)
-  - Task 2: FanGraphs-style dense leaderboard — col groups, team filter, min PA/IP, active sort column band (`2026-04-21`)
-  - revert: serve web-frontend v1 build (`2026-04-21`)
-  - Game click opens Boxscore dialog directly, skip inline analytics panel (`2026-04-18`)
+- Awards route: `mget` casing fix (ioredis uses lowercase `mget` not `mGet`). (`2026-06-01`)
+- WBC team logo 404s fixed (skip non-MLB team codes in logo resolver). (`2026-05-17`)
+- `p.tier` object crash in trade suggestions table. (`2026-05-17`)
+- Admin page: `useAuth()` instead of unexported `AuthContext`; wait for auth hydration before isAdmin check. (`2026-05-16`)
+- AI search: OpenAI package import fixed; canceled-request snackbar cleared correctly; checkout error handling in `RequirePro`. (`2026-05-07`)
 
 </details>
 
