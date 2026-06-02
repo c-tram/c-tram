@@ -208,66 +208,87 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Last updated: 2026-06-01</sub>
+<sub>Auto-updated changelog • Last updated: 2026-06-02 • 50 recent changes</sub>
 
 <details>
-<summary><b>📋 Recent Development Activity (Spring 2026)</b></summary>
+<summary><b>📋 Recent Development Activity</b></summary>
 
-#### 🚀 New Pages & Major Features
+#### 💰 Trade Intelligence
 
-- **Momentum Board** (`/momentum`) — quadrant scatter (CVR delta × WAR), biggest 30-day risers/fallers cards, full sortable table. Replaces CVR Movers + Hot/Cold Streaks with a single unified surface. Sidebar updated, `/cvr-movers` and `/streaks` redirect here. (`2026-06-01`)
-- **Fantasy Value Score (FVS) Board** — complete FVS-based rewrite of the Fantasy/DFS page. 4 tabs: Tonight's Slate, Value Board, Full Leaderboard, My Roster. DraftKings/FanDuel salary integration, stacking suggestions. (`2026-06-01`)
-- **Trade War Room** — surplus value verdict banner ("favors HOU by 0.6 WAR + $4M surplus value"), per-player surplus chip, Contender⚡ / Rebuilder🌱 toggle, fairness grade with narrative summary. (`2026-06-01`)
-- **Awards Tracker** (`/awards`) — live MVP, Cy Young, ROY, Silver Slugger, Gold Glove race projections updated daily. Position sourced from player-index; ROY rookie detection via team service-time history. (`2026-06-01`)
-- **Admin Dashboard** (`/admin`) — user count, revenue snapshot, active subscriptions, isAdmin gate (auth-hydration-safe). (`2026-05-15`)
-- **Forgot / Reset Password** — full email flow via Resend, `/reset-password` page, AuthModal forgot link. (`2026-05-10`)
-- **Compare Players spider chart** — RadarChart batting/pitching profile overlay on the Compare page (Tier-1 Roadmap item #3). (`2026-05-08`)
-- **Account menu** — top-right nav: login status, sign in/out, settings, upgrade/manage subscription. (`2026-05-07`)
+  - MLB-only — exclude spring training players from Fantasy/Momentum/Trades (gameTypeBreakdown.R check in players_v2, trade_v2, recalculateCVR) (`2026-06-01`)
+  - Momentum Board (replaces CVR Movers + Hot/Cold), FVS fantasy board, Trade War Room (surplus verdict + contender/rebuilder toggle), AL/NL league insights email split (`2026-06-01`)
+  - revert WBC player filter in trades, resolve MLB team from redis for logo display (`2026-05-31`)
+  - filter WBC/non-MLB team codes from trade_v2 player key scans (`2026-05-31`)
+  - sidebar cleanup, invite-pro fix, sub days left, CVR Movers standalone+filters, hot-cold filters+mode, fantasy roster+team filter, trade engine CTS explainer (`2026-05-31`)
+  - Redis response cache for stuff-plus leaderboard + trade leaders (fix cold Pro page loads) (`2026-05-31`)
+  - precompute URLs (/stats/leaders, /trade/leaders) + push.sh syncs scripts/ and ecosystem (`2026-05-31`)
+  - warm Pro page endpoints (Pitch Lab, Fantasy, Trades, Streaks) in cacheWarmer (`2026-05-31`)
 
-#### 💰 Trade Intelligence & Pro Pages
+#### 📊 Advanced Metrics
 
-- Trade War Room: Contender/Rebuilder mode toggle, surplus value verdict, "Get Verdict" CTA. (`2026-06-01`)
-- Trade Value leaderboard: `gameTypeBreakdown.R` MLB-only filter — spring training players excluded from trade assets. (`2026-06-01`)
-- DTV 6-year surplus projection with aging-curve decay, positional market rate, narrative synthesis. (`2026-05-20`)
-- Redis warm cache for trade leaders + Stuff+ leaderboard — cold Pro page loads eliminated. (`2026-05-12`)
+  - full digest email — all 5 modules (CVR movers, hot/cold, team pulse, league insights, fantasy edge), personalized per user (`2026-06-01`)
+  - email digest — fetch CVR movers from API, add emailPrefs.enabled check (`2026-06-01`)
+  - Settings.js extra paren in CVR Movers tab fragment (was breaking build → 403) (`2026-05-31`)
+  - Email Digests tab — player watchlist, team pulse, module toggles; CVR Movers nav rename (`2026-05-31`)
+  - remove CVR Movers + Cycle Index from home; CVR Movers now a Pro tab in Settings (`2026-05-31`)
+  - monetization — Pro paywall, Bettor CLV Tracker, CVR email alerts (`2026-05-27`)
 
-#### 🛡️ Data Integrity — MLB-Only Filter (Spring Training Exclusion)
+#### ⚾ Splits & Pitch Analytics
 
-- **`players_v2.js`**: Current-year player list now requires `gameTypeBreakdown.R >= 1` (at least 1 regular-season game). `gameCount` in API response now returns MLB-only games, not combined spring+MLB total. (`2026-06-01`)
-- **`trade_v2.js`**: Same `gameTypeBreakdown.R` gate added to `computeTradeLeaders` pre-filter and team roster post-filter. `gameTypeBreakdown` added to trade stats shape so filter has the data it needs. (`2026-06-01`)
-- **`recalculateCVR.cjs`**: Fallback path for missing `gameTypeBreakdown` returns `false` for current year — spring-only players can no longer receive a CVR score. Past-year historical data keeps lenient fallback (safe, predates tracking). (`2026-06-01`)
-- `stats_v2.js` leaderboard already had this filter — confirmed as the correct pattern. (`2026-06-01`)
-
-#### ⚡ Infrastructure & Performance
-
-- **Detail-page caching** — new `detail` loop in `cacheWarmer.cjs`: 30 team detail + roster pages + top-100 players by WAR warmed every 20 min. Runs separately from the 4-min hot loop to avoid blocking list endpoints. Player IDs fetched dynamically from the already-warm list so the top-100 set always reflects current standings. (`2026-06-01`)
-- Stale precomputed Pro page blobs (`precomputed:pro:*:2026`) purged on deploy — Pro pages now serve fresh filtered data immediately rather than waiting for next 10:15 UTC cron. (`2026-06-01`)
-- Cache warmer explanation: 4-min hot loop interleaves with `pullLive.sh` (runs every 5 min during game hours, purges nginx cache after each live ingest) — warmer races to re-prime nginx before next user request hits a cold miss. (`2026-06-01`)
-- Mailer migrated from Mailgun → **Resend**. (`2026-05-11`)
-- Paywall: Stripe webhook raw-body parsing fixed (before `express.json()`); `requirePro` middleware now does a fresh Redis lookup for tier on each request. (`2026-05-09`)
-- Pro page endpoints (Pitch Lab, Fantasy, Trades, Streaks) added to cacheWarmer. (`2026-05-08`)
-- Price standardized to **$8/month** across `RequirePro` + Settings. (`2026-05-08`)
-
-#### 📧 Email Digest System
-
-- **AL/NL two-column layout** in League Insights email module. (`2026-06-01`)
-- Full personalized digest: 5 modules — CVR Movers, Hot/Cold, Team Pulse, League Insights, Fantasy Edge — per-user via `emailPrefs`. (`2026-05-25`)
-- Email Digests tab in Settings: player watchlist, team pulse, module toggles. (`2026-05-22`)
-- `emailPrefs.enabled` check added to digest scheduler — only sends to opted-in users. (`2026-05-24`)
+  - remove hardcoded backend floors — allow minGames/minAtBats/minInnings=0, remove 5IP pitcher floor (`2026-05-31`)
+  - pitch lab 500 pitchers, awards Unknown position guard, fantasy 500 batters/250 pitchers (`2026-05-31`)
+  - Pitch Lab + At-Bat Explorer as independent pages (/pitch-lab, /at-bat-explorer) (`2026-05-31`)
+  - split Explorer into Pitch Lab + At-Bat Explorer in sidebar (`2026-05-31`)
+  - Tier-1 #3 — spider chart on Compare Players (RadarChart batting/pitching profile) (`2026-05-28`)
 
 #### 🎨 Frontend & UX
 
-- Sidebar: replaced "Hot/Cold Streaks" + "CVR Movers" with unified "Momentum Board" (`ShowChart` icon). (`2026-06-01`)
-- CVR Movers standalone page with filters, Hot/Cold filters + mode toggle, Fantasy roster + team filter, Trade engine CTS explainer. (`2026-05-18`)
-- Sub days remaining chip in sidebar. Invite-Pro fix. (`2026-05-18`)
+  - admin dashboard — /admin route, /api/admin/stats endpoint, isAdmin flag on coletrammell7@gmail.com (`2026-05-31`)
+  - push.sh — guard build failure, fix banner printf for zsh compat (`2026-05-31`)
+  - restore Explorer tab to Explore section in sidebar + nav search (`2026-05-31`)
+  - Pro features section in sidebar, background prefetch for Pro pages, Explorer now free (`2026-05-31`)
+  - account menu in top-right nav — login status, sign in/out, settings, upgrade/manage sub (`2026-05-30`)
+
+#### ⚡ API & Performance
+
+  - cacheWarmer URL accuracy — match exact nginx cache keys for teams, players, team rosters, player profiles (`2026-06-02`)
+  - warm 30 team detail pages + top-100 player detail pages every 20min (separate detail loop in cacheWarmer) (`2026-06-01`)
+  - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
+  - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
+  - invite codes — generate script, /api/payments/redeem endpoint, Settings redeem UI (`2026-05-31`)
+  - paywall — webhook raw body before express.json(), requirePro Redis lookup for fresh tier (`2026-05-30`)
+  - awards mget casing (ioredis uses mget not mGet) (`2026-05-28`)
+
+#### 🔧 Data Pipeline
+
+  - email digest — correct player profile URLs, salary-based fantasy edge, standings in team pulse, stats in hot/cold rows (`2026-06-01`)
+  - Admin page — wait for auth hydration before isAdmin check (was redirecting on null user) (`2026-05-31`)
+  - Admin page — useAuth() instead of AuthContext (not exported) (`2026-05-31`)
+  - forgot/reset password — email flow, /reset-password page, AuthModal forgot link (`2026-05-31`)
+  - precomputeProPages cron in ecosystem — runs 10:15 UTC daily after data pull (`2026-05-31`)
+  - add openai to package.json dependencies (NLQ was broken — module missing) (`2026-05-28`)
+  - rewrite push.sh — commit + GitHub + VPS rsync/restart in one script (`2026-05-27`)
+
+#### 🏗️ Infrastructure
+
+  - move dotenv.config() to top of server.js so JWT_SECRET loads before auth module (`2026-05-27`)
 
 #### 🐛 Bug Fixes
 
-- Awards route: `mget` casing fix (ioredis uses lowercase `mget` not `mGet`). (`2026-06-01`)
-- WBC team logo 404s fixed (skip non-MLB team codes in logo resolver). (`2026-05-17`)
-- `p.tier` object crash in trade suggestions table. (`2026-05-17`)
-- Admin page: `useAuth()` instead of unexported `AuthContext`; wait for auth hydration before isAdmin check. (`2026-05-16`)
-- AI search: OpenAI package import fixed; canceled-request snackbar cleared correctly; checkout error handling in `RequirePro`. (`2026-05-07`)
+  - WBC team logos 404 (skip non-MLB codes), p.tier object crash in suggestions table (`2026-05-31`)
+  - remove duplicate prefersReducedMotion declaration in App.js (`2026-05-31`)
+  - standardize price to $8/mo across RequirePro + Settings (`2026-05-30`)
+  - AI search (openai pkg), canceled snackbar, checkout error handling in RequirePro (`2026-05-28`)
+  - awards tracker — position from player-index, ROY rookie detection via team history (`2026-05-28`)
+  - push.sh SSH quoting + dotenv order (`2026-05-27`)
+  - Fix Correa-style undercounts: stop double-subtracting postseason (`2026-05-02`)
+  - Fix Boxscore shutter loop on /scores (`2026-05-02`)
+  - Fix spring training contamination of season aggregates (`2026-05-01`)
+
+#### 📝 General
+
+  - swap mailer from Mailgun to Resend (`2026-05-31`)
+  - auth + Stripe paywall for AI search (`2026-05-27`)
 
 </details>
 
