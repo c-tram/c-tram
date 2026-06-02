@@ -235,6 +235,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - cacheWarmer matchup loop — pre-warm today's game-preview + pitcher-vs-lineup on 30-min cadence (`2026-06-02`)
   - remove hardcoded backend floors — allow minGames/minAtBats/minInnings=0, remove 5IP pitcher floor (`2026-05-31`)
   - pitch lab 500 pitchers, awards Unknown position guard, fantasy 500 batters/250 pitchers (`2026-05-31`)
   - Pitch Lab + At-Bat Explorer as independent pages (/pitch-lab, /at-bat-explorer) (`2026-05-31`)
@@ -283,7 +284,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - push.sh SSH quoting + dotenv order (`2026-05-27`)
   - Fix Correa-style undercounts: stop double-subtracting postseason (`2026-05-02`)
   - Fix Boxscore shutter loop on /scores (`2026-05-02`)
-  - Fix spring training contamination of season aggregates (`2026-05-01`)
 
 #### 📝 General
 
