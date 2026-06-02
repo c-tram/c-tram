@@ -208,13 +208,14 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-06-02 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-06-02 • 49 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
 
 #### 💰 Trade Intelligence
 
+  - Trade War Room v5 — 3-tab rewrite (War Room / Market / Compare) (`2026-06-02`)
   - MLB-only — exclude spring training players from Fantasy/Momentum/Trades (gameTypeBreakdown.R check in players_v2, trade_v2, recalculateCVR) (`2026-06-01`)
   - Momentum Board (replaces CVR Movers + Hot/Cold), FVS fantasy board, Trade War Room (surplus verdict + contender/rebuilder toggle), AL/NL league insights email split (`2026-06-01`)
   - revert WBC player filter in trades, resolve MLB team from redis for logo display (`2026-05-31`)
@@ -282,8 +283,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - AI search (openai pkg), canceled snackbar, checkout error handling in RequirePro (`2026-05-28`)
   - awards tracker — position from player-index, ROY rookie detection via team history (`2026-05-28`)
   - push.sh SSH quoting + dotenv order (`2026-05-27`)
-  - Fix Correa-style undercounts: stop double-subtracting postseason (`2026-05-02`)
-  - Fix Boxscore shutter loop on /scores (`2026-05-02`)
 
 #### 📝 General
 
