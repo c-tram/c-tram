@@ -224,7 +224,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Email Digests tab — player watchlist, team pulse, module toggles; CVR Movers nav rename (`2026-05-31`)
   - remove CVR Movers + Cycle Index from home; CVR Movers now a Pro tab in Settings (`2026-05-31`)
   - monetization — Pro paywall, Bettor CLV Tracker, CVR email alerts (`2026-05-27`)
-  - compute season WAR on-the-fly; stop overlaying multi-year rolling WAR (`2026-05-01`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -244,6 +243,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - warm 30 team detail pages + top-100 player detail pages every 20min (separate detail loop in cacheWarmer) (`2026-06-01`)
   - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
   - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
   - invite codes — generate script, /api/payments/redeem endpoint, Settings redeem UI (`2026-05-31`)
