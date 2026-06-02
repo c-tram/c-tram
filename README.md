@@ -206,6 +206,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - Momentum Board (replaces CVR Movers + Hot/Cold), FVS fantasy board, Trade War Room (surplus verdict + contender/rebuilder toggle), AL/NL league insights email split (`2026-06-01`)
   - revert WBC player filter in trades, resolve MLB team from redis for logo display (`2026-05-31`)
   - filter WBC/non-MLB team codes from trade_v2 player key scans (`2026-05-31`)
   - sidebar cleanup, invite-pro fix, sub days left, CVR Movers standalone+filters, hot-cold filters+mode, fantasy roster+team filter, trade engine CTS explainer (`2026-05-31`)
@@ -247,7 +248,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - invite codes — generate script, /api/payments/redeem endpoint, Settings redeem UI (`2026-05-31`)
   - paywall — webhook raw body before express.json(), requirePro Redis lookup for fresh tier (`2026-05-30`)
   - awards mget casing (ioredis uses mget not mGet) (`2026-05-28`)
-  - restore team detail key metrics, player WAR/position (`2026-05-01`)
 
 #### 🔧 Data Pipeline
 
