@@ -223,7 +223,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - remove CVR Movers + Cycle Index from home; CVR Movers now a Pro tab in Settings (`2026-05-31`)
   - monetization — Pro paywall, Bettor CLV Tracker, CVR email alerts (`2026-05-27`)
   - compute season WAR on-the-fly; stop overlaying multi-year rolling WAR (`2026-05-01`)
-  - backfill team WAR + player position/playerType/war when season key fields stripped by reaggregation (`2026-04-30`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -252,6 +251,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🔧 Data Pipeline
 
+  - email digest — correct player profile URLs, salary-based fantasy edge, standings in team pulse, stats in hot/cold rows (`2026-06-01`)
   - Admin page — wait for auth hydration before isAdmin check (was redirecting on null user) (`2026-05-31`)
   - Admin page — useAuth() instead of AuthContext (not exported) (`2026-05-31`)
   - forgot/reset password — email flow, /reset-password page, AuthModal forgot link (`2026-05-31`)
