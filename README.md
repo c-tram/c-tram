@@ -254,6 +254,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - Team Pulse boxscore — fetch per-game boxscore individually (/game/pk/boxscore) since schedule API never hydrates player stats (`2026-06-03`)
   - admin — Send Test Digest button per user row, POST /api/admin/send-test-digest endpoint (`2026-06-02`)
   - cacheWarmer URL accuracy — match exact nginx cache keys for teams, players, team rosters, player profiles (`2026-06-02`)
   - warm 30 team detail pages + top-100 player detail pages every 20min (separate detail loop in cacheWarmer) (`2026-06-01`)
@@ -279,7 +280,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - remove duplicate prefersReducedMotion declaration in App.js (`2026-05-31`)
   - standardize price to $8/mo across RequirePro + Settings (`2026-05-30`)
   - AI search (openai pkg), canceled snackbar, checkout error handling in RequirePro (`2026-05-28`)
-  - awards tracker — position from player-index, ROY rookie detection via team history (`2026-05-28`)
 
 #### 📝 General
 
