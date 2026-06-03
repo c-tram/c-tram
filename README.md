@@ -236,6 +236,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - game-preview + pitcher-vs-lineup use Redis cache (shared across all 10 workers, 2h TTL) (`2026-06-03`)
   - cacheWarmer matchup loop — pre-warm today's game-preview + pitcher-vs-lineup on 30-min cadence (`2026-06-02`)
   - remove hardcoded backend floors — allow minGames/minAtBats/minInnings=0, remove 5IP pitcher floor (`2026-05-31`)
   - pitch lab 500 pitchers, awards Unknown position guard, fantasy 500 batters/250 pitchers (`2026-05-31`)
@@ -270,7 +271,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Admin page — useAuth() instead of AuthContext (not exported) (`2026-05-31`)
   - forgot/reset password — email flow, /reset-password page, AuthModal forgot link (`2026-05-31`)
   - precomputeProPages cron in ecosystem — runs 10:15 UTC daily after data pull (`2026-05-31`)
-  - add openai to package.json dependencies (NLQ was broken — module missing) (`2026-05-28`)
 
 #### 🐛 Bug Fixes
 
