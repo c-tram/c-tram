@@ -271,10 +271,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - precomputeProPages cron in ecosystem — runs 10:15 UTC daily after data pull (`2026-05-31`)
   - add openai to package.json dependencies (NLQ was broken — module missing) (`2026-05-28`)
 
-#### 🏗️ Infrastructure
-
-  - move dotenv.config() to top of server.js so JWT_SECRET loads before auth module (`2026-05-27`)
-
 #### 🐛 Bug Fixes
 
   - spring-training filter — also skip players with missing gameTypeBreakdown (stale keys) (`2026-06-02`)
@@ -287,6 +283,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - email digest — all game scores in Yesterday section, Team Pulse shows yesterday's boxscore (AB/H/HR/RBI + SP line) (`2026-06-02`)
   - swap mailer from Mailgun to Resend (`2026-05-31`)
 
 </details>
