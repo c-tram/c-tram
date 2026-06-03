@@ -277,6 +277,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - spring-training filter — also skip players with missing gameTypeBreakdown (stale keys) (`2026-06-02`)
   - WBC team logos 404 (skip non-MLB codes), p.tier object crash in suggestions table (`2026-05-31`)
   - remove duplicate prefersReducedMotion declaration in App.js (`2026-05-31`)
   - standardize price to $8/mo across RequirePro + Settings (`2026-05-30`)
@@ -287,7 +288,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 #### 📝 General
 
   - swap mailer from Mailgun to Resend (`2026-05-31`)
-  - auth + Stripe paywall for AI search (`2026-05-27`)
 
 </details>
 
