@@ -208,7 +208,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-06-02 • 49 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-06-03 • 49 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -227,6 +227,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - email — date in header, remove hero, condensed Yesterday scores, Team Pulse L10+boxscore fixes, League Snapshot SP/RP split, CVR Movers BUY/FADE signals (`2026-06-03`)
   - full digest email — all 5 modules (CVR movers, hot/cold, team pulse, league insights, fantasy edge), personalized per user (`2026-06-01`)
   - email digest — fetch CVR movers from API, add emailPrefs.enabled check (`2026-06-01`)
   - Settings.js extra paren in CVR Movers tab fragment (was breaking build → 403) (`2026-05-31`)
@@ -279,7 +280,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - standardize price to $8/mo across RequirePro + Settings (`2026-05-30`)
   - AI search (openai pkg), canceled snackbar, checkout error handling in RequirePro (`2026-05-28`)
   - awards tracker — position from player-index, ROY rookie detection via team history (`2026-05-28`)
-  - push.sh SSH quoting + dotenv order (`2026-05-27`)
 
 #### 📝 General
 
