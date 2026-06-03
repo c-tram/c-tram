@@ -262,7 +262,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
   - invite codes — generate script, /api/payments/redeem endpoint, Settings redeem UI (`2026-05-31`)
   - paywall — webhook raw body before express.json(), requirePro Redis lookup for fresh tier (`2026-05-30`)
-  - awards mget casing (ioredis uses mget not mGet) (`2026-05-28`)
 
 #### 🔧 Data Pipeline
 
@@ -283,6 +282,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - /scores/:gamePk deep-link, email links to app, warmer pre-warms today+yesterday schedule (`2026-06-03`)
   - email digest — all game scores in Yesterday section, Team Pulse shows yesterday's boxscore (AB/H/HR/RBI + SP line) (`2026-06-02`)
   - swap mailer from Mailgun to Resend (`2026-05-31`)
 
