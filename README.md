@@ -253,6 +253,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - admin — Send Test Digest button per user row, POST /api/admin/send-test-digest endpoint (`2026-06-02`)
   - cacheWarmer URL accuracy — match exact nginx cache keys for teams, players, team rosters, player profiles (`2026-06-02`)
   - warm 30 team detail pages + top-100 player detail pages every 20min (separate detail loop in cacheWarmer) (`2026-06-01`)
   - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
@@ -269,7 +270,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - forgot/reset password — email flow, /reset-password page, AuthModal forgot link (`2026-05-31`)
   - precomputeProPages cron in ecosystem — runs 10:15 UTC daily after data pull (`2026-05-31`)
   - add openai to package.json dependencies (NLQ was broken — module missing) (`2026-05-28`)
-  - rewrite push.sh — commit + GitHub + VPS rsync/restart in one script (`2026-05-27`)
 
 #### 🏗️ Infrastructure
 
