@@ -232,7 +232,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Settings.js extra paren in CVR Movers tab fragment (was breaking build → 403) (`2026-05-31`)
   - Email Digests tab — player watchlist, team pulse, module toggles; CVR Movers nav rename (`2026-05-31`)
   - remove CVR Movers + Cycle Index from home; CVR Movers now a Pro tab in Settings (`2026-05-31`)
-  - monetization — Pro paywall, Bettor CLV Tracker, CVR email alerts (`2026-05-27`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -245,6 +244,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - email digest revamp — Yesterday in Baseball hero, logo branding, Team Pulse with game results, K leader min-IP fix, remove Hot/Cold, reorder sections (`2026-06-02`)
   - admin dashboard — /admin route, /api/admin/stats endpoint, isAdmin flag on coletrammell7@gmail.com (`2026-05-31`)
   - push.sh — guard build failure, fix banner printf for zsh compat (`2026-05-31`)
   - restore Explorer tab to Explore section in sidebar + nav search (`2026-05-31`)
