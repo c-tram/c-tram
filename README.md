@@ -243,7 +243,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - pitch lab 500 pitchers, awards Unknown position guard, fantasy 500 batters/250 pitchers (`2026-05-31`)
   - Pitch Lab + At-Bat Explorer as independent pages (/pitch-lab, /at-bat-explorer) (`2026-05-31`)
   - split Explorer into Pitch Lab + At-Bat Explorer in sidebar (`2026-05-31`)
-  - Tier-1 #3 — spider chart on Compare Players (RadarChart batting/pitching profile) (`2026-05-28`)
 
 #### 🎨 Frontend & UX
 
@@ -256,6 +255,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - NLQ streaming — text appears token-by-token, blinking cursor while generating (POST /v2/nlq/stream SSE endpoint) (`2026-06-03`)
   - Team Pulse boxscore — fetch per-game boxscore individually (/game/pk/boxscore) since schedule API never hydrates player stats (`2026-06-03`)
   - admin — Send Test Digest button per user row, POST /api/admin/send-test-digest endpoint (`2026-06-02`)
   - cacheWarmer URL accuracy — match exact nginx cache keys for teams, players, team rosters, player profiles (`2026-06-02`)
