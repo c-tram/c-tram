@@ -215,6 +215,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - Redis-backed shared cache for all heavy scans (players, rolling, leaders, leaderboard, cvr-movers, cycle-index, teams) — near-0% cold miss across all 10 workers; fix warmer URLs (cvr-movers, cycle-index, HotCold defaults, FantasyDFS, trade path fix, detail ceiling 300) (`2026-06-03`)
   - Trade War Room v5 — 3-tab rewrite (War Room / Market / Compare) (`2026-06-02`)
   - MLB-only — exclude spring training players from Fantasy/Momentum/Trades (gameTypeBreakdown.R check in players_v2, trade_v2, recalculateCVR) (`2026-06-01`)
   - Momentum Board (replaces CVR Movers + Hot/Cold), FVS fantasy board, Trade War Room (surplus verdict + contender/rebuilder toggle), AL/NL league insights email split (`2026-06-01`)
@@ -278,7 +279,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - WBC team logos 404 (skip non-MLB codes), p.tier object crash in suggestions table (`2026-05-31`)
   - remove duplicate prefersReducedMotion declaration in App.js (`2026-05-31`)
   - standardize price to $8/mo across RequirePro + Settings (`2026-05-30`)
-  - AI search (openai pkg), canceled snackbar, checkout error handling in RequirePro (`2026-05-28`)
 
 #### 📝 General
 
