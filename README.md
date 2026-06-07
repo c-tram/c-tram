@@ -244,10 +244,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - ExpectedStatsCard skeleton — eliminate layout-shift during stat load (`2026-06-07`)
   - email digest revamp — Yesterday in Baseball hero, logo branding, Team Pulse with game results, K leader min-IP fix, remove Hot/Cold, reorder sections (`2026-06-02`)
   - admin dashboard — /admin route, /api/admin/stats endpoint, isAdmin flag on coletrammell7@gmail.com (`2026-05-31`)
-  - push.sh — guard build failure, fix banner printf for zsh compat (`2026-05-31`)
 
 #### ⚡ API & Performance
 
+  - warmer 12s timeout + parallel secondary/matchup; remove setLoading(true) from loadPlayerData so prefill renders stay visible (`2026-06-07`)
   - instant team detail render from list — seed state from route prefill (`2026-06-07`)
   - warmer timeout 90s→12s, matchup+secondary endpoints run in parallel — prevents worker starvation (`2026-06-07`)
   - fix double-load on player profile: prevent reload when setSelectedTeam/Year set from API response (`2026-06-07`)
