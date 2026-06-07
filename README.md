@@ -216,7 +216,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 #### 💰 Trade Intelligence
 
   - Redis-backed shared cache for all heavy scans (players, rolling, leaders, leaderboard, cvr-movers, cycle-index, teams) — near-0% cold miss across all 10 workers; fix warmer URLs (cvr-movers, cycle-index, HotCold defaults, FantasyDFS, trade path fix, detail ceiling 300) (`2026-06-03`)
-  - Trade War Room v5 — 3-tab rewrite (War Room / Market / Compare) (`2026-06-02`)
 
 #### 📊 Advanced Metrics
 
@@ -263,6 +262,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🔧 Data Pipeline
 
+  - client-side sort on Players page — stop re-fetching per sort change (`2026-06-07`)
   - warmer detail loop 20min→4min, raise player ceiling 100→150 (fix cold team/player detail pages) (`2026-06-03`)
 
 #### 🏗️ Infrastructure
