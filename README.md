@@ -229,7 +229,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - batted ball profile 0% + pitcher Quality of Contact color inversion (`2026-06-06`)
   - pitch count table showing cumulative totals instead of season totals (`2026-06-06`)
   - game-preview + pitcher-vs-lineup use Redis cache (shared across all 10 workers, 2h TTL) (`2026-06-03`)
-  - cacheWarmer matchup loop — pre-warm today's game-preview + pitcher-vs-lineup on 30-min cadence (`2026-06-02`)
 
 #### 🎨 Frontend & UX
 
@@ -273,6 +272,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - warmer covers 2015-2026 and common sort variants (SLG, OPS, AVG, HR, ERA, K) (`2026-06-07`)
   - team year switcher starts at 2015 not 2018 (`2026-06-07`)
   - retry once on 503 after 4s delay (`2026-06-07`)
   - include slug in slim mode player list response (`2026-06-07`)
