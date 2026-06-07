@@ -228,7 +228,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - email — date in header, remove hero, condensed Yesterday scores, Team Pulse L10+boxscore fixes, League Snapshot SP/RP split, CVR Movers BUY/FADE signals (`2026-06-03`)
   - full digest email — all 5 modules (CVR movers, hot/cold, team pulse, league insights, fantasy edge), personalized per user (`2026-06-01`)
   - email digest — fetch CVR movers from API, add emailPrefs.enabled check (`2026-06-01`)
-  - Settings.js extra paren in CVR Movers tab fragment (was breaking build → 403) (`2026-05-31`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -249,6 +248,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - instant team detail render from list — seed state from route prefill (`2026-06-07`)
   - warmer timeout 90s→12s, matchup+secondary endpoints run in parallel — prevents worker starvation (`2026-06-07`)
   - fix double-load on player profile: prevent reload when setSelectedTeam/Year set from API response (`2026-06-07`)
   - gamelog-keys as Redis SETs + SADD in ingest + precompute includes 2026 (`2026-06-07`)
