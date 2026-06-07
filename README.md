@@ -254,6 +254,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - fix thundering herd — sequential team SCAN loop + redisCache in-flight deduplication (`2026-06-06`)
   - fix team/player detail latency — shared Redis scan cache + parallel warmer batches (`2026-06-06`)
   - NLQ streaming — text appears token-by-token, blinking cursor while generating (POST /v2/nlq/stream SSE endpoint) (`2026-06-03`)
   - Team Pulse boxscore — fetch per-game boxscore individually (/game/pk/boxscore) since schedule API never hydrates player stats (`2026-06-03`)
@@ -278,7 +279,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - spring-training filter — also skip players with missing gameTypeBreakdown (stale keys) (`2026-06-02`)
   - WBC team logos 404 (skip non-MLB codes), p.tier object crash in suggestions table (`2026-05-31`)
   - remove duplicate prefersReducedMotion declaration in App.js (`2026-05-31`)
-  - standardize price to $8/mo across RequirePro + Settings (`2026-05-30`)
 
 #### 📝 General
 
