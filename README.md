@@ -230,7 +230,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - email digest — fetch CVR movers from API, add emailPrefs.enabled check (`2026-06-01`)
   - Settings.js extra paren in CVR Movers tab fragment (was breaking build → 403) (`2026-05-31`)
   - Email Digests tab — player watchlist, team pulse, module toggles; CVR Movers nav rename (`2026-05-31`)
-  - remove CVR Movers + Cycle Index from home; CVR Movers now a Pro tab in Settings (`2026-05-31`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -241,6 +240,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - AnimatePresence mode=sync + no exit animation — kills double-fade on navigation (`2026-06-07`)
   - remove exit animation from route transitions — eliminates double-fade on navigation (`2026-06-07`)
   - ExpectedStatsCard skeleton — eliminate layout-shift during stat load (`2026-06-07`)
   - email digest revamp — Yesterday in Baseball hero, logo branding, Team Pulse with game results, K leader min-IP fix, remove Hot/Cold, reorder sections (`2026-06-02`)
