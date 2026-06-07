@@ -242,7 +242,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - remove exit animation from route transitions — eliminates double-fade on navigation (`2026-06-07`)
   - ExpectedStatsCard skeleton — eliminate layout-shift during stat load (`2026-06-07`)
   - email digest revamp — Yesterday in Baseball hero, logo branding, Team Pulse with game results, K leader min-IP fix, remove Hot/Cold, reorder sections (`2026-06-02`)
-  - admin dashboard — /admin route, /api/admin/stats endpoint, isAdmin flag on coletrammell7@gmail.com (`2026-05-31`)
 
 #### ⚡ API & Performance
 
@@ -277,6 +276,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - push.sh detects errored workers via grep and does clean restart (`2026-06-07`)
   - eliminate double-load using refs for selectedTeam/Year — kills child component spinner flash (`2026-06-07`)
   - eliminate double-load skeleton flash — don't call setLoading(true) inside loadPlayerData (`2026-06-07`)
   - spring-training filter — also skip players with missing gameTypeBreakdown (stale keys) (`2026-06-02`)
