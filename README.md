@@ -229,7 +229,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - full digest email — all 5 modules (CVR movers, hot/cold, team pulse, league insights, fantasy edge), personalized per user (`2026-06-01`)
   - email digest — fetch CVR movers from API, add emailPrefs.enabled check (`2026-06-01`)
   - Settings.js extra paren in CVR Movers tab fragment (was breaking build → 403) (`2026-05-31`)
-  - Email Digests tab — player watchlist, team pulse, module toggles; CVR Movers nav rename (`2026-05-31`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -240,6 +239,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - instant player page render from list — seed state from route prefill, no skeleton on navigation (`2026-06-07`)
   - AnimatePresence mode=sync + no exit animation — kills double-fade on navigation (`2026-06-07`)
   - remove exit animation from route transitions — eliminates double-fade on navigation (`2026-06-07`)
   - ExpectedStatsCard skeleton — eliminate layout-shift during stat load (`2026-06-07`)
