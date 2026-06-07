@@ -224,7 +224,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - email — date in header, remove hero, condensed Yesterday scores, Team Pulse L10+boxscore fixes, League Snapshot SP/RP split, CVR Movers BUY/FADE signals (`2026-06-03`)
   - full digest email — all 5 modules (CVR movers, hot/cold, team pulse, league insights, fantasy edge), personalized per user (`2026-06-01`)
-  - email digest — fetch CVR movers from API, add emailPrefs.enabled check (`2026-06-01`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -237,6 +236,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - pass team/playerName props to PlayerOverview so ExpectedStatsCard always uses current team not stale player.team (`2026-06-07`)
   - eliminate double profile fetch + lazy analytics tab fetch — kills page load animation and year-switch delay (`2026-06-07`)
   - instant player page render from list — seed state from route prefill, no skeleton on navigation (`2026-06-07`)
   - AnimatePresence mode=sync + no exit animation — kills double-fade on navigation (`2026-06-07`)
