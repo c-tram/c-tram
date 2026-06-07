@@ -222,7 +222,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - revert WBC player filter in trades, resolve MLB team from redis for logo display (`2026-05-31`)
   - filter WBC/non-MLB team codes from trade_v2 player key scans (`2026-05-31`)
   - sidebar cleanup, invite-pro fix, sub days left, CVR Movers standalone+filters, hot-cold filters+mode, fantasy roster+team filter, trade engine CTS explainer (`2026-05-31`)
-  - Redis response cache for stuff-plus leaderboard + trade leaders (fix cold Pro page loads) (`2026-05-31`)
 
 #### 📊 Advanced Metrics
 
@@ -249,6 +248,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - warmer timeout 90s→12s, matchup+secondary endpoints run in parallel — prevents worker starvation (`2026-06-07`)
   - fix double-load on player profile: prevent reload when setSelectedTeam/Year set from API response (`2026-06-07`)
   - gamelog-keys as Redis SETs + SADD in ingest + precompute includes 2026 (`2026-06-07`)
   - cache game-log SCAN keys 1h + profile TTL 5min→30min + warmer detail 150→30 sequential (`2026-06-06`)
