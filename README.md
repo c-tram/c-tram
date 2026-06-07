@@ -273,7 +273,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Admin page — wait for auth hydration before isAdmin check (was redirecting on null user) (`2026-05-31`)
   - Admin page — useAuth() instead of AuthContext (not exported) (`2026-05-31`)
   - forgot/reset password — email flow, /reset-password page, AuthModal forgot link (`2026-05-31`)
-  - precomputeProPages cron in ecosystem — runs 10:15 UTC daily after data pull (`2026-05-31`)
 
 #### 🐛 Bug Fixes
 
@@ -282,6 +281,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - revert preventReloadRef fix (`2026-06-07`)
   - /scores/:gamePk deep-link, email links to app, warmer pre-warms today+yesterday schedule (`2026-06-03`)
   - email digest — all game scores in Yesterday section, Team Pulse shows yesterday's boxscore (AB/H/HR/RBI + SP line) (`2026-06-02`)
   - swap mailer from Mailgun to Resend (`2026-05-31`)
