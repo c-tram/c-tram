@@ -220,7 +220,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - MLB-only — exclude spring training players from Fantasy/Momentum/Trades (gameTypeBreakdown.R check in players_v2, trade_v2, recalculateCVR) (`2026-06-01`)
   - Momentum Board (replaces CVR Movers + Hot/Cold), FVS fantasy board, Trade War Room (surplus verdict + contender/rebuilder toggle), AL/NL league insights email split (`2026-06-01`)
   - revert WBC player filter in trades, resolve MLB team from redis for logo display (`2026-05-31`)
-  - filter WBC/non-MLB team codes from trade_v2 player key scans (`2026-05-31`)
 
 #### 📊 Advanced Metrics
 
@@ -238,6 +237,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - eliminate double profile fetch + lazy analytics tab fetch — kills page load animation and year-switch delay (`2026-06-07`)
   - instant player page render from list — seed state from route prefill, no skeleton on navigation (`2026-06-07`)
   - AnimatePresence mode=sync + no exit animation — kills double-fade on navigation (`2026-06-07`)
   - remove exit animation from route transitions — eliminates double-fade on navigation (`2026-06-07`)
