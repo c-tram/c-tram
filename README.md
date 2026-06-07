@@ -237,6 +237,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - batted ball profile 0% + pitcher Quality of Contact color inversion (`2026-06-06`)
   - pitch count table showing cumulative totals instead of season totals (`2026-06-06`)
   - game-preview + pitcher-vs-lineup use Redis cache (shared across all 10 workers, 2h TTL) (`2026-06-03`)
   - cacheWarmer matchup loop — pre-warm today's game-preview + pitcher-vs-lineup on 30-min cadence (`2026-06-02`)
@@ -278,7 +279,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - spring-training filter — also skip players with missing gameTypeBreakdown (stale keys) (`2026-06-02`)
   - WBC team logos 404 (skip non-MLB codes), p.tier object crash in suggestions table (`2026-05-31`)
-  - remove duplicate prefersReducedMotion declaration in App.js (`2026-05-31`)
 
 #### 📝 General
 
