@@ -223,7 +223,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 #### 📊 Advanced Metrics
 
   - email — date in header, remove hero, condensed Yesterday scores, Team Pulse L10+boxscore fixes, League Snapshot SP/RP split, CVR Movers BUY/FADE signals (`2026-06-03`)
-  - full digest email — all 5 modules (CVR movers, hot/cold, team pulse, league insights, fantasy edge), personalized per user (`2026-06-01`)
 
 #### ⚾ Splits & Pitch Analytics
 
@@ -246,6 +245,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - rewrite: cacheWarmer.cjs — keepAlive agent, capped concurrency, single loop, no competing async chains (`2026-06-07`)
   - warmer 12s timeout + parallel secondary/matchup; remove setLoading(true) from loadPlayerData so prefill renders stay visible (`2026-06-07`)
   - instant team detail render from list — seed state from route prefill (`2026-06-07`)
   - warmer timeout 90s→12s, matchup+secondary endpoints run in parallel — prevents worker starvation (`2026-06-07`)
