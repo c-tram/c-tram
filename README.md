@@ -221,7 +221,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Momentum Board (replaces CVR Movers + Hot/Cold), FVS fantasy board, Trade War Room (surplus verdict + contender/rebuilder toggle), AL/NL league insights email split (`2026-06-01`)
   - revert WBC player filter in trades, resolve MLB team from redis for logo display (`2026-05-31`)
   - filter WBC/non-MLB team codes from trade_v2 player key scans (`2026-05-31`)
-  - sidebar cleanup, invite-pro fix, sub days left, CVR Movers standalone+filters, hot-cold filters+mode, fantasy roster+team filter, trade engine CTS explainer (`2026-05-31`)
 
 #### 📊 Advanced Metrics
 
@@ -271,6 +270,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - email digest — correct player profile URLs, salary-based fantasy edge, standings in team pulse, stats in hot/cold rows (`2026-06-01`)
   - Admin page — wait for auth hydration before isAdmin check (was redirecting on null user) (`2026-05-31`)
   - Admin page — useAuth() instead of AuthContext (not exported) (`2026-05-31`)
+
+#### 🏗️ Infrastructure
+
+  - pm2 runs as root in push.sh + max_restarts=999 in ecosystem — prevents errored worker death spiral (`2026-06-07`)
 
 #### 🐛 Bug Fixes
 
