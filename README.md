@@ -242,6 +242,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - ExpectedStatsCard skeleton — eliminate layout-shift during stat load (`2026-06-07`)
   - email digest revamp — Yesterday in Baseball hero, logo branding, Team Pulse with game results, K leader min-IP fix, remove Hot/Cold, reorder sections (`2026-06-02`)
   - admin dashboard — /admin route, /api/admin/stats endpoint, isAdmin flag on coletrammell7@gmail.com (`2026-05-31`)
   - push.sh — guard build failure, fix banner printf for zsh compat (`2026-05-31`)
@@ -284,7 +285,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - revert preventReloadRef fix (`2026-06-07`)
   - /scores/:gamePk deep-link, email links to app, warmer pre-warms today+yesterday schedule (`2026-06-03`)
   - email digest — all game scores in Yesterday section, Team Pulse shows yesterday's boxscore (AB/H/HR/RBI + SP line) (`2026-06-02`)
-  - swap mailer from Mailgun to Resend (`2026-05-31`)
 
 </details>
 
