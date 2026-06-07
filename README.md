@@ -218,7 +218,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Redis-backed shared cache for all heavy scans (players, rolling, leaders, leaderboard, cvr-movers, cycle-index, teams) — near-0% cold miss across all 10 workers; fix warmer URLs (cvr-movers, cycle-index, HotCold defaults, FantasyDFS, trade path fix, detail ceiling 300) (`2026-06-03`)
   - Trade War Room v5 — 3-tab rewrite (War Room / Market / Compare) (`2026-06-02`)
   - MLB-only — exclude spring training players from Fantasy/Momentum/Trades (gameTypeBreakdown.R check in players_v2, trade_v2, recalculateCVR) (`2026-06-01`)
-  - Momentum Board (replaces CVR Movers + Hot/Cold), FVS fantasy board, Trade War Room (surplus verdict + contender/rebuilder toggle), AL/NL league insights email split (`2026-06-01`)
 
 #### 📊 Advanced Metrics
 
@@ -235,6 +234,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - Teams → TeamDetail navigation now passes selected year in URL (`2026-06-07`)
   - pass team/playerName props to PlayerOverview so ExpectedStatsCard always uses current team not stale player.team (`2026-06-07`)
   - eliminate double profile fetch + lazy analytics tab fetch — kills page load animation and year-switch delay (`2026-06-07`)
   - instant player page render from list — seed state from route prefill, no skeleton on navigation (`2026-06-07`)
