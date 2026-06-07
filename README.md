@@ -245,6 +245,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - ops/nginx: exempt 127.0.0.1 from API rate limit (warmer fix) (`2026-06-07`)
   - rewrite: cacheWarmer.cjs — keepAlive agent, capped concurrency, single loop, no competing async chains (`2026-06-07`)
   - warmer 12s timeout + parallel secondary/matchup; remove setLoading(true) from loadPlayerData so prefill renders stay visible (`2026-06-07`)
   - instant team detail render from list — seed state from route prefill (`2026-06-07`)
@@ -267,7 +268,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 #### 🔧 Data Pipeline
 
   - warmer detail loop 20min→4min, raise player ceiling 100→150 (fix cold team/player detail pages) (`2026-06-03`)
-  - email digest — correct player profile URLs, salary-based fantasy edge, standings in team pulse, stats in hot/cold rows (`2026-06-01`)
 
 #### 🏗️ Infrastructure
 
