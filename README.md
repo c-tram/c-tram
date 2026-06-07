@@ -230,6 +230,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - add slug to player list response + apply category filter (batting vs pitching) + fix null-slug navigation (`2026-06-07`)
   - batted ball profile 0% + pitcher Quality of Contact color inversion (`2026-06-06`)
   - pitch count table showing cumulative totals instead of season totals (`2026-06-06`)
   - game-preview + pitcher-vs-lineup use Redis cache (shared across all 10 workers, 2h TTL) (`2026-06-03`)
@@ -267,7 +268,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - warmer detail loop 20min→4min, raise player ceiling 100→150 (fix cold team/player detail pages) (`2026-06-03`)
   - email digest — correct player profile URLs, salary-based fantasy edge, standings in team pulse, stats in hot/cold rows (`2026-06-01`)
-  - Admin page — wait for auth hydration before isAdmin check (was redirecting on null user) (`2026-05-31`)
 
 #### 🏗️ Infrastructure
 
