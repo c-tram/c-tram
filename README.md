@@ -208,7 +208,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-06-07 • 49 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-06-07 • 50 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -223,6 +223,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Splits/AtBats/SprayChart remount cleanly on year change (`2026-06-07`)
   - stale team on ExpectedStatsCard, cache analytics player-profile in Redis (24h/5m), defensive team stats batting/pitching null init (`2026-06-07`)
   - add slug to player list response + apply category filter (batting vs pitching) + fix null-slug navigation (`2026-06-07`)
   - batted ball profile 0% + pitcher Quality of Contact color inversion (`2026-06-06`)
