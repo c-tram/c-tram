@@ -223,7 +223,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - filter WBC/non-MLB team codes from trade_v2 player key scans (`2026-05-31`)
   - sidebar cleanup, invite-pro fix, sub days left, CVR Movers standalone+filters, hot-cold filters+mode, fantasy roster+team filter, trade engine CTS explainer (`2026-05-31`)
   - Redis response cache for stuff-plus leaderboard + trade leaders (fix cold Pro page loads) (`2026-05-31`)
-  - precompute URLs (/stats/leaders, /trade/leaders) + push.sh syncs scripts/ and ecosystem (`2026-05-31`)
 
 #### 📊 Advanced Metrics
 
@@ -276,6 +275,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - eliminate double-load skeleton flash — don't call setLoading(true) inside loadPlayerData (`2026-06-07`)
   - spring-training filter — also skip players with missing gameTypeBreakdown (stale keys) (`2026-06-02`)
   - WBC team logos 404 (skip non-MLB codes), p.tier object crash in suggestions table (`2026-05-31`)
 
