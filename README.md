@@ -271,10 +271,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - email digest — correct player profile URLs, salary-based fantasy edge, standings in team pulse, stats in hot/cold rows (`2026-06-01`)
   - Admin page — wait for auth hydration before isAdmin check (was redirecting on null user) (`2026-05-31`)
   - Admin page — useAuth() instead of AuthContext (not exported) (`2026-05-31`)
-  - forgot/reset password — email flow, /reset-password page, AuthModal forgot link (`2026-05-31`)
 
 #### 🐛 Bug Fixes
 
+  - eliminate double-load using refs for selectedTeam/Year — kills child component spinner flash (`2026-06-07`)
   - eliminate double-load skeleton flash — don't call setLoading(true) inside loadPlayerData (`2026-06-07`)
   - spring-training filter — also skip players with missing gameTypeBreakdown (stale keys) (`2026-06-02`)
   - WBC team logos 404 (skip non-MLB codes), p.tier object crash in suggestions table (`2026-05-31`)
