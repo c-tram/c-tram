@@ -241,6 +241,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - remove exit animation from route transitions — eliminates double-fade on navigation (`2026-06-07`)
   - ExpectedStatsCard skeleton — eliminate layout-shift during stat load (`2026-06-07`)
   - email digest revamp — Yesterday in Baseball hero, logo branding, Team Pulse with game results, K leader min-IP fix, remove Hot/Cold, reorder sections (`2026-06-02`)
   - admin dashboard — /admin route, /api/admin/stats endpoint, isAdmin flag on coletrammell7@gmail.com (`2026-05-31`)
@@ -263,7 +264,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - admin — Send Test Digest button per user row, POST /api/admin/send-test-digest endpoint (`2026-06-02`)
   - cacheWarmer URL accuracy — match exact nginx cache keys for teams, players, team rosters, player profiles (`2026-06-02`)
   - warm 30 team detail pages + top-100 player detail pages every 20min (separate detail loop in cacheWarmer) (`2026-06-01`)
-  - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
   - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
 
 #### 🔧 Data Pipeline
