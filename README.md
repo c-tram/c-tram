@@ -261,7 +261,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - NLQ streaming — text appears token-by-token, blinking cursor while generating (POST /v2/nlq/stream SSE endpoint) (`2026-06-03`)
   - Team Pulse boxscore — fetch per-game boxscore individually (/game/pk/boxscore) since schedule API never hydrates player stats (`2026-06-03`)
   - admin — Send Test Digest button per user row, POST /api/admin/send-test-digest endpoint (`2026-06-02`)
-  - cacheWarmer URL accuracy — match exact nginx cache keys for teams, players, team rosters, player profiles (`2026-06-02`)
 
 #### 🔧 Data Pipeline
 
@@ -274,6 +273,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - team year switcher starts at 2015 not 2018 (`2026-06-07`)
   - retry once on 503 after 4s delay (`2026-06-07`)
   - include slug in slim mode player list response (`2026-06-07`)
   - push.sh detects errored workers via grep and does clean restart (`2026-06-07`)
