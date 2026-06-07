@@ -208,7 +208,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-06-06 • 49 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-06-07 • 49 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -224,7 +224,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - sidebar cleanup, invite-pro fix, sub days left, CVR Movers standalone+filters, hot-cold filters+mode, fantasy roster+team filter, trade engine CTS explainer (`2026-05-31`)
   - Redis response cache for stuff-plus leaderboard + trade leaders (fix cold Pro page loads) (`2026-05-31`)
   - precompute URLs (/stats/leaders, /trade/leaders) + push.sh syncs scripts/ and ecosystem (`2026-05-31`)
-  - warm Pro page endpoints (Pitch Lab, Fantasy, Trades, Streaks) in cacheWarmer (`2026-05-31`)
 
 #### 📊 Advanced Metrics
 
@@ -251,6 +250,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - gamelog-keys as Redis SETs + SADD in ingest + precompute includes 2026 (`2026-06-07`)
   - cache game-log SCAN keys 1h + profile TTL 5min→30min + warmer detail 150→30 sequential (`2026-06-06`)
   - current-year player list Redis cache 2min + parallelize critical warmer URLs (`2026-06-06`)
   - correct 6 wrong team codes in warmer (TBR/KCR/SDP/SFG/ARI/WSN) + parallelize TeamDetail schedule fetch (`2026-06-06`)
