@@ -264,7 +264,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - admin — Send Test Digest button per user row, POST /api/admin/send-test-digest endpoint (`2026-06-02`)
   - cacheWarmer URL accuracy — match exact nginx cache keys for teams, players, team rosters, player profiles (`2026-06-02`)
   - warm 30 team detail pages + top-100 player detail pages every 20min (separate detail loop in cacheWarmer) (`2026-06-01`)
-  - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
 
 #### 🔧 Data Pipeline
 
@@ -282,6 +281,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - revert: restore all files to 8787d1e (pre-animation-fix state) (`2026-06-07`)
   - revert preventReloadRef fix (`2026-06-07`)
   - /scores/:gamePk deep-link, email links to app, warmer pre-warms today+yesterday schedule (`2026-06-03`)
   - email digest — all game scores in Yesterday section, Team Pulse shows yesterday's boxscore (AB/H/HR/RBI + SP line) (`2026-06-02`)
