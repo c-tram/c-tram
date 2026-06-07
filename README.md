@@ -254,6 +254,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - 15-min nginx TTL + Redis profile cache + expand warmer + historical precompute (`2026-06-06`)
   - fix thundering herd — sequential team SCAN loop + redisCache in-flight deduplication (`2026-06-06`)
   - fix team/player detail latency — shared Redis scan cache + parallel warmer batches (`2026-06-06`)
   - NLQ streaming — text appears token-by-token, blinking cursor while generating (POST /v2/nlq/stream SSE endpoint) (`2026-06-03`)
@@ -263,7 +264,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - warm 30 team detail pages + top-100 player detail pages every 20min (separate detail loop in cacheWarmer) (`2026-06-01`)
   - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
   - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
-  - invite codes — generate script, /api/payments/redeem endpoint, Settings redeem UI (`2026-05-31`)
 
 #### 🔧 Data Pipeline
 
