@@ -244,7 +244,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - remove hardcoded backend floors — allow minGames/minAtBats/minInnings=0, remove 5IP pitcher floor (`2026-05-31`)
   - pitch lab 500 pitchers, awards Unknown position guard, fantasy 500 batters/250 pitchers (`2026-05-31`)
   - Pitch Lab + At-Bat Explorer as independent pages (/pitch-lab, /at-bat-explorer) (`2026-05-31`)
-  - split Explorer into Pitch Lab + At-Bat Explorer in sidebar (`2026-05-31`)
 
 #### 🎨 Frontend & UX
 
@@ -254,6 +253,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - correct 6 wrong team codes in warmer (TBR/KCR/SDP/SFG/ARI/WSN) + parallelize TeamDetail schedule fetch (`2026-06-06`)
   - fix ProPagePrefetcher 404s + historical profile TTL 30d + precompute profile phase 2 (`2026-06-06`)
   - 15-min nginx TTL + Redis profile cache + expand warmer + historical precompute (`2026-06-06`)
   - fix thundering herd — sequential team SCAN loop + redisCache in-flight deduplication (`2026-06-06`)
