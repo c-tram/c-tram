@@ -242,7 +242,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - game-preview + pitcher-vs-lineup use Redis cache (shared across all 10 workers, 2h TTL) (`2026-06-03`)
   - cacheWarmer matchup loop — pre-warm today's game-preview + pitcher-vs-lineup on 30-min cadence (`2026-06-02`)
   - remove hardcoded backend floors — allow minGames/minAtBats/minInnings=0, remove 5IP pitcher floor (`2026-05-31`)
-  - pitch lab 500 pitchers, awards Unknown position guard, fantasy 500 batters/250 pitchers (`2026-05-31`)
 
 #### 🎨 Frontend & UX
 
@@ -252,6 +251,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - cache game-log SCAN keys 1h + profile TTL 5min→30min + warmer detail 150→30 sequential (`2026-06-06`)
   - current-year player list Redis cache 2min + parallelize critical warmer URLs (`2026-06-06`)
   - correct 6 wrong team codes in warmer (TBR/KCR/SDP/SFG/ARI/WSN) + parallelize TeamDetail schedule fetch (`2026-06-06`)
   - fix ProPagePrefetcher 404s + historical profile TTL 30d + precompute profile phase 2 (`2026-06-06`)
