@@ -219,7 +219,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Trade War Room v5 — 3-tab rewrite (War Room / Market / Compare) (`2026-06-02`)
   - MLB-only — exclude spring training players from Fantasy/Momentum/Trades (gameTypeBreakdown.R check in players_v2, trade_v2, recalculateCVR) (`2026-06-01`)
   - Momentum Board (replaces CVR Movers + Hot/Cold), FVS fantasy board, Trade War Room (surplus verdict + contender/rebuilder toggle), AL/NL league insights email split (`2026-06-01`)
-  - revert WBC player filter in trades, resolve MLB team from redis for logo display (`2026-05-31`)
 
 #### 📊 Advanced Metrics
 
@@ -229,6 +228,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - stale team on ExpectedStatsCard, cache analytics player-profile in Redis (24h/5m), defensive team stats batting/pitching null init (`2026-06-07`)
   - add slug to player list response + apply category filter (batting vs pitching) + fix null-slug navigation (`2026-06-07`)
   - batted ball profile 0% + pitcher Quality of Contact color inversion (`2026-06-06`)
   - pitch count table showing cumulative totals instead of season totals (`2026-06-06`)
