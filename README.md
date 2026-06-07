@@ -276,11 +276,11 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🐛 Bug Fixes
 
+  - include slug in slim mode player list response (`2026-06-07`)
   - push.sh detects errored workers via grep and does clean restart (`2026-06-07`)
   - eliminate double-load using refs for selectedTeam/Year — kills child component spinner flash (`2026-06-07`)
   - eliminate double-load skeleton flash — don't call setLoading(true) inside loadPlayerData (`2026-06-07`)
   - spring-training filter — also skip players with missing gameTypeBreakdown (stale keys) (`2026-06-02`)
-  - WBC team logos 404 (skip non-MLB codes), p.tier object crash in suggestions table (`2026-05-31`)
 
 #### 📝 General
 
