@@ -268,10 +268,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - warmer detail loop 20min→4min, raise player ceiling 100→150 (fix cold team/player detail pages) (`2026-06-03`)
   - email digest — correct player profile URLs, salary-based fantasy edge, standings in team pulse, stats in hot/cold rows (`2026-06-01`)
   - Admin page — wait for auth hydration before isAdmin check (was redirecting on null user) (`2026-05-31`)
-  - Admin page — useAuth() instead of AuthContext (not exported) (`2026-05-31`)
 
 #### 🏗️ Infrastructure
 
+  - push.sh + watchdog target cycle pm2 daemon — eliminates EADDRINUSE death spiral (`2026-06-07`)
   - pm2 runs as root in push.sh + max_restarts=999 in ecosystem — prevents errored worker death spiral (`2026-06-07`)
 
 #### 🐛 Bug Fixes
