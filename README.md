@@ -237,6 +237,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - pitch count table showing cumulative totals instead of season totals (`2026-06-06`)
   - game-preview + pitcher-vs-lineup use Redis cache (shared across all 10 workers, 2h TTL) (`2026-06-03`)
   - cacheWarmer matchup loop — pre-warm today's game-preview + pitcher-vs-lineup on 30-min cadence (`2026-06-02`)
   - remove hardcoded backend floors — allow minGames/minAtBats/minInnings=0, remove 5IP pitcher floor (`2026-05-31`)
@@ -250,7 +251,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - admin dashboard — /admin route, /api/admin/stats endpoint, isAdmin flag on coletrammell7@gmail.com (`2026-05-31`)
   - push.sh — guard build failure, fix banner printf for zsh compat (`2026-05-31`)
   - restore Explorer tab to Explore section in sidebar + nav search (`2026-05-31`)
-  - Pro features section in sidebar, background prefetch for Pro pages, Explorer now free (`2026-05-31`)
 
 #### ⚡ API & Performance
 
