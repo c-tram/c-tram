@@ -240,7 +240,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - pitch count table showing cumulative totals instead of season totals (`2026-06-06`)
   - game-preview + pitcher-vs-lineup use Redis cache (shared across all 10 workers, 2h TTL) (`2026-06-03`)
   - cacheWarmer matchup loop — pre-warm today's game-preview + pitcher-vs-lineup on 30-min cadence (`2026-06-02`)
-  - remove hardcoded backend floors — allow minGames/minAtBats/minInnings=0, remove 5IP pitcher floor (`2026-05-31`)
 
 #### 🎨 Frontend & UX
 
@@ -250,6 +249,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - fix double-load on player profile: prevent reload when setSelectedTeam/Year set from API response (`2026-06-07`)
   - gamelog-keys as Redis SETs + SADD in ingest + precompute includes 2026 (`2026-06-07`)
   - cache game-log SCAN keys 1h + profile TTL 5min→30min + warmer detail 150→30 sequential (`2026-06-06`)
   - current-year player list Redis cache 2min + parallelize critical warmer URLs (`2026-06-06`)
