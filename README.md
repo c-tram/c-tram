@@ -208,7 +208,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-06-03 • 49 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-06-06 • 49 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -254,6 +254,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - fix team/player detail latency — shared Redis scan cache + parallel warmer batches (`2026-06-06`)
   - NLQ streaming — text appears token-by-token, blinking cursor while generating (POST /v2/nlq/stream SSE endpoint) (`2026-06-03`)
   - Team Pulse boxscore — fetch per-game boxscore individually (/game/pk/boxscore) since schedule API never hydrates player stats (`2026-06-03`)
   - admin — Send Test Digest button per user row, POST /api/admin/send-test-digest endpoint (`2026-06-02`)
@@ -262,7 +263,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
   - routes check precomputed:pro:* keys first before scanning Redis (`2026-05-31`)
   - invite codes — generate script, /api/payments/redeem endpoint, Settings redeem UI (`2026-05-31`)
-  - paywall — webhook raw body before express.json(), requirePro Redis lookup for fresh tier (`2026-05-30`)
 
 #### 🔧 Data Pipeline
 
