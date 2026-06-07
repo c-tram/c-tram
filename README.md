@@ -217,7 +217,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - Redis-backed shared cache for all heavy scans (players, rolling, leaders, leaderboard, cvr-movers, cycle-index, teams) — near-0% cold miss across all 10 workers; fix warmer URLs (cvr-movers, cycle-index, HotCold defaults, FantasyDFS, trade path fix, detail ceiling 300) (`2026-06-03`)
   - Trade War Room v5 — 3-tab rewrite (War Room / Market / Compare) (`2026-06-02`)
-  - MLB-only — exclude spring training players from Fantasy/Momentum/Trades (gameTypeBreakdown.R check in players_v2, trade_v2, recalculateCVR) (`2026-06-01`)
 
 #### 📊 Advanced Metrics
 
@@ -284,6 +283,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - year switcher chips on TeamDetail header (2018–current) (`2026-06-07`)
   - revert: restore all files to 8787d1e (pre-animation-fix state) (`2026-06-07`)
   - revert preventReloadRef fix (`2026-06-07`)
   - /scores/:gamePk deep-link, email links to app, warmer pre-warms today+yesterday schedule (`2026-06-03`)
