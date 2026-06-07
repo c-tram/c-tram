@@ -251,10 +251,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - email digest revamp — Yesterday in Baseball hero, logo branding, Team Pulse with game results, K leader min-IP fix, remove Hot/Cold, reorder sections (`2026-06-02`)
   - admin dashboard — /admin route, /api/admin/stats endpoint, isAdmin flag on coletrammell7@gmail.com (`2026-05-31`)
   - push.sh — guard build failure, fix banner printf for zsh compat (`2026-05-31`)
-  - restore Explorer tab to Explore section in sidebar + nav search (`2026-05-31`)
 
 #### ⚡ API & Performance
 
+  - fix ProPagePrefetcher 404s + historical profile TTL 30d + precompute profile phase 2 (`2026-06-06`)
   - 15-min nginx TTL + Redis profile cache + expand warmer + historical precompute (`2026-06-06`)
   - fix thundering herd — sequential team SCAN loop + redisCache in-flight deduplication (`2026-06-06`)
   - fix team/player detail latency — shared Redis scan cache + parallel warmer batches (`2026-06-06`)
