@@ -217,10 +217,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - Redis-backed shared cache for all heavy scans (players, rolling, leaders, leaderboard, cvr-movers, cycle-index, teams) — near-0% cold miss across all 10 workers; fix warmer URLs (cvr-movers, cycle-index, HotCold defaults, FantasyDFS, trade path fix, detail ceiling 300) (`2026-06-03`)
 
-#### 📊 Advanced Metrics
-
-  - email — date in header, remove hero, condensed Yesterday scores, Team Pulse L10+boxscore fixes, League Snapshot SP/RP split, CVR Movers BUY/FADE signals (`2026-06-03`)
-
 #### ⚾ Splits & Pitch Analytics
 
   - ui: remove duplicate pitch arsenal table below batted ball profile in pitch analysis tab (`2026-06-07`)
@@ -284,6 +280,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - --frontend (`2026-06-07`)
   - --frontend (`2026-06-07`)
   - year switcher chips on TeamDetail header (2018–current) (`2026-06-07`)
   - revert: restore all files to 8787d1e (pre-animation-fix state) (`2026-06-07`)
