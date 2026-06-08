@@ -208,7 +208,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-06-07 • 50 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-06-07 • 49 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -285,7 +285,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - year switcher chips on TeamDetail header (2018–current) (`2026-06-07`)
   - revert: restore all files to 8787d1e (pre-animation-fix state) (`2026-06-07`)
   - revert preventReloadRef fix (`2026-06-07`)
-  - /scores/:gamePk deep-link, email links to app, warmer pre-warms today+yesterday schedule (`2026-06-03`)
 
 </details>
 
