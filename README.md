@@ -256,7 +256,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - fix thundering herd — sequential team SCAN loop + redisCache in-flight deduplication (`2026-06-06`)
   - fix team/player detail latency — shared Redis scan cache + parallel warmer batches (`2026-06-06`)
   - NLQ streaming — text appears token-by-token, blinking cursor while generating (POST /v2/nlq/stream SSE endpoint) (`2026-06-03`)
-  - Team Pulse boxscore — fetch per-game boxscore individually (/game/pk/boxscore) since schedule API never hydrates player stats (`2026-06-03`)
 
 #### 🔧 Data Pipeline
 
@@ -280,6 +279,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - --frontend (`2026-06-07`)
   - --frontend (`2026-06-07`)
   - --frontend (`2026-06-07`)
   - year switcher chips on TeamDetail header (2018–current) (`2026-06-07`)
