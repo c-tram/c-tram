@@ -233,6 +233,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 🎨 Frontend & UX
 
+  - Redis cache for team list+detail current year (5min TTL); PlayerDetail auto-switch to spring training tab when no regular season games (`2026-06-07`)
   - Teams → TeamDetail navigation now passes selected year in URL (`2026-06-07`)
   - pass team/playerName props to PlayerOverview so ExpectedStatsCard always uses current team not stale player.team (`2026-06-07`)
   - eliminate double profile fetch + lazy analytics tab fetch — kills page load animation and year-switch delay (`2026-06-07`)
@@ -240,7 +241,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - AnimatePresence mode=sync + no exit animation — kills double-fade on navigation (`2026-06-07`)
   - remove exit animation from route transitions — eliminates double-fade on navigation (`2026-06-07`)
   - ExpectedStatsCard skeleton — eliminate layout-shift during stat load (`2026-06-07`)
-  - email digest revamp — Yesterday in Baseball hero, logo branding, Team Pulse with game results, K leader min-IP fix, remove Hot/Cold, reorder sections (`2026-06-02`)
 
 #### ⚡ API & Performance
 
