@@ -284,11 +284,11 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - --frontend (`2026-06-07`)
   - year switcher chips on TeamDetail header (2018–current) (`2026-06-07`)
   - revert: restore all files to 8787d1e (pre-animation-fix state) (`2026-06-07`)
   - revert preventReloadRef fix (`2026-06-07`)
   - /scores/:gamePk deep-link, email links to app, warmer pre-warms today+yesterday schedule (`2026-06-03`)
-  - email digest — all game scores in Yesterday section, Team Pulse shows yesterday's boxscore (AB/H/HR/RBI + SP line) (`2026-06-02`)
 
 </details>
 
