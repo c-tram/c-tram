@@ -223,6 +223,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - ui: remove duplicate pitch arsenal table below batted ball profile in pitch analysis tab (`2026-06-07`)
   - SMEMBERS fast path + Redis cache for splits/trends/analytics; matchups 20s timeout; All-Star team fix; warm analytics+splits+trends top-50 (`2026-06-07`)
   - Splits/AtBats/SprayChart remount cleanly on year change (`2026-06-07`)
   - stale team on ExpectedStatsCard, cache analytics player-profile in Redis (24h/5m), defensive team stats batting/pitching null init (`2026-06-07`)
@@ -260,7 +261,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - fix team/player detail latency — shared Redis scan cache + parallel warmer batches (`2026-06-06`)
   - NLQ streaming — text appears token-by-token, blinking cursor while generating (POST /v2/nlq/stream SSE endpoint) (`2026-06-03`)
   - Team Pulse boxscore — fetch per-game boxscore individually (/game/pk/boxscore) since schedule API never hydrates player stats (`2026-06-03`)
-  - admin — Send Test Digest button per user row, POST /api/admin/send-test-digest endpoint (`2026-06-02`)
 
 #### 🔧 Data Pipeline
 
