@@ -223,6 +223,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Pitch Lab rework: interactive Pitch Designer + Arsenal Builder (`2026-07-02`)
   - Phase 0: retire Compare Players, Spray Charts page, Bettor CLV Tracker (`2026-07-02`)
   - ui: remove duplicate pitch arsenal table below batted ball profile in pitch analysis tab (`2026-06-07`)
   - SMEMBERS fast path + Redis cache for splits/trends/analytics; matchups 20s timeout; All-Star team fix; warm analytics+splits+trends top-50 (`2026-06-07`)
@@ -230,7 +231,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - stale team on ExpectedStatsCard, cache analytics player-profile in Redis (24h/5m), defensive team stats batting/pitching null init (`2026-06-07`)
   - add slug to player list response + apply category filter (batting vs pitching) + fix null-slug navigation (`2026-06-07`)
   - batted ball profile 0% + pitcher Quality of Contact color inversion (`2026-06-06`)
-  - pitch count table showing cumulative totals instead of season totals (`2026-06-06`)
 
 #### 🎨 Frontend & UX
 
