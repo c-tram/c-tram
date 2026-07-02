@@ -208,7 +208,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-06-07 • 49 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-07-01 • 49 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -226,7 +226,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - add slug to player list response + apply category filter (batting vs pitching) + fix null-slug navigation (`2026-06-07`)
   - batted ball profile 0% + pitcher Quality of Contact color inversion (`2026-06-06`)
   - pitch count table showing cumulative totals instead of season totals (`2026-06-06`)
-  - game-preview + pitcher-vs-lineup use Redis cache (shared across all 10 workers, 2h TTL) (`2026-06-03`)
 
 #### 🎨 Frontend & UX
 
@@ -241,6 +240,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - P0: stop purging nginx cache on live pulls — refresh in place instead (`2026-07-01`)
   - ops/nginx: exempt 127.0.0.1 from API rate limit (warmer fix) (`2026-06-07`)
   - rewrite: cacheWarmer.cjs — keepAlive agent, capped concurrency, single loop, no competing async chains (`2026-06-07`)
   - warmer 12s timeout + parallel secondary/matchup; remove setLoading(true) from loadPlayerData so prefill renders stay visible (`2026-06-07`)
