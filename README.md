@@ -223,6 +223,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Pitch Lab corpus: wire into precompute + cache warm layers (`2026-07-02`)
   - Pitch Lab rework: interactive Pitch Designer + Arsenal Builder (`2026-07-02`)
   - Phase 0: retire Compare Players, Spray Charts page, Bettor CLV Tracker (`2026-07-02`)
   - ui: remove duplicate pitch arsenal table below batted ball profile in pitch analysis tab (`2026-06-07`)
@@ -230,7 +231,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Splits/AtBats/SprayChart remount cleanly on year change (`2026-06-07`)
   - stale team on ExpectedStatsCard, cache analytics player-profile in Redis (24h/5m), defensive team stats batting/pitching null init (`2026-06-07`)
   - add slug to player list response + apply category filter (batting vs pitching) + fix null-slug navigation (`2026-06-07`)
-  - batted ball profile 0% + pitcher Quality of Contact color inversion (`2026-06-06`)
 
 #### 🎨 Frontend & UX
 
