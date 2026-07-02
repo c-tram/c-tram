@@ -213,6 +213,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
 
+#### 💰 Trade Intelligence
+
+  - CVR v7: percentile-anchored performance + surplus-value steal score (`2026-07-02`)
+
 #### ⚾ Splits & Pitch Analytics
 
   - Phase 0: retire Compare Players, Spray Charts page, Bettor CLV Tracker (`2026-07-02`)
@@ -253,7 +257,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - correct 6 wrong team codes in warmer (TBR/KCR/SDP/SFG/ARI/WSN) + parallelize TeamDetail schedule fetch (`2026-06-06`)
   - fix ProPagePrefetcher 404s + historical profile TTL 30d + precompute profile phase 2 (`2026-06-06`)
   - 15-min nginx TTL + Redis profile cache + expand warmer + historical precompute (`2026-06-06`)
-  - fix thundering herd — sequential team SCAN loop + redisCache in-flight deduplication (`2026-06-06`)
 
 #### 🔧 Data Pipeline
 
