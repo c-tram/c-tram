@@ -236,6 +236,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - restore production players_v2.js lost to stale local copy (`2026-07-01`)
   - P1: version-keyed current-year response cache — one recompute per pull (`2026-07-01`)
   - P0: stop purging nginx cache on live pulls — refresh in place instead (`2026-07-01`)
   - ops/nginx: exempt 127.0.0.1 from API rate limit (warmer fix) (`2026-06-07`)
@@ -252,7 +253,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - 15-min nginx TTL + Redis profile cache + expand warmer + historical precompute (`2026-06-06`)
   - fix thundering herd — sequential team SCAN loop + redisCache in-flight deduplication (`2026-06-06`)
   - fix team/player detail latency — shared Redis scan cache + parallel warmer batches (`2026-06-06`)
-  - NLQ streaming — text appears token-by-token, blinking cursor while generating (POST /v2/nlq/stream SSE endpoint) (`2026-06-03`)
 
 #### 🔧 Data Pipeline
 
