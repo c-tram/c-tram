@@ -217,6 +217,10 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
   - CVR v7: percentile-anchored performance + surplus-value steal score (`2026-07-02`)
 
+#### 📊 Advanced Metrics
+
+  - cvr-movers: only accept v7-tagged snapshots as baseline (`2026-07-02`)
+
 #### ⚾ Splits & Pitch Analytics
 
   - Phase 0: retire Compare Players, Spray Charts page, Bettor CLV Tracker (`2026-07-02`)
@@ -256,7 +260,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - current-year player list Redis cache 2min + parallelize critical warmer URLs (`2026-06-06`)
   - correct 6 wrong team codes in warmer (TBR/KCR/SDP/SFG/ARI/WSN) + parallelize TeamDetail schedule fetch (`2026-06-06`)
   - fix ProPagePrefetcher 404s + historical profile TTL 30d + precompute profile phase 2 (`2026-06-06`)
-  - 15-min nginx TTL + Redis profile cache + expand warmer + historical precompute (`2026-06-06`)
 
 #### 🔧 Data Pipeline
 
