@@ -208,13 +208,14 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-07-01 • 49 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-07-02 • 49 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Phase 0: retire Compare Players, Spray Charts page, Bettor CLV Tracker (`2026-07-02`)
   - ui: remove duplicate pitch arsenal table below batted ball profile in pitch analysis tab (`2026-06-07`)
   - SMEMBERS fast path + Redis cache for splits/trends/analytics; matchups 20s timeout; All-Star team fix; warm analytics+splits+trends top-50 (`2026-06-07`)
   - Splits/AtBats/SprayChart remount cleanly on year change (`2026-06-07`)
@@ -253,7 +254,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - fix ProPagePrefetcher 404s + historical profile TTL 30d + precompute profile phase 2 (`2026-06-06`)
   - 15-min nginx TTL + Redis profile cache + expand warmer + historical precompute (`2026-06-06`)
   - fix thundering herd — sequential team SCAN loop + redisCache in-flight deduplication (`2026-06-06`)
-  - fix team/player detail latency — shared Redis scan cache + parallel warmer batches (`2026-06-06`)
 
 #### 🔧 Data Pipeline
 
