@@ -213,10 +213,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
 
-#### 💰 Trade Intelligence
-
-  - Redis-backed shared cache for all heavy scans (players, rolling, leaders, leaderboard, cvr-movers, cycle-index, teams) — near-0% cold miss across all 10 workers; fix warmer URLs (cvr-movers, cycle-index, HotCold defaults, FantasyDFS, trade path fix, detail ceiling 300) (`2026-06-03`)
-
 #### ⚾ Splits & Pitch Analytics
 
   - ui: remove duplicate pitch arsenal table below batted ball profile in pitch analysis tab (`2026-06-07`)
@@ -240,6 +236,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - P1: version-keyed current-year response cache — one recompute per pull (`2026-07-01`)
   - P0: stop purging nginx cache on live pulls — refresh in place instead (`2026-07-01`)
   - ops/nginx: exempt 127.0.0.1 from API rate limit (warmer fix) (`2026-06-07`)
   - rewrite: cacheWarmer.cjs — keepAlive agent, capped concurrency, single loop, no competing async chains (`2026-06-07`)
