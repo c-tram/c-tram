@@ -236,6 +236,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚡ API & Performance
 
+  - P2: route ?season= requests to the correct cache tier (`2026-07-01`)
   - restore production players_v2.js lost to stale local copy (`2026-07-01`)
   - P1: version-keyed current-year response cache — one recompute per pull (`2026-07-01`)
   - P0: stop purging nginx cache on live pulls — refresh in place instead (`2026-07-01`)
@@ -257,7 +258,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 #### 🔧 Data Pipeline
 
   - client-side sort on Players page — stop re-fetching per sort change (`2026-06-07`)
-  - warmer detail loop 20min→4min, raise player ceiling 100→150 (fix cold team/player detail pages) (`2026-06-03`)
 
 #### 🏗️ Infrastructure
 
