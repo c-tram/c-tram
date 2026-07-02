@@ -259,7 +259,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - fix double-load on player profile: prevent reload when setSelectedTeam/Year set from API response (`2026-06-07`)
   - gamelog-keys as Redis SETs + SADD in ingest + precompute includes 2026 (`2026-06-07`)
   - cache game-log SCAN keys 1h + profile TTL 5min→30min + warmer detail 150→30 sequential (`2026-06-06`)
-  - current-year player list Redis cache 2min + parallelize critical warmer URLs (`2026-06-06`)
 
 #### 🔧 Data Pipeline
 
@@ -282,6 +281,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - Phase 2: Savant-style league percentile rails on player Overview (`2026-07-02`)
   - --frontend (`2026-06-07`)
   - --frontend (`2026-06-07`)
   - --frontend (`2026-06-07`)
