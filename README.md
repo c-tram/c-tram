@@ -223,6 +223,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Arsenal tab: derive pre-pitch counts from previous pitch's post-pitch count (API count is post-pitch) (`2026-07-02`)
   - Phase 3: Pitcher Arsenal tab — per-pitch Stuff+ grade cards, movement plot vs league, pitch mix by count/hand, velocity trend; promote sequencing+tunneling; expose balls/strikes in pitch-events (`2026-07-02`)
   - Phase 1: Batted Ball tab for hitters with real spray coordinates (`2026-07-02`)
   - Pitch Lab corpus: wire into precompute + cache warm layers (`2026-07-02`)
@@ -258,7 +259,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - instant team detail render from list — seed state from route prefill (`2026-06-07`)
   - warmer timeout 90s→12s, matchup+secondary endpoints run in parallel — prevents worker starvation (`2026-06-07`)
   - fix double-load on player profile: prevent reload when setSelectedTeam/Year set from API response (`2026-06-07`)
-  - gamelog-keys as Redis SETs + SADD in ingest + precompute includes 2026 (`2026-06-07`)
 
 #### 🔧 Data Pipeline
 
