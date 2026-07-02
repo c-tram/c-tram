@@ -223,6 +223,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Phase 1: Batted Ball tab for hitters with real spray coordinates (`2026-07-02`)
   - Pitch Lab corpus: wire into precompute + cache warm layers (`2026-07-02`)
   - Pitch Lab rework: interactive Pitch Designer + Arsenal Builder (`2026-07-02`)
   - Phase 0: retire Compare Players, Spray Charts page, Bettor CLV Tracker (`2026-07-02`)
@@ -259,7 +260,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - cache game-log SCAN keys 1h + profile TTL 5min→30min + warmer detail 150→30 sequential (`2026-06-06`)
   - current-year player list Redis cache 2min + parallelize critical warmer URLs (`2026-06-06`)
   - correct 6 wrong team codes in warmer (TBR/KCR/SDP/SFG/ARI/WSN) + parallelize TeamDetail schedule fetch (`2026-06-06`)
-  - fix ProPagePrefetcher 404s + historical profile TTL 30d + precompute profile phase 2 (`2026-06-06`)
 
 #### 🔧 Data Pipeline
 
