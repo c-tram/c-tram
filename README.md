@@ -224,6 +224,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Merge Pitch Analysis into Arsenal tab: keep pitch locations, zone heatmap, and batted-ball profile; drop duplicate Stuff+ card (`2026-07-02`)
   - Fix pitcher batted-ball profile: rebuild stats from filtered pitch events; use real spray angles for dots (`2026-07-02`)
   - Fixes: career splits timeout (single SCAN COUNT 10000 + MGET batch + 6h Redis cache), BB% color direction (higher BB% is good for batters), spring-training-only false positive for relievers (game log R-games override stats heuristic) (`2026-07-02`)
   - Fix: pitcher detection broke when player API position changed from 'P' to 'SP'/'RP' — tolerant isPitcherPosition() helper; Arsenal + Pitch Analysis were fetching batter pitch data (`2026-07-02`)
@@ -249,7 +250,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - instant player page render from list — seed state from route prefill, no skeleton on navigation (`2026-06-07`)
   - AnimatePresence mode=sync + no exit animation — kills double-fade on navigation (`2026-06-07`)
   - remove exit animation from route transitions — eliminates double-fade on navigation (`2026-06-07`)
-  - ExpectedStatsCard skeleton — eliminate layout-shift during stat load (`2026-06-07`)
 
 #### ⚡ API & Performance
 
