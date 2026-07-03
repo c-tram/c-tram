@@ -219,6 +219,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - P4: Splits Matrix — situational splits (home/away, hand, month, count, inning, times-through-order for pitchers) with cells colored vs own season baseline, derived from pitch-by-pitch at-bat events (`2026-07-02`)
   - cvr-movers: only accept v7-tagged snapshots as baseline (`2026-07-02`)
 
 #### ⚾ Splits & Pitch Analytics
@@ -287,7 +288,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - --frontend (`2026-06-07`)
   - year switcher chips on TeamDetail header (2018–current) (`2026-06-07`)
   - revert: restore all files to 8787d1e (pre-animation-fix state) (`2026-06-07`)
-  - revert preventReloadRef fix (`2026-06-07`)
 
 </details>
 
