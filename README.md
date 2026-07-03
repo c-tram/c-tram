@@ -219,6 +219,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - P5: team page remodel (Cycle Index card, team CVR movers, last-10 strip, rotation vs bullpen, roster pitchers fix) + merge Pitch Analysis into Arsenal tab (`2026-07-02`)
   - P4: Splits Matrix — situational splits (home/away, hand, month, count, inning, times-through-order for pitchers) with cells colored vs own season baseline, derived from pitch-by-pitch at-bat events (`2026-07-02`)
   - cvr-movers: only accept v7-tagged snapshots as baseline (`2026-07-02`)
 
@@ -261,7 +262,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - rewrite: cacheWarmer.cjs — keepAlive agent, capped concurrency, single loop, no competing async chains (`2026-06-07`)
   - warmer 12s timeout + parallel secondary/matchup; remove setLoading(true) from loadPlayerData so prefill renders stay visible (`2026-06-07`)
   - instant team detail render from list — seed state from route prefill (`2026-06-07`)
-  - warmer timeout 90s→12s, matchup+secondary endpoints run in parallel — prevents worker starvation (`2026-06-07`)
 
 #### 🔧 Data Pipeline
 
