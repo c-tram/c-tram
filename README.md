@@ -219,6 +219,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📊 Advanced Metrics
 
+  - cvr-movers: fall forward to oldest v7 snapshot when target date predates CVR v7 rescale (`2026-07-02`)
   - P5: team page remodel (Cycle Index card, team CVR movers, last-10 strip, rotation vs bullpen, roster pitchers fix) + merge Pitch Analysis into Arsenal tab (`2026-07-02`)
   - P4: Splits Matrix — situational splits (home/away, hand, month, count, inning, times-through-order for pitchers) with cells colored vs own season baseline, derived from pitch-by-pitch at-bat events (`2026-07-02`)
   - cvr-movers: only accept v7-tagged snapshots as baseline (`2026-07-02`)
@@ -250,7 +251,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - eliminate double profile fetch + lazy analytics tab fetch — kills page load animation and year-switch delay (`2026-06-07`)
   - instant player page render from list — seed state from route prefill, no skeleton on navigation (`2026-06-07`)
   - AnimatePresence mode=sync + no exit animation — kills double-fade on navigation (`2026-06-07`)
-  - remove exit animation from route transitions — eliminates double-fade on navigation (`2026-06-07`)
 
 #### ⚡ API & Performance
 
