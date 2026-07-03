@@ -224,6 +224,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Fix pitcher batted-ball profile: rebuild stats from filtered pitch events; use real spray angles for dots (`2026-07-02`)
   - Fixes: career splits timeout (single SCAN COUNT 10000 + MGET batch + 6h Redis cache), BB% color direction (higher BB% is good for batters), spring-training-only false positive for relievers (game log R-games override stats heuristic) (`2026-07-02`)
   - Fix: pitcher detection broke when player API position changed from 'P' to 'SP'/'RP' — tolerant isPitcherPosition() helper; Arsenal + Pitch Analysis were fetching batter pitch data (`2026-07-02`)
   - Arsenal tab: derive pre-pitch counts from previous pitch's post-pitch count (API count is post-pitch) (`2026-07-02`)
@@ -278,7 +279,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - retry once on 503 after 4s delay (`2026-06-07`)
   - include slug in slim mode player list response (`2026-06-07`)
   - push.sh detects errored workers via grep and does clean restart (`2026-06-07`)
-  - eliminate double-load using refs for selectedTeam/Year — kills child component spinner flash (`2026-06-07`)
 
 #### 📝 General
 
