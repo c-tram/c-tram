@@ -215,6 +215,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - Overhaul Teams + TeamDetail pages; fix two-way player WAR backfill in trade values (`2026-07-05`)
   - Trade Room v8: dual skin (Simulator/Terminal), client-side verdict, compact header, derived SP/RP roles (`2026-07-05`)
   - Trade leaders: warm cache top-500, Redis negative-cache for failed MLB age lookups (`2026-07-05`)
   - Trade War Room v7: fix empty rolling leaders (gameTypeBreakdown filter), hybrid local+server player search, headshots, tier badges, balance meter, market ticker hero (`2026-07-05`)
@@ -254,7 +255,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Redis cache for team list+detail current year (5min TTL); PlayerDetail auto-switch to spring training tab when no regular season games (`2026-06-07`)
   - Teams → TeamDetail navigation now passes selected year in URL (`2026-06-07`)
   - pass team/playerName props to PlayerOverview so ExpectedStatsCard always uses current team not stale player.team (`2026-06-07`)
-  - eliminate double profile fetch + lazy analytics tab fetch — kills page load animation and year-switch delay (`2026-06-07`)
 
 #### ⚡ API & Performance
 
