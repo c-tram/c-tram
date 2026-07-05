@@ -260,7 +260,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - P0: stop purging nginx cache on live pulls — refresh in place instead (`2026-07-01`)
   - ops/nginx: exempt 127.0.0.1 from API rate limit (warmer fix) (`2026-06-07`)
   - rewrite: cacheWarmer.cjs — keepAlive agent, capped concurrency, single loop, no competing async chains (`2026-06-07`)
-  - warmer 12s timeout + parallel secondary/matchup; remove setLoading(true) from loadPlayerData so prefill renders stay visible (`2026-06-07`)
 
 #### 🔧 Data Pipeline
 
@@ -281,6 +280,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - Glossary v7 rewrite + batted-ball at-bat popup + scatter zoom (`2026-07-05`)
   - Admin tools, email verification, pro-time tracking, glossary relocation (`2026-07-05`)
   - NLQ analytical engine: analyze_correlation + query_game_logs tools over team game logs (`2026-07-04`)
   - Phase 2: Savant-style league percentile rails on player Overview (`2026-07-02`)
