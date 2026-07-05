@@ -228,6 +228,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Splits tab dedupe + readability: hide old-style sections covered by matrix, bigger charts/dots/fonts (`2026-07-05`)
   - Merge Pitch Analysis into Arsenal tab: keep pitch locations, zone heatmap, and batted-ball profile; drop duplicate Stuff+ card (`2026-07-02`)
   - Fix pitcher batted-ball profile: rebuild stats from filtered pitch events; use real spray angles for dots (`2026-07-02`)
   - Fixes: career splits timeout (single SCAN COUNT 10000 + MGET batch + 6h Redis cache), BB% color direction (higher BB% is good for batters), spring-training-only false positive for relievers (game log R-games override stats heuristic) (`2026-07-02`)
@@ -268,7 +269,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 #### 🏗️ Infrastructure
 
   - push.sh + watchdog target cycle pm2 daemon — eliminates EADDRINUSE death spiral (`2026-06-07`)
-  - pm2 runs as root in push.sh + max_restarts=999 in ecosystem — prevents errored worker death spiral (`2026-06-07`)
 
 #### 🐛 Bug Fixes
 
