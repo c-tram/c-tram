@@ -215,6 +215,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - Trade War Room v7: fix empty rolling leaders (gameTypeBreakdown filter), hybrid local+server player search, headshots, tier badges, balance meter, market ticker hero (`2026-07-05`)
   - Trade verdict: sign-aware surplus formatting (`2026-07-05`)
   - Trade engine rework: WAR + $ surplus verdict, regressed WAR projections, rolling CVR overlay fix, full Trades UI overhaul (`2026-07-05`)
   - CVR v7: percentile-anchored performance + surplus-value steal score (`2026-07-02`)
@@ -266,10 +267,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 #### 🔧 Data Pipeline
 
   - client-side sort on Players page — stop re-fetching per sort change (`2026-06-07`)
-
-#### 🏗️ Infrastructure
-
-  - push.sh + watchdog target cycle pm2 daemon — eliminates EADDRINUSE death spiral (`2026-06-07`)
 
 #### 🐛 Bug Fixes
 
