@@ -228,6 +228,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### ⚾ Splits & Pitch Analytics
 
+  - Two-way player fix: perspective-aware pitch data refetch on role toggle; pitcher spray chart full-width; bigger zone/velo charts (`2026-07-05`)
   - Splits tab dedupe + readability: hide old-style sections covered by matrix, bigger charts/dots/fonts (`2026-07-05`)
   - Merge Pitch Analysis into Arsenal tab: keep pitch locations, zone heatmap, and batted-ball profile; drop duplicate Stuff+ card (`2026-07-02`)
   - Fix pitcher batted-ball profile: rebuild stats from filtered pitch events; use real spray angles for dots (`2026-07-02`)
@@ -276,7 +277,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - team year switcher starts at 2015 not 2018 (`2026-06-07`)
   - retry once on 503 after 4s delay (`2026-06-07`)
   - include slug in slim mode player list response (`2026-06-07`)
-  - push.sh detects errored workers via grep and does clean restart (`2026-06-07`)
 
 #### 📝 General
 
