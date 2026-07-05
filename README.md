@@ -215,6 +215,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - Trade leaders: warm cache top-500, Redis negative-cache for failed MLB age lookups (`2026-07-05`)
   - Trade War Room v7: fix empty rolling leaders (gameTypeBreakdown filter), hybrid local+server player search, headshots, tier badges, balance meter, market ticker hero (`2026-07-05`)
   - Trade verdict: sign-aware surplus formatting (`2026-07-05`)
   - Trade engine rework: WAR + $ surplus verdict, regressed WAR projections, rolling CVR overlay fix, full Trades UI overhaul (`2026-07-05`)
@@ -245,7 +246,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - SMEMBERS fast path + Redis cache for splits/trends/analytics; matchups 20s timeout; All-Star team fix; warm analytics+splits+trends top-50 (`2026-06-07`)
   - Splits/AtBats/SprayChart remount cleanly on year change (`2026-06-07`)
   - stale team on ExpectedStatsCard, cache analytics player-profile in Redis (24h/5m), defensive team stats batting/pitching null init (`2026-06-07`)
-  - add slug to player list response + apply category filter (batting vs pitching) + fix null-slug navigation (`2026-06-07`)
 
 #### 🎨 Frontend & UX
 
