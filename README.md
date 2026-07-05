@@ -215,6 +215,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - Trade Room v8: dual skin (Simulator/Terminal), client-side verdict, compact header, derived SP/RP roles (`2026-07-05`)
   - Trade leaders: warm cache top-500, Redis negative-cache for failed MLB age lookups (`2026-07-05`)
   - Trade War Room v7: fix empty rolling leaders (gameTypeBreakdown filter), hybrid local+server player search, headshots, tier badges, balance meter, market ticker hero (`2026-07-05`)
   - Trade verdict: sign-aware surplus formatting (`2026-07-05`)
@@ -273,7 +274,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - warmer covers 2015-2026 and common sort variants (SLG, OPS, AVG, HR, ERA, K) (`2026-06-07`)
   - team year switcher starts at 2015 not 2018 (`2026-06-07`)
   - retry once on 503 after 4s delay (`2026-06-07`)
-  - include slug in slim mode player list response (`2026-06-07`)
 
 #### 📝 General
 
