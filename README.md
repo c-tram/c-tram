@@ -215,6 +215,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - Trade verdict: sign-aware surplus formatting (`2026-07-05`)
   - Trade engine rework: WAR + $ surplus verdict, regressed WAR projections, rolling CVR overlay fix, full Trades UI overhaul (`2026-07-05`)
   - CVR v7: percentile-anchored performance + surplus-value steal score (`2026-07-02`)
 
@@ -260,7 +261,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - ops/nginx: exempt 127.0.0.1 from API rate limit (warmer fix) (`2026-06-07`)
   - rewrite: cacheWarmer.cjs — keepAlive agent, capped concurrency, single loop, no competing async chains (`2026-06-07`)
   - warmer 12s timeout + parallel secondary/matchup; remove setLoading(true) from loadPlayerData so prefill renders stay visible (`2026-06-07`)
-  - instant team detail render from list — seed state from route prefill (`2026-06-07`)
 
 #### 🔧 Data Pipeline
 
