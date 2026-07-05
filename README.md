@@ -247,7 +247,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - ui: remove duplicate pitch arsenal table below batted ball profile in pitch analysis tab (`2026-06-07`)
   - SMEMBERS fast path + Redis cache for splits/trends/analytics; matchups 20s timeout; All-Star team fix; warm analytics+splits+trends top-50 (`2026-06-07`)
   - Splits/AtBats/SprayChart remount cleanly on year change (`2026-06-07`)
-  - stale team on ExpectedStatsCard, cache analytics player-profile in Redis (24h/5m), defensive team stats batting/pitching null init (`2026-06-07`)
 
 #### 🎨 Frontend & UX
 
@@ -277,6 +276,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - TeamDetail: fix Last 10 showing first 10 games; add Savant-style team percentile rails (`2026-07-05`)
   - Glossary v7 rewrite + batted-ball at-bat popup + scatter zoom (`2026-07-05`)
   - Admin tools, email verification, pro-time tracking, glossary relocation (`2026-07-05`)
   - NLQ analytical engine: analyze_correlation + query_game_logs tools over team game logs (`2026-07-04`)
