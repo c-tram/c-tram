@@ -208,7 +208,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 ### ⚾ The Cycle — MLB Analytics Platform
 **See it live:** [thecycle.online](https://thecycle.online)
 
-<sub>Auto-updated changelog • Last updated: 2026-07-04 • 49 recent changes</sub>
+<sub>Auto-updated changelog • Last updated: 2026-07-05 • 49 recent changes</sub>
 
 <details>
 <summary><b>📋 Recent Development Activity</b></summary>
@@ -250,7 +250,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - pass team/playerName props to PlayerOverview so ExpectedStatsCard always uses current team not stale player.team (`2026-06-07`)
   - eliminate double profile fetch + lazy analytics tab fetch — kills page load animation and year-switch delay (`2026-06-07`)
   - instant player page render from list — seed state from route prefill, no skeleton on navigation (`2026-06-07`)
-  - AnimatePresence mode=sync + no exit animation — kills double-fade on navigation (`2026-06-07`)
 
 #### ⚡ API & Performance
 
@@ -282,6 +281,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - Admin tools, email verification, pro-time tracking, glossary relocation (`2026-07-05`)
   - NLQ analytical engine: analyze_correlation + query_game_logs tools over team game logs (`2026-07-04`)
   - Phase 2: Savant-style league percentile rails on player Overview (`2026-07-02`)
   - --frontend (`2026-06-07`)
