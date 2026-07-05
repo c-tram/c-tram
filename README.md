@@ -215,6 +215,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 💰 Trade Intelligence
 
+  - Trade engine rework: WAR + $ surplus verdict, regressed WAR projections, rolling CVR overlay fix, full Trades UI overhaul (`2026-07-05`)
   - CVR v7: percentile-anchored performance + surplus-value steal score (`2026-07-02`)
 
 #### 📊 Advanced Metrics
@@ -249,7 +250,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Teams → TeamDetail navigation now passes selected year in URL (`2026-06-07`)
   - pass team/playerName props to PlayerOverview so ExpectedStatsCard always uses current team not stale player.team (`2026-06-07`)
   - eliminate double profile fetch + lazy analytics tab fetch — kills page load animation and year-switch delay (`2026-06-07`)
-  - instant player page render from list — seed state from route prefill, no skeleton on navigation (`2026-06-07`)
 
 #### ⚡ API & Performance
 
