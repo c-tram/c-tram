@@ -253,7 +253,6 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
   - Fix Batted Ball tab: normalize expanded event field names (`2026-07-02`)
   - Redis cache for team list+detail current year (5min TTL); PlayerDetail auto-switch to spring training tab when no regular season games (`2026-06-07`)
   - Teams → TeamDetail navigation now passes selected year in URL (`2026-06-07`)
-  - pass team/playerName props to PlayerOverview so ExpectedStatsCard always uses current team not stale player.team (`2026-06-07`)
 
 #### ⚡ API & Performance
 
@@ -276,6 +275,7 @@ QA                Jest · route-consistency tests · pre-push lint + structural 
 
 #### 📝 General
 
+  - warmer: align team roster warm URL with TeamDetail frontend (category=all, limit=200) (`2026-07-05`)
   - TeamDetail: fix Last 10 showing first 10 games; add Savant-style team percentile rails (`2026-07-05`)
   - Glossary v7 rewrite + batted-ball at-bat popup + scatter zoom (`2026-07-05`)
   - Admin tools, email verification, pro-time tracking, glossary relocation (`2026-07-05`)
